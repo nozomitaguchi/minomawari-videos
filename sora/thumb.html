@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>そら：昼は青いのに、どうして夕やけは赤い？</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  const NOONP = '0,0 1130,0 830,1080 0,1080', EVEP = '1130,0 1920,0 1920,1080 830,1080';
+  let o = DEFS;
+  o += `<clipPath id="cl"><polygon points="${NOONP}"/></clipPath><clipPath id="cr"><polygon points="${EVEP}"/></clipPath>`;
+  o += `<g clip-path="url(#cl)">${skyRect('t0', 0)}${sunDisc(330, 230, 92, 0)}${cloud(700, 300, 1.1, '#fff')}<path d="M 0 900 Q 500 820 1000 900 L 1000 1080 L 0 1080 Z" fill="#6fba68"/></g>`;
+  o += `<g clip-path="url(#cr)">${skyRect('t1', 1)}${sunDisc(1650, 880, 110, 1)}${cloud(1380, 240, 0.9, '#ffc9b3')}<path d="M 800 920 Q 1400 830 1920 900 L 1920 1080 L 800 1080 Z" fill="#4a4766"/></g>`;
+  o += `<line x1="1130" y1="0" x2="830" y2="1080" stroke="#fffaf0" stroke-width="14"/>`;
+  const T = (y, inner, size) => `<text x="70" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="26" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(430, `昼は <tspan fill="${C.blue}">青い</tspan>のに`, 190);
+  o += T(680, `夕やけは <tspan fill="#e8541e">赤い</tspan>？`, 190);
+  o += `<g transform="translate(1600 1075) scale(0.98)">${sister(0.3, { pose: 'point', eyes: 'wide', mouth: 'open', look: [4, -10] })}</g>`;
+  o += g(bubble(190, 150, '？', { size: 100 }), { x: 1760, y: 300 });
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 300, y: 950 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>
