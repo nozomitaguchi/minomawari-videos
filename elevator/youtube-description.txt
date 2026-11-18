@@ -1,0 +1,46 @@
+【タイトル案】
+エレベーターは、どうやって上がる？｜みのまわり図鑑 エレベーター
+
+【概要欄】
+ボタンをおすと、すーっと上がるエレベーター。人がたくさん乗った重いへやを、どうやって上げているのでしょう？
+ロープと滑車のしくみ、ロープの反対がわにある「おもり」、ロープが切れても落ちないしかけ、ドアのひみつを、親子で見られるようにアニメにしました。
+
+（チャプターは仮。ナレーションを入れたあとに計算しなおす）
+0:00 オープニング
+0:04 エレベーターは、どうやって上がる？
+0:26 ロープの反対がわには何がある？
+0:52 かごとロープ、上のモーター
+1:07 滑車とロープがこすれる力
+1:24 かごとつり合う「おもり」
+1:44 ロープが切れたら落ちない？
+2:04 オーチスのしかけと1854年の実演
+2:43 ドアのひみつ
+3:06 「何人乗り」はひとり65キロ
+3:19 正解と、みてみよう
+
+▼ もっとくわしく（みのまわり図鑑「エレベーター」）
+https://nozomitaguchi.github.io/everyday-trivia/i/elevator/
+
+▼ 出典
+・日本機械学会 メカライフ「エレベーターのしくみ」（ロープはふつう3本以上）
+  https://www.jsme.or.jp/mechalife/jp/student/mechaland/0706.pdf
+・国土交通省「エレベーターの構造」（トラクション式：ロープを綱車に掛け、摩擦力で動かす）
+  https://www.mlit.go.jp/common/000134121.pdf
+・三菱電機 エレベーター計画資料「積載荷重と最大定員」（最大定員は1人65kgとして計算）
+  https://mitsubishielectric.co.jp/elevator/planning/regulation/pdf/5-3.pdf
+・国土交通省「戸開走行保護装置のイメージ」（かごドアと乗場ドア）
+  https://www.mlit.go.jp/common/000142992.pdf
+・国土交通省「エレベーターの制御器・制動装置・安全装置に関する規定の整理」（すべての戸が閉じた後にかごを昇降）
+  https://www.mlit.go.jp/common/001065057.pdf
+・Live Science「Ups & Downs: The Evolution of Elevators」
+  https://livescience.com/57282-elevator-history.html
+・TIME「The Elevator Safety Brake Patent」
+  https://time.com/4700084/elevator-patent-history-otis-safety
+・Wikipedia「Elisha Otis」（1854年 ニューヨーク万国博覧会での実演）
+  https://en.wikipedia.org/wiki/Elisha_Otis
+
+※ エレベーターのドアが動いているときは近づかず、足もとのすき間は見るだけにしてください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #エレベーター #しくみ #雑学 #親子で学ぶ
