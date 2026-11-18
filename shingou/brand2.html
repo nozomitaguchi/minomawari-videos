@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif}svg{display:block}</style></head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="s" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+const s = document.getElementById('s');
+const G = { deep: '#2f5e4e', deep2: '#264d40', cream: '#fbf6ea', yellow: '#f6c23e', coral: '#e8705f', sky: '#7fb6d6', ink: '#1e1d19' };
+// 白い線の小さなアイコン（バナーの模様用）
+const line = (d, w = 7) => `<path d="${d}" fill="none" stroke="currentColor" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round"/>`;
+const lineIcons = [
+  line('M -46 -18 h 92 a 10 10 0 0 1 10 10 v 16 a 10 10 0 0 1 -10 10 h -92 a 10 10 0 0 1 -10 -10 v -16 a 10 10 0 0 1 10 -10 z') + `<circle cx="-28" cy="0" r="9" fill="currentColor"/><circle cx="0" cy="0" r="9" fill="none" stroke="currentColor" stroke-width="6"/><circle cx="28" cy="0" r="9" fill="none" stroke="currentColor" stroke-width="6"/>`,
+  line('M -10 -50 h 20 v 12 l 14 20 v 56 a 8 8 0 0 1 -8 8 h -32 a 8 8 0 0 1 -8 -8 v -56 l 14 -20 z M -24 8 h 48'),
+  line('M -50 30 l 70 -70 l 14 14 l -70 70 l -18 4 z M 6 -26 l 14 14'),
+  line('M -50 40 h 20 l 50 -50 h 30 M -30 40 l 50 -50 M -50 40 v -14 M 50 -10 v -14'),
+  `<circle cx="-30" cy="0" r="12" fill="currentColor"/><circle cx="-4" cy="2" r="10" fill="currentColor"/><ellipse cx="28" cy="4" rx="20" ry="14" fill="currentColor"/>` + line('M -36 -10 L -46 -30 M -26 -10 L -20 -32 M -4 10 L -16 28 M -4 10 L 8 28 M 22 16 L 16 32 M 32 16 L 40 32', 5),
+  line('M 18 -42 A 44 44 0 1 0 18 42 A 34 34 0 1 1 18 -42 Z'),
+  line('M -34 -34 h 68 l -8 72 h -52 z M 34 -18 q 26 4 18 28 q -6 14 -22 12'),
+  line('M -40 -10 h 80 M -30 -10 v 40 h 60 v -40 M -12 -10 v -26 h 24 v 26'),
+];
+const lensRing = (r, c = '#fff', w = 0.16) => `<circle r="${r}" fill="none" stroke="${c}" stroke-width="${r * w}"/><rect x="${r * 0.62}" y="${r * 0.62}" width="${r * 0.26}" height="${r * 0.8}" rx="${r * 0.13}" fill="${c}" transform="rotate(-45 ${r * 0.75} ${r * 0.75})"/>`;
+
+function chamHead(t = 2, color = CH.cham) {
+  // カメレオンの頭だけを大きく
+  return `<g transform="translate(-86 112)">${chameleon(t, { color, eyeL: -10, eyeR: -40 })}</g>`;
+}
+
+function make(kind) {
+  let W = 800, H = 800, o = '';
+  if (kind === 'iconA') { // ルーペの中に「み」
+    o += `<rect width="800" height="800" fill="${G.deep}"/>`;
+    o += `<g transform="translate(372 372)">${lensRing(250, '#fff', 0.13)}</g>`;
+    o += `<g transform="translate(372 372)"><circle r="218" fill="${G.cream}"/></g>`;
+    o += `<text x="372" y="392" font-size="300" font-weight="900" text-anchor="middle" dominant-baseline="middle" fill="${G.deep}">み</text>`;
+    o += `<circle cx="470" cy="240" r="26" fill="${G.yellow}"/>`;
+  } else if (kind === 'iconB') { // カメレオンの顔のアップ
+    o += `<rect width="800" height="800" fill="${G.yellow}"/>`;
+    o += `<circle cx="400" cy="400" r="300" fill="#fff6d6"/>`;
+    o += `<g transform="translate(330 520) scale(1.5)">${chameleon(2.0, { holdLens: true, eyeL: 10, eyeR: -60 })}</g>`;
+  } else if (kind === 'iconC') { // 図鑑の目次のような4マス
+    o += `<rect width="800" height="800" fill="${G.cream}"/>`;
+    const tiles = [[G.deep, 0], [G.coral, 1], [G.sky, 4], [G.yellow, 2]];
+    tiles.forEach(([c, ic], k) => {
+      const x = 130 + (k % 2) * 280, y = 130 + Math.floor(k / 2) * 280;
+      o += `<rect x="${x}" y="${y}" width="260" height="260" rx="56" fill="${c}"/>`;
+      o += `<g transform="translate(${x + 130} ${y + 130}) scale(1.5)" color="#fff">${lineIcons[ic]}</g>`;
+    });
+  } else if (kind === 'bannerA') { // 深緑・白ロゴ・線のアイコン模様
+    W = 2560; H = 1440;
+    o += `<rect width="${W}" height="${H}" fill="${G.deep}"/>`;
+    // 模様
+    let k = 0;
+    for (let y = 120; y < H; y += 220) for (let x = 100 + ((y / 220) % 2) * 110; x < W; x += 220) {
+      if (x > 470 && x < 2090 && y > 470 && y < 970) continue;
+      o += `<g transform="translate(${x} ${y}) rotate(${(k * 37) % 30 - 15}) scale(0.9)" color="#ffffff" opacity="0.13">${lineIcons[k++ % lineIcons.length]}</g>`;
+    }
+    o += `<g transform="translate(700 720)">${lensRing(150, G.yellow, 0.15)}</g>`;
+    o += `<g transform="translate(700 720)" color="#fff">${lineIcons[0].replace(/stroke-width="6"/g, 'stroke-width="6"')}</g>`;
+    o += `<text x="900" y="680" font-size="150" font-weight="900" fill="#fff" dominant-baseline="middle" letter-spacing="0.06em">みのまわり図鑑</text>`;
+    o += `<text x="906" y="815" font-size="50" font-weight="700" fill="#cfe3d9" dominant-baseline="middle" letter-spacing="0.08em">まいにち見ているものを、前より くわしく。</text>`;
+  } else if (kind === 'bannerB') { // クリーム地・カラフルなタイル・キャラクター
+    W = 2560; H = 1440;
+    o += `<rect width="${W}" height="${H}" fill="${G.cream}"/>`;
+    const cols = [G.deep, G.coral, G.sky, G.yellow];
+    let i = 0;
+    for (let x = -60; x < W + 100; x += 250, i++) {
+      [180, 1260].forEach((y, r) => {
+        o += `<g transform="translate(${x + r * 125} ${y})"><rect x="-100" y="-100" width="200" height="200" rx="48" fill="${cols[(i + r * 2) % 4]}"/><g transform="scale(1.1)" color="#fff">${lineIcons[(i * 3 + r * 5) % lineIcons.length]}</g></g>`;
+      });
+    }
+    // スマホでも見える安全領域（x507-2053, y508-931）の中に、タイル・ロゴ・姉弟を収める
+    o += `<rect x="470" y="470" width="1620" height="500" rx="60" fill="${G.cream}"/>`;
+    const grid = [[0, 0], [1, 1], [2, 2], [3, 6], [0, 4], [1, 5]];
+    grid.forEach(([c, ic], k) => {
+      const x = 590 + (k % 3) * 128, y = 630 + Math.floor(k / 3) * 128;
+      o += `<g transform="translate(${x} ${y})"><rect x="-56" y="-56" width="112" height="112" rx="28" fill="${cols[c]}"/><g transform="scale(0.62)" color="#fff">${lineIcons[ic]}</g></g>`;
+    });
+    o += `<text x="1350" y="672" font-size="112" font-weight="900" text-anchor="middle" dominant-baseline="middle" fill="${G.ink}" letter-spacing="0.05em">みのまわり<tspan fill="${G.deep}">図鑑</tspan></text>`;
+    o += `<text x="1350" y="790" font-size="40" font-weight="700" fill="#69685f" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.08em">まいにち見ているものを、前より くわしく。</text>`;
+    o += `<g transform="translate(1835 905) scale(0.5)">${sister(2.0, { pose: 'wave', eyes: 'smile', mouth: 'open' })}</g>`;
+    o += `<g transform="translate(1965 905) scale(0.5)">${brother(2.0, { pose: 'point', eyes: 'open', mouth: 'open', look: [-5, -4] })}</g>`;
+  }
+  s.setAttribute('width', W); s.setAttribute('height', H); s.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  s.innerHTML = DEFS + o;
+}
+window.make = make;
+</script>
+</body></html>

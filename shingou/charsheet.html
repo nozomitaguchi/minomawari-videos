@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#fffaf0;font-family:"Noto Sans CJK JP",sans-serif}</style></head>
+<body>
+<svg id="s" width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+const T = 2.0;
+const lab = (x, y, s, size = 34, fill = '#69685f') => `<text x="${x}" y="${y}" font-size="${size}" font-weight="700" fill="${fill}" text-anchor="middle">${s}</text>`;
+let o = `<rect width="1920" height="1080" fill="#fffaf0"/>`;
+o += lab(960, 70, 'みのまわり図鑑 キャラクター（案）', 48, '#1e1d19');
+o += `<rect x="40" y="110" width="900" height="900" rx="30" fill="#f8f1e3"/>`;
+o += lab(490, 160, 'おねえちゃん（6さいくらい）', 36, '#4f6f5f');
+o += `<g transform="translate(200 900)">${sister(T)}</g>`;
+o += `<g transform="translate(490 900)">${sister(T, { pose: 'point', eyes: 'wide', mouth: 'o', look: [4, -3] })}</g>`;
+o += `<g transform="translate(780 900)">${sister(T, { pose: 'think', eyes: 'open', mouth: 'flat', look: [-4, -6] })}</g>`;
+o += lab(200, 960, 'ふつう') + lab(490, 960, '「なんで？」') + lab(780, 960, 'かんがえる');
+o += `<rect x="980" y="110" width="900" height="900" rx="30" fill="#f8f1e3"/>`;
+o += lab(1200, 160, 'おとうと（3さいくらい）', 36, '#a85a4d');
+o += `<g transform="translate(1090 900)">${brother(T)}</g>`;
+o += `<g transform="translate(1310 900)">${brother(T, { pose: 'point', eyes: 'wide', mouth: 'open', look: [4, -3] })}</g>`;
+o += lab(1090, 960, 'ふつう') + lab(1310, 960, '「みつけた！」');
+o += lab(1660, 160, 'カメレオン', 36, '#5ea338');
+o += `<g transform="translate(1540 500) scale(1.0)">${chameleon(T, { eyeL: 20, eyeR: -150, holdLens: true })}</g>`;
+o += `<g transform="translate(1560 880) scale(1.0)">${chameleon(T, { color: '#e8412c', mouth: 'open', eyeL: -10, eyeR: -10 })}</g>`;
+o += lab(1640, 590, '目を べつべつに動かす', 28) + lab(1640, 960, '色が かわる', 28);
+document.getElementById('s').innerHTML = DEFS + o;
+</script>
+</body></html>

@@ -1,0 +1,40 @@
+毎日見ている信号の「青」。よーく見ると、緑に近くありませんか？
+信号の色は、鉄道のランプから始まりました。はじめは白が「進め」で、緑は「注意」。それがどうして今の赤・黄・緑になり、日本では「青信号」と呼ばれるようになったのか。親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 この光、ほんとうに「青」？
+0:23 どうしてだと思う？
+0:35 はじめは白が「進め」だった（1841年 イギリスの鉄道）
+0:58 白をやめたわけ
+1:23 黄色が「注意」になるまで
+1:45 道路の信号へ（ロンドン・デトロイト・日比谷）
+2:16 新聞の「青」と、緑までふくむ「あお」
+2:53 名前に合わせて、色のほうが青へ
+3:17 正解と、みてみよう
+
+▼ もっとくわしく（みのまわり図鑑「しんごう」）
+https://nozomitaguchi.github.io/everyday-trivia/
+
+▼ 出典
+・The Railway Age 1899年3月17日号「Yellow Lights for Distant Signals」（1841年の取り決め、ウィッテントン・ジャンクションの事故、ニューヘイブン鉄道の黄色）
+  https://jonroma.net/media/rail/articles/railway-age/Yellow%20Lights%20for%20Distant%20Signals.%20The%20Railway%20Age.%201899-03-17.pdf
+・Mike Smith「British Railway Signals」（イギリスで緑が「進め」になった時期）
+  https://igg.org.uk/rail/3-sigs/sigs-1.htm
+・NBS Handbook 95「United States Standard for the Colors of Signal Lights」（1964年、赤と緑は色の地図でもっとも離れている）
+  https://nvlpubs.nist.gov/nistpubs/Legacy/hb/nbshandbook95.pdf
+・乗りものニュース「緑なのになぜ『青信号』？」（「緑信号」から「青信号」へ、1947年）
+  https://trafficnews.jp/post/129844
+・道路交通法施行令 第2条（青色の灯火）
+  https://lawzilla.jp/law/335CO0000000270?n=ln2&mode=only
+・中島義雄「青信号の見かけの色」（人間工学 24巻2号、1988年）
+  https://www.jstage.jst.go.jp/article/jje1965/24/2/24_2_113/_article/-char/en
+・Ayama ほか「Apparent Hue of the Light Signal of Road Traffic Control」（照明学会誌 66巻10号、1982年）
+  https://www.jstage.jst.go.jp/article/jieij1980/66/10/66_10_445/_article/-char/en
+※ 1868年のロンドンの信号、1920年のデトロイト、1930年の日比谷、当時の新聞の「青・黄・赤」、1973年からの灯器の色は、サイトの「信号機の歴史」「しんごうのことば」のページに出典をまとめています。
+
+※ 信号を見るときは、歩道で立ち止まって、見るだけにしてください。
+
+ナレーション・声：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #信号 #雑学 #親子で学ぶ
+

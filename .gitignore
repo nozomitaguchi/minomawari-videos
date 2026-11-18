@@ -1,0 +1,22 @@
+# 生成物（スクリプトから作り直せるもの）
+*.mp4
+parts/
+parts2x/
+snaps/
+review/
+check/
+*.log
+mix.wav
+bgm.wav
+list*.txt
+# 確認用の一時画像
+sheet*.jpg
+review_sheet_*.jpg
+review_fix.jpg
+chk*.jpg
+cmp*.jpg
+check_*.jpg
+*_cmp.jpg
+scenes.bak.js
+desc.json
+__pycache__/
