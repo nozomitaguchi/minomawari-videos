@@ -35,8 +35,9 @@ YouTube「みのまわり図鑑」（@minomawari-zukan、親子で見る雑学�
 - その行を `下書き中（YYYY-MM-DD HH:MM）` にして、**すぐ commit・push**（ほかのセッションと取りあわないため）。
 - `everyday-trivia/trivia/` の関連する記事をぜんぶ読んで、いちばん「へぇ」となる問いを1つ決める。
 
-### A2. フォルダ
-`./new_video.sh <slug>`。`sora/` から道具一式がコピーされる（`scenes2.example.js` が見本）。
+### A2. フォルダと BGM
+- `./new_video.sh <slug>`。`sora/` から道具一式がコピーされる（`scenes2.example.js` が見本）。
+- `python3 set_bgm.py <slug> auto` で BGM を決める（ほかの動画で最近使っていない曲調が選ばれ、メロディも毎回変わる。チャンネルを流しっぱなしにしても飽きないように）。内容に合わせて選びなおしてもよい（`python3 bgm.py` で一覧。例：空・月は space、乗りものは march）。
 
 ### A3. 台本
 - `<slug>/script.md` に場面ごとの台本。
@@ -65,16 +66,16 @@ YouTube「みのまわり図鑑」（@minomawari-zukan、親子で見る雑学�
 
 ## B. ナレーションづくり（MacBook を使うのはここだけ）
 
-無料枠は1日10回くらい。**2回はやり直し用に残して、1回の実行で最大8回**まで使う。1回の生成で**2本分**をまとめる（約7分）。
-（3本分＝約10分は、最初に1度だけ試す。きれいに最後まで読めて切り分けも合えば、`VIDEOS.md` の先頭に「まとめる本数: 3」と書いて以後は3本ずつ。だめなら2本のまま。書いてあればその本数に従う）
+無料枠は1日10回くらい。**2回はやり直し用に残して、1回の実行で最大8回**まで使う。1回の生成で**2本分**をまとめる（約7分。1回の出力は8分半くらいが上限なので、3本以上はまとめない）。
+**声は生成ごとに変える**（`VOICES.md` の順番。まとめた2本は同じ声）。
 
 1. `git pull --rebase`。`ナレーション待ち` を上から2本選び、`ナレーション中（日時）` にして push。
 2. まとめて読ませる文を作る：`python3 split_batch.py text <slug1> <slug2> > /tmp/batch.txt`
-3. Chrome：`tabs_context_mcp`（createIfEmpty: true）→ 新しいタブで `https://aistudio.google.com/generate-speech`（2回目からは同じタブ）。Speaker 1 が **Hali**、スタイルが「やさしく落ち着いた…」なのを確認（ちがえば Hali を選び、スタイルに narration.json の voices.N.prompt を入れる）。
+3. Chrome：`tabs_context_mcp`（createIfEmpty: true）→ 新しいタブで `https://aistudio.google.com/generate-speech`（2回目からは同じタブ）。`VOICES.md` の「最後に使った声」の次の声（NG はとばす）を選び、スタイルの欄をその声の性別・スタイルの指示に書きかえる（やり方は VOICES.md）。
 4. 「Speech block text」をクリック → cmd+a → `/tmp/batch.txt` の中身を type → 右下の Run。2本分で6〜7分かかる（Stop が Run にもどるまで待つ）。下のバーの時間が、見つもり（各 `timeline.js` の合計 − オープニングなど）とだいたい合っているか見る。途中で切れていたら失敗。
 5. ダウンロードボタン → MacBook の `/Users/nozomitaguchi/Downloads` に `Generated Audio <日付> - <時刻>.wav` が入る。`device_list_dir` でいちばん新しいものを探し、`device_stage_files` で取りこむ。
 6. 切り分け：`python3 split_batch.py split <取りこんだwav> <slug1> <slug2>`。表示の (実際の秒, 予想の秒) の比がそろっていて、「短い無音で切った所」が少なければ OK。おかしければ、無音の位置を見て直すか、その組を `ナレーション待ち` にもどす。
-7. それぞれ `python3 build_timeline.py`（「下書きモード」の表示が消えること）。`lines/` を commit して、`仕上げ待ち` にして push。
+7. それぞれ `python3 build_timeline.py`（「下書きモード」の表示が消えること）。使った声の名前を `<slug>/voice.txt` に書く。`VOICES.md` の「最後に使った声」を更新。`lines/` と一緒に commit して、`仕上げ待ち` にして push。
 8. 1〜7 を、`ナレーション待ち` がなくなるか、8回使うまでくり返す。
 9. 上限・ログイン切れ・Chrome や MacBook につながらない、などで作れなくなったら、そこでやめて `ナレーション中` のものを `ナレーション待ち` にもどす。同じ操作を何度もくり返さない。1本も作れなかったときだけ、`SendUserMessage` で1〜2行知らせる。
 10. タブを閉じる。
@@ -84,10 +85,10 @@ YouTube「みのまわり図鑑」（@minomawari-zukan、親子で見る雑学�
 ## C. 仕上げ（クラウドだけ）
 
 1回の実行で `仕上げ待ち` を上から**最大2本**。1本ずつ `仕上げ中（日時）` にして push してから始める。
-1. `python3 build_timeline.py` → `python3 review.py 3.0` の一覧をぜんぶ見て、本物の長さになったことでのずれ・重なりを直す。
+1. `mix.py` に `BGM_PRESET` の行がなければ（古い下書き）、`python3 set_bgm.py <slug> auto`。`python3 build_timeline.py` → `python3 review.py 3.0` の一覧をぜんぶ見て、本物の長さになったことでのずれ・重なりを直す。
 2. `nohup ./finish.sh > finish.log 2>&1 &` で 4K を書き出す（4分で40分ほど）。`sleep` で待ちながら `tail finish.log`。
 3. できた `<slug>_mimawari_4k.mp4` を `python3 review_video.py <slug>_mimawari_4k.mp4 3` で3秒ごとの一覧にしてぜんぶ見る（音とのずれは字幕の出るタイミングで確認）。直すところがあれば直して finish.sh をやり直す。
 4. `youtube-description.txt` のチャプターを `timeline.js` から計算しなおす。
 5. `VIDEOS.md` を `完成` にして commit・push（mp4 は git に入れない）。
-6. `SendUserFile`（status: proactive）で mp4 とサムネイルを送り、`SendUserMessage` で題名と見どころを2〜3行で知らせる。
+6. `SendUserFile`（status: proactive）で mp4 とサムネイルを送り、`SendUserMessage` で題名と見どころを2〜3行と、「声：<voice.txt の名前>／BGM：<プリセット名>」を1行で知らせる（ユーザーが声や曲の好ききらいを言えるように）。
 `仕上げ待ち` がなければ、何もせずに終わる（連絡もいらない）。

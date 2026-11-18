@@ -39,22 +39,11 @@ def add(buf, start, y):
     if 0 <= i < N: buf[i:j] += y[:j - i]
 mus = np.zeros(N); sfx = np.zeros(N)
 IDENT = TL['scenes'][0]['dur']
-bpm = 92; beat = 60 / bpm
-prog = [(48, [60, 64, 67]), (45, [57, 60, 64]), (41, [57, 60, 65]), (43, [59, 62, 67])]
-penta = [72, 74, 76, 79, 81, 84]
-rng = np.random.default_rng(4)
-phrase = [rng.choice(penta) if rng.random() > 0.3 else None for _ in range(32)]
-b = 0; t = IDENT
-while t < TOTAL - 2:
-    bar = int(b // 4); root, chord = prog[(bar // 2) % 4]
-    if b % 4 == 0: add(mus, t, pluck(note_hz(root), 2.5, 0.20, 0.1))
-    if b % 2 == 1:
-        for k, m in enumerate(chord): add(mus, t + k * 0.02, pluck(note_hz(m), 1.2, 0.05))
-    for half in (0, 1):
-        m = phrase[int(b * 2 + half) % 32]
-        if m is not None and ((b // 16) % 2 == 0 or half == 0):
-            add(mus, t + half * beat / 2, pluck(note_hz(m), 1.0, 0.075, 0.5))
-    b += 1; t += beat
+# BGM：動画ごとに変える（bgm.py の PRESETS から選ぶ。SEED でメロディが変わる）
+import sys; sys.path.insert(0, str(here.parent)); import bgm
+BGM_PRESET, BGM_SEED = 'pluck', 4
+rng = np.random.default_rng(BGM_SEED)  # 効果音のノイズ用
+mus += bgm.render(BGM_PRESET, BGM_SEED, N, SR, IDENT, TOTAL)
 env = np.ones(N)
 # ナレーション中は BGM を下げる
 duck = 1 - 0.6 * speech
