@@ -1,11 +1,18 @@
 """ナレーション音声の長さから、場面ごとの長さとセリフの開始時刻を決めて timeline.js に書く。
 絵は場面の中の「何番目のセリフが何秒に始まるか」（cue）に合わせて動く。"""
-import json, wave, pathlib
+import json, re, wave, pathlib
 here = pathlib.Path(__file__).parent
 NAR = [l for l in json.load(open(here / 'narration.json'))['lines'] if l['who'] == 'N']
 
-def dur(f):
-    w = wave.open(str(here / 'lines' / f)); return w.getnframes() / w.getframerate()
+ESTIMATED = []
+def dur(f, text=''):
+    # 音声があればその長さ。まだなければ文字数から見つもる（sora で 平均0.4秒の誤差）
+    p = here / 'lines' / f
+    if p.exists():
+        w = wave.open(str(p)); return w.getnframes() / w.getframerate()
+    ESTIMATED.append(f)
+    c = len(re.sub(r'[、。？！「」・ \n]', '', text)); k = len(re.findall(r'[、。？！]', text))
+    return max(0.8, 0.186 * c + 0.33 * k - 0.15)
 
 def wrap(s, n=27):
     # 長い字幕は、まん中に近い「、」で2行に分ける
@@ -40,7 +47,7 @@ for sid, cfg in SCN:
     for k, (who, ref, gap) in enumerate(cfg['rows']):
         if k: t = lines[-1]['end'] + gap
         if who == 'N':
-            f = f'N_{ref:02d}.wav'; d = dur(f); txt = wrap(NAR[ref]['text'])
+            f = f'N_{ref:02d}.wav'; d = dur(f, NAR[ref]['text']); txt = wrap(NAR[ref]['text'])
         else:
             f = None; d = BUB; txt = ref
         lines.append(dict(who=who, file=f, text=txt, start=round(t, 3), end=round(t + d, 3)))
@@ -49,3 +56,5 @@ for sid, cfg in SCN:
 open(here / 'timeline.js', 'w').write('window.TL = ' + json.dumps(dict(scenes=out, total=round(total, 3)), ensure_ascii=False) + ';\n')
 for s in out: print(s['id'], s['dur'], [round(l['start'], 1) for l in s['lines']])
 print('total', round(total, 1))
+if ESTIMATED: print(f'※ ナレーションがない {len(ESTIMATED)} 行は文字数からの見つもり（下書きモード）')
+open(here / 'timeline_mode.txt', 'w').write('estimated\n' if ESTIMATED else 'audio\n')

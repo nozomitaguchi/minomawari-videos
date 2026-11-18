@@ -23,3 +23,7 @@ __pycache__/
 review_sheet_*.jpg
 s[0-9].jpg
 raw/
+timeline_mode.txt
+*.log
+review_video/
+review_video_*.jpg

@@ -1,7 +1,11 @@
 # みのまわり図鑑 動画づくりの手順
 
-YouTube「みのまわり図鑑」（@minomawari-zukan、親子で見る雑学・横型4分前後のアニメ）の動画を、このリポジトリで1本ずつ作る。
-見本は `sora/`（いちばん新しい作り方）。`shingou/` は古い作り方（時間の伸び縮みあり）なので、まねしない。
+YouTube「みのまわり図鑑」（@minomawari-zukan、親子で見る雑学・横型4分前後のアニメ）の動画を、このリポジトリで作る。
+見本は `sora/`（いちばん新しい作り方）。`shingou/` は古い作り方なので、まねしない。
+
+作業は2段階に分かれる。どちらで呼ばれたかは、スケジュールの指示を見る。
+- **A. 下書きづくり**（クラウドだけ）：ネタ → 台本 → アニメーション（ナレーションの長さは文字数から見つもる）→ 1080p の下書き → セルフレビュー → 「ナレーション待ち」
+- **B. ナレーションと仕上げ**（MacBook の Chrome と ダウンロードフォルダを使う）：「ナレーション待ち」の動画にナレーションを入れて、見直して、4K で仕上げて届ける
 
 ## 決まりごと
 
@@ -11,55 +15,72 @@ YouTube「みのまわり図鑑」（@minomawari-zukan、親子で見る雑学�
 - 流れ：オープニング → つかみ（ふしぎ）と題名 → 予想（3択、読み上げ中の選択肢に枠）→ 説明3〜6場面 → 正解と「みてみよう」（実物のどこを見るか。危ないことは必ず注意を入れる）→ おわり。
 - ナレーションは30〜36行、全体で3分半〜4分。
 - YouTube へのアップロード・公開・YouTube Studio の操作はしない（ユーザーがやる）。
+- `VIDEOS.md` は複数のセッションが同時にさわる。書きかえる前に必ず `git pull --rebase`、書いたらすぐ commit・push。push がぶつかったら pull --rebase してやり直す。
 
-## 手順
+## VIDEOS.md の状態
 
-### 1. ネタを決める
-`VIDEOS.md` の「つぎに作る候補」の上から順に1つ選ぶ。`everyday-trivia/trivia/` の関連する記事をぜんぶ読んで、いちばん「へぇ」となる問いを1つ決める。
+`候補` → `下書き中`（だれかが作業中。日時を書く）→ `ナレーション待ち`（下書きとセルフレビューずみ）→ `仕上げ中` → `完成`（4K を届けた）→ `公開`（ユーザーが上げた）
+`下書き中` / `仕上げ中` のまま12時間以上たっているものは、止まったものとみなして作業を引きついでよい。
 
-### 2. フォルダを作る
-`./new_video.sh <slug>`（例 `./new_video.sh dangomushi`）。`sora/` から道具一式がコピーされる。
+---
 
-### 3. 台本
-- `<slug>/script.md` に場面ごとの台本を書く。
-- `<slug>/narration.json` の `lines` に全行を書く（`who`: N=ナレーター、S/B/K=吹き出し）。
-- `python3 - <<EOF` で N の行だけを ` <long pause> ` でつないだ `n_text.txt` を作る（`sora/` と同じ）。
+## A. 下書きづくり
+
+### A0. やるかどうか
+`git pull --rebase` して `VIDEOS.md` を見る。`ナレーション待ち` が **8本以上**なら、下書きは作らずに終わる（仕上げが追いつくまで待つ。ユーザーへの連絡もいらない）。
+
+### A1. ネタを決めて、取る
+- 「つぎに作る候補」の上から、`候補` のものを1つ選ぶ。候補が空なら、`everyday-trivia/items/*.md` のうち、まだ動画にしていないもの（子どもが毎日見る・アニメで見せやすいもの）を候補に足してから選ぶ。
+- その行を `下書き中（YYYY-MM-DD HH:MM）` にして、**すぐ commit・push**（ほかのセッションと取りあわないため）。
+- `everyday-trivia/trivia/` の関連する記事をぜんぶ読んで、いちばん「へぇ」となる問いを1つ決める。
+
+### A2. フォルダ
+`./new_video.sh <slug>`。`sora/` から道具一式がコピーされる（`scenes2.example.js` が見本）。
+
+### A3. 台本
+- `<slug>/script.md` に場面ごとの台本。
+- `<slug>/narration.json` の `lines` に全行（`who`: N=ナレーター、S/B/K=吹き出し）。`voices` はそのまま。
+- N の行だけを ` <long pause> ` でつないだ `<slug>/n_text.txt` を作る（`sora/` と同じ）。
 - 予想の選択肢は「1番。〜」「2番。〜」「3番。〜」の3行。正解がわかりやすく、ほかの2つももっともらしく。
 
-### 4. ナレーション（Gemini TTS / Google AI Studio、Claude in Chrome）
-1. `tabs_context_mcp`（createIfEmpty: true）→ 新しいタブで `https://aistudio.google.com/generate-speech` を開く。
-2. Speaker 1 が **Hali**、スタイルが「やさしく落ち着いた…」になっているのを確認（ちがえば Hali を選び、スタイルに narration.json の voices.N.prompt を入れる）。
-3. 「Speech block text」の欄をクリック → cmd+a → `n_text.txt` の中身を type。
-4. 右下の Run を押す。3分ほどで生成が終わる（Stop が Run にもどる）。
-5. 下のバーのダウンロードボタンを押す。ファイルは **MacBook の `/Users/nozomitaguchi/Downloads`** に `Generated Audio <日付> - <時刻>.wav` で入る。
-6. `device_list_dir` でそのフォルダを見て、いちばん新しい `Generated Audio` の wav を `device_stage_files` で取りこみ、`<slug>/raw/narration.wav` にコピー。
-7. 「今日の上限」などで生成できないときは、そこで止めて、ここまでの台本をコミットし、ユーザーに `SendUserMessage` で知らせる。
-8. 開いたタブは最後に閉じる。
-
-### 5. 1行ずつに切る
-`python3 split2.py raw/narration.wav N`。表示される (実際の秒, 予想の秒) の比がだいたいそろっていて、`cuts` がどれも長い無音（50以上）なら OK。ずれていたら、無音の位置を見て切り直す。
-
-### 6. タイムラインと絵
-- `build_timeline.py` の `SCN` を場面ごとに書きかえる（行の順番は narration.json と同じ）。`python3 build_timeline.py`。
-- `scenes2.js` に場面を書く。`sora/scenes2.js` の書き方をまねる：`cue(k)`（場面の中の k 番目の行の開始秒）に合わせて絵を出す。`helpers.js` の `topBadge` の文字（`みのまわり図鑑 ｜ <題>`）、おわりの場面のサイトのページ名も変える。
+### A4. タイムラインと絵
+- `build_timeline.py` の `SCN` を場面ごとに書きかえて `python3 build_timeline.py`。音声がないので「下書きモード」になり、行の長さは文字数から見つもられる（誤差は1行あたり平均0.4秒）。
+- `scenes2.js` に場面を書く。`cue(k)`（場面の中の k 番目の行の開始秒）と `cueE(k)`（終わり）に合わせて絵を出す。**秒を決め打ちにしない**（ナレーションが入ると長さが変わるため）。`helpers.js` の `topBadge` の文字（`みのまわり図鑑 ｜ <題>`）、おわりの場面のサイトのページ名も変える。
 - 字幕は下（y 850〜1050）に出るので、大事な絵や人物は y 850 より上に置く。
-- `./build_scenes.sh` で `scenes.js` を作る。
-- `python3 snap.py 場面:秒 ...` と `python3 sheet.py out.jpg snaps/*.jpg` で見て直す。
-- 最後に `python3 review.py 3.0` で全体の一覧（`review_sheet_*.jpg`）をぜんぶ見て、重なり・はみ出し・空白・字幕とのかぶりを直す。
+- `./build_scenes.sh` → `python3 snap.py 場面:秒 ...` と `python3 sheet.py out.jpg snaps/*.jpg` で見て直す。
+- `mix.py` の効果音の部分（`add(sfx, cue('場面id', k, 秒), ...)`）を新しい場面に合わせて書きかえる。
 
-### 7. 音
-`mix.py` の効果音の部分（`add(sfx, cue('場面id', k, 秒), ...)`）を新しい場面に合わせて書きかえ、`python3 mix.py`。
+### A5. セルフレビュー（実際の動画から静止画を取り出して見る）
+- 作っている途中は `python3 review.py 3.0`（ページから直接撮る一覧、速い）で直す。
+- 仕上げのチェックは**書き出した動画そのもの**で行う：`./preview.sh` で 1080p の下書き（声なし・字幕つき）`<slug>_preview.mp4` を作り、`python3 review_video.py <slug>_preview.mp4 3` で3秒ごとの静止画の一覧（`review_video_*.jpg`）を作って**ぜんぶ**見る。
+- 見るところ：重なり・はみ出し・空白・字幕とのかぶり・場面のつなぎ目・映っていないコマ・内容のまちがい（サイトの記事と照らす）。直したら preview.sh からやり直して、もう一度ぜんぶ見る。
+- サムネイル（`thumb.html` の `drawThumb()` → `brand/thumb.jpg` 1280×720。大きな題2行＋キャラクター＋「みのまわり図鑑」バッジ）と `youtube-description.txt`（タイトル案、説明、チャプターは仮、サイトURL、出典、タグ）も作る。
 
-### 8. 4K で書き出す
-- `SCALE=2 nohup python3 render.py > render4k.log 2>&1 &` をバックグラウンドで動かし、`sleep` で待ちながら `grep done render4k.log` で進み具合を見る（4分の動画で40分ほど）。
-- 終わったら `parts2x/part*.mp4` を concat（`-c copy`）→ `mix.wav` をのせて（aac 256k、`-movflags +faststart`）`<slug>_mimawari_4k.mp4`。
-- 何コマか取り出して、ちゃんと出ているか見る。
+### A6. 保存
+- `VIDEOS.md` のその行を `ナレーション待ち` にする。
+- commit・push（mp4 は git に入れない）。ユーザーへの連絡はしない（完成したときだけ知らせる）。
 
-### 9. サムネイルと概要欄
-- `thumb.html` の `drawThumb()` を新しい題にあわせて書きかえ、`sora/` と同じ方法で `brand/thumb.jpg`（1280×720）を作る。大きな題（2行）＋おねえちゃんかおとうと＋「みのまわり図鑑」のバッジ。
-- `youtube-description.txt`：タイトル案、説明、チャプター（timeline.js から計算）、サイトのURL、出典、`#みのまわり図鑑` などのタグ。
+---
 
-### 10. 保存して届ける
-- `VIDEOS.md` を更新（作った動画を「できた動画」へ）。
-- コミットして push（コミットメッセージの最後に、セッションで指示されたクレジット行をつける）。
-- `SendUserFile`（status: proactive）で mp4 とサムネイルを送り、`SendUserMessage` で題名と見どころを2〜3行で知らせる。
+## B. ナレーションと仕上げ
+
+### B1. ナレーションをまとめて作る（MacBook がいるのはここだけ）
+`ナレーション待ち` のものを上から順に、作れるだけ作る（1回の実行で最大4本）。1本ずつ `仕上げ中（日時）` にして push してから始める。
+1. `tabs_context_mcp`（createIfEmpty: true）→ 新しいタブで `https://aistudio.google.com/generate-speech` を開く。
+2. Speaker 1 が **Hali**、スタイルが「やさしく落ち着いた…」なのを確認（ちがえば Hali を選び、スタイルに narration.json の voices.N.prompt を入れる）。
+3. 「Speech block text」をクリック → cmd+a → `<slug>/n_text.txt` を type → 右下の Run。3分ほどで終わる（Stop が Run にもどる）。
+4. 下のバーのダウンロードボタン。ファイルは **MacBook の `/Users/nozomitaguchi/Downloads`** に `Generated Audio <日付> - <時刻>.wav` で入る。
+5. `device_list_dir` でそのフォルダを見て、いちばん新しい `Generated Audio` の wav を `device_stage_files` で取りこみ、`<slug>/raw/narration.wav` にコピー（raw/ は git に入れない）。
+6. 上限・ログイン切れ・Chrome や MacBook につながらない、などで作れなくなったら、そこで生成をやめる。残りは `ナレーション待ち` にもどす。同じ操作を何度もくり返さない。
+7. ぜんぶ終わったらタブを閉じる。
+
+### B2. 1本ずつ仕上げる
+1. `python3 split2.py raw/narration.wav N`。(実際の秒, 予想の秒) の比がだいたいそろい、`cuts` がどれも長い無音なら OK。ずれていたら無音の位置を見て切り直す。
+2. `python3 build_timeline.py`（「下書きモード」の表示が消えること）→ `python3 review.py 3.0` の一覧をぜんぶ見て、長さが変わったことでのずれ・重なりを直す。
+3. `nohup ./finish.sh > finish.log 2>&1 &` で 4K を書き出す（4分で40分ほど）。`sleep` で待ちながら `tail finish.log`。複数あるときは1本ずつ。
+4. できた `<slug>_mimawari_4k.mp4` を `python3 review_video.py <slug>_mimawari_4k.mp4 3` で3秒ごとの一覧にしてぜんぶ見る（音とのずれは字幕の出るタイミングで確認）。直すところがあれば直して finish.sh をやり直す。`youtube-description.txt` のチャプターを `timeline.js` から計算しなおす。
+5. `VIDEOS.md` を `完成` にして commit・push。
+6. `SendUserFile`（status: proactive）で mp4 とサムネイルを送り、`SendUserMessage` で題名と見どころを2〜3行で知らせる。
+
+### B3. ナレーションが1本も作れなかったとき
+何が起きたかを `SendUserMessage` で1〜2行で知らせて終わる。

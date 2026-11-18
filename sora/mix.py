@@ -17,7 +17,11 @@ voice = np.zeros(N); speech = np.zeros(N)
 for sid, (st, s) in SC.items():
     for l in s['lines']:
         if l['who'] != 'N': continue  # キャラクターは吹き出しだけ（声なし）
-        y = readwav(here / 'lines' / l['file'])
+        f = here / 'lines' / l['file']
+        if not f.exists():  # ナレーションがまだない（下書き）：声は入れず、BGM を下げる区間だけ作る
+            i = int((st + l['start']) * SR); j = min(N, int((st + l['end']) * SR))
+            speech[max(0, i - int(0.15 * SR)):j + int(0.25 * SR)] = 1; continue
+        y = readwav(f)
         gain = 1.0 if l['who'] == 'N' else 1.08
         i = int((st + l['start']) * SR); j = min(N, i + len(y))
         voice[i:j] += gain * y[:j - i]
