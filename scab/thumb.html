@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>かさぶた：どうしてできる？</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  let o = DEFS + `<rect width="1920" height="1080" fill="${C.paper}"/>`;
+  o += g(knee(0, { crust: 1 }), { x: 1460, y: 700, s: 1.05 });
+  o += g(bubble(200, 150, '？', { size: 100, tail: 'left' }), { x: 1700, y: 220 });
+  const T = (y, inner, size) => `<text x="70" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="26" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(300, `<tspan fill="${SK.crust}">かさぶた</tspan>は`, 190);
+  o += T(540, `どうして <tspan fill="${C.redUi}">できる</tspan>？`, 170);
+  o += `<g transform="translate(250 1060) scale(0.6)">${sister(0.3, { pose: 'point', eyes: 'wide', mouth: 'open', look: [6, -4] })}</g>`;
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 640, y: 780 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>

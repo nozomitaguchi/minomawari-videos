@@ -1,0 +1,46 @@
+【タイトル案】
+かさぶたは、どうしてできる？｜みのまわり図鑑 かさぶた
+
+【概要欄】
+すりむいたあとにできる、茶色くてかたい「かさぶた」。いったい何でできているのでしょう？
+血が止まる3つの段階（血管がちぢむ・血小板のせん・フィブリンのあみ）、血は赤いのにかさぶたが茶色いわけ、かさぶたの下で新しい皮ふができるようすを、親子で見られるようにアニメにしました。
+
+（チャプターは仮。ナレーションを入れたあとに計算しなおす）
+0:00 オープニング
+0:04 かさぶたは、どうしてできる？
+0:24 かさぶたは何でできている？
+0:49 血を止める3つの段階①血管がちぢむ
+1:07 ②血小板がせんをする
+1:26 ③フィブリンのあみでしばる
+1:41 乾いてかさぶたに
+1:53 血は赤いのに、どうして茶色？
+2:19 かさぶたの下で起きていること
+2:40 自然に取れるまで
+2:58 正解と、みてみよう
+
+▼ もっとくわしく（みのまわり図鑑「かさぶた」）
+https://nozomitaguchi.github.io/everyday-trivia/i/scab/
+
+▼ 出典
+・Cleveland Clinic「What Is a Scab?」（かさぶたは乾いた血のかたまり、中身、白っぽい・緑のかさぶた）
+  https://my.clevelandclinic.org/health/body/scab
+・KidsHealth「What Are Scabs?」（血小板・フィブリン、1〜2週間で自然に取れる、はがすと修理がこわれる）
+  https://kidshealth.org/en/kids/scab.html
+・MSDマニュアル家庭版「血液はどのようにして固まるか」（止血の3つの過程）
+  https://www.msdmanuals.com/ja-jp/home/13-%E8%A1%80%E6%B6%B2%E3%81%AE%E7%97%85%E6%B0%97/%E8%A1%80%E6%B6%B2%E3%81%8C%E5%87%9D%E5%9B%BA%E3%81%99%E3%82%8B%E9%81%8E%E7%A8%8B/%E8%A1%80%E6%B6%B2%E3%81%AF%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E5%9B%BA%E3%81%BE%E3%82%8B%E3%81%8B
+・鈴木秀典「正常および先天性異常血小板の超微形態」日本医科大学医学会雑誌 2015（血小板の大きさ）
+  https://www.nms.ac.jp/sh/jmanms/pdf/011020062.pdf
+・Bremmer ほか「Biphasic Oxidation of Oxy-Hemoglobin in Bloodstains」PLoS ONE（2011）（血のしみが赤からこげ茶へ）
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC3137592
+・Botonjic-Sehic ほか「Forensic Application of Near-Infrared Spectroscopy: Aging of Bloodstains」（鉄の2価から3価への変化）
+  https://www.spectroscopyonline.com/view/forensic-application-near-infrared-spectroscopy-aging-bloodstains
+・StatPearls「Wound Healing」（白血球、新しい血管、新しい皮ふは傷のふちと毛の根元から）
+  https://statpearls.com/point-of-care/31402
+・Winter GD「Formation of the scab and the rate of epithelization of superficial wounds in the skin of the young domestic pig」Nature（1962）
+  https://link.springer.com/article/10.1038/193293a0
+
+※ わざと傷を作ったり、かさぶたをはがしたりしないでください。緑色のかさぶたは、ばい菌が入っているしるしのことがあるので、病院にみせてください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #かさぶた #からだ #雑学 #親子で学ぶ
