@@ -20,3 +20,6 @@ check_*.jpg
 scenes.bak.js
 desc.json
 __pycache__/
+review_sheet_*.jpg
+s[0-9].jpg
+raw/
