@@ -1,0 +1,44 @@
+【タイトル案】
+鏡は、本当に左右を反対にする？｜みのまわり図鑑 鏡
+
+【概要欄】
+鏡の前で右手を上げると、鏡の中の人は左手を上げているように見えます。でも、鏡は本当に左右を反対にしているのでしょうか？
+鏡が光をそろえてはね返して映すしくみ、鏡が本当に入れかえているのは「前と後ろ」だということ、左右が反対に見えるわけ、鏡文字と救急車の「急救」を、親子で見られるようにアニメにしました。
+
+（チャプターは仮。ナレーションを入れたあとに計算しなおす）
+0:00 オープニング
+0:04 鏡は、本当に左右を反対にする？
+0:27 本当に反対なのはどれ？
+0:49 鏡はどうして映る？
+1:19 鏡の中の顔は鏡の奥に
+1:38 右手を上げてたしかめよう
+2:04 どうして左右が反対に見える？
+2:34 鏡文字と救急車の「急救」
+3:01 正解と、みてみよう
+
+▼ もっとくわしく（みのまわり図鑑「かがみ」）
+https://nozomitaguchi.github.io/everyday-trivia/i/mirror/
+
+▼ 出典
+・東京大学「『鏡映反転 ― 紀元前からの難問を解く』高野陽太郎」（2015、2〜4割の人が自分の鏡映反転を感じない）
+  https://www.u-tokyo.ac.jp/content/400038457.pdf
+・東京大学 プレスリリース「鏡に映すと左右が反対に見えるのはなぜか」（2007年）
+  https://www.u-tokyo.ac.jp/focus/ja/press/p01_191101_01.html
+・Physics FAQ「Why do Mirrors Reverse Left and Right?」（DESY）
+  https://www.desy.de/user/projects/Physics/General/mirrors.html
+・コトバンク「鏡文字」（デジタル大辞泉）
+  https://kotobank.jp/word/%E9%8F%A1%E6%96%87%E5%AD%97-459416
+・Evident（旧オリンパス）「Specular Reflection」（正反射と乱反射）
+  https://evidentscientific.com/en/microscope-resource/tutorials/reflection/specular
+・オハイオ州立大学 Physics 1201 Lecture 15（反射の法則、像は鏡の奥の同じ距離）
+  https://www.asc.ohio-state.edu/humanic.1/p1201lecture15.pdf
+・ブリティッシュコロンビア大学「Plane Mirrors」（全身を映すには身長の半分の鏡）
+  https://scienceres-edcp-educ.sites.olt.ubc.ca/files/2015/01/sec_phys_optics_planeMirrors.pdf
+・くるまのニュース「救急車の前面の文字はなぜ反転？」（名古屋市など一部の町）
+  https://kuruma-news.jp/post/561332
+
+※ 救急車は、止まっているときや写真で見てください。道路では近づかないでください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #鏡 #かがみ #雑学 #親子で学ぶ
