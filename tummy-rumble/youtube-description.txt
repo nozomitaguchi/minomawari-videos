@@ -1,0 +1,43 @@
+【タイトル案】
+おなかは、どうしてグーと鳴る？｜みのまわり図鑑 おなかの音
+
+【概要欄】
+しずかなときに「グー」。おなかの音は、いったい何が鳴っているのでしょう？
+胃や腸がしぼるように動いてガスと液体を押し流す音であること、からっぽだと大きく聞こえるわけ、おなかがすくと1時間半〜2時間ごとにやってくる強い波を、親子で見られるようにアニメにしました。
+
+（チャプターは仮。ナレーションを入れたあとに計算しなおす）
+0:00 オープニング
+0:04 おなかは、どうしてグーと鳴る？
+0:23 何の音だと思う？
+0:48 胃と腸は、しぼるように動く
+1:10 ガスと液体を押し流す音
+1:31 からっぽだと大きく聞こえるわけ
+1:50 おなかがすいたときの特別な動き
+2:23 「そうじ係」のはたらき
+2:38 合図を出すホルモン
+2:59 正解と、みてみよう
+
+▼ もっとくわしく（みのまわり図鑑「おなかの おと」）
+https://nozomitaguchi.github.io/everyday-trivia/i/tummy-rumble/
+
+▼ 出典
+・コトバンク「腹鳴」（デジタル大辞泉・精選版 日本国語大辞典・世界大百科事典）
+  https://kotobank.jp/word/%E8%85%B9%E9%B3%B4-617545
+・Scientific American「Why does your stomach growl?」
+  https://www.scientificamerican.com/article/why-does-your-stomach-gro/
+・Live Science「Why do our stomachs growl?」
+  https://www.livescience.com/health/food-diet/why-do-our-stomachs-growl
+・Sanger, Hellström & Näslund 2011（空腹期の運動とモチリン・グレリンの総説、Frontiers in Pharmacology）
+  https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2010.00145/full
+・伊藤漸ほか 1977「Plasma motilin concentration and gastric contractile activity in conscious dogs」（日本消化器病学会雑誌）
+  https://www.jstage.jst.go.jp/article/nisshoshi1964/74/9/74_9_1166/_article/-char/en
+・Vantrappen et al. 1977（健康な人の空腹期の運動、J Clin Invest）
+  https://www.jci.org/articles/view/108740
+・コトバンク「腹の虫」
+  https://kotobank.jp/word/%E8%85%B9%E3%81%AE%E8%99%AB-605062
+
+※ ごはんをぬいて、ためさなくて大丈夫です。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #おなかの音 #からだ #雑学 #親子で学ぶ
