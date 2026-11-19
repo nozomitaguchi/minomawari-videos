@@ -2,6 +2,8 @@
 
 YouTube「みのまわり図鑑」（@minomawari-zukan）の動画のソース。サイト：https://nozomitaguchi.github.io/everyday-trivia/
 
+[動画ネタ帳](ideas/README.md) に、新しい動画の問いと撮り方の案をまとめています。制作に入る候補と進捗は [制作一覧](VIDEOS.md) にあります。
+
 | フォルダ | 動画 |
 |---|---|
 | `shingou/` | 緑なのに、どうして「青信号」？ |
