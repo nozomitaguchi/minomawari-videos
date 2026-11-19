@@ -28,7 +28,7 @@
 | eye-tears-blink | 泣くと、どうして鼻水まで出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/eye-tears-blink.md)） | ナレーション待ち |
 | sky-cloud-white | 白い雲と黒っぽい雨雲、何がちがうの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sky-cloud-white.md)） | ナレーション待ち |
 | power-lines | 電線に止まった鳥は、どうしてしびれない？ | ナレーション待ち |
-| escalator | エスカレーターの階段は、消えたあとどこへ行く？ | 下書き中（2026-11-19 04:08） |
+| escalator | エスカレーターの階段は、消えたあとどこへ行く？ | ナレーション待ち |
 | toothpaste | 歯みがき粉のしましまは、どうして混ざらずに出てくる？ | 候補 |
 | ant | アリの行列は、どうやって同じ道を見つける？ | 候補 |
 | microwave | 中が見える電子レンジのドアは、どうして電波を外に逃がさない？ | 候補 |
