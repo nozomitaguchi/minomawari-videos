@@ -40,11 +40,11 @@ function chMouth(cx, cy, t, mode = 'smile', talk = 0) {
   return `<path d="M ${cx - 12} ${cy} Q ${cx} ${cy + 12} ${cx + 12} ${cy}" fill="none" stroke="${CH.line}" stroke-width="5" stroke-linecap="round"/>`;
 }
 
-// おねえちゃん：pose = 'stand' | 'point' | 'think' | 'wave' | 'cheer'
+// おねえちゃん：pose = 'stand' | 'point' | 'think' | 'wave' | 'cheer' | 'pointL' | 'shrug' | 'jump'
 function sister(t, { pose = 'stand', eyes = 'open', mouth = 'smile', talk = 0, look = [0, 0], hop = 0 } = {}) {
   const bob = Math.sin(t * 2.2) * 3 - hop;
-  const armL = { stand: 18, point: 18, think: 18, wave: 18, cheer: 150 }[pose];
-  const armR = { stand: -18, point: -112, think: -140, wave: -150 + Math.sin(t * 9) * 18, cheer: -150 }[pose];
+  const armL = { stand: 18, point: 18, think: 18, wave: 18, cheer: 150, pointL: 112, shrug: 72, jump: 135 }[pose] ?? 18;
+  const armR = { stand: -18, point: -112, think: -140, wave: -150 + Math.sin(t * 9) * 18, cheer: -150, pointL: -18, shrug: -72, jump: -135 }[pose] ?? -18;
   const arm = (x, y, ang, hand = true) => `<g transform="translate(${x} ${y}) rotate(${ang})">
       <rect x="-13" y="-6" width="26" height="92" rx="13" fill="${CH.skin}"/>
       <rect x="-15" y="-10" width="30" height="34" rx="14" fill="${CH.collar}"/>
@@ -84,11 +84,11 @@ function sister(t, { pose = 'stand', eyes = 'open', mouth = 'smile', talk = 0, l
   </g>`;
 }
 
-// おとうと：pose = 'stand' | 'point' | 'jump' | 'cheer'
+// おとうと：pose = 'stand' | 'point' | 'jump' | 'cheer' | 'wave' | 'think' | 'pointL' | 'shrug'
 function brother(t, { pose = 'stand', eyes = 'open', mouth = 'smile', talk = 0, look = [0, 0], hop = 0 } = {}) {
   const bob = Math.sin(t * 2.6 + 1) * 3 - hop;
-  const armL = { stand: 20, point: 20, jump: 140, cheer: 150 }[pose];
-  const armR = { stand: -20, point: -118, jump: -140, cheer: -150 }[pose];
+  const armL = { stand: 20, point: 20, jump: 140, cheer: 150, wave: 20, think: 20, pointL: 118, shrug: 74 }[pose] ?? 20;
+  const armR = { stand: -20, point: -118, jump: -140, cheer: -150, wave: -150 + Math.sin(t * 9) * 18, think: -150, pointL: -20, shrug: -74 }[pose] ?? -20;
   const arm = (x, y, ang) => `<g transform="translate(${x} ${y}) rotate(${ang})">
       <rect x="-12" y="-4" width="24" height="70" rx="12" fill="${CH.skin}"/>
       <rect x="-15" y="-10" width="30" height="34" rx="14" fill="${CH.shirtB}"/>
@@ -105,8 +105,10 @@ function brother(t, { pose = 'stand', eyes = 'open', mouth = 'smile', talk = 0, 
     ${arm(40, -190, armR)}
     <g transform="translate(0 -282)">
       <circle cx="0" cy="0" r="88" fill="${CH.skin}"/>
-      <path d="M -90 4 Q -100 -60 -60 -88 Q -40 -104 -10 -100 Q 10 -108 34 -98 Q 70 -96 88 -60 Q 100 -30 90 4 L 84 -14 Q 78 -26 66 -22 L 58 -32 L 44 -22 L 32 -34 L 18 -22 L 4 -34 L -10 -22 L -24 -34 L -38 -22 L -52 -32 L -64 -22 Q -78 -26 -84 -14 Z" fill="${CH.hairB}"/>
-      <path d="M -40 -92 Q -36 -108 -22 -104 M 20 -102 Q 30 -114 40 -100" fill="none" stroke="${CH.hairB}" stroke-width="10" stroke-linecap="round"/>
+      <!-- かみ：まるいショートと、ななめに流れる前がみ。てっぺんに小さなくせ毛ひとつ -->
+      <path d="M -92 10 Q -100 -62 -50 -92 Q 0 -114 52 -92 Q 100 -66 92 10 Q 88 -16 76 -30 Q 54 -10 28 -38 Q 2 -16 -24 -42 Q -48 -24 -70 -34 Q -86 -20 -92 10 Z" fill="${CH.hairB}"/>
+      <path d="M -6 -106 Q -2 -128 26 -126 Q 14 -118 16 -104 Z" fill="${CH.hairB}"/>
+      <path d="M -54 -78 Q -30 -94 -6 -92" fill="none" stroke="#5a4136" stroke-width="5" stroke-linecap="round"/>
       <circle cx="-88" cy="8" r="16" fill="${CH.skin}"/><circle cx="88" cy="8" r="16" fill="${CH.skin}"/>
       <circle cx="-52" cy="30" r="14" fill="${CH.cheek}" opacity="0.75"/>
       <circle cx="52" cy="30" r="14" fill="${CH.cheek}" opacity="0.75"/>
