@@ -260,6 +260,19 @@ SCENES.push({
     return out;
   },
 });
+// 吹き出しは、管（くだ）にかぶらないように、おとうとの右がわに出して、しっぽを顔にとどかせる
+const tipBubble = (who, x, y, tipX, tipY, size = 44) => {
+  const L = lineOf(who); if (!L) return '';
+  const k = back(clamp((NOW.t - L.start + 0.1) / 0.35));
+  const o = Math.min(clamp((NOW.t - L.start + 0.1) / 0.15), clamp((L.end - NOW.t) / 0.25));
+  const w = tw(L.text, size, 700, 0.04) + 70, h = size * 2.3;
+  const dx = tipX - x, dy = tipY - y;
+  const bx = Math.sign(dx) * (w / 2 - 4), by = Math.max(-h / 2 + 30, Math.min(h / 2 - 30, dy));
+  const base = `${bx} ${by - 18} L ${bx} ${by + 18}`;
+  const body = `<g filter="url(#shadow)"><rect x="${-w / 2}" y="${-h / 2}" width="${w}" height="${h}" rx="${h / 2.4}" fill="#fff"/><path d="M ${base} L ${dx} ${dy} Z" fill="#fff"/></g>` + text(0, 2, L.text, { size, fill: C.ink });
+  return g(body, { x, y, s: Math.max(k, 0.001), o });
+};
+
 // ---------- おなかの道具 ----------
 const GT = { wall: '#e9928a', wallDark: '#c96a62', inside: '#fbe3dc', liquid: '#f2c46a', gas: '#ffffff', food: '#c9925a', blood: '#d8463c' };
 // 子どもの胴（前から）。inner=1 で胃と腸が見える
@@ -420,13 +433,13 @@ SCENES.push({
       a += callout(560, 560, 420, 220, 'えきたい', prog(t, cue(0) + 0.8, 0.3), { col: '#c08a1a', size: 46 });
       a += callout(900, 420, 1100, 220, 'ガス', prog(t, cue(0) + 1.6, 0.3), { col: '#9a7b70', size: 46 });
       if (run >= 0) {
-        const px = Math.min(1700, wx + 140);
+        const px = Math.min(1700, Math.max(wx + 140, t > cue(2) - 0.8 ? 520 : 0));  // おとうとにかぶらない
         a += g(text(0, 0, 'ゴロゴロ', { size: 70, w: 900, fill: C.redUi }), { x: px, y: 770 + Math.sin(t * 18) * 4, o: prog(t, cue(1) + 0.8, 0.3) });
         a += soundWaves(px + 60, 480, t, 0.8);
       }
       const bT = talking('B');
       a += pop(`<g transform="scale(0.44)">${brother(NOW.t, { pose: bT ? 'cheer' : 'stand', eyes: 'smile', mouth: 'open', hop: bT ? Math.abs(Math.sin(NOW.t * 9)) * 14 : 0 })}</g>`, t, cue(2) - 0.8, 220, 840);
-      a += sayBubble('B', 320, 600, { tail: 'left' });
+      a += tipBubble('B', 480, 745, 272, 722);
       out += g(a, { o: aO });
     }
     const bO = prog(t, cue(3) - 0.3, 0.4);
@@ -539,8 +552,8 @@ SCENES.push({
     out += pop(badge('「そうじがかり」', { fill: C.accent, size: 56, pad: 44 }), t, cue(1) + 0.6, 760, 200);
     const kO = prog(t, cue(2) - 0.6, 0.4);
     if (kO > 0) {
-      out += g(chameleon(NOW.t, { holdLens: true, mouth: lineOf('K') ? 'open' : 'smile' }), { x: 1460, y: 830, s: 0.55, o: kO });
-      out += sayBubble('K', 1540, 620, { tail: 'left' });
+      out += g(chameleon(NOW.t, { holdLens: true, mouth: lineOf('K') ? 'open' : 'smile' }), { x: 1535, y: 870, s: 0.55, o: kO });
+      out += tipBubble('K', 1745, 705, 1625, 790);
     }
     return out;
   },
