@@ -2,6 +2,8 @@
 
 状態：`候補` → `下書き中（日時）` → `ナレーション待ち` → `ナレーション中（日時）` → `仕上げ待ち` → `仕上げ中（日時）` → `完成` → `公開`
 
+`WAV取り込み待ち` は音声生成済みで、GitHubへのWAV取り込みが残っている状態。取り込み後は `仕上げ待ち` に進める。
+
 （手順は CLAUDE.md。書きかえる前に git pull --rebase、書いたらすぐ push）
 
 ## できた動画
@@ -22,7 +24,7 @@
 | scab | けがのあと、どうしてかさぶたができる？ | 完成 |
 | moon | 月は、どうして形が変わる？ | 完成 |
 | tummy-rumble | おなかは、どうして鳴る？ | 完成 |
-| mirror | 鏡は、どうして左右が反対に見える？ | ナレーション中（2026-11-19 11:37） |
+| mirror | 鏡は、どうして左右が反対に見える？ | WAV取り込み待ち |
 | eye-tears-blink | 泣くと、どうして鼻水まで出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/eye-tears-blink.md)） | 候補 |
 | sky-cloud-white | 白い雲と黒っぽい雨雲、何がちがうの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sky-cloud-white.md)） | 候補 |
 | power-lines | 電線に止まった鳥は、どうしてしびれない？ | 候補 |
