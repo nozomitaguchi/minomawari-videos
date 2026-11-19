@@ -730,7 +730,25 @@ SCENES.push({
     out += pop(`<g transform="scale(0.52)">${sister(NOW.t, { pose: 'wave', eyes: 'smile', mouth: 'open', talk: talking('S') })}</g>`, t, 0.8, 150, 1060, { d: 0.45 });
     out += pop(`<g transform="scale(0.52)">${brother(NOW.t + 1, { pose: 'cheer', eyes: 'smile', mouth: 'open', hop: talking('B') ? Math.abs(Math.sin(NOW.t * 9)) * 14 : 0 })}</g>`, t, 1.0, 310, 1060, { d: 0.45 });
     out += pop(chameleon(NOW.t, { holdLens: true }), t, 1.2, 1660, 1040, { s: 0.7 });
-    out += sayBubble('S', 150, 610, { size: 44 }) + sayBubble('B', 250, 730, { size: 44 });
+    // 吹き出しは、しっぽの先をそれぞれの子の頭（顔）にとどかせる
+    const endBubble = (who, x, y, tipX, tipY, size = 44) => {
+      const L = lineOf(who); if (!L) return '';
+      const k = back(clamp((NOW.t - L.start + 0.1) / 0.35));
+      const o = Math.min(clamp((NOW.t - L.start + 0.1) / 0.15), clamp((L.end - NOW.t) / 0.25));
+      const w = tw(L.text, size, 700, 0.04) + 70, h = size * 2.3;
+      const dx = tipX - x, dy = tipY - y;
+      let base;
+      if (Math.abs(dy) - h / 2 > Math.abs(dx) - w / 2) {  // 下（上）へ出す
+        const bx = Math.max(-w / 2 + 40, Math.min(w / 2 - 40, dx)), by = Math.sign(dy) * (h / 2 - 4);
+        base = `${bx - 22} ${by} L ${bx + 22} ${by}`;
+      } else {  // 横へ出す
+        const bx = Math.sign(dx) * (w / 2 - 4), by = Math.max(-h / 2 + 30, Math.min(h / 2 - 30, dy));
+        base = `${bx} ${by - 18} L ${bx} ${by + 18}`;
+      }
+      const body = `<g filter="url(#shadow)"><rect x="${-w / 2}" y="${-h / 2}" width="${w}" height="${h}" rx="${h / 2.4}" fill="#fff"/><path d="M ${base} L ${dx} ${dy} Z" fill="#fff"/></g>` + text(0, 2, L.text, { size, fill: C.ink });
+      return g(body, { x, y, s: Math.max(k, 0.001), o });
+    };
+    out += endBubble('S', 185, 680, 165, 800) + endBubble('B', 575, 905, 372, 905);
     out += `<rect width="1920" height="1080" fill="#000" opacity="${prog(t, D - 1.0, 1.0)}"/>`;
     return out;
   },
