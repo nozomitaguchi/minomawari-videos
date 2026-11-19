@@ -1,0 +1,41 @@
+name: みのまわり図鑑のナレーション
+
+on:
+  schedule:
+    - cron: '7 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: minomawari-narration-main
+  cancel-in-progress: false
+
+jobs:
+  narrate:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'numpy>=2,<3'
+      - name: Generate the next batch
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python narrate_gemini.py
+      - name: Preserve generated audio if post-processing fails
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: narration-wav-for-review
+          path: ${{ runner.temp }}/*.wav
+          if-no-files-found: ignore
