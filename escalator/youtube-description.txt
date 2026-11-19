@@ -1,0 +1,39 @@
+【タイトル案】
+エスカレーターの階段は、消えたあとどこへ行く？｜みのまわり図鑑 エスカレーター
+
+【概要欄】
+エスカレーターに乗ると、足もとから階段がつぎつぎに出てきて、上に着くと床にすいこまれて消えてしまいます。消えた階段は、そのあとどこへ行くのでしょう？
+段がチェーンでつながった大きな輪になっていること、上で向きを変えて床の下の裏がわを通って乗り口へもどること、降り口の「くし」と段の「みぞ」、前と後ろの車輪が別々のレールを走って階段になったり平らになったりするしくみを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 エスカレーターの階段は、消えたあとどこへ行く？
+0:29 消えた階段は、どこへ行く？
+0:57 段はチェーンでつながった大きな輪
+1:19 裏がわを通って乗り口へもどる
+1:40 降り口の「くし」と段の「みぞ」
+2:13 階段になったり、平らになったりするしくみ
+2:46 おまけ：速さとかたむき
+2:59 正解と、みてみよう
+
+▼ もっとくわしく（みのまわり図鑑「エスカレーター」）
+https://nozomitaguchi.github.io/everyday-trivia/i/escalator/
+
+▼ 出典
+・日本機械学会 メカライフ エスカレータ編（PDF）
+  https://www.jsme.or.jp/mechalife/jp/student/mechaland/0506.pdf
+・東京都 消費生活 協議会資料2「エスカレーターの種類と安全対策」（PDF）
+  https://www.shouhiseikatu.metro.tokyo.lg.jp/anzen/kyougikai/r7/documents/r7kyogikai-1_handout-01-2.pdf
+・Google Patents JPS59177290A エスカレータの踏段ガイドレール
+  https://patents.google.com/patent/JPS59177290A/ja
+・三菱電機 エスカレーター Sシリーズ カタログ（PDF）
+  https://www.mitsubishielectric.co.jp/elevator/catalog/pdf/c-c01-3-c9207.pdf
+・日本エレベーター協会 エスカレーターのご利用について
+  https://www.n-elekyo.or.jp/instructions/escalator.html
+・コトバンク 世界大百科事典「エスカレーター」
+  https://kotobank.jp/word/%E3%82%A8%E3%82%B9%E3%82%AB%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC-444746
+
+※ 見るときは人の流れのじゃまにならない場所で。くしのところには手をふれず、落とし物は係の人をよんでください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #エスカレーター #しくみ #乗りもの #雑学 #親子で学ぶ

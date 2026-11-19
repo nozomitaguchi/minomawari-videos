@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エスカレーター：エスカレーターの階段は、消えたあとどこへ行く？</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  NOW = { i: 8, t: 2 };
+  let o = DEFS + `<rect width="1920" height="1080" fill="${WALL}"/>` + `<rect x="0" y="${330 + 620 * 0.72}" width="1920" height="400" fill="${mix(WALL, FLOOR, 0.5)}"/><rect x="0" y="${330 + 612 * 0.72}" width="${560 + 388 * 0.72}" height="400" fill="${FLOOR}"/>`;
+  const target = ESEG.slice(0, 5).reduce((a, s) => a + s.len, 0) + ESEG[5].len * 0.45, base = target + SS / 2 - 30 * SS;
+  o += `<g transform="translate(560 330) scale(0.72)">${escalator(3, { xray: 0.85, base, hlIdx: 30, dim: 0.9, chain: 0.5, glass: 1 })}</g>`;
+  const p = escPos(target);
+  const px = 560 + p.x * 0.72, py = 330 + p.y * 0.72;
+  o += `<circle cx="${px}" cy="${py + 8}" r="62" fill="none" stroke="${C.red}" stroke-width="10" stroke-dasharray="20 12"/>`;
+  o += `<text x="${px + 110}" y="${py + 10}" font-size="120" font-weight="900" fill="${C.red}" stroke="#fffaf0" stroke-width="16" paint-order="stroke" text-anchor="middle" dominant-baseline="middle">？</text>`;
+  const T = (x, y, inner, size) => `<text x="${x}" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="26" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(60, 170, `<tspan fill="${C.blueUi}">エスカレーター</tspan>の`, 140);
+  o += T(60, 340, `かいだんは`, 140);
+  o += T(60, 960, `<tspan fill="${C.redUi}">きえたら</tspan> どこへ？`, 150);
+  o += `<g transform="translate(260 800) scale(0.6)">${sister(0.3, { pose: 'point', eyes: 'wide', mouth: 'open', look: [6, -8] })}</g>`;
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 50, pad: 46 }), { x: 1660, y: 90 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>
