@@ -5,7 +5,7 @@ YouTube「みのまわり図鑑」（@minomawari-zukan、親子で見る雑学�
 
 作業は3段階に分かれる。どれで呼ばれたかは、スケジュールの指示を見る。
 - **A. 下書きづくり**（クラウドだけ）：ネタ → 台本 → アニメーション（ナレーションの長さは文字数から見つもる）→ 1080p の下書き → セルフレビュー → 「ナレーション待ち」
-- **B. ナレーションづくり**（MacBook の Chrome と ダウンロードフォルダを使う）：AI Studio で2本分ずつまとめてナレーションを作り、1行ずつに切って保存 → 「仕上げ待ち」
+- **B. ナレーションづくり**（**ChatGPT 担当**。手順は `NARRATION_FOR_CHATGPT.md`）：AI Studio で2本分ずつまとめてナレーションを作り、1行ずつに切って保存 → 「仕上げ待ち」。Claude は、ユーザーに頼まれたときだけこの段階をやる（下の B の手順）
 - **C. 仕上げ**（クラウドだけ）：本物のナレーションの長さで見直し → 4K → 動画からの静止画でチェック → 届ける → 「完成」
 
 ## 決まりごと
@@ -87,6 +87,7 @@ YouTube「みのまわり図鑑」（@minomawari-zukan、親子で見る雑学�
 ## C. 仕上げ（クラウドだけ）
 
 1回の実行で `仕上げ待ち` を上から**最大2本**。1本ずつ `仕上げ中（日時）` にして push してから始める。
+0. `<slug>/lines/` がまだなく、`incoming/` にその slug を含む wav（`<slug1>__<slug2>.wav`）があれば、`python3 split_batch.py split incoming/<その名前>.wav <slug1> <slug2>` で切り、比がそろっていることを確かめて、`lines/` を commit、wav を `git rm`。`voice.txt` がなければ「不明」と書く。
 1. `mix.py` に `BGM_PRESET` の行がなければ（古い下書き）、`python3 set_bgm.py <slug> auto`。`python3 build_timeline.py` → `python3 review.py 3.0` の一覧をぜんぶ見て、本物の長さになったことでのずれ・重なりを直す。
 2. `nohup ./finish.sh > finish.log 2>&1 &` で 4K を書き出す（4分で40分ほど）。`sleep` で待ちながら `tail finish.log`。
 3. できた `<slug>_mimawari_4k.mp4` を `python3 review_video.py <slug>_mimawari_4k.mp4 3` で3秒ごとの一覧にしてぜんぶ見る（音とのずれは字幕の出るタイミングで確認）。直すところがあれば直して finish.sh をやり直す。
