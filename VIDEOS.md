@@ -26,7 +26,7 @@
 | tummy-rumble | おなかは、どうして鳴る？ | 完成 |
 | mirror | 鏡は、どうして左右が反対に見える？ | WAV取り込み待ち |
 | eye-tears-blink | 泣くと、どうして鼻水まで出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/eye-tears-blink.md)） | ナレーション待ち |
-| sky-cloud-white | 白い雲と黒っぽい雨雲、何がちがうの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sky-cloud-white.md)） | 下書き中（2026-11-19 15:08） |
+| sky-cloud-white | 白い雲と黒っぽい雨雲、何がちがうの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sky-cloud-white.md)） | ナレーション待ち |
 | power-lines | 電線に止まった鳥は、どうしてしびれない？ | 候補 |
 | escalator | エスカレーターの階段は、消えたあとどこへ行く？ | 候補 |
 | toothpaste | 歯みがき粉のしましまは、どうして混ざらずに出てくる？ | 候補 |
