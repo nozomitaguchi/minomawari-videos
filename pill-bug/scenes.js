@@ -359,6 +359,8 @@ const frog = () => `<ellipse cx="0" cy="-50" rx="90" ry="60" fill="#6cbf5a"/><ci
 const mantis = () => `<g stroke="#5fae4a" stroke-linecap="round" fill="none"><path d="M -70 0 L -40 -60 M -10 0 L -20 -60 M 60 0 L 40 -60" stroke-width="8"/><path d="M -90 -70 L 40 -70" stroke-width="26"/><path d="M 40 -70 L 70 -150" stroke-width="18"/><path d="M 66 -130 L 110 -110 L 96 -70" stroke-width="12"/></g><path d="M 50 -150 L 100 -170 L 76 -132 Z" fill="#7cc95f"/><circle cx="84" cy="-158" r="7" fill="${C.ink}"/>`;
 const spider = () => { let s = ''; for (let i = 0; i < 4; i++) { const a = -0.5 + i * 0.35; s += `<path d="M 0 -60 Q ${-60 - i * 10} ${-110 + i * 30} ${-110 - i * 6} ${-10 + i * 6}" fill="none" stroke="${C.ink}" stroke-width="7" stroke-linecap="round"/><path d="M 0 -60 Q ${60 + i * 10} ${-110 + i * 30} ${110 + i * 6} ${-10 + i * 6}" fill="none" stroke="${C.ink}" stroke-width="7" stroke-linecap="round"/>`; } return s + `<ellipse cx="0" cy="-70" rx="46" ry="40" fill="#3a3530"/><circle cx="0" cy="-118" r="24" fill="#3a3530"/><circle cx="-9" cy="-122" r="5" fill="#fff"/><circle cx="9" cy="-122" r="5" fill="#fff"/>`; };
 const antIcon = (s = 1, col = C.ink) => `<g transform="scale(${s})"><circle cx="-34" cy="0" r="14" fill="${col}"/><circle cx="-6" cy="2" r="11" fill="${col}"/><ellipse cx="28" cy="4" rx="22" ry="16" fill="${col}"/><path d="M -40 -12 L -52 -32 M -30 -12 L -24 -34 M -6 10 L -18 28 M -6 10 L 6 28 M 20 16 L 14 32 M 30 16 L 38 32" stroke="${col}" stroke-width="5" stroke-linecap="round"/></g>`;
+// 右向きのアリ（antIcon は頭が左。進む向きに頭を向けるために使う）
+const antIconR = (s = 1, col = C.ink) => `<g transform="scale(-1,1)">${antIcon(s, col)}</g>`;
 const shrimp = () => `<path d="M -90 -20 Q -40 -110 50 -80 Q 100 -60 90 -10 L 60 -20 Q 40 -50 0 -50 Q -40 -40 -60 0 Z" fill="#f08a6a"/><path d="M -90 -20 L -120 -50 L -120 10 Z" fill="#f08a6a"/><circle cx="66" cy="-66" r="6" fill="${C.ink}"/><path d="M 80 -70 Q 140 -110 170 -60 M 80 -64 Q 150 -80 160 -30" fill="none" stroke="#e0705a" stroke-width="4"/>${[0, 1, 2, 3].map(i => `<line x1="${-30 + i * 22}" y1="-40" x2="${-36 + i * 22}" y2="-8" stroke="#e0705a" stroke-width="5" stroke-linecap="round"/>`).join('')}`;
 const crab = () => `<ellipse cx="0" cy="-50" rx="80" ry="50" fill="#e0613f"/><path d="M -70 -70 Q -120 -120 -100 -150 M 70 -70 Q 120 -120 100 -150" fill="none" stroke="#e0613f" stroke-width="14" stroke-linecap="round"/><path d="M -116 -150 Q -100 -190 -78 -156 Z M 116 -150 Q 100 -190 78 -156 Z" fill="#e0613f"/>${[-1, 1].map(sd => [0, 1, 2].map(i => `<path d="M ${sd * 60} ${-40 + i * 10} L ${sd * (110 + i * 6)} ${-10 + i * 16}" stroke="#d0532f" stroke-width="9" stroke-linecap="round"/>`).join('')).join('')}<circle cx="-24" cy="-96" r="9" fill="${C.ink}"/><circle cx="24" cy="-96" r="9" fill="${C.ink}"/>`;
 const insectTop = () => `<g stroke="${C.ink}" stroke-width="6" stroke-linecap="round">${[-1, 1].map(sd => [-30, 0, 30].map(px => `<line x1="${px}" y1="0" x2="${px + 10}" y2="${sd * 70}"/>`).join('')).join('')}<path d="M 90 -10 Q 130 -50 150 -60 M 90 10 Q 130 50 150 60" fill="none"/></g><ellipse cx="-50" cy="0" rx="60" ry="30" fill="#7a5a3a"/><ellipse cx="20" cy="0" rx="30" ry="22" fill="#6a4a2a"/><circle cx="76" cy="0" r="20" fill="#5a3a1a"/>`;
@@ -498,7 +500,7 @@ SCENES.push({
       const roll = eio(prog(t, cue(1) + 1.6, 0.6));
       b += pillSide(1000, 782, 520, roll, { t, walk: roll > 0 ? 0 : 0.8, glowBelly: win(t, cue(1) + 0.6, cue(1) + 1.8, 0.2) });
       const ax = lerp(200, 560, eo(prog(t, cue(1), 2.0)));
-      b += g(antIcon(2.4), { x: ax, y: 740 });
+      b += g(antIconR(2.4), { x: ax, y: 740 });  // 右へ進むので右向き
       b += g(badge('おなかを かくす', { fill: C.redUi, size: 44 }), { x: 1000, y: 380, o: win(t, cue(1) + 2.2, cue(1) + 5.0, 0.3) });
       b += g(badge('かたい からで まもる', { fill: PB.dark, size: 44 }), { x: 1000, y: 380, o: prog(t, cue(1) + 5.0, 0.3) });
       const bT = talking('B');
@@ -606,7 +608,8 @@ SCENES.push({
         for (let i = 0; i < nA; i++) {
           const ang = i / nA * Math.PI * 2 + t * 0.3 * (bite ? 0 : 1) + (cous ? 0 : 1.2);
           const rr = bite && cous ? 120 : 190;
-          s += g(antIcon(0.9), { x: x + Math.cos(ang) * rr, y: 520 + Math.sin(ang) * rr * 0.8, r: ang * 57 + 180 });
+          // 回っているあいだは進む向き（円の接線）に頭を向け、止まったら真ん中を向く
+          s += g(antIcon(0.9), { x: x + Math.cos(ang) * rr, y: 520 + Math.sin(ang) * rr * 0.8, r: ang * 57 + (bite ? 0 : -90) });
           if (bite && cous) s += g(text(0, 0, 'がぶっ', { size: 30, w: 900, fill: C.redUi }), { x: x + Math.cos(ang) * 210, y: 520 + Math.sin(ang) * 180, o: 0.5 + 0.5 * Math.sin(t * 8 + i) });
         }
         return s;
@@ -628,7 +631,7 @@ SCENES.push({
       // つるっとすべるアリ
       const p = ((t - cue(3)) * 0.45) % 1;
       const ang = -Math.PI * 0.55 + p * Math.PI * 0.55;
-      b += g(antIcon(1.3), { x: 960 + Math.cos(ang) * (R0 + 26), y: BC + Math.sin(ang) * (R0 + 26), r: ang * 57 + 90 });
+      b += g(antIconR(1.3), { x: 960 + Math.cos(ang) * (R0 + 26), y: BC + Math.sin(ang) * (R0 + 26), r: ang * 57 + 90 });  // 右へすべるので右向き
       b += pop(badge('つるつる', { fill: C.blueUi, size: 50 }), t, cue(3) + 0.6, 960, 200);
       b += pop(badge('かみつく ところが ない', { fill: C.redUi, size: 42 }), t, cue(3) + 2.4, 1500, 420);
       out += g(b, { o: bO });

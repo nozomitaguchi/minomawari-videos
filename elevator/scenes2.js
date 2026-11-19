@@ -539,9 +539,9 @@ SCENES.push({
     const aO = 1 - prog(t, cue(1) - 0.6, 0.5);
     if (aO > 0) {
       let a = pop(card(1240, 170) + `<circle cx="-530" cy="0" r="50" fill="${C.accent}"/>` + text(-530, 3, '②', { size: 56, w: 900, fill: '#fff' }) +
-        text(-450, 2, 'へやと おなじくらい おもい おもり', { size: 58, w: 900, anchor: 'start' }), t, 0.4, 960, 300);
+        text(-432, 2, 'へやと おなじくらい おもい おもり', { size: 58, w: 900, anchor: 'start' }), t, 0.4, 960, 300);
       const ring = prog(t, 1.2, 0.5);
-      a += g(`<circle r="70" fill="none" stroke="${C.red}" stroke-width="12"/>` + text(0, -130, 'せいかい！', { size: 58, w: 900, fill: C.red }), { x: 400, y: 300, o: ring, s: Math.max(back(ring), 0.001) });
+      a += g(`<circle r="64" fill="none" stroke="${C.red}" stroke-width="10"/>` + text(0, -130, 'せいかい！', { size: 58, w: 900, fill: C.red }), { x: 430, y: 300, o: ring, s: Math.max(back(ring), 0.001) });
       // 小さなしくみの図
       const mv = (Math.sin(t * 1.2) + 1) / 2;
       let f = sheave(0, 0, 60, -t * 1.2) + `<path d="M -60 0 A 60 60 0 0 1 60 0" fill="none" stroke="${EL.rope}" stroke-width="7"/>`;

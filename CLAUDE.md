@@ -58,6 +58,9 @@ YouTube「みのまわり図鑑」（@minomawari-zukan、親子で見る雑学�
 - 作っている途中は `python3 review.py 3.0`（ページから直接撮る一覧、速い）で直す。
 - 仕上げのチェックは**書き出した動画そのもの**で行う：`./preview.sh` で 1080p の下書き（声なし・字幕つき）`<slug>_preview.mp4` を作り、`python3 review_video.py <slug>_preview.mp4 3` で3秒ごとの静止画の一覧（`review_video_*.jpg`）を作って**ぜんぶ**見る。
 - 見るところ：重なり・はみ出し・空白・字幕とのかぶり・場面のつなぎ目・映っていないコマ・内容のまちがい（サイトの記事と照らす）。直したら preview.sh からやり直して、もう一度ぜんぶ見る。
+- **とくに見落としやすいところ**（ユーザーから指摘があったもの）：
+  - **動く向き**：生きもの・人・乗りものが動くときは、頭や顔が進む方向を向いているか（後ろ向きに進んでいないか）。静止画1枚ではわからないので、`python3 snap.py 場面:秒 場面:秒+1` のように1秒ずらした2枚を並べて、動いた向きと頭の向きを比べる。円を回るものは接線の向き、すべり落ちるものも進む向きに頭を向ける。
+  - **印と相手のずれ**：「せいかい！」の丸・矢印・枠・指し線が、指したいもの（番号の丸など）の中心にぴったり合っているか。丸が文字にかぶっていないか。座標をコピーしたときにずれやすい。
 - サムネイル（`thumb.html` の `drawThumb()` → `brand/thumb.jpg` 1280×720。大きな題2行＋キャラクター＋「みのまわり図鑑」バッジ）と `youtube-description.txt`（タイトル案、説明、チャプターは仮、サイトURL、出典、タグ）も作る。
 
 ### A6. 保存
@@ -90,7 +93,7 @@ YouTube「みのまわり図鑑」（@minomawari-zukan、親子で見る雑学�
 0. `<slug>/lines/` がまだなく、`incoming/` にその slug を含む wav（`<slug1>__<slug2>.wav`）があれば、`python3 split_batch.py split incoming/<その名前>.wav <slug1> <slug2>` で切り、比がそろっていることを確かめて、`lines/` を commit、wav を `git rm`。`voice.txt` がなければ「不明」と書く。
 1. `mix.py` に `BGM_PRESET` の行がなければ（古い下書き）、`python3 set_bgm.py <slug> auto`。`python3 build_timeline.py` → `python3 review.py 3.0` の一覧をぜんぶ見て、本物の長さになったことでのずれ・重なりを直す。
 2. `nohup ./finish.sh > finish.log 2>&1 &` で 4K を書き出す（4分で40分ほど）。`sleep` で待ちながら `tail finish.log`。
-3. できた `<slug>_mimawari_4k.mp4` を `python3 review_video.py <slug>_mimawari_4k.mp4 3` で3秒ごとの一覧にしてぜんぶ見る（音とのずれは字幕の出るタイミングで確認）。直すところがあれば直して finish.sh をやり直す。
+3. できた `<slug>_mimawari_4k.mp4` を `python3 review_video.py <slug>_mimawari_4k.mp4 3` で3秒ごとの一覧にしてぜんぶ見る（音とのずれは字幕の出るタイミングで確認。A5 の「とくに見落としやすいところ」も必ず確かめる）。直すところがあれば直して finish.sh をやり直す。
 4. `youtube-description.txt` のチャプターを `timeline.js` から計算しなおす。
 5. `VIDEOS.md` を `完成` にして commit・push（mp4 は git に入れない）。
 6. `SendUserFile`（status: proactive）で mp4 とサムネイルを送り、`SendUserMessage` で題名と見どころを2〜3行と、「声：<voice.txt の名前>／BGM：<プリセット名>」を1行で知らせる（ユーザーが声や曲の好ききらいを言えるように）。
