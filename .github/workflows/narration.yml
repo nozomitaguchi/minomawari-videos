@@ -2,7 +2,7 @@ name: みのまわり図鑑のナレーション
 
 on:
   schedule:
-    - cron: '7 23 * * *'
+    - cron: '7 2-23/3 * * *'
   workflow_dispatch:
   push:
     branches: [main]
