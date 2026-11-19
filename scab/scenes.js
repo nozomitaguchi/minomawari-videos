@@ -584,8 +584,8 @@ SCENES.push({
       out += callout(1290, 420, 1500, 300, 'ばいきん', wb * (1 - prog(t, cue(1) + 3.0, 0.5)), { col: '#5a9a3a', size: 46 });
     }
     out += callout(NB0 - 60, 520, 480, 820, 'あたらしい けっかん', prog(t, cue(2) + 1.0, 0.3) * (1 - prog(t, cue(3) - 0.3, 0.4)), { col: SK.vesselWall, size: 46 });
-    out += callout(NX0 + 60, EPI, 480, 820, 'きずの ふちから', prog(t, cue(3) + 1.6, 0.3), { col: '#d06a5a', size: 46 });
-    out += callout(1300, 500, 1500, 820, 'けの ねもとから', prog(t, cue(3) + 3.0, 0.3), { col: '#d06a5a', size: 46 });
+    out += callout(NX0 + 60, EPI, 480, 795, 'きずの ふちから', prog(t, cue(3) + 1.6, 0.3), { col: '#d06a5a', size: 46 });
+    out += callout(1300, 500, 1500, 795, 'けの ねもとから', prog(t, cue(3) + 3.0, 0.3), { col: '#d06a5a', size: 46 });
     out += g(badge('かさぶたの した', { fill: SK.crust, size: 46 }), { x: 960, y: 120, o: prog(t, 0.4, 0.3) });
     // 毛の根元から広がる新しい皮ふ
     if (hl > 0) out += `<path d="M 1278 ${SURF + 10} L 1278 ${lerp(SURF + 10, 500, hl)} M 1322 ${SURF + 10} L 1322 ${lerp(SURF + 10, 500, hl)}" stroke="${SK.newSkin}" stroke-width="14" stroke-linecap="round" opacity="0.9"/>`;
@@ -605,7 +605,7 @@ SCENES.push({
       // 下の皮ふができあがり
       a += g(`<path d="M ${NX0} ${SURF} L ${NX1} ${SURF} L ${NX1 - 40} ${EPI + 20} L ${NX0 + 40} ${EPI + 20} Z" fill="${SK.newSkin}"/><path d="M ${NX0 + 40} ${EPI + 20} L ${NB0} ${VT} L ${NB1} ${VT} L ${NX1 - 40} ${EPI + 20} Z" fill="${SK.derm}"/>`, { o: prog(t, cue(0) + 0.6, 0.6) });
       a += g(badge('しぜんに とれる', { fill: C.accent, size: 50 }), { x: 1460, y: 160, o: prog(t, cue(0) + 2.4, 0.3) });
-      a += g(`<rect x="-200" y="-80" width="400" height="160" rx="24" fill="#fff" stroke="${C.line}" stroke-width="6"/>` + text(0, 2, '1〜2しゅうかん', { size: 56, w: 900, fill: C.redUi }), { x: 460, y: 160, o: prog(t, cue(1) + 0.4, 0.3) });
+      a += g(`<rect x="-260" y="-80" width="520" height="160" rx="24" fill="#fff" stroke="${C.line}" stroke-width="6"/>` + text(0, 2, '1〜2しゅうかん', { size: 56, w: 900, fill: C.redUi }), { x: 460, y: 160, o: prog(t, cue(1) + 0.4, 0.3) });
       a += g(text(0, 0, 'すりきず', { size: 40, w: 900, fill: C.muted }), { x: 460, y: 280, o: prog(t, cue(1) + 0.4, 0.3) });
       out += g(a, { o: aO });
     }
@@ -631,9 +631,9 @@ SCENES.push({
     const aO = 1 - prog(t, cue(1) - 0.6, 0.5);
     if (aO > 0) {
       let a = pop(card(1240, 170) + `<circle cx="-530" cy="0" r="50" fill="${C.accent}"/>` + text(-530, 3, '②', { size: 56, w: 900, fill: '#fff' }) +
-        text(-450, 2, 'ちが かたまって、かわいたもの', { size: 58, w: 900, anchor: 'start' }), t, 0.4, 960, 300);
+        text(-432, 2, 'ちが かたまって、かわいたもの', { size: 58, w: 900, anchor: 'start' }), t, 0.4, 960, 300);
       const ring = prog(t, 1.2, 0.5);
-      a += g(`<circle r="70" fill="none" stroke="${C.red}" stroke-width="12"/>` + text(0, -130, 'せいかい！', { size: 58, w: 900, fill: C.red }), { x: 430, y: 300, o: ring, s: Math.max(back(ring), 0.001) });
+      a += g(`<circle r="64" fill="none" stroke="${C.red}" stroke-width="10"/>` + text(0, -130, 'せいかい！', { size: 58, w: 900, fill: C.red }), { x: 430, y: 300, o: ring, s: Math.max(back(ring), 0.001) });
       a += chipsRow([['ちが でる', C.redUi], ['かたまる', '#c08a1a'], ['かわく', SK.crust]], t, 960, 560, { size: 46, start: 2.4, step: 0.8 });
       a += g(arrow2(700, 650, 760, 650, C.muted, 6) + arrow2(1150, 650, 1210, 650, C.muted, 6), { o: 0 });
       out += g(a, { o: aO });
