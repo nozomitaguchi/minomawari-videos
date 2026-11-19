@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '7 23 * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/narration.yml'
+      - 'narrate_gemini.py'
 
 permissions:
   contents: write
@@ -13,8 +18,37 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  check_api_connection:
+    if: github.event_name == 'push'
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'numpy>=2,<3'
+      - name: Check Gemini API credentials and next voice
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python - <<'PY'
+          import os
+          from narrate_gemini import MODEL, VOICES, next_voice, request, voice_id
+
+          key = os.environ.get("GEMINI_API_KEY")
+          if not key:
+              raise SystemExit("GEMINI_API_KEY is not configured")
+          request(key, f"/models/{MODEL}")
+          voice, _ = next_voice(VOICES.read_text())
+          voice_id(key, voice)
+          print(f"Gemini API connection verified: {MODEL}, {voice}")
+          PY
+
   narrate:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && github.event_name != 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
