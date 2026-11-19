@@ -516,9 +516,9 @@ SCENES.push({
       for (let k = 0; k < 3; k++) {
         const x = 300 + k * 600;
         c += `<rect x="${x - 40}" y="740" width="80" height="56" rx="12" fill="${C.redUi}"/>` + text(x, 768, 'グー', { size: 28, w: 900, fill: '#fff' });
-        if (k < 2) c += g(text(x + 300, 720, '1じかんはん〜2じかん', { size: 34, w: 900, fill: C.ochre }) + `<path d="M ${x + 50} 740 Q ${x + 300} 690 ${x + 550} 740" fill="none" stroke="${C.ochre}" stroke-width="5" stroke-dasharray="10 8"/>`, {});
+        if (k < 2) c += g(text(x + 300, 686, '1じかんはん〜2じかん', { size: 34, w: 900, fill: C.ochre }) + `<path d="M ${x + 50} 740 Q ${x + 300} 716 ${x + 550} 740" fill="none" stroke="${C.ochre}" stroke-width="5" stroke-dasharray="10 8"/>`, {});
       }
-      out += g(c, { o: cO });
+      out += g(g(c, { y: 50 }), { o: cO });
     }
     const dO = prog(t, cue(4) - 0.3, 0.4);
     if (dO > 0) {
