@@ -56,7 +56,7 @@ def cut(src, texts):
         y = a[s2 * hop:e2 * hop].copy()
         f = min(len(y), int(sr * 0.01)); y[:f] *= np.linspace(0, 1, f); y[-f:] *= np.linspace(1, 0, f)
         clips.append(y)
-        info.append((round(len(y) / sr, 2), round(W[k] * rate / 100, 2), texts[k][:16]))
+        info.append((round(len(y) / sr, 2), round(float(W[k] * rate / 100), 2), texts[k][:16]))
     cuts = [(round(pts[j] / 100, 2), glen[j - 1]) for j in path[1:-1]]
     return sr, clips, info, cuts
 
