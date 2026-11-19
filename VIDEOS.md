@@ -29,32 +29,13 @@
 | sky-cloud-white | 白い雲と黒っぽい雨雲、何がちがうの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sky-cloud-white.md)） | ナレーション待ち |
 | power-lines | 電線に止まった鳥は、どうしてしびれない？ | ナレーション待ち |
 | escalator | エスカレーターの階段は、消えたあとどこへ行く？ | ナレーション待ち |
-| toothpaste | 歯みがき粉のしましまは、どうして混ざらずに出てくる？ | 候補 |
 | ant | アリの行列は、どうやって同じ道を見つける？ | 候補 |
-| microwave | 中が見える電子レンジのドアは、どうして電波を外に逃がさない？ | 候補 |
-| ketchup | ケチャップは、どうして出ないと思ったら急にドバッと出る？ | 候補 |
 | digestion | 食べたものは、どうやってうんちになる？ | 候補 |
-| pill-bug-turn | ダンゴムシは、右に曲がったら次は左に曲がる？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/pill-bug-turn.md)） | 候補 |
 | eyes | 目を開けているのに、見えない場所があるってほんと？ | 候補 |
 | pet-bottle | 炭酸のペットボトルは、どうして底が花びらみたいな形？ | 候補 |
-| train | 電車の上の電線は、どうしてジグザグなの？ | 候補 |
-| station | 改札に入れたきっぷは、どうやって人より先に出てくる？ | 候補 |
 | nails-and-hair | つめや髪は、どうして切っても痛くない？ | 候補 |
-| building | ビルの屋上のクレーンは、工事が終わったらどうやって降りる？ | 候補 |
-| crosswalk | 横断歩道の白い線は、どうして車のライトで光る？ | 候補 |
-| remote-and-wifi | テレビのリモコンは、どうやって見えない光で合図する？ | 候補 |
 | pencil | 鉛筆は、どうして消しゴムで消える？ | 候補 |
 | height | 朝と夜で、背の高さが変わるってほんと？ | 候補 |
-| tunnel | トンネルは、どうして入口だけライトが多いの？ | 候補 |
-| moon-illusion | のぼったばかりの月は、どうして大きく見える？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/moon-illusion.md)） | 候補 |
-| cardboard | 段ボールは、どうして紙だけで重い荷物を支えられる？ | 候補 |
-| emergency-exit | 非常口のマークは、どうして停電しても光る？ | 候補 |
-| photo | 小さな穴を通ると、どうして景色がさかさまに映る？ | 候補 |
-| rice | お米をとぐと、どうして水が白くなる？ | 候補 |
-| futon | 干したふとんの「お日さまのにおい」って、なんのにおい？ | 候補 |
-| crayon | クレヨンで描いたところは、どうして絵の具をはじく？ | 候補 |
-| mayonnaise | マヨネーズは、どうして油とお酢が分かれない？ | 候補 |
-| body-fat | 体が使った脂肪は、最後にどこへ行くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/body-fat-where-it-goes.md)） | 候補 |
 | cold | かぜをひくと、どうして体は熱を出す？ | 候補 |
 
 ※ 問いの例は目安。元記事リンクがある行は、リンク先の問いをその動画で扱う。動画IDは制作フォルダ名として使う。
@@ -80,3 +61,22 @@
 | road | わずかな傾きを画面で伝えにくく、横断歩道のほうが違いを見せやすい。 |
 | stairs | 段の高さがそろう理由は想像しやすい。階段の動きはエスカレーターの回で扱う。 |
 | vinyl | 素材名と材料の説明が中心で、身近な場面から入りにくい。 |
+| toothpaste | 制作見送り。歯みがき粉のしましまは、どうして混ざらずに出てくる？ |
+| microwave | 制作見送り。中が見える電子レンジのドアは、どうして電波を外に逃がさない？ |
+| ketchup | 制作見送り。ケチャップは、どうして出ないと思ったら急にドバッと出る？ |
+| pill-bug-turn | 制作見送り。ダンゴムシは、右に曲がったら次は左に曲がる？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/pill-bug-turn.md)） |
+| train | 制作見送り。電車の上の電線は、どうしてジグザグなの？ |
+| station | 制作見送り。改札に入れたきっぷは、どうやって人より先に出てくる？ |
+| building | 制作見送り。ビルの屋上のクレーンは、工事が終わったらどうやって降りる？ |
+| crosswalk | 制作見送り。横断歩道の白い線は、どうして車のライトで光る？ |
+| remote-and-wifi | 制作見送り。テレビのリモコンは、どうやって見えない光で合図する？ |
+| tunnel | 制作見送り。トンネルは、どうして入口だけライトが多いの？ |
+| moon-illusion | 制作見送り。のぼったばかりの月は、どうして大きく見える？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/moon-illusion.md)） |
+| cardboard | 制作見送り。段ボールは、どうして紙だけで重い荷物を支えられる？ |
+| emergency-exit | 制作見送り。非常口のマークは、どうして停電しても光る？ |
+| photo | 制作見送り。小さな穴を通ると、どうして景色がさかさまに映る？ |
+| rice | 制作見送り。お米をとぐと、どうして水が白くなる？ |
+| futon | 制作見送り。干したふとんの「お日さまのにおい」って、なんのにおい？ |
+| crayon | 制作見送り。クレヨンで描いたところは、どうして絵の具をはじく？ |
+| mayonnaise | 制作見送り。マヨネーズは、どうして油とお酢が分かれない？ |
+| body-fat | 制作見送り。体が使った脂肪は、最後にどこへ行くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/body-fat-where-it-goes.md)） |
