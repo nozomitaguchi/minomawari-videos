@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>なみだ：泣くと、どうして鼻水まで出るの？</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  NOW = { i: 9, t: 2 };
+  let o = DEFS + `<rect width="1920" height="1080" fill="#f6eedd"/><rect x="0" y="860" width="1920" height="220" fill="#e8d6b8"/>`;
+  o += `<circle cx="1440" cy="560" r="470" fill="#dcecf7"/>`;
+  // 泣いている おとうと（大きく）
+  const BX = 1420, BY = 1240, BS = 2.7;
+  o += `<g transform="translate(${BX} ${BY}) scale(${BS})">${brother(0.4, { eyes: 'closed', mouth: 'open' })}</g>`;
+  o += cryOverlay(0.35, BX, BY, BS, { tears: 1, snot: 1 });
+  const T = (y, inner, size) => `<text x="70" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="26" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(380, `<tspan fill="${TEAR.dropDark}">なく</tspan>と、なぜ`, 170);
+  o += T(610, `<tspan fill="#4d86ad">はなみず</tspan>まで？`, 170);
+  o += g(bubble(190, 150, '？', { size: 100 }), { x: 1830, y: 230 });
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 300, y: 860 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>
