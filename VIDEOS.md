@@ -15,7 +15,7 @@
 
 サイトの `items/` をもとに、親子で見たことのある物や場面、一言で答えが気になる疑問、映像で答えを見せられる問いを優先する。
 
-| サイトのもの | 問いの例 | 状態 |
+| 動画ID | 問いの例 | 状態 |
 |---|---|---|
 | elevator | どうやって上がる？ おもりのひみつ・消防用の鍵穴 | 完成 |
 | pill-bug | だんごむしは、どうして丸くなる？ | 完成 |
@@ -23,6 +23,8 @@
 | moon | 月は、どうして形が変わる？ | 完成 |
 | tummy-rumble | おなかは、どうして鳴る？ | 完成 |
 | mirror | 鏡は、どうして左右が反対に見える？ | ナレーション中（2026-11-19 11:37） |
+| eye-tears-blink | 泣くと、どうして鼻水まで出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/eye-tears-blink.md)） | 候補 |
+| sky-cloud-white | 白い雲と黒っぽい雨雲、何がちがうの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sky-cloud-white.md)） | 候補 |
 | power-lines | 電線に止まった鳥は、どうしてしびれない？ | 候補 |
 | escalator | エスカレーターの階段は、消えたあとどこへ行く？ | 候補 |
 | toothpaste | 歯みがき粉のしましまは、どうして混ざらずに出てくる？ | 候補 |
@@ -30,6 +32,7 @@
 | microwave | 中が見える電子レンジのドアは、どうして電波を外に逃がさない？ | 候補 |
 | ketchup | ケチャップは、どうして出ないと思ったら急にドバッと出る？ | 候補 |
 | digestion | 食べたものは、どうやってうんちになる？ | 候補 |
+| pill-bug-turn | ダンゴムシは、右に曲がったら次は左に曲がる？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/pill-bug-turn.md)） | 候補 |
 | eyes | 目を開けているのに、見えない場所があるってほんと？ | 候補 |
 | pet-bottle | 炭酸のペットボトルは、どうして底が花びらみたいな形？ | 候補 |
 | train | 電車の上の電線は、どうしてジグザグなの？ | 候補 |
@@ -41,6 +44,7 @@
 | pencil | 鉛筆は、どうして消しゴムで消える？ | 候補 |
 | height | 朝と夜で、背の高さが変わるってほんと？ | 候補 |
 | tunnel | トンネルは、どうして入口だけライトが多いの？ | 候補 |
+| moon-illusion | のぼったばかりの月は、どうして大きく見える？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/moon-illusion.md)） | 候補 |
 | cardboard | 段ボールは、どうして紙だけで重い荷物を支えられる？ | 候補 |
 | emergency-exit | 非常口のマークは、どうして停電しても光る？ | 候補 |
 | photo | 小さな穴を通ると、どうして景色がさかさまに映る？ | 候補 |
@@ -48,9 +52,10 @@
 | futon | 干したふとんの「お日さまのにおい」って、なんのにおい？ | 候補 |
 | crayon | クレヨンで描いたところは、どうして絵の具をはじく？ | 候補 |
 | mayonnaise | マヨネーズは、どうして油とお酢が分かれない？ | 候補 |
+| body-fat | 体が使った脂肪は、最後にどこへ行くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/body-fat-where-it-goes.md)） | 候補 |
 | cold | かぜをひくと、どうして体は熱を出す？ | 候補 |
 
-※ 問いの例は目安。実際の問いは、サイトの記事を読んでから決める。
+※ 問いの例は目安。元記事リンクがある行は、リンク先の問いをその動画で扱う。動画IDは制作フォルダ名として使う。
 
 ## 動画化を見送る題材
 
