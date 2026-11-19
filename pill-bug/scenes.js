@@ -487,7 +487,7 @@ SCENES.push({
       const st = [0.6, 2.2, 3.6, 4.6];
       let a = '';
       E.forEach(([ic, nm, x], i) => {
-        a += pop(ic, t, cue(0) + st[i], x, 540) + g(text(0, 0, nm, { size: 50, w: 900 }), { x, y: 640, o: prog(t, cue(0) + st[i] + 0.2, 0.3) });
+        a += pop(ic, t, cue(0) + st[i], x, nm === 'アリ' ? 510 : 540) + g(text(0, 0, nm, { size: 50, w: 900 }), { x, y: 640, o: prog(t, cue(0) + st[i] + 0.2, 0.3) });
       });
       a += pop(badge('ダンゴムシを たべる てき', { fill: C.redUi, size: 48 }), t, cue(0) + 0.2, 960, 220);
       out += g(a, { o: aO });
@@ -670,9 +670,9 @@ SCENES.push({
       // しめった石の下 ○、日なた ✕
       b += `<rect x="200" y="300" width="680" height="460" rx="30" fill="#8a7a62"/><ellipse cx="540" cy="360" rx="300" ry="90" fill="${GROUND.stone}"/>`;
       b += pillSide(540, 700, 300, 0, { t, walk: 0.4 }) + drop(400, 540, 0.9) + drop(700, 560, 0.8);
-      b += okMark(540, 230, 0.9) + text(540, 820, 'しめった ところ', { size: 44, w: 900 });
+      b += okMark(540, 230, 0.9) + text(540, 805, 'しめった ところ', { size: 44, w: 900 });
       b += `<rect x="1040" y="300" width="680" height="460" rx="30" fill="#f2dfa8"/>` + sunDisc(1600, 380, 50, 0.2);
-      b += pillSide(1380, 700, 300, 0, { t }) + cross(1380, 230, 0.7) + text(1380, 820, 'かわいた ところ', { size: 44, w: 900 });
+      b += pillSide(1380, 700, 300, 0, { t }) + cross(1380, 230, 0.7) + text(1380, 805, 'かわいた ところ', { size: 44, w: 900 });
       b += pop(badge('かわくと いきが できない', { fill: C.redUi, size: 40 }), t, cue(1) + 2.0, 1380, 520);
       out += g(b, { o: bO });
     }
@@ -688,9 +688,9 @@ SCENES.push({
     const aO = 1 - prog(t, cue(1) - 0.6, 0.5);
     if (aO > 0) {
       let a = pop(card(1300, 170) + `<circle cx="-560" cy="0" r="50" fill="${C.accent}"/>` + text(-560, 3, '②', { size: 56, w: 900, fill: '#fff' }) +
-        text(-480, 2, 'おなかを かくして、からだを まもるため', { size: 54, w: 900, anchor: 'start' }), t, 0.4, 960, 300);
+        text(-462, 2, 'おなかを かくして、からだを まもるため', { size: 54, w: 900, anchor: 'start' }), t, 0.4, 960, 300);
       const ring = prog(t, 1.2, 0.5);
-      a += g(`<circle r="70" fill="none" stroke="${C.red}" stroke-width="12"/>` + text(0, -130, 'せいかい！', { size: 58, w: 900, fill: C.red }), { x: 400, y: 300, o: ring, s: Math.max(back(ring), 0.001) });
+      a += g(`<circle r="64" fill="none" stroke="${C.red}" stroke-width="10"/>` + text(0, -130, 'せいかい！', { size: 58, w: 900, fill: C.red }), { x: 400, y: 300, o: ring, s: Math.max(back(ring), 0.001) });
       a += pop(pillSide(0, 0, 420, (Math.sin(t * 1.5) + 1) / 2, { t }), t, 2.4, 960, 640);
       out += g(a, { o: aO });
     }
@@ -701,7 +701,7 @@ SCENES.push({
       const items = [
         [g(pillSide(0, 48, 300, 1, { t: 0 })), 'しょっかくや あしは みえている？', C.ink, cue(1)],
         [g(pillSide(0, 48, 300, 1, { t: 0 })) + `<circle r="62" fill="none" stroke="${C.ochre}" stroke-width="5" stroke-dasharray="8 8"/>`, 'まるい からだに すきまは ある？', C.ink, cue(1) + 3.4],
-        [g(pillSide(0, 30, 190, 0.1, { t, walk: 1 })), 'しばらく まつと、のびて あるきだす', C.ink, cue(2)],
+        [g(pillSide(-8, 26, 150, 0.1, { t, walk: 1 })), 'しばらく まつと、のびて あるきだす', C.ink, cue(2)],
         [warn, 'さわらない・ゆらさない。みるだけ', C.red, cue(3)],
       ];
       items.forEach(([ic, s, col, st], i) => {
