@@ -558,9 +558,9 @@ SCENES.push({
     const aO = 1 - prog(t, cue(1) - 0.6, 0.5);
     if (aO > 0) {
       let a = pop(card(1240, 170) + `<circle cx="-530" cy="0" r="50" fill="${C.redUi}"/>` + text(-530, 3, '③', { size: 56, w: 900, fill: '#fff' }) +
-        text(-450, 2, 'まえ と うしろ', { size: 60, w: 900, anchor: 'start' }), t, 0.4, 960, 300);
+        text(-432, 2, 'まえ と うしろ', { size: 60, w: 900, anchor: 'start' }), t, 0.4, 960, 300);
       const ring = prog(t, 1.2, 0.5);
-      a += g(`<circle r="70" fill="none" stroke="${C.red}" stroke-width="12"/>` + text(0, -130, 'せいかい！', { size: 58, w: 900, fill: C.red }), { x: 430, y: 300, o: ring, s: Math.max(back(ring), 0.001) });
+      a += g(`<circle r="64" fill="none" stroke="${C.red}" stroke-width="10"/>` + text(0, -130, 'せいかい！', { size: 58, w: 900, fill: C.red }), { x: 430, y: 300, o: ring, s: Math.max(back(ring), 0.001) });
       a += pop(`<rect x="-500" y="-8" width="1000" height="16" rx="8" fill="${MR.glass2}"/>` + topPerson(0, 150, -1, 1, { s: 0.7 }) + topPerson(0, -150, 1, 1, { s: 0.7, o: 0.85 }) + arrow2(260, 110, 260, 30, C.redUi, 10) + arrow2(260, -110, 260, -30, C.redUi, 10), t, 2.2, 960, 620);
       out += g(a, { o: aO });
     }

@@ -595,9 +595,9 @@ SCENES.push({
     const aO = 1 - prog(t, cue(1) - 0.6, 0.5);
     if (aO > 0) {
       let a = pop(card(1360, 170) + `<circle cx="-590" cy="0" r="50" fill="${C.accent}"/>` + text(-590, 3, '②', { size: 56, w: 900, fill: '#fff' }) +
-        text(-510, 2, 'いや ちょうが、ガスと えきたいを おしながす', { size: 50, w: 900, anchor: 'start' }), t, 0.4, 960, 300);
+        text(-492, 2, 'いや ちょうが、ガスと えきたいを おしながす', { size: 50, w: 900, anchor: 'start' }), t, 0.4, 960, 300);
       const ring = prog(t, 1.2, 0.5);
-      a += g(`<circle r="70" fill="none" stroke="${C.red}" stroke-width="12"/>` + text(0, -130, 'せいかい！', { size: 58, w: 900, fill: C.red }), { x: 370, y: 300, o: ring, s: Math.max(back(ring), 0.001) });
+      a += g(`<circle r="64" fill="none" stroke="${C.red}" stroke-width="10"/>` + text(0, -130, 'せいかい！', { size: 58, w: 900, fill: C.red }), { x: 370, y: 300, o: ring, s: Math.max(back(ring), 0.001) });
       const wx = lerp(400, 1600, ((t * 0.35) % 1));
       a += pop(gutTube(460, 1460, 580, 160, t, { wx, sq: 0.8, liquid: 0.3, gas: 5, push: 1, seed: 40 }), t, 2.4, 0, 0);
       out += g(a, { o: aO });

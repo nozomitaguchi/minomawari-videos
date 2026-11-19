@@ -643,9 +643,9 @@ SCENES.push({
     const aO = 1 - prog(t, cue(1) - 0.6, 0.5);
     if (aO > 0) {
       let a = pop(card(1240, 170) + `<circle cx="-530" cy="0" r="50" fill="${C.accent}"/>` + text(-530, 3, '②', { size: 56, w: 900, fill: '#fff' }) +
-        text(-450, 2, '空気が、光を 飛びちらせている', { size: 60, w: 900, anchor: 'start' }), t, 0.4, 960, 440);
+        text(-432, 2, '空気が、光を 飛びちらせている', { size: 60, w: 900, anchor: 'start' }), t, 0.4, 960, 440);
       const ring = prog(t, 1.2, 0.5);
-      a += g(`<circle r="70" fill="none" stroke="${C.red}" stroke-width="12"/>` + text(0, -130, 'せいかい！', { size: 58, w: 900, fill: C.red }), { x: 430, y: 440, o: ring, s: Math.max(back(ring), 0.001) });
+      a += g(`<circle r="64" fill="none" stroke="${C.red}" stroke-width="10"/>` + text(0, -130, 'せいかい！', { size: 58, w: 900, fill: C.red }), { x: 430, y: 440, o: ring, s: Math.max(back(ring), 0.001) });
       a += chipsRow([['あおい ひかりが とびちる', C.blueUi], ['そら いっぱいに ひろがる', C.accent], ['ゆうがたは あかが のこる', '#c8602c']], t, 960, 660, { start: 2.6, step: 0.9 });
       out += g(a, { o: aO });
     }

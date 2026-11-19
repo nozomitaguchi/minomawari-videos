@@ -622,9 +622,9 @@ SCENES.push({
     const aO = 1 - prog(t, 7.6, 0.5);
     if (aO > 0) {
       let a = pop(card(1240, 170) + `<circle cx="-530" cy="0" r="50" fill="${C.accent}"/>` + text(-530, 3, '②', { size: 56, w: 900, fill: '#fff' }) +
-        text(-450, 2, 'むかしは 緑も「あお」と よんだ', { size: 60, w: 900, anchor: 'start' }), t, 0.4, 960, 460);
+        text(-432, 2, 'むかしは 緑も「あお」と よんだ', { size: 60, w: 900, anchor: 'start' }), t, 0.4, 960, 460);
       const ring = prog(t, 1.2, 0.5);
-      a += g(`<circle r="70" fill="none" stroke="${C.red}" stroke-width="12"/>` + text(0, -130, 'せいかい！', { size: 58, w: 900, fill: C.red }), { x: 430, y: 460, o: ring, s: Math.max(back(ring), 0.001) });
+      a += g(`<circle r="64" fill="none" stroke="${C.red}" stroke-width="10"/>` + text(0, -130, 'せいかい！', { size: 58, w: 900, fill: C.red }), { x: 430, y: 460, o: ring, s: Math.max(back(ring), 0.001) });
       const pills = [['新聞が「青」と書いた', C.blueUi], ['「あお」は緑までふくむ', C.accent], ['→「青信号」に', C.ochre]];
       pills.forEach(([str, col], i) => { a += pop(badge(str, { fill: col, size: 38 }), t, 2.6 + i * 0.8, [480, 1030, 1510][i], 680); });
       out += g(a, { o: aO });
@@ -660,7 +660,26 @@ SCENES.push({
     out += pop(`<g transform="scale(0.52)">${sister(NOW.t, { pose: 'wave', eyes: 'smile', mouth: 'open', talk: talking('S') })}</g>`, t, 0.8, 150, 1060, { d: 0.45 });
     out += pop(`<g transform="scale(0.52)">${brother(NOW.t + 1, { pose: 'cheer', eyes: 'smile', mouth: 'open', talk: talking('B'), hop: talking('B') ? Math.abs(Math.sin(NOW.t * 9)) * 14 : 0 })}</g>`, t, 1.0, 310, 1060, { d: 0.45 });
     out += pop(chameleon(NOW.t, { holdLens: true }), t, 1.2, 1660, 1040, { s: 0.7 });
-    out += sayBubble('S', 150, 610, { size: 44 }) + sayBubble('B', 250, 730, { size: 44 });
+    // 吹き出しは、しっぽの先をそれぞれの子の頭（顔）にとどかせる
+    const endBubble = (who, x, y, tipX, tipY, size = 44) => {
+      const L = lineOf(who, 0.7); if (!L) return '';
+      const str = { 'S_03.wav': 'またね！', 'B_01.wav': 'またねー！' }[L.file] || '';
+      const k = back(clamp((NOW.t - L.start + 0.1) / 0.35));
+      const o = Math.min(clamp((NOW.t - L.start + 0.1) / 0.15), clamp((L.end + 0.7 - NOW.t) / 0.25));
+      const w = tw(str, size, 700, 0.04) + 70, h = size * 2.3;
+      const dx = tipX - x, dy = tipY - y;
+      let base;
+      if (Math.abs(dy) - h / 2 > Math.abs(dx) - w / 2) {  // 下（上）へ出す
+        const bx = Math.max(-w / 2 + 40, Math.min(w / 2 - 40, dx)), by = Math.sign(dy) * (h / 2 - 4);
+        base = `${bx - 22} ${by} L ${bx + 22} ${by}`;
+      } else {  // 横へ出す
+        const bx = Math.sign(dx) * (w / 2 - 4), by = Math.max(-h / 2 + 30, Math.min(h / 2 - 30, dy));
+        base = `${bx} ${by - 18} L ${bx} ${by + 18}`;
+      }
+      const body = `<g filter="url(#shadow)"><rect x="${-w / 2}" y="${-h / 2}" width="${w}" height="${h}" rx="${h / 2.4}" fill="#fff"/><path d="M ${base} L ${dx} ${dy} Z" fill="#fff"/></g>` + text(0, 2, str, { size, fill: C.ink });
+      return g(body, { x, y, s: Math.max(k, 0.001), o });
+    };
+    out += endBubble('S', 185, 680, 165, 800) + endBubble('B', 575, 905, 372, 905);
     out += `<rect width="1920" height="1080" fill="#000" opacity="${prog(t, 7.0, 1.0)}"/>`;
     return out;
   },
