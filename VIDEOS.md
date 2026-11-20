@@ -27,8 +27,8 @@
 | moon | 月は、どうして形が変わる？ | 完成 |
 | tummy-rumble | おなかは、どうして鳴る？ | 完成 |
 | mirror | 鏡は、どうして左右が反対に見える？ | WAV取り込み待ち |
-| eye-tears-blink | 泣くと、どうして鼻水まで出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/eye-tears-blink.md)） | ナレーション待ち |
-| sky-cloud-white | 白い雲と黒っぽい雨雲、何がちがうの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sky-cloud-white.md)） | ナレーション待ち |
+| eye-tears-blink | 泣くと、どうして鼻水まで出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/eye-tears-blink.md)） | ナレーション中（2026-11-20 18:57） |
+| sky-cloud-white | 白い雲と黒っぽい雨雲、何がちがうの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sky-cloud-white.md)） | ナレーション中（2026-11-20 18:57） |
 | power-lines | 電線に止まった鳥は、どうしてしびれない？ | ナレーション待ち |
 | escalator | エスカレーターの階段は、消えたあとどこへ行く？ | ナレーション待ち |
 | cold | かぜをひくと、どうして体は熱を出す？ | 下書き中（2026-11-20 14:47） |
