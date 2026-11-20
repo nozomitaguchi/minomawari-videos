@@ -15,7 +15,7 @@ YouTube「みのまわり図鑑」（@minomawari-zukan、親子で見る雑学�
 - 内容は、サイト「みのまわり図鑑」（GitHub `nozomitaguchi/everyday-trivia` の `trivia/*.md`）に書いてあることだけ。書いていない数字や話は足さない。出典は記事の「出典」から概要欄に入れる。
 - 流れ：オープニング → つかみ（ふしぎ）と題名 → 予想（3択、読み上げ中の選択肢に枠）→ 説明3〜6場面 → 正解と「みてみよう」（実物のどこを見るか。危ないことは必ず注意を入れる）→ おわり。
 - ナレーションは30〜36行、全体で3分半〜4分。
-- YouTube へのアップロード・公開・YouTube Studio の操作はしない（ユーザーがやる）。
+- A〜C の制作作業で YouTube へのアップロード・公開・YouTube Studio の操作はしない。ユーザーは [手動実行の GitHub Actions](docs/youtube-upload.md) で非公開アップロードを選べる。
 - `VIDEOS.md` は複数のセッションが同時にさわる。書きかえる前に必ず `git pull --rebase`、書いたらすぐ commit・push。push がぶつかったら pull --rebase してやり直す。
 
 ## VIDEOS.md の状態

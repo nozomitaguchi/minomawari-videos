@@ -9,6 +9,8 @@ YouTube「みのまわり図鑑」（@minomawari-zukan）の動画のソース�
 | `shingou/` | 緑なのに、どうして「青信号」？ |
 | `sora/` | 昼は青いのに、どうして夕やけは赤い？（制作中） |
 
+[GitHub Actionsからの4K書き出し・YouTube非公開アップロード](docs/youtube-upload.md)
+
 ## しくみ
 
 - `video.html` + `scenes.js` + `characters.js`：SVGで1コマずつ描くアニメーション（`show(場面, 秒)`）
