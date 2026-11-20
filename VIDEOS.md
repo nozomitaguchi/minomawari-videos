@@ -31,7 +31,7 @@
 | sky-cloud-white | 白い雲と黒っぽい雨雲、何がちがうの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sky-cloud-white.md)） | ナレーション待ち |
 | power-lines | 電線に止まった鳥は、どうしてしびれない？ | ナレーション待ち |
 | escalator | エスカレーターの階段は、消えたあとどこへ行く？ | ナレーション待ち |
-| cold | かぜをひくと、どうして体は熱を出す？ | 候補 |
+| cold | かぜをひくと、どうして体は熱を出す？ | 下書き中（2026-11-20 14:47） |
 | nails-and-hair | つめや髪は、どうして切っても痛くない？ | 候補 |
 | futon-warmth | おふとんは、どうして入ったときは冷たいのに、だんだんあったかくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/futon-warmth.md)） | 候補 |
 | key | 鍵を回すと、ドアの中で何が動いて開くの？ | 記事作成待ち |
