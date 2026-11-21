@@ -112,19 +112,26 @@ def push(message, paths):
     git("push", "origin", "HEAD:main")
 
 
+class SplitMismatch(RuntimeError):
+    """音声はできたが、1行ずつに切った尺が原稿の見つもりと合わない。"""
+
+
 def split(wav, slugs, count):
     with wave.open(str(wav)) as audio:
         seconds = audio.getnframes() / audio.getframerate()
         if audio.getnchannels() != 1 or audio.getsampwidth() != 2 or not 30 <= seconds < 510:
             raise RuntimeError(f"想定外のWAV形式または長さです（{seconds:.1f}秒）")
 
+    print(f"生成したWAV: {seconds:.1f}秒")
     output = subprocess.check_output([sys.executable, "split_batch.py", "split", str(wav), *slugs], text=True)
+    print(output)
     ratios = [
         float(actual) / float(expected) if float(expected) else 0
         for actual, expected in re.findall(r"^\(([\d.]+), ([\d.]+), ", output, re.M)
     ]
     if len(ratios) != count or any(not 0.6 <= ratio <= 1.8 for ratio in ratios):
-        raise RuntimeError("分割の尺が想定範囲外です。元WAVで切れ目を確認してください")
+        bad = [round(r, 2) for r in ratios if not 0.6 <= r <= 1.8]
+        raise SplitMismatch(f"分割の尺が想定範囲外です（{len(ratios)}/{count}行、範囲外の比 {bad[:10]}）")
     for slug in slugs:
         if len(list(Path(slug, "lines").glob("N_*.wav"))) != len(ntexts(slug)):
             raise RuntimeError(f"{slug} の分割ファイル数が原稿と一致しません")
@@ -157,7 +164,15 @@ def main():
 
     try:
         wav.write_bytes(generate(key, speaker, style, " <long pause> ".join(lines)))
-        split(wav, slugs, len(lines))
+        try:
+            split(wav, slugs, len(lines))
+            incoming = None
+        except SplitMismatch as error:
+            # 音声は捨てずに incoming/ に置き、仕上げ（Claude）で切れ目を確かめて切る。
+            print(f"{error}。WAVを incoming/ に置いて仕上げに回します。")
+            git("reset", "--hard", claim_commit)
+            git("clean", "-fdq", "--", *[f"{slug}/lines" for slug in slugs])
+            incoming = Path("incoming", "__".join(slugs) + ".wav")
         git("fetch", "origin", "main")
         git("merge", "--ff-only", "origin/main")
         if VOICES.read_text() != voices_source:
@@ -168,8 +183,14 @@ def main():
         for slug in slugs:
             voice_file = Path(slug, "voice.txt")
             voice_file.write_text(voice + "\n")
-            paths.extend([f"{slug}/lines", str(voice_file)])
-        push(f"{names}: ナレーション（{voice}）", paths)
+            paths.append(str(voice_file))
+            if not incoming:
+                paths.append(f"{slug}/lines")
+        if incoming:
+            incoming.write_bytes(wav.read_bytes())
+            paths.append(str(incoming))
+        note = "、切り分けは仕上げで" if incoming else ""
+        push(f"{names}: ナレーション（{voice}{note}）", paths)
     except Exception:
         # This script runs in the workflow's disposable checkout.
         git("reset", "--hard", claim_commit)
