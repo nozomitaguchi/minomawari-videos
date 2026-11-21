@@ -44,7 +44,7 @@
 | white-breath-steam | 寒いとき、湯気や白い息が見えるのはなぜ？（お茶やおふろの湯気と、口から出る白い息を1本で。熱いものに近づかない・さわらない注意を入れる） | 記事作成待ち |
 | car-drive | アクセルを踏むと、どうやってタイヤまで力が届くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/car-drivetrain.md)） | 保留 |
 | wheel-to-car | 車輪がついた荷車は、いつ自分で走る車になったの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/car-wheel-to-car.md)） | 保留 |
-| ant | アリの行列は、どうやって同じ道を見つける？ | 仕上げ待ち |
+| ant | アリの行列は、どうやって同じ道を見つける？ | 仕上げ中（2026-11-22 07:40） |
 | digestion | 食べたものは、どうやってうんちになる？ | ナレーション待ち |
 | pet-bottle | 炭酸のペットボトルは、どうして底が花びらみたいな形？ | 保留 |
 | pencil | 鉛筆は、どうして消しゴムで消える？ | ナレーション待ち |
