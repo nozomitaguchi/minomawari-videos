@@ -223,7 +223,7 @@ SCENES.push({
 SCENES.push({
   id: 'comb',
   draw(t) {
-    let out = `<rect width="1920" height="1080" fill="${WALL}"/>` + topBadge();
+    let out = `<rect width="1920" height="1080" fill="${WALL}"/>`;
     const X0 = 660, X1 = 1260, CY = 330, SH = 170, sp = 50;
     const grooves = 24, gw = (X1 - X0) / grooves;
     // 段（下から上へ動く）
@@ -280,7 +280,7 @@ SCENES.push({
       r += `<path d="M -40 40 L 60 6" stroke="${C.ochre}" stroke-width="8" stroke-linecap="round"/>`;
       out += g(r, { x: 1610, y: 470, o: rk, s: lerp(0.9, 1, eo(rk)) });
     }
-    return out;
+    return out + topBadge();
   },
 });
 
