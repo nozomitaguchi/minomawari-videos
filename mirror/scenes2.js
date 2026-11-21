@@ -275,10 +275,10 @@ SCENES.push({
       // ルームミラー
       const rO = prog(t, cue(3) + 0.2, 0.5);
       b += g(`<rect x="-300" y="-120" width="600" height="240" rx="110" fill="#3a3f44"/><rect x="-270" y="-95" width="540" height="190" rx="90" fill="${MR.glass}"/>` +
-        `<clipPath id="rm"><rect x="-270" y="-95" width="540" height="190" rx="90"/></clipPath><g clip-path="url(#rm)"><g transform="translate(0 -20) scale(-0.42 0.42)">${ambulanceFront(true)}</g></g><rect x="-20" y="-170" width="40" height="60" fill="#3a3f44"/>`, { x: 1380, y: 420, o: rO });
-      b += g(text(1380, 620, 'まえの くるまの ルームミラー', { size: 40, w: 900 }), { o: rO });
-      b += g(okMark(1700, 300, 0.8), { o: prog(t, cue(3) + 2.0, 0.3) });
-      b += g(badge('ふつうの「救急」に よめる', { fill: C.accent, size: 44 }), { x: 1380, y: 740, o: prog(t, cue(3) + 1.6, 0.3) });
+        `<clipPath id="rm"><rect x="-270" y="-95" width="540" height="190" rx="90"/></clipPath><g clip-path="url(#rm)"><g transform="translate(0 -20) scale(-0.42 0.42)">${ambulanceFront(true)}</g></g><rect x="-20" y="-170" width="40" height="60" fill="#3a3f44"/>`, { x: 1200, y: 420, o: rO });
+      b += g(text(1200, 620, 'まえの くるまの ルームミラー', { size: 40, w: 900 }), { o: rO });
+      b += g(okMark(1520, 300, 0.8), { o: prog(t, cue(3) + 2.0, 0.3) });
+      b += g(badge('ふつうの「救急」に よめる', { fill: C.accent, size: 44 }), { x: 1200, y: 740, o: prog(t, cue(3) + 1.6, 0.3) });
       const bT = talking('B');
       b += pop(`<g transform="scale(0.44)">${brother(NOW.t, { pose: bT ? 'cheer' : 'stand', eyes: 'smile', mouth: 'open', hop: bT ? Math.abs(Math.sin(NOW.t * 9)) * 14 : 0 })}</g>`, t, cue(4) - 0.8, 1800, 860);
       b += sayBubble('B', 1700, 620, { tail: 'right' });
