@@ -33,10 +33,10 @@
 | sky-cloud-white | 白い雲と黒っぽい雨雲、何がちがうの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sky-cloud-white.md)） | 完成 |
 | power-lines | 電線に止まった鳥は、どうしてしびれない？ | 完成 |
 | escalator | エスカレーターの階段は、消えたあとどこへ行く？ | 完成 |
-| cold | かぜをひくと、どうして体は熱を出す？ | 完成 |
+| cold | かぜをひくと、どうして体は熱を出す？ | 仕上げ待ち |
 | autumn-leaves | 葉っぱは、どうして秋になると赤や黄色になるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/autumn-leaves-color.md)） | 仕上げ中（2026-11-22 06:45） |
 | nails-and-hair | つめや髪は、どうして切っても痛くない？ | 仕上げ待ち |
-| futon-warmth | おふとんは、どうして入ったときは冷たいのに、だんだんあったかくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/futon-warmth.md)） | 完成 |
+| futon-warmth | おふとんは、どうして入ったときは冷たいのに、だんだんあったかくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/futon-warmth.md)） | 仕上げ待ち |
 | key | 鍵を回すと、ドアの中で何が動いて開くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/key-lock.md)） | 保留 |
 | winter-trees | 冬、葉っぱがなくなる木と、緑のままの木があるのはなぜ？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/tree-winter-leaves.md)） | 仕上げ待ち |
 | rain-snow | 空の上では何が起きて、雨になったり雪になったりするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/rain-snow.md)） | 仕上げ待ち |
