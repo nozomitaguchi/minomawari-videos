@@ -67,7 +67,7 @@
 | sea-salty | 海の水は、どうしてしょっぱいの？ | 記事作成待ち |
 | wind | 風は、どうしてふくの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/wind-blow.md)） | 候補 |
 | snow-white | 雪は、どうして白いの？ | 記事作成待ち |
-| sneeze | くしゃみは、どうして出るの？ | 記事作成待ち |
+| sneeze | くしゃみは、どうして出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sneeze-reflex.md)） | 候補 |
 | soap | 石けんで洗うと、どうしてよごれが落ちるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/soap-washing.md)） | 候補 |
 | cicada | セミは、どうして夏になると鳴くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/cicada-summer-song.md)） | 候補 |
 | fish-gills | 魚は、どうして水の中で息ができるの？ | 記事作成待ち |
