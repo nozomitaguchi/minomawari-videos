@@ -38,7 +38,7 @@
 | nails-and-hair | つめや髪は、どうして切っても痛くない？ | 下書き中（2026-11-21 19:48） |
 | futon-warmth | おふとんは、どうして入ったときは冷たいのに、だんだんあったかくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/futon-warmth.md)） | ナレーション待ち |
 | key | 鍵を回すと、ドアの中で何が動いて開くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/key-lock.md)） | 保留 |
-| winter-trees | 冬、葉っぱがなくなる木と、緑のままの木があるのはなぜ？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/tree-winter-leaves.md)） | 候補 |
+| winter-trees | 冬、葉っぱがなくなる木と、緑のままの木があるのはなぜ？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/tree-winter-leaves.md)） | 下書き中（2026-11-22 00:12） |
 | rain-snow | 空の上では何が起きて、雨になったり雪になったりするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/rain-snow.md)） | 候補 |
 | toilet | トイレは、流したあともどうして少し水が残るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/toilet-water.md)） | 候補 |
 | car-drive | アクセルを踏むと、どうやってタイヤまで力が届くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/car-drivetrain.md)） | 保留 |
