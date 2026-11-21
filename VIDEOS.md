@@ -45,7 +45,7 @@
 | car-drive | アクセルを踏むと、どうやってタイヤまで力が届くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/car-drivetrain.md)） | 保留 |
 | wheel-to-car | 車輪がついた荷車は、いつ自分で走る車になったの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/car-wheel-to-car.md)） | 保留 |
 | ant | アリの行列は、どうやって同じ道を見つける？ | 仕上げ待ち |
-| digestion | 食べたものは、どうやってうんちになる？ | 下書き中（2026-11-22 06:32） |
+| digestion | 食べたものは、どうやってうんちになる？ | ナレーション待ち |
 | pet-bottle | 炭酸のペットボトルは、どうして底が花びらみたいな形？ | 保留 |
 | pencil | 鉛筆は、どうして消しゴムで消える？ | 候補 |
 | baby-teeth | 子どもの歯は、どうしてぬけて生えかわるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/baby-teeth.md)） | 候補 |

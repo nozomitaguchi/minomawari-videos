@@ -1,0 +1,51 @@
+【タイトル案】
+食べたものは、どうやって うんちになるの？｜みのまわり図鑑 うんち
+
+【概要欄】
+ごはんを、もぐもぐ、ごっくん。食べたものは、やがて、うんちになって出てきます。おなかの中では、いったい何が起きているのでしょう？
+口からおしりまでは、1本の長い管でつながっています。口でかんで細かくし、胃でどろどろにし、6メートルくらいもある小腸で栄養をとりこみ、大腸で水をすいとるうちに、だんだんかたまってうんちになること、うんちがたまると脳に知らせがとどいて「うんちがしたい」と感じること、食べてから出てくるまで1日半から3日ほどかかることを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 食べたものは、やがて うんちに
+0:26 どうやって、うんちになると思う？
+1:00 口からおしりまで、1本の長い管
+1:15 口でかんで、胃でどろどろに
+1:48 小腸で、栄養をとりこむ
+2:08 大腸で、水をすいとる
+2:25 たまると、脳に知らせがとどく
+2:43 出てくるまでの時間と、うんちの中身
+3:03 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「うんち」）
+https://nozomitaguchi.github.io/everyday-trivia/i/digestion/
+https://nozomitaguchi.github.io/everyday-trivia/t/digestion-to-poop/
+https://nozomitaguchi.github.io/everyday-trivia/t/poop-basics/
+
+▼ 出典
+・HugKum 食べ物が消化されるまで
+  https://hugkum.sho.jp/544027
+・HugKum 長さ6mにもなる「小腸」の不思議
+  https://hugkum.sho.jp/539938
+・労働者健康安全機構 せき損センター 排便のしくみ（PDF）
+  https://sekisonh.johas.go.jp/file/nursing/nursing_pamphlet_06.pdf
+・岡山大学病院 薬剤部 くすりの窓口 No.236（朝食後の胃・結腸反射）（PDF）
+  https://www.pharm.hospital.okayama-u.ac.jp/kanja/pdf/mado236.pdf
+・The Conversation: Why do I poo in the morning? A gut expert explains（2024年）
+  https://theconversation.com/why-do-i-poo-in-the-morning-a-gut-expert-explains-229624
+・国立病院機構 南京都病院 排便の知識（食べてから排便まで1日半〜3日）（PDF）
+  https://minamikyoto.hosp.go.jp/dest/pdf/section/chisiki/haiben.pdf
+・QLife 腸活ナビ「ウンチから、腸内環境がわかる！」（水分約80%）
+  https://www.qlife.jp/square/feature/kaicho/story12666.html
+・長寿科学振興財団 健康長寿ネット 腸内環境
+  https://www.tyojyu.or.jp/net/kenkou-tyoju/kenko-cho/chonaikankyo.html
+
+※ 体の中の絵は、わかりやすくするために、管の太さ・長さ・位置を変えてかいています。
+※ 小腸の長さは約6〜7メートル。動画では「6メートルくらい」と言っています。
+※ うんちは約8割が水で、残りは食べかす・腸内細菌・はがれた腸のかべ（腸粘膜）です。
+※ 胃で3〜5時間ほど、食べてから出るまでふつう1日半〜3日ほど、というのは目安です。
+※ うんちは、見るだけにして、さわらないでください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #うんち #消化 #からだ #小腸 #大腸 #雑学 #親子で学ぶ #なぜなに
