@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>あめと ゆき：サムネイル</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  NOW = { i: 1, t: 3 };
+  let o = DEFS + `<linearGradient id="tsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9cdee"/><stop offset="0.55" stop-color="#dcebf6"/><stop offset="1" stop-color="#fdf0d8"/></linearGradient><rect width="1920" height="1080" fill="url(#tsky)"/>`;
+  o += puff(1430, 290, 1.5, { id: 'tc', top: '#f3f5f7', bot: '#7f8c9a' });
+  // 雲から2つの道：雪／雨
+  o += `<path d="M 1330 430 Q 1250 520 1230 620" fill="none" stroke="${RS.coldDk}" stroke-width="14" stroke-linecap="round" stroke-dasharray="4 30"/><path d="M 1530 430 Q 1610 520 1630 620" fill="none" stroke="${RS.rain}" stroke-width="14" stroke-linecap="round" stroke-dasharray="4 30"/>`;
+  o += flake(1215, 800, 150, { rot: 8 }) + rdrop(1640, 800, 6.2);
+  o += flake(1300, 560, 34, { rot: 20 }) + flake(1180, 470, 26, { rot: -10 }) + rdrop(1560, 560, 1.5) + rdrop(1700, 500, 1.2);
+  o += text(1428, 800, '？', { size: 190, w: 900, fill: C.ochre, extra: `stroke="#fffaf0" stroke-width="22" stroke-linejoin="round" paint-order="stroke"` });
+  o += `<g transform="translate(860 1030) scale(0.74)">${brother(0.3, { pose: 'think', eyes: 'wide', mouth: 'o', look: [6, -8] })}</g>`;
+  const T = (x, y, inner, size) => `<text x="${x}" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="26" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(60, 250, `<tspan fill="${RS.rain}">あめ</tspan>と <tspan fill="${RS.coldDk}">ゆき</tspan>`, 170);
+  o += T(60, 480, `どこで わかれる？`, 118);
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 300, y: 700 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>

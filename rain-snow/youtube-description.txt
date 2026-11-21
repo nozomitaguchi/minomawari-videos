@@ -1,0 +1,43 @@
+【タイトル案】
+雨と雪は、空のどこで分かれるの？｜みのまわり図鑑 あめと ゆき
+
+【概要欄】
+同じような灰色の雲なのに、雨がふる日と、雪がふる日があります。雨と雪は、空のどこで分かれるのでしょう？
+雲のつぶは小さすぎてなかなか落ちてこないこと、つぶどうしがくっついて大きくなると落ちてくること、日本でふる雨のほとんどは、空の上では氷のつぶや雪だということ、落ちてくるとちゅうの空気があたたかいととけて雨になり、地面の近くまで冷たいと雪のままとどくこと、そして空気がかわいていると少しあたたかくても雪のままとどくことがあるわけを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 雨の日と、雪の日
+0:26 日本でふる雨は、空の上ではどんなすがた？
+0:51 雲のつぶは、小さすぎて落ちてこない
+1:11 くっついて大きくなると、落ちてくる
+1:35 空の上は寒い。氷のつぶから、雪の結晶へ
+2:04 とけるかどうかは、落ちる道しだい（雨・雪・みぞれ）
+2:42 空気がかわいていると、雪のままとどくことがある
+3:10 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「あめと ゆき」）
+https://nozomitaguchi.github.io/everyday-trivia/i/rain-snow/
+https://nozomitaguchi.github.io/everyday-trivia/t/rain-snow/
+
+▼ 出典
+・仙台管区気象台「雨が降る仕組み」（PDF）
+  https://www.data.jma.go.jp/sendai/knowledge/kyouiku/yoho/ame.pdf
+・名古屋大学宇宙地球環境研究所『気象 50のなぜ＋10』（PDF）
+  https://www.isee.nagoya-u.ac.jp/pub/naze/meteorology.pdf
+・東京航空地方気象台 WEATHER TOPICS 第56号「降雪について」（2015年12月28日、PDF）
+  https://www.data.jma.go.jp/haneda-airport/weather_topics/file/rjtt_wt20151228.pdf
+・気象庁「南岸低気圧による東京都での課題と、大雪発生の仕組み」
+  https://www.data.jma.go.jp/tokyo/shosai/chiiki/tokyo-kishou/ooyuki-nangan/nangan-kadai-shikumi.html
+・気象庁 予報用語「降水」（みぞれ・あられ・ひょう）
+  https://www.jma.go.jp/jma/kishou/know/yougo_hp/kousui.html
+・ESCI 241 Meteorology, Lesson 10 – Precipitation（PDF）
+  https://www.weather.gov/media/zhu/ZHU_Training_Page/clouds/cloud_precipitation/cloud_precipitation.pdf
+
+※ 「空の上では氷のつぶや雪」なのは、日本の近くでふる雨の「ほとんど」です。氷のない雲で、水のつぶのまま育ってふる雨もあります。
+※ 雨になるか雪になるかは、地面の近くの気温だけでは決まりません。動画の絵は、しくみをわかりやすくしたものです。
+※ 雨や雪を見るときは、部屋の中から。窓から身を乗り出したり、こおった道や雪の道に飛び出したりしないでください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #雨 #雪 #みぞれ #天気 #しくみ #雑学 #親子で学ぶ
