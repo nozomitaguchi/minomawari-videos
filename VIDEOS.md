@@ -45,7 +45,7 @@
 | pet-bottle | 炭酸のペットボトルは、どうして底が花びらみたいな形？ | 候補 |
 | pencil | 鉛筆は、どうして消しゴムで消える？ | 候補 |
 | baby-teeth | 子どもの歯は、どうしてぬけて生えかわるの？ | 記事作成待ち |
-| yawn | あくびは、どうしてうつるの？（わかっていないことは「わかっていない」と言う） | 記事作成待ち |
+| yawn | あくびは、どうしてうつるの？（わかっていないことは「わかっていない」と言う）（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/yawn-contagious.md)） | 候補 |
 | mosquito-bite | 蚊にさされると、どうしてかゆくなるの？ | 記事作成待ち |
 | morning-glory | あさがおのつるは、どうやって棒に巻きつくの？ | 記事作成待ち |
 | dandelion | たんぽぽのわたげは、どうして遠くまで飛べるの？ | 記事作成待ち |
