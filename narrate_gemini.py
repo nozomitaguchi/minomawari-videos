@@ -140,6 +140,23 @@ def split(wav, slugs, count):
     print(f"{seconds:.1f}秒、{count}行を分割しました。")
 
 
+def listen(key, slugs):
+    """耳で切れ目を直し、1行ずつ台本と照らす。結果は <slug>/audio_review.md。
+    レビューそのものができないとき（混雑・上限）は、止めずに先へ進む。"""
+    sys.path.insert(0, "tools")
+    try:
+        import realign, review_audio
+        realign.realign(key, slugs)
+        for slug in slugs:
+            if review_audio.review(key, slug):
+                # 残った問題は audio_review.md に書いてある。仕上げの回が読んで、直すか作り直すかを決める。
+                print(f"{slug}: 耳レビューで問題が残りました（audio_review.md）")
+    except Exception as error:
+        print(f"耳レビューができませんでした（{type(error).__name__}: {str(error)[:120]}）。先へ進みます。")
+        for slug in slugs:
+            Path(slug, "audio_review.md").write_text(f"# {slug} ナレーションの耳レビュー\n\n未レビュー（{type(error).__name__}）。\n")
+
+
 def main():
     waiting = [slug for slug, status in statuses(VIDEOS.read_text()).items() if status == WAITING]
     # NARRATE_FIRST=<動画ID> で、その動画を先に作る（手動実行の「先に作る動画ID」）。
@@ -175,6 +192,7 @@ def main():
         try:
             split(wav, slugs, len(lines))
             incoming = None
+            listen(key, slugs)
         except SplitMismatch as error:
             # 音声は捨てずに incoming/ に置き、仕上げ（Claude）で切れ目を確かめて切る。
             print(f"{error}。WAVを incoming/ に置いて仕上げに回します。")
@@ -194,6 +212,8 @@ def main():
             paths.append(str(voice_file))
             if not incoming:
                 paths.append(f"{slug}/lines")
+                if Path(slug, "audio_review.md").exists():
+                    paths.append(f"{slug}/audio_review.md")
         if incoming:
             incoming.write_bytes(wav.read_bytes())
             paths.append(str(incoming))

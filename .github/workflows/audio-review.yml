@@ -7,8 +7,12 @@ on:
   workflow_dispatch:
     inputs:
       slugs:
-        description: 動画ID（空白で区切って複数）
+        description: 動画ID（空白で区切って複数。いっしょに作った動画は、作った順に）
         required: true
+      realign:
+        description: 先に、耳で切れ目を直す（yes / no）
+        required: false
+        default: 'no'
 
 permissions:
   contents: write
@@ -23,6 +27,13 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install 'numpy>=2,<3'
+      - name: Fix the cuts by ear
+        if: inputs.realign == 'yes'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SLUGS: ${{ inputs.slugs }}
+        run: python tools/realign.py $SLUGS | tee -a "$GITHUB_STEP_SUMMARY"
+        shell: bash -eo pipefail {0}
       - name: Listen to every line
         id: listen
         env:
@@ -35,7 +46,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- '*/audio_review.md'
+          git add -- '*/audio_review.md' '*/lines/*.wav'
           git diff --cached --quiet || git commit -m "ナレーションの耳レビュー: ${{ inputs.slugs }}"
           git pull --rebase && git push
       - if: steps.listen.outcome == 'failure'
