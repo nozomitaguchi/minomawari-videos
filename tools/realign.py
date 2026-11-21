@@ -4,7 +4,7 @@
 「どのチャンクが台本の何行めか」を答えてもらい、その答えどおりに行を組み直す。
 無音の長さや文字数からの見つもりだけで切ると、「正解は」「2番。」のような出だしが前の行に付いたり、
 行がまるごとずれたりすることがあるため。GEMINI_API_KEY が要る。"""
-import base64, io, json, os, pathlib, sys, time, wave
+import base64, io, json, os, pathlib, re, sys, time, wave
 import numpy as np
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
@@ -19,7 +19,7 @@ PROMPT = """あなたは子ども向け動画のナレーションの編集係�
 - チャンクは台本の順に進みます。1つの行は、1つまたは続いたいくつかのチャンクでできています。
 - チャンクが2つの行にまたがることはありません。聞こえた言葉がある行に入れてください。
 - 「正解は」「1番。」「だから、」のような短いチャンクも、その言葉がある行に入れてください（前の行に入れない）。
-JSON の配列だけを返してください。要素は {"c": チャンク番号, "l": 行番号} です。すべてのチャンクについて1つずつ返してください。"""
+行番号だけをチャンクの順にならべた、数の配列だけを返してください（例: [0,0,1,1,1,2]）。配列の長さは、チャンクの数と同じにしてください。"""
 
 
 def texts_of(slug):
@@ -88,7 +88,7 @@ def ask(key, texts, audio, sr, chunks):
         parts.append({"inline_data": {"mime_type": "audio/wav", "data": base64.b64encode(
             small_wav(audio[max(0, s - pad): e + pad], sr)).decode()}})
     payload = {"contents": [{"role": "user", "parts": parts}],
-               "generationConfig": {"temperature": 0, "responseMimeType": "application/json"}}
+               "generationConfig": {"temperature": 0, "responseMimeType": "application/json", "maxOutputTokens": 16384}}
     for attempt in range(4):
         try:
             response = request(key, f"/models/{MODEL}:generateContent", payload); break
@@ -96,11 +96,11 @@ def ask(key, texts, audio, sr, chunks):
             if attempt == 3 or not any(c in str(error) for c in ("HTTP 503", "HTTP 429", "HTTP 500")): raise
             time.sleep(40 * (attempt + 1))
     out = "".join(p.get("text", "") for p in response["candidates"][0]["content"]["parts"])
-    rows = json.JSONDecoder().raw_decode(out[out.index("["):])[0]
-    pred = [-1] * len(chunks)
-    for r in rows:
-        if 0 <= int(r["c"]) < len(chunks): pred[int(r["c"])] = int(r["l"])
-    return pred
+    nums = [int(x) for x in re.findall(r"-?\d+", out)]
+    print(f"答え {len(nums)}個 / チャンク {len(chunks)}個")
+    if abs(len(nums) - len(chunks)) > max(3, len(chunks) // 20):
+        raise RuntimeError("答えの数がチャンクの数と合いません")
+    return (nums + [-1] * len(chunks))[: len(chunks)]
 
 
 def realign(key, slugs, predict=None):

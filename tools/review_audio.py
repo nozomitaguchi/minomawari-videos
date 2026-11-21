@@ -30,7 +30,7 @@ def review(key, slug):
         parts.append({"inline_data": {"mime_type": "audio/wav", "data": base64.b64encode(wav.read_bytes()).decode()}})
     payload = {
         "contents": [{"role": "user", "parts": parts}],
-        "generationConfig": {"temperature": 0, "responseMimeType": "application/json"},
+        "generationConfig": {"temperature": 0, "responseMimeType": "application/json", "maxOutputTokens": 16384},
     }
     for attempt in range(4):  # 混雑（503）や一時的な上限（429）は、待ってやり直す
         try:
