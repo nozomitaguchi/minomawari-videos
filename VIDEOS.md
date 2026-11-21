@@ -57,7 +57,7 @@
 | thunder | かみなりは、どうして光ってから音がするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/thunder-light-sound.md)） | 候補 |
 | faucet | 蛇口をひねると、どうしていつでも水が出てくるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/faucet-water-pressure.md)） | 候補 |
 | recorded-voice | 録音した自分の声は、どうして別人みたいに聞こえるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/voice-recorded.md)） | 候補 |
-| rain-ground-water | 雨がふったあと、地面の水はどこへ行くの？ | 記事作成待ち |
+| rain-ground-water | 雨がふったあと、地面の水はどこへ行くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/rain-ground-water.md)） | 候補 |
 | ice-melt | 氷は、どうしてとけるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/ice-melt.md)） | 候補 |
 | finger-wrinkles | おふろに入ると、どうして指がしわしわになるの？ | 記事作成待ち |
 | goosebumps | 寒いと、どうして鳥肌が立つの？ | 記事作成待ち |
