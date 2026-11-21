@@ -39,7 +39,7 @@
 | rain-snow | 空の上では何が起きて、雨になったり雪になったりするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/rain-snow.md)） | 候補 |
 | toilet | トイレは、流したあともどうして少し水が残るの？ | 記事作成待ち |
 | car-drive | アクセルを踏むと、どうやってタイヤまで力が届くの？ | 記事作成待ち |
-| wheel-to-car | 車輪がついた荷車は、いつ自分で走る車になったの？ | 記事作成待ち |
+| wheel-to-car | 車輪がついた荷車は、いつ自分で走る車になったの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/car-wheel-to-car.md)） | 候補 |
 | ant | アリの行列は、どうやって同じ道を見つける？ | 候補 |
 | digestion | 食べたものは、どうやってうんちになる？ | 候補 |
 | pet-bottle | 炭酸のペットボトルは、どうして底が花びらみたいな形？ | 候補 |
