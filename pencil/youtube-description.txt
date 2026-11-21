@@ -1,0 +1,45 @@
+【タイトル案】
+えんぴつは、どうして消しゴムで消えるの？｜みのまわり図鑑 えんぴつ
+
+【概要欄】
+えんぴつで書いた字を、消しゴムでごしごし。黒い線が、きれいになくなります。どうしてでしょう？
+えんぴつの芯が紙にこすれて少しずつくだけ、黒鉛（こくえん）のつぶが紙のせんいにくっついて線になること、そのつぶは紙よりも消しゴムのほうにくっつきやすく、こすると消しゴムの表面にうつって、消しかすにつつみこまれて取りのぞかれること、ろうの入った色えんぴつが消えにくいわけ、消しゴムがなかったころはパンで消していたことを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 えんぴつの字を、消しゴムでごしごし
+0:27 消しゴムで消えるのは、どうして？
+1:00 えんぴつで書けるしくみ
+1:29 消しゴムで消えるしくみ
+2:10 色えんぴつは、消えにくい
+2:34 昔は、パンで消していた
+3:01 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「えんぴつ」）
+https://nozomitaguchi.github.io/everyday-trivia/i/pencil/
+https://nozomitaguchi.github.io/everyday-trivia/t/pencil-basics/
+https://nozomitaguchi.github.io/everyday-trivia/t/vinyl-eraser/
+https://nozomitaguchi.github.io/everyday-trivia/t/crayon-resist-eraser/
+
+▼ 出典
+・三菱鉛筆 よくあるご質問 文字が書ける原理
+  https://www.mpuni.co.jp/customer/pencil/qa_02.html
+・三菱鉛筆 よくあるご質問 消しゴムで消せる原理
+  https://www.mpuni.co.jp/customer/pencil/qa_03.html
+・三菱鉛筆 えんぴつのナゾを解く
+  https://www.mpuni.co.jp/special/qa/mistery.html
+・マイナビニュース「どこでもサイエンス」132 消しゴム（消しくずで新しい面が出る、昔はパン）
+  https://news.mynavi.jp/article/dokodemo_science-132/
+・QuizKnock「色鉛筆がきれいに消せないのはなぜ？ 鉛筆メーカーに聞いてみた」（三菱鉛筆の回答）
+  https://web.quizknock.com/colored-pencil
+・Wikipedia Eraser（プリーストリーの脚注、パンの消しゴム）
+  https://en.wikipedia.org/wiki/Eraser
+
+※ 黒鉛のつぶや紙のせんいは、わかりやすくするために、とても大きくかいています。
+※ 「消しかすが出ると、まだ黒くない面が出てくる」は、プラスチックの消しゴムの説明です。
+※ 消えにくいのは、ろう（ワックス）の入った色えんぴつです。
+※ プリーストリーが見た「えんぴつのあとを消すのに向いたもの」は、天然ゴムでした。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #えんぴつ #消しゴム #文房具 #黒鉛 #雑学 #親子で学ぶ #なぜなに
