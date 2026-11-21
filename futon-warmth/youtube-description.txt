@@ -1,0 +1,51 @@
+【タイトル案】
+おふとんは、どうして入ったときは冷たいのに、だんだんあったかくなるの？｜みのまわり図鑑 ふとん
+
+【概要欄】
+寒い夜、おふとんに入ると「ひやっ」。でも、しばらくするとぽかぽかに。おふとんは、どうしてだんだんあったかくなるのでしょう？
+ふとんは自分では熱を出さないこと、あたたかさのもとは寝ている人の体であること、わたのすき間の「動かない空気」が熱を守っていること、そして湿ってぺちゃんこになったふとんが寒いわけを、親子で見られるようにアニメにしました。おまけに、家のかべの断熱材や、羽毛ふとんのダウンも同じしくみ、という話も。
+
+0:00 オープニング
+0:04 おふとんは、どうしてだんだんあったかくなる？
+0:29 どうしてだと思う？
+0:57 入る前のふとんは、部屋と同じ温度
+1:15 熱を出しているのは、体
+1:37 ふとんは、熱をにがしにくくする
+1:50 わたのすき間の「動かない空気」
+2:20 家のかべも、羽毛のダウンも同じしくみ
+2:41 ぺちゃんこのふとんは、どうして寒い？
+3:11 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「ふとん」）
+https://nozomitaguchi.github.io/everyday-trivia/i/futon/
+
+▼ 出典
+・建産協「快適4」（省エネ資料、PDF）
+  https://www.kensankyo.org/syoene/siryou/pdf/kaiteki_4/kaiteki4_im.pdf
+・辻原万規彦「建築環境工学I 第2回」講義資料（熊本県立大学、PDF）
+  https://www.pu-kumamoto.ac.jp/users_site/m-tsuji/kougi.html/genron.html/gen25.html/gen_1_2502.pdf
+・Thermal Conductivity of Common Materials（Engineering ToolBox）
+  https://engineeringtoolbox.com/thermal-conductivity-d_429.html
+・Theoretical and Experimental Studies on Thermal Properties of Polyester Nonwoven Fibrous Material（Materials誌）
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC7345890
+・マグ・イゾベール「ガイドブック」（グラスウールの動きにくい空気層、PDF）
+  https://www.isover.co.jp/sites/mac3.isover.co.jp/files/migration-files/guidebook_part2.pdf
+・製品評価技術基盤機構（NITE）「ふとん（羽毛ふとん）」市場モニタリングテスト（平成16年度、PDF）
+  https://www.nite.go.jp/data/000004551.pdf
+・酒井豊子「『万年床』における寝具の温湿度変化」1991年度実績報告（KAKEN）
+  https://kaken.nii.ac.jp/ja/report/KAKENHI-PROJECT-03452295/034522951991jisseki
+・同 1992年度実績報告（KAKEN）
+  https://kaken.nii.ac.jp/report/KAKENHI-PROJECT-03452295/034522951992jisseki
+・日本羽毛製品協同組合「羽毛ふとんの豆知識Q&A」
+  https://www.nichiukyo.org/qa/
+・日本ふとん協会「綿素材の特徴」（干すと湿気を出し、弾力性と保温性を取り戻す）
+  https://futon.or.jp/futonknowledge/cottoncomforter/
+・篠塚雅子・大城靖彦「高齢者向け快眠ベッドの研究開発」（茨城県工業技術センター研究報告、PDF）
+  https://www.itic.pref.ibaraki.jp/publication/doc/research/h11/N28P048.pdf
+・長寿科学振興財団 健康長寿ネット「快眠のための寝具選びとケア」
+  https://www.tyojyu.or.jp/net/kenkou-tyoju/tyojyu-suimin/kaimin-shinguerabi-care.html
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #ふとん #おふとん #しくみ #雑学 #親子で学ぶ
