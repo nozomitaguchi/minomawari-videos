@@ -51,7 +51,7 @@
 | dandelion | たんぽぽのわたげは、どうして遠くまで飛べるの？ | 記事作成待ち |
 | honeycomb | ハチの巣は、どうして六角形なの？（実物には近づかない。みてみようは写真や図で） | 記事作成待ち |
 | rainbow | にじは、どうして雨のあとに出るの？ | 記事作成待ち |
-| thunder | かみなりは、どうして光ってから音がするの？ | 記事作成待ち |
+| thunder | かみなりは、どうして光ってから音がするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/thunder-light-sound.md)） | 候補 |
 
 ※ 問いの例は目安。元記事リンクがある行は、リンク先の問いをその動画で扱う。動画IDは制作フォルダ名として使う。
 
