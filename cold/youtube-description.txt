@@ -1,0 +1,47 @@
+【タイトル案】
+かぜをひくと、どうして体は熱を出す？｜みのまわり図鑑 かぜ
+
+【概要欄】
+かぜをひいた日、おでこはあついのに、毛布にくるまってぶるぶるふるえることがあります。かぜをひくと、どうして体は熱を出すのでしょう？
+かぜのウイルスは鼻の中の細胞をほとんどこわしていないこと、鼻水や鼻づまりやくしゃみは、ウイルスに気づいた体の「こたえ」であること、そして脳の「体温の目もり」が上がって、体が自分で熱を作り、そのために熱の上がりかけは寒くてふるえることを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 かぜをひくと、どうして熱が出るの？
+0:28 どうしてだと思う？
+0:54 かぜのもと、ウイルス
+1:13 ウイルスは鼻の細胞をほとんどこわさない
+1:35 合図の物質と、集まる白血球
+1:55 さらさらの鼻水と、くしゃみ
+2:10 脳の「目もり」が上がる
+2:32 熱の上がりかけは、どうして寒い？
+3:01 おまけ：いつも熱が出るわけではない
+3:23 正解と、みてみよう
+
+▼ もっとくわしく（みのまわり図鑑「かぜ」）
+https://nozomitaguchi.github.io/everyday-trivia/i/cold/
+
+▼ 出典
+・Subauste, Jacoby, Richards & Proud 1995, Infection of a human respiratory epithelial cell line with rhinovirus（J Clin Invest、PDF）
+  https://www.jci.org/articles/view/118067/files/pdf
+・Eccles 2007, Mechanisms of symptoms of the common cold and influenza（Br J Hosp Med、PDF）
+  https://storage.imrpress.com/IMR/hmed/application/10.12968/hmed.2007.68.2.22824.pdf
+・Eccles 2005, Understanding the symptoms of the common cold and influenza（Lancet Infect Dis、要旨）
+  https://orca.cardiff.ac.uk/71809
+・Runny Nose（CDC、PDF）
+  https://www.cdc.gov/antibiotic-use/media/pdfs/Runny-Nose-508.pdf
+・Fever（MSDマニュアル プロフェッショナル版）
+  https://www.msdmanuals.com/professional/infectious-diseases/biology-of-infectious-disease/fever
+・Common Cold（MSDマニュアル プロフェッショナル版）
+  https://www.msdmanuals.com/en-gb/professional/infectious-diseases/respiratory-viruses/common-cold
+・Children and Colds（アメリカ小児科学会 HealthyChildren.org）
+  https://healthychildren.org/English/health-issues/conditions/ear-nose-throat/pages/Children-and-Colds.aspx
+・かぜ症候群（日本呼吸器学会 呼吸器の病気 A-01、PDF）
+  https://www.jrs.or.jp/file/disease_a01.pdf
+・Common Cold（CDC）
+  https://www.cdc.gov/common-cold
+
+※ 息が苦しそう、ひどく眠そうなど、いつもとちがうときは、お医者さんに相談してください。夜や休みの日に受診するか迷ったら、日本小児科学会の「こどもの救急」（http://kodomo-qq.jp/）に目安があります。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #かぜ #からだ #しくみ #雑学 #親子で学ぶ
