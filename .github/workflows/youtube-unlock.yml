@@ -1,0 +1,28 @@
+name: アップロードずみの印を消す（作り直した動画を上げ直すとき）
+
+# 二重アップロードを防ぐ印（タグ youtube-upload/<動画ID>）を消す。
+# 消したあと、その動画がまた「完成」になると、自動で非公開アップロードされる。
+# YouTube にある古い動画は消えないので、Studio で自分で削除する。
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 動画ID（例 cold）
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  unlock:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Delete the upload lock tag
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VIDEO_SLUG: ${{ inputs.slug }}
+        run: |
+          case "$VIDEO_SLUG" in (*[!a-z0-9-]*|'') echo "動画IDが正しくありません"; exit 1;; esac
+          gh api -X DELETE "repos/$GITHUB_REPOSITORY/git/refs/tags/youtube-upload/$VIDEO_SLUG"
+          echo "- youtube-upload/$VIDEO_SLUG を消しました。" >> "$GITHUB_STEP_SUMMARY"
