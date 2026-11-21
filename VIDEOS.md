@@ -34,6 +34,7 @@
 | power-lines | 電線に止まった鳥は、どうしてしびれない？ | 完成 |
 | escalator | エスカレーターの階段は、消えたあとどこへ行く？ | 完成 |
 | cold | かぜをひくと、どうして体は熱を出す？ | 下書き中（2026-11-21 19:27） |
+| autumn-leaves | 葉っぱは、どうして秋になると赤や黄色になるの？ | 記事作成待ち |
 | nails-and-hair | つめや髪は、どうして切っても痛くない？ | 候補 |
 | futon-warmth | おふとんは、どうして入ったときは冷たいのに、だんだんあったかくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/futon-warmth.md)） | 候補 |
 | key | 鍵を回すと、ドアの中で何が動いて開くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/key-lock.md)） | 保留 |
@@ -52,10 +53,17 @@
 | morning-glory | あさがおのつるは、どうやって棒に巻きつくの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/morning-glory-twining.md)） | 保留 |
 | dandelion | たんぽぽのわたげは、どうして遠くまで飛べるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/dandelion-seed-flight.md)） | 候補 |
 | honeycomb | ハチの巣は、どうして六角形なの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/bee-honeycomb-hexagon.md)。実物には近づかない。みてみようは写真や図で） | 候補 |
-| rainbow | にじは、どうして雨のあとに出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/rainbow-after-rain.md)） | 候補 |
+| rainbow | にじは、どうして雨のあとに出て、七色に見えるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/rainbow-after-rain.md)） | 候補 |
 | thunder | かみなりは、どうして光ってから音がするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/thunder-light-sound.md)） | 候補 |
 | faucet | 蛇口をひねると、どうしていつでも水が出てくるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/faucet-water-pressure.md)） | 候補 |
 | recorded-voice | 録音した自分の声は、どうして別人みたいに聞こえるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/voice-recorded.md)） | 候補 |
+| rain-ground-water | 雨がふったあと、地面の水はどこへ行くの？ | 記事作成待ち |
+| ice-melt | 氷は、どうしてとけるの？ | 記事作成待ち |
+| finger-wrinkles | おふろに入ると、どうして指がしわしわになるの？ | 記事作成待ち |
+| goosebumps | 寒いと、どうして鳥肌が立つの？ | 記事作成待ち |
+| shadow | かげは、どうして自分と同じ形になるの？ | 記事作成待ち |
+| airplane | 飛行機は、あんなに重いのに、どうして空を飛べるの？ | 記事作成待ち |
+| soap-bubble | シャボン玉は、どうして丸くなるの？ | 記事作成待ち |
 
 ※ 問いの例は目安。元記事リンクがある行は、リンク先の問いをその動画で扱う。動画IDは制作フォルダ名として使う。
 
