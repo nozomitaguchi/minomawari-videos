@@ -53,6 +53,7 @@
 | rainbow | にじは、どうして雨のあとに出るの？ | 記事作成待ち |
 | thunder | かみなりは、どうして光ってから音がするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/thunder-light-sound.md)） | 候補 |
 
+| faucet | 蛇口をひねると、どうしていつでも水が出てくるの？ | 記事作成待ち |
 ※ 問いの例は目安。元記事リンクがある行は、リンク先の問いをその動画で扱う。動画IDは制作フォルダ名として使う。
 
 ## 動画化を見送る題材
