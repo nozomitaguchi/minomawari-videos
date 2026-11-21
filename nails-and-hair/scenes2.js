@@ -146,7 +146,7 @@ SCENES.push({
     }
     out += pop(badge('いたくない', { fill: C.accent, size: 48 }), t, cue(1) + 0.4, 1440, 190, { end: cueE(3) + 0.4 });
     out += kidShow('B', t, 1650, 840, { s: 0.55, start: 0.6, n: 0, side: 'left' });
-    out += g(text(0, 0, '？', { size: 130, w: 900, fill: C.ochre }), { x: 1420, y: 180, o: win(t, cue(3), cueE(3) + 0.6, 0.3) });
+    out += g(text(0, 0, '？', { size: 130, w: 900, fill: C.ochre }), { x: 1700, y: 200, o: win(t, cue(3), cueE(3) + 0.6, 0.3) });
     // 題名
     const t0 = cueE(3) + 0.6, tk = prog(t, t0, 0.6);
     if (tk > 0) {
@@ -194,7 +194,7 @@ SCENES.push({
     const sh = eio(prog(t, cue(2) - 0.4, 0.9));
     const FX = lerp(1080, 760, sh), FY = lerp(470, 330, sh), FS = lerp(1.15, 0.75, sh);
     out += fingerSide(FX, FY, FS, t, { flow: prog(t, cue(1) + 0.4, 0.5), matrixGlow: win(t, cue(0) + 1.2, cue(2) - 0.3, 0.4) });
-    out += pop(badge('ゆびを よこから みると', { fill: C.muted, size: 36 }), t, 0.3, 960, 140, { end: cue(1) + 1.2 });
+    out += pop(badge('ゆびを よこから みると', { fill: C.muted, size: 36 }), t, 0.3, 960, 92, { end: cue(1) + 1.2 });
     out += callout(FX - 320 * FS, FY - 76 * FS, FX - 520 * FS, FY + 150 * FS, 'つめの ねもと', win(t, cue(0) + 1.4, cue(2) - 0.3, 0.3), { col: '#c25a4a', size: 42 });
     out += callout(FX - 100 * FS, FY - 100 * FS, FX - 40 * FS, FY - 250 * FS, 'つめ', prog(t, cue(0) + 0.6, 0.3) * (1 - prog(t, cue(1), 0.3)), { col: C.ochre, size: 40 });
     // 新しい細胞が押し出す
@@ -438,7 +438,7 @@ SCENES.push({
       items.forEach(([icn, s, col, st], i) => { b += pop(g(icn, { s: 0.9 }) + text(90, 2, s, { size: 40, w: 900, anchor: 'start', fill: col }), t, st, 200, 340 + i * 140); });
       const hO = prog(t, cue(1) + 0.4, 0.5);
       if (hO > 0) b += g(handBack(0, 0, 0.9, t), { x: 1560, y: 330, o: hO, s: lerp(0.9, 1, eo(hO)) });
-      b += kidShow('K', t, 1740, 870, { s: 0.5, start: cue(1) + 0.8, n: 1, bubble: false });
+      b += kidShow('K', t, 1740, 790, { s: 0.5, start: cue(1) + 0.8, n: 1, bubble: false });
       out += g(b, { o: bO });
     }
     return out;
