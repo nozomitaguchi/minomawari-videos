@@ -38,13 +38,13 @@
 | nails-and-hair | つめや髪は、どうして切っても痛くない？ | 仕上げ待ち |
 | futon-warmth | おふとんは、どうして入ったときは冷たいのに、だんだんあったかくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/futon-warmth.md)） | 完成 |
 | key | 鍵を回すと、ドアの中で何が動いて開くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/key-lock.md)） | 保留 |
-| winter-trees | 冬、葉っぱがなくなる木と、緑のままの木があるのはなぜ？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/tree-winter-leaves.md)） | ナレーション待ち |
+| winter-trees | 冬、葉っぱがなくなる木と、緑のままの木があるのはなぜ？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/tree-winter-leaves.md)） | ナレーション中（2026-11-22 06:42） |
 | rain-snow | 空の上では何が起きて、雨になったり雪になったりするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/rain-snow.md)） | ナレーション待ち |
 | toilet | トイレは、流したあともどうして少し水が残るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/toilet-water.md)） | ナレーション待ち |
 | white-breath-steam | 寒いとき、湯気や白い息が見えるのはなぜ？（お茶やおふろの湯気と、口から出る白い息を1本で。熱いものに近づかない・さわらない注意を入れる） | 記事作成待ち |
 | car-drive | アクセルを踏むと、どうやってタイヤまで力が届くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/car-drivetrain.md)） | 保留 |
 | wheel-to-car | 車輪がついた荷車は、いつ自分で走る車になったの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/car-wheel-to-car.md)） | 保留 |
-| ant | アリの行列は、どうやって同じ道を見つける？ | ナレーション待ち |
+| ant | アリの行列は、どうやって同じ道を見つける？ | ナレーション中（2026-11-22 06:42） |
 | digestion | 食べたものは、どうやってうんちになる？ | 下書き中（2026-11-22 06:32） |
 | pet-bottle | 炭酸のペットボトルは、どうして底が花びらみたいな形？ | 保留 |
 | pencil | 鉛筆は、どうして消しゴムで消える？ | 候補 |
