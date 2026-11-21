@@ -2,6 +2,10 @@
 
 「完成」の動画IDを指定すると、既存のナレーションから4KのMP4を再生成できます。非公開アップロードも選ぶと、同じ実行環境から「みのまわり図鑑」(@minomawari-zukan) に送り、実行結果にYouTube Studioへのリンクを表示します。
 
+## 自動アップロード
+
+`VIDEOS.md` で動画が新しく「完成」になると、Actions の「完成した動画を自動で非公開アップロード」が4Kを書き出し、非公開でアップロードして、`<動画ID>/brand/thumb.jpg` をサムネイルに設定します（子ども向け：はい、リアルな改変・合成コンテンツ：いいえ）。公開は YouTube Studio で行います。前から「完成」だった動画は対象外なので、下の手動実行を使います。失敗した回も、下の手動実行でやり直せます。
+
 ## 使い方
 
 [Actionsの「4K書き出し・YouTube非公開アップロード」](https://github.com/nozomitaguchi/minomawari-videos/actions/workflows/youtube-private.yml) の **Run workflow** で、ブランチに `main`、動画IDに [VIDEOS.md](../VIDEOS.md) の「完成」の行にあるIDを指定します。

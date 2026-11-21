@@ -131,6 +131,26 @@ def upload(slug, path, title, description, kids, synthetic):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as summary:
             summary.write(f"- [YouTube Studio で非公開動画を確認する]({url})\n")
         print(f"非公開アップロード完了: {url}")
+
+        # The video is already uploaded, so a thumbnail failure must not fail the run.
+        thumb = Path(slug) / "brand" / "thumb.jpg"
+        note = "サムネイルを設定しました。"
+        try:
+            if not thumb.is_file() or thumb.stat().st_size > 2 * 1024 * 1024:
+                raise FileNotFoundError
+            youtube.thumbnails().set(
+                videoId=video_id, media_body=MediaFileUpload(str(thumb), mimetype="image/jpeg")
+            ).execute()
+        except FileNotFoundError:
+            note = f"サムネイル {thumb} が無いか2MBをこえています。Studio で設定してください。"
+        except HttpError as error:
+            note = (
+                f"サムネイルを設定できませんでした (HTTP {error.resp.status})。"
+                "チャンネルの電話番号確認が済んでいるか確かめ、Studio で設定してください。"
+            )
+        with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as summary:
+            summary.write(f"- {note}\n")
+        print(note)
     except RefreshError:
         raise SystemExit("Google の OAuth 認可を更新してください。") from None
     except HttpError as error:

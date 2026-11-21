@@ -1,0 +1,94 @@
+name: 完成した動画を自動で非公開アップロード
+
+# VIDEOS.md で新しく「完成」になった動画を、4Kで書き出して @minomawari-zukan に非公開で送り、
+# サムネイルを設定する。公開は YouTube Studio で人が行う。
+# 前から「完成」だった動画は対象にしない（手動の「4K書き出し・YouTube非公開アップロード」を使う）。
+
+on:
+  push:
+    branches: [main]
+    paths: ['VIDEOS.md']
+
+permissions:
+  contents: write
+
+jobs:
+  find:
+    runs-on: ubuntu-24.04
+    outputs:
+      slugs: ${{ steps.find.outputs.slugs }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - id: find
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: |
+          python - <<'PY'
+          import json, os, re, subprocess
+
+          def finished(text):
+              done = set()
+              for line in text.splitlines():
+                  if line.startswith("|"):
+                      cells = line.strip("|").split("|")
+                      slug = cells[0].strip().strip("`").rstrip("/")
+                      if re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug) and cells[-1].strip() == "完成":
+                          done.add(slug)
+              return done
+
+          old = subprocess.run(
+              ["git", "show", os.environ["BEFORE"] + ":VIDEOS.md"], capture_output=True, text=True
+          )
+          # Without the previous version we cannot tell what is new, so upload nothing.
+          before = finished(old.stdout) if old.returncode == 0 else None
+          now = finished(open("VIDEOS.md", encoding="utf-8").read())
+          tags = subprocess.check_output(["git", "tag", "-l", "youtube-upload/*"], text=True).split()
+          slugs = [] if before is None else sorted(
+              s for s in now - before if f"youtube-upload/{s}" not in tags
+          )
+          print("新しく完成:", slugs)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as out:
+              out.write("slugs=" + json.dumps(slugs) + "\n")
+          PY
+
+  upload:
+    needs: find
+    if: needs.find.outputs.slugs != '[]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        slug: ${{ fromJSON(needs.find.outputs.slugs) }}
+    concurrency:
+      group: youtube-${{ matrix.slug }}
+      cancel-in-progress: false
+    env:
+      VIDEO_SLUG: ${{ matrix.slug }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check finished video
+        run: python tools/youtube_upload.py check "$VIDEO_SLUG" --kids yes --synthetic no
+      - name: Install render dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-noto-cjk
+          python -m pip install 'numpy>=2,<3' 'playwright>=1.50,<2' 'google-api-python-client>=2,<3'
+          python -m playwright install --with-deps chromium
+      - name: Render and verify 4K MP4
+        run: |
+          sh "$VIDEO_SLUG/finish.sh"
+          python tools/youtube_upload.py verify "$VIDEO_SLUG"
+      - name: Upload privately to @minomawari-zukan and set the thumbnail
+        env:
+          GH_TOKEN: ${{ github.token }}
+          YOUTUBE_OAUTH_JSON: ${{ secrets.YOUTUBE_OAUTH_JSON }}
+        run: python tools/youtube_upload.py upload "$VIDEO_SLUG" --kids yes --synthetic no
