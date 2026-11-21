@@ -64,7 +64,7 @@
 | shadow | かげは、どうして自分と同じ形になるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/shadow-shape.md)。太陽そのものは見ない） | 候補 |
 | airplane | 飛行機は、あんなに重いのに、どうして空を飛べるの？ | 記事作成待ち |
 | soap-bubble | シャボン玉は、どうして丸くなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/soap-bubble-round.md)。星の輪でふいても丸い、が見せ場。石けん水は口や目に入れない） | 候補 |
-| sea-salty | 海の水は、どうしてしょっぱいの？ | 記事作成待ち |
+| sea-salty | 海の水は、どうしてしょっぱいの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sea-salty.md)。海の水は飲まない注意を入れる） | 候補 |
 | wind | 風は、どうしてふくの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/wind-blow.md)） | 候補 |
 | snow-white | 雪は、どうして白いの？ | 記事作成待ち |
 | sneeze | くしゃみは、どうして出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sneeze-reflex.md)） | 候補 |
