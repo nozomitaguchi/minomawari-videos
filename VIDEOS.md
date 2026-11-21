@@ -43,7 +43,7 @@
 | toilet | トイレは、流したあともどうして少し水が残るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/toilet-water.md)） | ナレーション待ち |
 | car-drive | アクセルを踏むと、どうやってタイヤまで力が届くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/car-drivetrain.md)） | 保留 |
 | wheel-to-car | 車輪がついた荷車は、いつ自分で走る車になったの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/car-wheel-to-car.md)） | 保留 |
-| ant | アリの行列は、どうやって同じ道を見つける？ | 候補 |
+| ant | アリの行列は、どうやって同じ道を見つける？ | 下書き中（2026-11-22 06:14） |
 | digestion | 食べたものは、どうやってうんちになる？ | 候補 |
 | pet-bottle | 炭酸のペットボトルは、どうして底が花びらみたいな形？ | 保留 |
 | pencil | 鉛筆は、どうして消しゴムで消える？ | 候補 |
