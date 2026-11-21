@@ -65,7 +65,7 @@
 | airplane | 飛行機は、あんなに重いのに、どうして空を飛べるの？ | 記事作成待ち |
 | soap-bubble | シャボン玉は、どうして丸くなるの？ | 記事作成待ち |
 | sea-salty | 海の水は、どうしてしょっぱいの？ | 記事作成待ち |
-| wind | 風は、どうしてふくの？ | 記事作成待ち |
+| wind | 風は、どうしてふくの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/wind-blow.md)） | 候補 |
 | snow-white | 雪は、どうして白いの？ | 記事作成待ち |
 | sneeze | くしゃみは、どうして出るの？ | 記事作成待ち |
 | soap | 石けんで洗うと、どうしてよごれが落ちるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/soap-washing.md)） | 候補 |
