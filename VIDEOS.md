@@ -69,7 +69,7 @@
 | snow-white | 雪は、どうして白いの？ | 記事作成待ち |
 | sneeze | くしゃみは、どうして出るの？ | 記事作成待ち |
 | soap | 石けんで洗うと、どうしてよごれが落ちるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/soap-washing.md)） | 候補 |
-| cicada | セミは、どうして夏になると鳴くの？ | 記事作成待ち |
+| cicada | セミは、どうして夏になると鳴くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/cicada-summer-song.md)） | 候補 |
 | fish-gills | 魚は、どうして水の中で息ができるの？ | 記事作成待ち |
 | bird-fly | 鳥は、どうして空を飛べるの？ | 記事作成待ち |
 | dog-panting | 犬は、どうして舌を出してハアハアするの？ | 記事作成待ち |
