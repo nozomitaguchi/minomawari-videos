@@ -44,7 +44,7 @@
 | digestion | 食べたものは、どうやってうんちになる？ | 候補 |
 | pet-bottle | 炭酸のペットボトルは、どうして底が花びらみたいな形？ | 候補 |
 | pencil | 鉛筆は、どうして消しゴムで消える？ | 候補 |
-| baby-teeth | 子どもの歯は、どうしてぬけて生えかわるの？ | 記事作成待ち |
+| baby-teeth | 子どもの歯は、どうしてぬけて生えかわるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/baby-teeth.md)） | 候補 |
 | yawn | あくびは、どうしてうつるの？（わかっていないことは「わかっていない」と言う）（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/yawn-contagious.md)） | 候補 |
 | mosquito-bite | 蚊にさされると、どうしてかゆくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/mosquito-bite-itch.md)） | 候補 |
 | morning-glory | あさがおのつるは、どうやって棒に巻きつくの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/morning-glory-twining.md)） | 候補 |
