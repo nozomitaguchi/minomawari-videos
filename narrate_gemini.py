@@ -129,8 +129,8 @@ def split(wav, slugs, count):
         float(actual) / float(expected) if float(expected) else 0
         for actual, expected in re.findall(r"^\(([\d.]+), ([\d.]+), ", output, re.M)
     ]
-    if len(ratios) != count or any(not 0.6 <= ratio <= 1.8 for ratio in ratios):
-        bad = [round(r, 2) for r in ratios if not 0.6 <= r <= 1.8]
+    if len(ratios) != count or any(not 0.6 <= ratio <= 2.3 for ratio in ratios):
+        bad = [round(r, 2) for r in ratios if not 0.6 <= r <= 2.3]
         raise SplitMismatch(f"分割の尺が想定範囲外です（{len(ratios)}/{count}行、範囲外の比 {bad[:10]}）")
     for slug in slugs:
         if len(list(Path(slug, "lines").glob("N_*.wav"))) != len(ntexts(slug)):

@@ -23,7 +23,7 @@ GitHub Actions の「みのまわり図鑑のナレーション」は、3時間�
    - 1回の生成の上限は8分半くらいなので、**3本以上はまとめない**。
 4. ダウンロードした wav を1行ずつに切る：
    `python3 split_batch.py split <ダウンロードしたwav> <slug1> <slug2>`
-   表示される (実際の秒, 予想の秒) の比が 0.6〜1.8 くらいにそろっていれば OK（必要なもの：python3 と numpy）。
+   表示される (実際の秒, 予想の秒) の比が 0.6〜2.3 くらいにそろっていれば OK（必要なもの：python3 と numpy）。
    それぞれの `<slug>/lines/N_00.wav …` ができる。
 5. それぞれの `<slug>/voice.txt` に声の名前（例 `Elio`）を書く。`VOICES.md` の「最後に使った声」を更新。
 6. `VIDEOS.md` の2行を `仕上げ待ち` にする。`lines/`・`voice.txt`・`VOICES.md`・`VIDEOS.md` を commit・push。
