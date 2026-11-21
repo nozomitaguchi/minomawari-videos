@@ -13,7 +13,7 @@
 | フォルダ | 題 | 状態 |
 |---|---|---|
 | `shingou/` | 緑なのに、どうして「青信号」？ | 公開 |
-| `sora/` | 昼は青いのに、どうして夕やけは赤い？ | 完成 |
+| `sora/` | 昼は青いのに、どうして夕やけは赤い？ | 公開 |
 
 ## つぎに作る候補（上から順に）
 
@@ -21,11 +21,11 @@
 
 | 動画ID | 問いの例 | 状態 |
 |---|---|---|
-| elevator | どうやって上がる？ おもりのひみつ・消防用の鍵穴 | 完成 |
-| pill-bug | だんごむしは、どうして丸くなる？ | 完成 |
+| elevator | どうやって上がる？ おもりのひみつ・消防用の鍵穴 | 公開 |
+| pill-bug | だんごむしは、どうして丸くなる？ | 公開 |
 | scab | けがのあと、どうしてかさぶたができる？ | 完成 |
-| moon | 月は、どうして形が変わる？ | 完成 |
-| tummy-rumble | おなかは、どうして鳴る？ | 完成 |
+| moon | 月は、どうして形が変わる？ | 公開 |
+| tummy-rumble | おなかは、どうして鳴る？ | 公開 |
 | mirror | 鏡は、どうして左右が反対に見える？ | 完成 |
 | eye-tears-blink | 泣くと、どうして鼻水まで出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/eye-tears-blink.md)） | 完成 |
 | sky-cloud-white | 白い雲と黒っぽい雨雲、何がちがうの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sky-cloud-white.md)） | 仕上げ中（2026-11-21 09:20） |
