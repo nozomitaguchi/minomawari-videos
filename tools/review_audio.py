@@ -2,7 +2,7 @@
   python tools/review_audio.py <slug> [<slug> ...]
 余分な言葉（次の行の出だしなど）・欠け・読みまちがいがあれば <slug>/audio_review.md に書き、終了コード1で終わる。
 問題がなければ「OK」と書く。GEMINI_API_KEY が要る（GitHub Actions の「ナレーションの耳レビュー」から使う）。"""
-import base64, json, os, pathlib, sys
+import base64, json, os, pathlib, sys, time
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from narrate_gemini import request  # noqa: E402
@@ -28,10 +28,18 @@ def review(key, slug):
         wav = root / "lines" / f"N_{i:02d}.wav"
         parts.append({"text": f"行 {i}\n台本: {text}"})
         parts.append({"inline_data": {"mime_type": "audio/wav", "data": base64.b64encode(wav.read_bytes()).decode()}})
-    response = request(key, f"/models/{MODEL}:generateContent", {
+    payload = {
         "contents": [{"role": "user", "parts": parts}],
         "generationConfig": {"temperature": 0, "responseMimeType": "application/json"},
-    })
+    }
+    for attempt in range(4):  # 混雑（503）や一時的な上限（429）は、待ってやり直す
+        try:
+            response = request(key, f"/models/{MODEL}:generateContent", payload)
+            break
+        except RuntimeError as error:
+            if attempt == 3 or not any(code in str(error) for code in ("HTTP 503", "HTTP 429", "HTTP 500")):
+                raise
+            time.sleep(40 * (attempt + 1))
     out = "".join(p.get("text", "") for p in response["candidates"][0]["content"]["parts"])
     rows = {int(r["line"]): r for r in json.loads(out)}
     lines = [f"# {slug} ナレーションの耳レビュー（{MODEL}）", ""]
