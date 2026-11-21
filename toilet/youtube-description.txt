@@ -1,0 +1,40 @@
+【タイトル案】
+トイレは、流したあとも、どうして水が残るの？｜みのまわり図鑑 トイレ
+
+【概要欄】
+トイレを流すと、水はジャーッと流れていきます。それなのに、しばらくすると便器の底には、また水がたまっています。どうしてでしょう？
+便器のおくの道がくねっと曲がっていて（トラップ）、そこに水がたまること、流すとタンクの水が便器へ流れ出し、便器によっては曲がった道が水でいっぱいになって便器の水ごと引っぱり出すこと、流したあとはタンクにも便器にも水を足してもとの高さにもどすこと、そしてこの水が「ふた」になって下水のくさいにおいや虫を止めていることを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 流したのに、また水がある
+0:31 便器に水が残るのは、どうして？
+0:59 横から見ると：くねっと曲がった道（トラップ）
+1:27 流すと、水はどう進む？
+2:01 流したあと、水はどう戻る？
+2:24 残る水の役目（下水のにおいを止める水のふた）
+2:58 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「トイレ」）
+https://nozomitaguchi.github.io/everyday-trivia/i/toilet/
+https://nozomitaguchi.github.io/everyday-trivia/t/toilet-water/
+
+▼ 出典
+・TOTO 取扱説明書 タンク密結形便器（CS370系・CS380系ほか、2007年。泉佐野市掲載、PDF）
+  https://www.city.izumisano.lg.jp/material/files/group/11/207_toilet_toilet_toto.pdf
+・千葉県企業局 水道のしおり「ロータンクの構造としくみ」（PDF、24〜25ページ）
+  https://www.pref.chiba.lg.jp/suidou/gyoumu/documents/suidousiori-202410-24-25.pdf
+・船橋市 排水設備設計施工要領 第3章（PDF）
+  https://www.city.funabashi.lg.jp/machi/gesui/006/sekkeisekouyouryou_d/fil/ssyouryou-03.pdf
+・白井市 排水設備設計施行の手引き（PDF）
+  https://www.city.shiroi.chiba.jp/material/files/group/43/haisuisetubisekkei.pdf
+・堺市上下水道局 排水設備の資料「15 防臭トラップ」（PDF）
+  https://water.city.sakai.lg.jp/material/files/group/6/74694451.pdf
+
+※ 「流したすぐあとは水がほとんどなくなる」「1〜2分かけて水を足す」は、サイホン作用を使う便器の話です（TOTO の取扱説明書）。便器の方式によって、水の動きはちがいます。
+※ 動画の絵は、しくみをわかりやすくした断面図です。
+※ 流すのは大人といっしょに。便器の中に手を入れたり、タンクのふたを開けたりしないでください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #トイレ #水 #しくみ #雑学 #親子で学ぶ #なぜなに
