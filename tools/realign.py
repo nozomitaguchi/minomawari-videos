@@ -12,7 +12,7 @@ from narrate_gemini import request  # noqa: E402
 
 MODEL = os.environ.get("REVIEW_MODEL", "gemini-3.8-flash")
 JOIN = 0.40      # もとの行と行のあいだに入れる無音（秒）
-MIN_GAP = 0.20   # これより長い無音でチャンクに分ける
+MIN_GAP = 0.30   # これより長い無音でチャンクに分ける
 PROMPT = """あなたは子ども向け動画のナレーションの編集係です。
 下に、台本の行（番号つき）があります。そのあとに、ナレーションの音声を無音で細かく切った「チャンク」が、読まれた順に入っています。
 それぞれのチャンクを実際に聞いて、台本の何行めの言葉かを答えてください。
@@ -103,34 +103,79 @@ def ask(key, texts, audio, sr, chunks):
     return (nums + [-1] * len(chunks))[: len(chunks)]
 
 
+def stream_of(slugs):
+    """lines/N_xx.wav をつないだ音と、チャンク [(開始, 終了, 動画の番号, もとの行)]。"""
+    pieces, chunks, pos, sr = [], [], 0, None
+    for v, slug in enumerate(slugs):
+        for n in range(len(texts_of(slug))):
+            a, sr = load(pathlib.Path(slug) / "lines" / f"N_{n:02d}.wav")
+            chunks += [(pos + s, pos + e, v, n) for s, e in chunks_of(a, sr)]
+            pieces += [a, np.zeros(int(sr * JOIN), np.float32)]; pos += len(a) + int(sr * JOIN)
+    return np.concatenate(pieces), sr, chunks
+
+
 def realign(key, slugs, predict=None):
-    groups = [(s, texts_of(s)) for s in slugs]
-    texts = [t for _, ts in groups for t in ts]
-    files = [pathlib.Path(s) / "lines" / f"N_{i:02d}.wav" for s, ts in groups for i in range(len(ts))]
-    pieces, old = [], []           # old[k] = もとのファイルで、チャンク k が入っていた行
-    sr = None; pos = 0; chunks = []
-    for n, f in enumerate(files):
-        a, sr = load(f)
-        for s, e in chunks_of(a, sr):
-            chunks.append((pos + s, pos + e)); old.append(n)
-        pieces += [a, np.zeros(int(sr * JOIN), np.float32)]; pos += len(a) + int(sr * JOIN)
-    audio = np.concatenate(pieces)
-    pred = predict(texts, chunks) if predict else ask(key, texts, audio, sr, chunks)
-    pred = [p if 0 <= p < len(texts) else o for p, o in zip(pred, old)]
-    new, fixed = monotone(pred, len(texts))
-    moved = [(k, old[k], new[k]) for k in range(len(chunks)) if old[k] != new[k]]
-    lead, tail = int(sr * 0.04), int(sr * 0.10)
-    for n, f in enumerate(files):
-        ks = [k for k in range(len(chunks)) if new[k] == n]
-        y = audio[max(0, chunks[ks[0]][0] - lead): chunks[ks[-1]][1] + tail].copy()
-        fade = int(sr * 0.01); y[:fade] *= np.linspace(0, 1, fade); y[-fade:] *= np.linspace(1, 0, fade)
-        save(f, y, sr)
-    print(f"{', '.join(slugs)}: チャンク {len(chunks)}個、行 {len(texts)}。行を移したチャンク {len(moved)}個"
-          f"（答えを順番にそろえるための書きかえ {fixed}個）")
-    for k, o, n in moved[:40]:
-        print(f"  チャンク {k}: 行 {o} → 行 {n}（{texts[n][:14]}…）")
-    return moved
+    """動画を1本ずつ聞かせる。次の動画の出だしがまぎれていたら、次の動画へ回す。"""
+    audio, sr, chunks = stream_of(slugs)
+    pool = {v: [c for c in chunks if c[2] == v] for v in range(len(slugs))}
+    moved_all = 0
+    for v, slug in enumerate(slugs):
+        texts = texts_of(slug); L = len(texts)
+        mine = pool[v]
+        peek = pool.get(v + 1, [])[:6]                     # 次の動画のはじめも少し聞かせる（こちらの終わりがまぎれていないか）
+        cs = mine + peek
+        old = [c[3] if c[2] == v else L for c in cs]
+        script = texts + (["（この動画の台本にない言葉。次の動画のはじまり）"] if v + 1 < len(slugs) else [])
+        pred = (predict(script, cs) if predict else ask(key, script, audio, sr, [(c[0], c[1]) for c in cs]))
+        pred = [p if 0 <= p < len(script) else o for p, o in zip(pred, old)]
+        best = None
+        for lines in ([L + 1, L] if len(script) > L else [L]):
+            if len(cs) < lines: continue
+            new, cost = monotone([min(p, lines - 1) for p in pred], lines)
+            if best is None or cost < best[1]: best = (new, cost)
+        new, cost = best
+        if v + 1 < len(slugs):
+            spill = [c for c, n in zip(cs, new) if n >= L and c[2] == v]         # こちらにあった、次の動画の言葉
+            taken = [c for c, n in zip(cs, new) if n < L and c[2] == v + 1]      # 次の動画のファイルにあった、こちらの言葉
+            pool[v + 1] = [(c[0], c[1], v + 1, 0) for c in spill] + [c for c in pool[v + 1] if c not in taken]
+        moved = sum(1 for c, n, o in zip(cs, new, old) if n != o)
+        moved_all += moved
+        lead, tail = int(sr * 0.04), int(sr * 0.10)
+        for n in range(L):
+            ks = [c for c, m in zip(cs, new) if m == n]
+            y = audio[max(0, ks[0][0] - lead): ks[-1][1] + tail].copy()
+            fade = int(sr * 0.01); y[:fade] *= np.linspace(0, 1, fade); y[-fade:] *= np.linspace(1, 0, fade)
+            save(pathlib.Path(slug) / "lines" / f"N_{n:02d}.wav", y, sr)
+        print(f"{slug}: チャンク {len(cs)}個、行 {L}。行を移したチャンク {moved}個（順番にそろえるための書きかえ {cost}個）")
+        for c, n, o in [(c, n, o) for c, n, o in zip(cs, new, old) if n != o][:12]:
+            print(f"  {round(c[0] / sr, 1)}秒のチャンク: 行 {o} → 行 {n}（{script[n][:14]}…）")
+    return moved_all
+
+
+def checked(key, slugs):
+    """直す前と後で耳レビューをして、悪くなった動画は元にもどす。"""
+    import shutil, tempfile
+    import review_audio
+    def count(slug):
+        try: return len(review_audio.review(key, slug))
+        except Exception as error:
+            print(f"{slug}: レビューできませんでした（{type(error).__name__}）"); return None
+    before = {s: count(s) for s in slugs}
+    if all(b == 0 for b in before.values()):
+        print("直す前から問題なし。"); return before
+    keep = tempfile.mkdtemp()
+    for s in slugs: shutil.copytree(pathlib.Path(s) / "lines", pathlib.Path(keep) / s)
+    realign(key, slugs)
+    after = {s: count(s) for s in slugs}
+    for s in slugs:
+        if before[s] is not None and (after[s] is None or after[s] > before[s]):
+            shutil.rmtree(pathlib.Path(s) / "lines"); shutil.copytree(pathlib.Path(keep) / s, pathlib.Path(s) / "lines")
+            print(f"{s}: 直したら悪くなったので元にもどしました（{before[s]} → {after[s]}）"); count(s)
+        else:
+            print(f"{s}: 問題 {before[s]} → {after[s]}")
+    return after
 
 
 if __name__ == "__main__":
-    realign(os.environ["GEMINI_API_KEY"], sys.argv[1:])
+    sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+    checked(os.environ["GEMINI_API_KEY"], sys.argv[1:])

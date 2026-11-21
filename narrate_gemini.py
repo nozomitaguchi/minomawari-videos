@@ -146,11 +146,8 @@ def listen(key, slugs):
     sys.path.insert(0, "tools")
     try:
         import realign, review_audio
-        realign.realign(key, slugs)
-        for slug in slugs:
-            if review_audio.review(key, slug):
-                # 残った問題は audio_review.md に書いてある。仕上げの回が読んで、直すか作り直すかを決める。
-                print(f"{slug}: 耳レビューで問題が残りました（audio_review.md）")
+        # 直す前後でレビューし、悪くなったら元にもどす。残った問題は audio_review.md に書かれ、仕上げの回が読む。
+        realign.checked(key, slugs)
     except Exception as error:
         print(f"耳レビューができませんでした（{type(error).__name__}: {str(error)[:120]}）。先へ進みます。")
         for slug in slugs:
