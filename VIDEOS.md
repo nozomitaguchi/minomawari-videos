@@ -34,8 +34,8 @@
 | power-lines | 電線に止まった鳥は、どうしてしびれない？ | 完成 |
 | escalator | エスカレーターの階段は、消えたあとどこへ行く？ | 完成 |
 | cold | かぜをひくと、どうして体は熱を出す？ | 完成 |
-| autumn-leaves | 葉っぱは、どうして秋になると赤や黄色になるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/autumn-leaves-color.md)） | ナレーション待ち |
-| nails-and-hair | つめや髪は、どうして切っても痛くない？ | ナレーション待ち |
+| autumn-leaves | 葉っぱは、どうして秋になると赤や黄色になるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/autumn-leaves-color.md)） | ナレーション中（2026-11-22 06:24） |
+| nails-and-hair | つめや髪は、どうして切っても痛くない？ | ナレーション中（2026-11-22 06:24） |
 | futon-warmth | おふとんは、どうして入ったときは冷たいのに、だんだんあったかくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/futon-warmth.md)） | 完成 |
 | key | 鍵を回すと、ドアの中で何が動いて開くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/key-lock.md)） | 保留 |
 | winter-trees | 冬、葉っぱがなくなる木と、緑のままの木があるのはなぜ？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/tree-winter-leaves.md)） | ナレーション待ち |
