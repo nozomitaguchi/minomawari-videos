@@ -1,0 +1,42 @@
+name: ナレーションの耳レビュー
+
+# 1行ずつの音声を Gemini に聞かせて、台本どおりか（余分な言葉・欠け・読みまちがい）を確かめる。
+# 結果は <動画ID>/audio_review.md に入る。問題があれば、この実行は失敗になる。
+
+on:
+  workflow_dispatch:
+    inputs:
+      slugs:
+        description: 動画ID（空白で区切って複数）
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'numpy>=2,<3'
+      - name: Listen to every line
+        id: listen
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SLUGS: ${{ inputs.slugs }}
+        run: python tools/review_audio.py $SLUGS | tee -a "$GITHUB_STEP_SUMMARY"
+        shell: bash -o pipefail {0}
+        continue-on-error: true
+      - name: Save the review
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- '*/audio_review.md'
+          git diff --cached --quiet || git commit -m "ナレーションの耳レビュー: ${{ inputs.slugs }}"
+          git pull --rebase && git push
+      - if: steps.listen.outcome == 'failure'
+        run: exit 1
