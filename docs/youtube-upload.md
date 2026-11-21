@@ -28,3 +28,11 @@ python tools/authorize_youtube.py "$HOME/Downloads/ダウンロードしたOAuth
 ```
 
 OAuth JSONと更新用トークンは手元とActions Secretsで管理し、チャットやGitには貼り付けません。連携を解除する場合はActions Secretsから `YOUTUBE_OAUTH_JSON` を削除し、Googleアカウントの接続設定からアプリの権限を取り消します。
+
+## 完成した動画を手元のフォルダに集める
+
+アップロードの実行は、4KのMP4とサムネイルを Actions の実行結果に14日間残します。Macで次を実行すると、まだ手元にないものを `~/minomawari-zukan-movies` に取りこみます。
+
+```sh
+sh tools/sync_movies.sh
+```

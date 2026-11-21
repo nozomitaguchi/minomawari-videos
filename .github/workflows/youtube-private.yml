@@ -75,6 +75,21 @@ jobs:
           sh "$VIDEO_SLUG/finish.sh"
           python tools/youtube_upload.py verify "$VIDEO_SLUG"
           printf '%s\n' '3840×2160 の映像と音声を確認しました。' >> "$GITHUB_STEP_SUMMARY"
+      - name: Keep the MP4 and thumbnail for download (tools/sync_movies.sh)
+        if: always()
+        run: |
+          mkdir -p "$RUNNER_TEMP/movie"
+          cp "$VIDEO_SLUG/${VIDEO_SLUG}_mimawari_4k.mp4" "$RUNNER_TEMP/movie/" 2>/dev/null || true
+          cp "$VIDEO_SLUG/brand/thumb.jpg" "$RUNNER_TEMP/movie/${VIDEO_SLUG}_thumb.jpg" 2>/dev/null || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: movie-${{ env.VIDEO_SLUG }}
+          path: ${{ runner.temp }}/movie/*
+          retention-days: 14
+          compression-level: 0
+          overwrite: true
+          if-no-files-found: ignore
       - name: Install YouTube API client
         if: inputs.mode == 'upload-private'
         run: python -m pip install 'google-api-python-client>=2,<3'

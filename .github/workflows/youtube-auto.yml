@@ -87,6 +87,21 @@ jobs:
         run: |
           sh "$VIDEO_SLUG/finish.sh"
           python tools/youtube_upload.py verify "$VIDEO_SLUG"
+      - name: Keep the MP4 and thumbnail for download (tools/sync_movies.sh)
+        if: always()
+        run: |
+          mkdir -p "$RUNNER_TEMP/movie"
+          cp "$VIDEO_SLUG/${VIDEO_SLUG}_mimawari_4k.mp4" "$RUNNER_TEMP/movie/" 2>/dev/null || true
+          cp "$VIDEO_SLUG/brand/thumb.jpg" "$RUNNER_TEMP/movie/${VIDEO_SLUG}_thumb.jpg" 2>/dev/null || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: movie-${{ env.VIDEO_SLUG }}
+          path: ${{ runner.temp }}/movie/*
+          retention-days: 14
+          compression-level: 0
+          overwrite: true
+          if-no-files-found: ignore
       - name: Upload privately to @minomawari-zukan and set the thumbnail
         env:
           GH_TOKEN: ${{ github.token }}
