@@ -41,7 +41,7 @@ def review(key, slug):
                 raise
             time.sleep(40 * (attempt + 1))
     out = "".join(p.get("text", "") for p in response["candidates"][0]["content"]["parts"])
-    rows = {int(r["line"]): r for r in json.loads(out)}
+    rows = {int(r["line"]): r for r in json.JSONDecoder().raw_decode(out[out.index("["):])[0]}
     lines = [f"# {slug} ナレーションの耳レビュー（{MODEL}）", ""]
     bad = []
     for i, text in enumerate(texts):
@@ -59,5 +59,12 @@ def review(key, slug):
 
 if __name__ == "__main__":
     key = os.environ["GEMINI_API_KEY"]
-    failed = [slug for slug in sys.argv[1:] if review(key, slug)]
+    failed = []
+    for slug in sys.argv[1:]:
+        try:
+            if review(key, slug):
+                failed.append(slug)
+        except Exception as error:  # 1本でつまずいても、ほかの動画は見る
+            print(f"# {slug}: レビューできませんでした（{type(error).__name__}: {str(error)[:120]}）")
+            failed.append(slug)
     sys.exit(1 if failed else 0)
