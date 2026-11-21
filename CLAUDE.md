@@ -79,6 +79,7 @@ YouTube「みのまわり図鑑」（@minomawari-zukan、親子で見る雑学�
 ### A6. 保存
 - `VIDEOS.md` のその行を `ナレーション待ち` にする。
 - commit・push（mp4 は git に入れない）。ユーザーへの連絡はしない（完成したときだけ知らせる）。
+- push のあと、`gh workflow run narration.yml -R nozomitaguchi/minomawari-videos --ref main` でナレーションづくりを起動する（GitHub の定期実行は間引かれて何時間も動かないことがあるため）。`gh` が使えない・失敗したときは、そのままでよい（3時間ごとの定期実行が拾う）。
 
 ---
 
