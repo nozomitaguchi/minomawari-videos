@@ -35,7 +35,7 @@
 | escalator | エスカレーターの階段は、消えたあとどこへ行く？ | 完成 |
 | cold | かぜをひくと、どうして体は熱を出す？ | ナレーション待ち |
 | autumn-leaves | 葉っぱは、どうして秋になると赤や黄色になるの？ | 記事作成待ち |
-| nails-and-hair | つめや髪は、どうして切っても痛くない？ | 候補 |
+| nails-and-hair | つめや髪は、どうして切っても痛くない？ | 下書き中（2026-11-21 19:48） |
 | futon-warmth | おふとんは、どうして入ったときは冷たいのに、だんだんあったかくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/futon-warmth.md)） | 候補 |
 | key | 鍵を回すと、ドアの中で何が動いて開くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/key-lock.md)） | 保留 |
 | winter-trees | 冬、葉っぱがなくなる木と、緑のままの木があるのはなぜ？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/tree-winter-leaves.md)） | 候補 |
