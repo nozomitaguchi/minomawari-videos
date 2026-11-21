@@ -46,7 +46,7 @@
 | pencil | 鉛筆は、どうして消しゴムで消える？ | 候補 |
 | baby-teeth | 子どもの歯は、どうしてぬけて生えかわるの？ | 記事作成待ち |
 | yawn | あくびは、どうしてうつるの？（わかっていないことは「わかっていない」と言う）（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/yawn-contagious.md)） | 候補 |
-| mosquito-bite | 蚊にさされると、どうしてかゆくなるの？ | 記事作成待ち |
+| mosquito-bite | 蚊にさされると、どうしてかゆくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/mosquito-bite-itch.md)） | 候補 |
 | morning-glory | あさがおのつるは、どうやって棒に巻きつくの？ | 記事作成待ち |
 | dandelion | たんぽぽのわたげは、どうして遠くまで飛べるの？ | 記事作成待ち |
 | honeycomb | ハチの巣は、どうして六角形なの？（実物には近づかない。みてみようは写真や図で） | 記事作成待ち |
