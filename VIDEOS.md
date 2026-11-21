@@ -35,7 +35,7 @@
 | nails-and-hair | つめや髪は、どうして切っても痛くない？ | 候補 |
 | futon-warmth | おふとんは、どうして入ったときは冷たいのに、だんだんあったかくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/futon-warmth.md)） | 候補 |
 | key | 鍵を回すと、ドアの中で何が動いて開くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/key-lock.md)） | 候補 |
-| winter-trees | 冬、葉っぱがなくなる木と、緑のままの木があるのはなぜ？ | 記事作成待ち |
+| winter-trees | 冬、葉っぱがなくなる木と、緑のままの木があるのはなぜ？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/tree-winter-leaves.md)） | 候補 |
 | rain-snow | 空の上では何が起きて、雨になったり雪になったりするの？ | 記事作成待ち |
 | toilet | トイレは、流したあともどうして少し水が残るの？ | 記事作成待ち |
 | car-drive | アクセルを踏むと、どうやってタイヤまで力が届くの？ | 記事作成待ち |
