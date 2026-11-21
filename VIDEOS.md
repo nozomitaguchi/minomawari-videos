@@ -63,7 +63,7 @@
 | goosebumps | 寒いと、どうして鳥肌が立つの？ | 記事作成待ち |
 | shadow | かげは、どうして自分と同じ形になるの？ | 記事作成待ち |
 | airplane | 飛行機は、あんなに重いのに、どうして空を飛べるの？ | 記事作成待ち |
-| soap-bubble | シャボン玉は、どうして丸くなるの？ | 記事作成待ち |
+| soap-bubble | シャボン玉は、どうして丸くなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/soap-bubble-round.md)。星の輪でふいても丸い、が見せ場。石けん水は口や目に入れない） | 候補 |
 | sea-salty | 海の水は、どうしてしょっぱいの？ | 記事作成待ち |
 | wind | 風は、どうしてふくの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/wind-blow.md)） | 候補 |
 | snow-white | 雪は、どうして白いの？ | 記事作成待ち |
