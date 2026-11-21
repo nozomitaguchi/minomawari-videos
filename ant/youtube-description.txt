@@ -1,0 +1,42 @@
+【タイトル案】
+アリは、どうして同じ道にならんで歩けるの？｜みのまわり図鑑 アリ
+
+【概要欄】
+公園の地面を、アリが1本の線のようにならんで歩いています。地面に線なんてかいていないのに、どうして同じ道を歩けるのでしょう？
+エサを見つけた働きアリが、巣へ帰る道で地面に「におい」（道しるべフェロモン）をつけること、仲間がそのにおいを触角でかぎとって道をたどること、においはすぐにうすくなるのに、エサを運ぶ仲間が何度も重ねるから行列がつづくこと、エサがなくなると道も消えることを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 アリが1本の線のように歩いている
+0:28 同じ道を歩けるのは、どうして？
+0:58 エサを見つけたアリが、帰り道ににおいをつける
+1:22 仲間が、においをたどる
+1:43 行列を紙でさえぎると
+1:58 においはすぐ消える。重ねるから行列がつづく
+2:36 エサがへると、道は消える
+2:54 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「アリ」）
+https://nozomitaguchi.github.io/everyday-trivia/i/ant/
+https://nozomitaguchi.github.io/everyday-trivia/t/ant-trail-pheromone/
+
+▼ 出典
+・Dwight Moody, A Field Study of the Ant Trail Phenomenon（Wilson 1963 にもとづく、PDF）
+  https://www.ableweb.org/volumes/pdf/?volume=5&art=7
+・Harvard Magazine（ウィルソンがヒアリの道しるべフェロモンの出どころを見つけた話）
+  https://www.harvardmagazine.com/node/77783
+・るるぶKids アリの行列の自由研究（紙・水・酢でさえぎる）
+  https://kids.rurubu.jp/article/200404/
+・Robinson ほか（2005）Insect communication: 'No entry' signal in ant foraging, Nature 438
+  https://sro.sussex.ac.uk/id/eprint/22787/
+・Robinson ほか（2008）Decay rates of attractive and repellent pheromones in an ant foraging trail network, Insectes Sociaux 55
+  https://eprints.whiterose.ac.uk/id/document/716776
+
+※ 道ができて消えるまでの流れと、「2分ほどでうすくなる」「そのあいだに進めるのは40センチほど」は、ヒアリというアリを調べた研究にもとづきます。においが長く残る種類のアリもいます。
+※ におい（道しるべフェロモン）は、本当は目に見えません。動画では、むらさきの点でかいています。
+※ ヒアリは、強い毒の針をもつ外国のアリです。見なれないアリを見つけても、素手でさわらないでください。
+※ 行列をふんだり、巣をこわしたりしないで、そっと見てください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #アリ #行列 #フェロモン #虫 #雑学 #親子で学ぶ #なぜなに
