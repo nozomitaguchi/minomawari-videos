@@ -139,7 +139,13 @@ def split(wav, slugs, count):
 
 
 def main():
-    slugs = [slug for slug, status in statuses(VIDEOS.read_text()).items() if status == WAITING][:2]
+    waiting = [slug for slug, status in statuses(VIDEOS.read_text()).items() if status == WAITING]
+    # NARRATE_FIRST=<動画ID> で、その動画を先に作る（手動実行の「先に作る動画ID」）。
+    first = os.environ.get("NARRATE_FIRST", "").strip()
+    if first in waiting:
+        waiting.remove(first)
+        waiting.insert(0, first)
+    slugs = waiting[:2]
     if not slugs:
         print("ナレーション待ちの動画はありません。")
         return
