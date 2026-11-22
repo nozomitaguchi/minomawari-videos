@@ -1,3 +1,3 @@
-# baby-teeth ナレーションの耳レビュー
+# baby-teeth ナレーションの耳レビュー（gemini-3.6-flash）
 
-未レビュー（RuntimeError）。
+33行のうち、問題 0行。 OK
