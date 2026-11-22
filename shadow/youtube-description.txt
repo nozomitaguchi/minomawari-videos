@@ -1,0 +1,56 @@
+【タイトル案】
+かげは、どうして 自分と 同じ 形に なるの？｜みのまわり図鑑 かげ
+
+【概要欄】
+晴れた日に外に立つと、足もとから黒っぽいかげがのびます。手をふると、かげも手をふります。かげは、どうして自分と同じ形になるのでしょう？
+光はまっすぐ進むこと、光を通さないものに当たるとその先へ進めず、光がとどかないところが「かげ」になること、ふちをかすめた光はそのままとどき、内がわに来た光だけがさえぎられるので、かげのふちが、もののふちをなぞった線になること、朝や夕方は長く、お昼は短くなること、光の来る向きで形も変わること、そして、太陽は点ではなく大きさのある光なので、かげのふちが少しぼやけることを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 手をふると、かげも手をふる
+0:26 かげは、どうして同じ形？（予想）
+0:55 光は、まっすぐ進む
+1:07 光がとどかないところが、かげ
+1:31 星の形の紙で見てみよう（ふちをなぞる）
+2:06 朝・お昼・夕方で、のびたり、ちぢんだり
+2:26 光に近いと大きい／お皿のかげは、丸にも棒にも
+2:50 ふちが、ぼやけるわけ
+3:14 正解と、みてみよう
+
+▼ もっとくわしく（みのまわり図鑑「かげ」）
+https://nozomitaguchi.github.io/everyday-trivia/i/shadow/
+https://nozomitaguchi.github.io/everyday-trivia/t/shadow-shape/
+
+▼ 出典
+・文部科学省「小学校学習指導要領（平成29年告示）解説 理科編」（PDF）
+  https://www.mext.go.jp/content/20211020-mxt_kyoiku02-100002607_05.pdf
+・Science Learning Hub（ワイカト大学／ニュージーランド教育省の教材）"Shadows: Effects of the absence of light"
+  https://www.sciencelearn.org.nz/image_maps/77-shadows-effects-of-the-absence-of-light
+・国立天文台 暦計算室「太陽の高度，方位角および影の位置の概略値の求め方」
+  https://eco.mtk.nao.ac.jp/koyomi/topics/html/topics2005.html
+・国立天文台 暦計算室 暦Wiki「圭表儀」
+  https://eco.mtk.nao.ac.jp/koyomi/wiki/B7BDC9BDB5B7.html
+・University of Kentucky "The Physics of Light -- Shadows"
+  https://www.pa.uky.edu/sciworks/courses/light/sh3.htm
+・University of Illinois, Physics Van "Umbras and Penumbras"
+  https://van.physics.illinois.edu/ask/listing/2068
+・Christopher S. Baird（West Texas A&M University）"How does diffraction make a tree's shadow blurry?"
+  https://wtamu.edu/~cbaird/sq/2014/07/02/how-does-diffraction-make-a-trees-shadow-blurry/
+・Janet Sheldon "Only the Shadow Knows", Optics & Photonics News (Optical Society of America), 1993（PDF）
+  https://osa.magnet.fsu.edu/teachersparents/articles/pdfs/only%20the%20shadow%20knows.pdf
+・NASA Science "Why Do Eclipses Happen?"
+  https://science.nasa.gov/eclipses/geometry/
+・国立天文台「2023年4月20日 日食（金環皆既日食）解説資料」（PDF）
+  https://www.nao.ac.jp/contents/astro/sky/2023/04/partial-eclipse-factsheet.pdf
+
+※ かげは、黒いものが地面に「ある」のではなく、まわりより光が少ない場所です。
+※ 「同じ形」は、まわりの線（りんかく）のつくりが同じ、という意味です。長さ・大きさ・向きは、光の来る向きや、光との近さで変わります。
+※ 「ものを光に近づけるほど、かげは大きくなる」のは、懐中電灯のように近くにある光のときです（ケンタッキー大学の物理教材）。
+※ かげのふちがぼやけるのは、太陽が点ではなく、大きさのある光だからです。ふちの近くの、太陽の一部だけがかくれる、明るくぼやけたところを「半影」、太陽がぜんぶかくれる、いちばんこいところを「本影」といいます。
+※ 太陽の大きさ、かげのぼやけかた、光の線の数は、見やすいように大きく（少なく）描いています。星の形の紙やお皿の絵も、しくみを見せるための図です。
+※ 太陽そのものは、ぜったいに見ないでください。肉眼で直接太陽を見ると、短い時間でも目をいためます（国立天文台）。
+※ 懐中電灯の光は、人の目に向けないでください。
+※ 道路のそばでかげを見るときは、車に気をつけて、大人といっしょに見ましょう。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #かげ #影 #光 #太陽 #自由研究 #雑学 #親子で学ぶ #なぜなに
