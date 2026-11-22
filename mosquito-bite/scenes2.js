@@ -232,7 +232,7 @@ SCENES.push({
     [0, 1].forEach(i => { out += g(text(0, 0, 'ない…', { size: 44, w: 900, fill: C.muted }), { x: TG[i][0] - 10, y: TG[i][1] + 76, o: win(t, seg[i][0] + 0.8, seg[i][1] + 0.3, 0.2) }); });
     out += g(text(0, 0, 'あった！', { size: 54, w: 900, fill: MC.blood, extra: `stroke="#fff" stroke-width="10" paint-order="stroke"` }), { x: 1110, y: 540, o: win(t, c0 + 5.5, c1 - 0.2, 0.25) });
     out += titleAt('じっけんで みられた ようす', t, c0 + 0.3, c1 - 0.2, C.muted, 1330, 170, 40);
-    out += g(text(0, 0, 'はりの さきが まがって、けっかんを さがす', { size: 46, w: 900 }), { x: 1260, y: 250, o: win(t, c0 + 1.2, c1 - 0.2, 0.3) });
+    out += g(text(0, 0, 'はりの さきが まがって、けっかんを さがす', { size: 46, w: 900 }), { x: 1340, y: 250, o: win(t, c0 + 1.2, c1 - 0.2, 0.3) });
     out += tag(TG[2][0] - 70, TG[2][1] - 56, 420, 800, 'だえき（つば）', win(t, c1 + 0.8, c3 - 0.3, 0.3), { col: MC.salivaDk, size: 48 });
     out += pop(card(860, 110) + drop(-374, 4, 1.4) + text(-330, 2, 'ちを かたまりにくく する ものが、はいっている', { size: 33, w: 900, anchor: 'start', fill: MC.salivaDk }), t, c2 + 0.5, 1420, 180, { end: c3 - 0.2 });
     // 管は 2本
@@ -255,7 +255,7 @@ SCENES.push({
   id: 'alarm',
   draw(t) {
     const c0 = cue(0), c1 = cue(1), c2 = cue(2), c3 = cue(3), c4 = cue(4);
-    let out = `<rect width="1920" height="1080" fill="${MC.derLt}"/>` + _derm + topBadge();
+    let out = `<rect width="1920" height="1080" fill="${MC.derLt}"/>` + _derm;
     const MX = 1000, MY = 400, VY = 750, MR = 160;
     // 血管（広がる）
     const wide = eio(prog(t, c3 + 0.8, 1.6)), vw = lerp(70, 124, wide);
@@ -265,6 +265,7 @@ SCENES.push({
     out += g(text(0, 0, 'けっかん', { size: 38, w: 900, fill: MC.vline }), { x: 1760, y: VY - vw / 2 - 40, o: prog(t, c1, 0.4) * (1 - prog(t, c3 + 0.4, 0.3)) });
     // 針の先と だ液
     out += `<path d="M 250 -20 Q 270 160 400 250" fill="none" stroke="${MC.body}" stroke-width="16" stroke-linecap="round"/>`;
+    out += topBadge();
     const reach = eo(prog(t, c2 - 0.6, 1.6));
     for (let i = 0; i < 7; i++) { const a = i * 0.9, sx = 410 + Math.cos(a) * 60 + (i % 3) * 36, sy = 270 + Math.sin(a) * 46 + (i % 2) * 40; const tx = MX - 215 + (i % 3) * 30, ty = MY - 80 + i * 26; out += drop(lerp(sx, tx, reach * (0.55 + 0.45 * rnd(i, 41))), lerp(sy, ty, reach * (0.55 + 0.45 * rnd(i, 42))) + Math.sin(t * 2 + i) * 6, 1.25, MC.saliva, MC.salivaDk, prog(t, 0.3 + i * 0.1, 0.3)); }
     out += tag(430, 300, 520, 170, 'かの だえき', prog(t, c0 + 0.6, 0.4) * (1 - prog(t, c3 - 0.3, 0.3)), { col: MC.salivaDk, size: 44 });
