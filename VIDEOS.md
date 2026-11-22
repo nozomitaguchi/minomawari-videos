@@ -65,7 +65,7 @@
 | shadow | かげは、どうして自分と同じ形になるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/shadow-shape.md)。太陽そのものは見ない） | 完成 |
 | airplane | 飛行機は、あんなに重いのに、どうして空を飛べるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/airplane-lift.md)） | 完成 |
 | soap-bubble | シャボン玉は、どうして丸くなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/soap-bubble-round.md)。星の輪でふいても丸い、が見せ場。石けん水は口や目に入れない） | 完成 |
-| sea-salty | 海の水は、どうしてしょっぱいの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sea-salty.md)。海の水は飲まない注意を入れる） | ナレーション待ち |
+| sea-salty | 海の水は、どうしてしょっぱいの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sea-salty.md)。海の水は飲まない注意を入れる） | ナレーション中（2026-11-23 08:53） |
 | wind | 風は、どうしてふくの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/wind-blow.md)） | 完成 |
 | snow-white | 雪は、どうして白いの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/snow-white.md)） | 完成 |
 | sneeze | くしゃみは、どうして出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sneeze-reflex.md)） | 仕上げ待ち |
@@ -83,7 +83,7 @@
 | static-shock | 冬にドアをさわると、どうしてバチッとなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/static-shock-door.md)。歩くとでんしが引っこしして体にたまり、乾いた冬はにげない、金属に近づくと空気をとびこえる小さなかみなり、が見せ場。わざとバチッとさせない・ガソリンスタンドのシートと給油は大人、の注意を入れる） | 下書き中（2026-11-23 07:57） |
 | mochi-puff | おもちは、焼くとどうしてふくらむの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/rice-mochi-puff.md)。お正月の題材。中の水が目に見えない水蒸気になってかさが約1700倍、のびる網目が風船のゴムになる、が見せ場。焼くのは大人・焼きたては熱いのでさわらない、のどにつまらせない（小さく切る・のどをしめらせる）注意を入れる） | 候補 |
 | mikan-white-threads | みかんの白いすじは、何のためにあるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/mikan-white-threads.md)。すじは木から水と栄養を運んだ通り道、なのに中のつぶつぶには管がなく細胞から細胞へ手わたし、が見せ場。皮の内側の白いふわふわ（アルベド）とは別もの。むく前に手をあらう） | 仕上げ待ち |
-| hiccup | しゃっくりは、どうして急に出て止まらないの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/hiccup-diaphragm.md)。横隔膜が勝手にピクッ → 声のとびらがパタンで「ヒック」、だから吸うときに鳴る、が見せ場。何のためかは「わかっていない」と言う。水を一気に飲む・袋をかぶせる・おどかす、で止めようとしない注意を入れる） | ナレーション待ち |
+| hiccup | しゃっくりは、どうして急に出て止まらないの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/hiccup-diaphragm.md)。横隔膜が勝手にピクッ → 声のとびらがパタンで「ヒック」、だから吸うときに鳴る、が見せ場。何のためかは「わかっていない」と言う。水を一気に飲む・袋をかぶせる・おどかす、で止めようとしない注意を入れる） | ナレーション中（2026-11-23 08:53） |
 | heartbeat-running | 走ると、どうして心臓がドキドキするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/heartbeat-running.md)。心臓は打つ回数と1回に送る血の量を両方ふやして血を4〜5倍に、ふえた血はおもに走っている足の筋肉へ、アクセルとブレーキの神経、が見せ場。走るのは広くて車の来ない所で・苦しい・胸が痛いときはすぐ止まって大人に言う注意を入れる） | 下書き中（2026-11-23 08:41） |
 | sweat | あせは、どうして出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sweat-why.md)。汗は肌の上で乾く（蒸発する）ときに体の熱を持っていくので、出ただけでは冷えず乾いてはじめて冷える、脳の「温度の係」が神経で約300万個の汗腺に合図、材料は血で塩を取りもどしてうすい汗に、むしむしの日は乾かないので冷えにくい、が見せ場。暑い日は水をこまめに・頭が痛い・気持ちが悪いときはすずしい所で休んで大人に言う注意を入れる） | 候補 |
 | navel | おへそは、何のためにあるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/navel-umbilical-cord.md)。いまのおへそは何もしていない・へその緒がついていたきずあと、へその緒の中は血の道3本（行き1本・帰り2本）、神経がないので切っても痛くない、が見せ場。おへその中をほじらない・赤ちゃんのへその緒の残りにさわらない注意を入れる） | 候補 |
