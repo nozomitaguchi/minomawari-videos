@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>ひこうき：飛行機は、あんなに重いのに、どうして空を飛べるの？</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  NOW = { i: 1, t: 3 };
+  let o = DEFS + skyRect('tbg', 0, { h: 900 });
+  o += cloud(1650, 330, 1.1, '#fff', 0.9) + cloud(250, 640, 0.9, '#fff', 0.85);
+  o += `<rect x="0" y="880" width="1920" height="60" fill="#9fcf8e"/>` + runway(930, 150);
+  // 飛び立つ飛行機（機首は左＝進む向き）
+  for (let i = 0; i < 4; i++) o += `<line x1="${1560 + i * 40}" y1="${700 + i * 34}" x2="${1800 + i * 30}" y2="${760 + i * 34}" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity="0.8"/>`;
+  o += plane(1130, 660, 2.3, { gear: 1, r: 13 });
+  o += arrow(1330, 610, 1330, 400, AC.lift, 44, 1);
+  const T = (y, inner, size) => `<text x="60" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="28" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(170, `<tspan fill="${AC.blue}">飛行機</tspan>は <tspan fill="#d2452c">重い</tspan>のに`, 164);
+  o += T(370, `なぜ 飛べる？`, 176);
+  o += `<g transform="translate(250 1078) scale(1.0)">${brother(0.3, { pose: 'point', eyes: 'wide', mouth: 'o', look: [8, -8] })}</g>`;
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 700, y: 1000 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>

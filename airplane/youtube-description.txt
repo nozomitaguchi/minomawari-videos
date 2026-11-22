@@ -1,0 +1,52 @@
+【タイトル案】
+飛行機は、あんなに 重いのに、どうして 空を 飛べるの？｜みのまわり図鑑 ひこうき
+
+【概要欄】
+空港で見る飛行機は、人や荷物をのせると、とても重くなります。それなのに、滑走路を走ると、ふわっと浮き上がります。飛行機は、あんなに重いのに、どうして空を飛べるのでしょう？
+飛んでいる飛行機には4つの力がはたらいていること、前へ進めるのはエンジンで、持ち上げているのはつばさだということ、止まっていると持ち上げる力は生まれないので、滑走路を走って速さを上げること、つばさが前から来た空気を下向きに曲げ、その反動で上へ押し返されること（つばさの上は空気の押す力が弱く、下は強くなっています）、そして、よく聞く「上と下に分かれた空気が、後ろで同時に出会う」という説明はまちがいだということを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 重い飛行機が、ふわっと浮く
+0:30 空へ持ち上げているのは、何？（予想）
+0:58 旅客機は、どのくらい重い？
+1:10 飛行機にはたらく、4つの力
+1:35 止まっていると、浮かない。走って速さを上げる
+2:01 つばさは、空気を下へ曲げている
+2:31 よく聞く説明は、まちがい（煙の実験・紙飛行機）
+3:01 正解と、みてみよう
+
+▼ もっとくわしく（みのまわり図鑑「ひこうき」）
+https://nozomitaguchi.github.io/everyday-trivia/i/airplane/
+https://nozomitaguchi.github.io/everyday-trivia/t/airplane-lift/
+
+▼ 出典
+・NASA Glenn Research Center「What is Lift?」
+  https://www.grc.nasa.gov/WWW/K-12/VirtualAero/BottleRocket/airplane/lift1.html
+・NASA Glenn Research Center「Four Forces on an Airplane」
+  https://www.grc.nasa.gov/WWW/K-12/VirtualAero/BottleRocket/airplane/forces.html
+・NASA Glenn Research Center「Incorrect Lift Theory #1 – Equal Transit」
+  https://www.grc.nasa.gov/WWW/K-12/VirtualAero/BottleRocket/airplane/wrong1.html
+・NASA Glenn Research Center「Bernoulli and Newton」
+  https://www.grc.nasa.gov/WWW/K-12/VirtualAero/BottleRocket/airplane/bernnew.html
+・ケンブリッジ大学「How wings really work」（2012年1月25日）
+  https://www.cam.ac.uk/research/news/how-wings-really-work
+・Babinsky 2003「How do wings work?」Physics Education 38巻6号 497–503ページ
+  https://www3.eng.cam.ac.uk/outreach/Project-resources/Wind-turbine/howwingswork.pdf
+・JAXA「JAXAキッズ 航空機」（宇宙航空研究開発機構 広報部、2025年）
+  https://www.jaxa.jp/projects/pr/brochure/pdf/08/kids_05-a.pdf
+・ボーイング「787 Airplane Characteristics for Airport Planning」（D6-58333 Rev Q、2025年）
+  https://www.boeing.com/content/dam/boeing/v2/airports/acaps/787_ACAP_Rev_Q.pdf
+・OnTrip JAL「そもそも飛行機はなぜ飛ぶの？その仕組みと秘密をパイロットが解説！」（2026年3月2日）
+  https://ontrip.jal.co.jp/_ct/17824119
+
+※ 「およそ255トン」「290人」は、旅客機ボーイング787-9が、いちばん重い状態で飛び立つときの重さ（254,692キログラム）と、座席を2つのクラスに分けたときの人数です（ボーイングの空港向け資料）。
+※ 「時速270キロ」は、飛び立つまでに上がるスピードです（JAXA）。持ち上げる力（揚力）が機体の重さを上回ったとき、飛行機は浮き上がります（JAL の機長の解説）。
+※ 動画の「持ち上げる力」は「揚力（ようりょく）」、「前へ進める力」は「推力（すいりょく）」のことです。
+※ 「空気を下へ曲げる反動」と「つばさの上と下の、空気の押す力（圧力）のちがい」は、どちらも正しく、同じことを別の側から見た説明です（NASA）。
+※ 「上と下に分かれた空気が、後ろの端で同時に出会う」という説明は、NASA が「いちばん広まっている、まちがった説明の一つ」としています。つばさの上を通る空気が下より速いことは正しく、実際は、下の空気が後ろの端に着くころには、上の空気はもう先へ行っています（ケンブリッジ大学の煙の実験、NASA）。
+※ 飛行機・つばさの切り口・空気の流れのすじ・煙のしるし・矢印の長さは、しくみを見せるための、かんたんにした図です。
+※ 紙飛行機は、人の顔に向けて飛ばさないでください。空港では、展望デッキなど、決められた場所から見ましょう。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #ひこうき #飛行機 #空港 #つばさ #揚力 #自由研究 #雑学 #親子で学ぶ #なぜなに
