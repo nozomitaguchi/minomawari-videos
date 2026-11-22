@@ -105,9 +105,11 @@ YouTube「みのまわり図鑑」（@minomawari-zukan、親子で見る雑学�
 
 1回の実行で `仕上げ待ち` を上から**最大2本**。1本ずつ `仕上げ中（日時）` にして push してから始める。
 0. `<slug>/lines/` がまだなく、`incoming/` にその slug を含む wav（`<slug1>__<slug2>.wav`）があれば、`python3 split_batch.py split incoming/<その名前>.wav <slug1> <slug2>` で切り、比がそろっていることを確かめて、`lines/` を commit、wav を `git rm`（切れ目の細かい直しは 0b の耳レビューでやる）。`voice.txt` がなければ「不明」と書く。
-0b. **耳レビューを読む**：`<slug>/audio_review.md`（ナレーションの音声を1行ずつ Gemini に聞かせて台本と照らした結果）を読む。
-   - 「問題 0行」ならそのまま進む。ファイルがない・「未レビュー」なら、`gh workflow run audio-review.yml -R nozomitaguchi/minomawari-videos --ref main -f slugs="<slug>" -f realign=yes` を起動し、数分待って `git pull` して読む（`gh` が使えなければそのまま進み、届けるときに「耳レビューなし」と書く）。
-   - 問題が残っているとき：余分な言葉・欠け（切れ目のずれ）は、上のコマンドを `realign=yes` でもう一度かける。2回かけても残る、または読みまちがい・語尾切れ（音声そのものの問題）で、内容が変わる・聞いておかしいものは、その動画を `ナレーション待ち` にもどして作り直す（`lines/` と `audio_review.md` を `git rm`）。作り直しは1本につき2回まで（`<slug>/voice.txt` の履歴でなく、コミット履歴で数える）。それでも残るときは、そのまま仕上げて、届けるときに残った問題を1行書く。
+0b. **耳レビューを読む**：`<slug>/audio_review.md`（ナレーションの音声を1行ずつ Gemini に聞かせて台本と照らした結果）を読む。**耳レビューで「問題 0行」になっていない動画は、仕上げない**（字幕と声のずれや読みまちがいが、そのまま公開されてしまうため）。
+   - 「問題 0行」なら進む。
+   - ファイルがない・「未レビュー」・問題が残っているとき：`gh workflow run audio-review.yml -R nozomitaguchi/minomawari-videos --ref main -f slugs="<slug>" -f realign=yes` を起動し、10分ほど待って `git pull` して読みなおす。「問題 0行」になったら進む。
+   - Gemini の無料枠は1日20回ほどで、日本時間の17時ごろに回復する。上限（429）でレビューできないときは、その動画を `仕上げ待ち` にもどして（`仕上げ中` にしていたら）、次の動画へ。全部できなければ何もせずに終わる（連絡もいらない）。同じ動画に何度も起動しない（1回の実行で1本につき1回まで）。
+   - 切れ目を直しても残る問題のうち、同じ所が2回読まれている・行がまるごとない・読みまちがいで意味が変わる、といった音声そのものの問題は、その動画を `ナレーション待ち` にもどして作り直す（`lines/` と `audio_review.md` を `git rm`）。作り直しは1本につき2回まで（コミット履歴で数える）。それでも残るとき、または残りが軽いもの（「んでしょう」が「のでしょう」になる程度）だけのときは、そのまま仕上げて、届けるときに残った問題を1行書く。
 1. `mix.py` に `BGM_PRESET` の行がなければ（古い下書き）、`python3 set_bgm.py <slug> auto`。`python3 build_timeline.py` → `python3 review.py 3.0` の一覧をぜんぶ見て、本物の長さになったことでのずれ・重なりを直す。
 2. `nohup ./finish.sh > finish.log 2>&1 &` で 4K を書き出す（4分で40分ほど）。`sleep` で待ちながら `tail finish.log`。
 3. できた `<slug>_mimawari_4k.mp4` を `python3 review_video.py <slug>_mimawari_4k.mp4 3` で3秒ごとの一覧にしてぜんぶ見る（音とのずれは字幕の出るタイミングで確認。A5 の「とくに見落としやすいところ」も必ず確かめる）。直すところがあれば直して finish.sh をやり直す。
