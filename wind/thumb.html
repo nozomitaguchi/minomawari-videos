@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>かぜ：風は、どうして ふくの？</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  NOW = { i: 1, t: 3 };
+  const t = 3.2;
+  let o = DEFS + skyRect('tsky', 0) + sunDisc(1700, 170, 90, 0) + cloud(1320, 250, 0.9) + cloud(380, 760, 0.7, '#fff', 0.8);
+  o += `<path d="M 0 900 Q 500 820 1000 890 T 1920 860 L 1920 1080 L 0 1080 Z" fill="#6fba68"/>`;
+  // 風の線（左から右へ）
+  [[820, 560, 420], [900, 660, 520], [760, 760, 380], [1160, 500, 250]].forEach(([x, y, len]) => {
+    o += `<path d="M ${x} ${y} q ${len * 0.25} -26 ${len * 0.5} 0 t ${len * 0.5} 0" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity="0.85"/>`;
+  });
+  // 旗（右へなびく）
+  o += flag(1500, 1010, t, { h: 600, w: 330, dir: 1, k: 1, pw: 22 });
+  const T = (y, inner, size) => `<text x="60" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="28" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(190, `<tspan fill="${WD.blue}">かぜ</tspan>は`, 200);
+  o += T(430, `なぜ <tspan fill="${WD.blue}">ふく</tspan>？`, 200);
+  o += `<g transform="translate(300 1078) scale(0.98)">${brother(0.3, { pose: 'point', eyes: 'wide', mouth: 'o', look: [8, -2] })}</g>`;
+  o += g(bubble(190, 150, '？', { size: 100 }), { x: 560, y: 690 });
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 1020, y: 980 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>
