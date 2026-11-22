@@ -1,0 +1,48 @@
+【タイトル案】
+こおりは、どうして とけるの？｜みのまわり図鑑 こおり
+
+【概要欄】
+冷凍庫から出した氷をお皿にのせておくと、だんだん小さくなって水になります。氷は、どうしてとけるのでしょう？ だれが氷をとかしているのでしょうか。
+氷の中では水のつぶがきちんと並んで手をつなぎ、すきまの多い形になっていること、手・空気・お皿など、氷よりあたたかいものから熱がうつってくること、入った熱はつぶの手をはなすのに使われ、ばらばらに動けるようになったものが水だということ、とけているあいだは温度が0℃のまま変わらないこと、そして、同じ部屋に置いたアルミの板とプラスチックのあわの板に氷をのせると、アルミの上のほうがずっと早くとけることを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 氷が、水になった
+0:26 早くとけるのは、どっち？
+0:54 氷の中をのぞいてみよう
+1:14 熱は、あたたかいものから氷へ
+1:37 つぶが手をはなすと、水になる
+1:58 とけているあいだは0℃のまま
+2:18 アルミの板と、あわの板
+2:59 さわると、アルミは冷たい
+3:18 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「こおり」）
+https://nozomitaguchi.github.io/everyday-trivia/i/ice/
+https://nozomitaguchi.github.io/everyday-trivia/t/ice-melt/
+
+▼ 出典
+・名古屋市科学館 展示解説「水分子」（PDF）
+  https://www.ncsm.city.nagoya.jp/exhibit_files/pdf/S523.pdf
+・アメリカ地質調査所（USGS）Water Science School "Water Density"
+  https://www.usgs.gov/water-science-school/science/water-density
+・三菱電機 子ども向け実験資料「熱の伝わり方を楽しく学ぼう」（PDF）
+  https://www.mitsubishielectric.co.jp/corporate/philanthropy/science/pdf/science04.pdf
+・OpenStax Physics（ライス大学）11.3 Phase Change and Latent Heat
+  https://openstax.org/books/physics/pages/11-3-phase-change-and-latent-heat
+・UC Santa Barbara Physics Lecture Demonstrations 52.10 "Amazing Ice Melting Blocks"
+  https://web.physics.ucsb.edu/~lecturedemonstrations/Composer/Pages/52.10.html
+・UC Santa Cruz Physics Demonstration Room "Ice Melting Blocks"
+  https://ucscphysicsdemo.sites.ucsc.edu/physics-5b6b-demos/ice-melting-blocks/
+・Purdue University Physics Demonstrations 3B-05 "Ice Melting Blocks"
+  https://www.physics.purdue.edu/demos/display_page.php?item=3B-05
+
+※ 動画の「水のつぶ」は水分子、「手をつなぐ」は水素結合のことです。氷では、1つの水分子がまわりの4つの水分子とつながって、すきまの多い形になっています（名古屋市科学館）。つぶの大きさや並び方は、見やすいように平らな絵にしています。
+※ 「アルミの板」と「あわの板」の実験は、カリフォルニア大学サンタバーバラ校の演示実験です。同じ大きさの黒い板（1枚はアルミニウム、1枚はかたいプラスチックのあわ＝発泡プラスチック）に氷をのせると、1分ほどでアルミの上の氷は半分以上とけ、あわの板の上はほとんどこおったままでした。
+※ 2枚の板は、どちらも部屋と同じ温度です。アルミが冷たく感じるのは、手の熱を早くうばうからです（サンタバーバラ校・サンタクルーズ校）。
+※ 氷がとけているあいだ温度が0℃のまま変わらないことは、OpenStax Physics の説明にもとづきます。グラフは、見やすいように描いています。
+※ おうちでためすときは、同じ大きさの氷を2つ大人に出してもらい、アルミのバット（金属のトレー）と食品の発泡スチロールのトレーにのせます。氷を口に入れて遊ばないでください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #こおり #氷 #熱 #実験 #自由研究 #雑学 #親子で学ぶ #なぜなに
