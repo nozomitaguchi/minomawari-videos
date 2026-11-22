@@ -1,0 +1,47 @@
+【タイトル案】
+寒いと、どうして鳥肌が立つの？｜みのまわり図鑑 とりはだ
+
+【概要欄】
+冬の朝、パジャマをぬぐと、ぶるっ。腕や太ももが、ぶつぶつになります。これが「鳥肌」。寒いと、どうして鳥肌が立つのでしょうか？
+ぶつぶつの真ん中からは細い毛が出ていること、毛の根もとには「立毛筋（りつもうきん）」という小さな筋肉がついていて、ちぢむと毛が起き上がり、まわりの皮ふがもり上がること、この筋肉は自分では動かせず、寒さを感じると神経の合図で勝手にちぢむこと、毛皮のある動物や鳥では、毛や羽の間に空気をためて体の熱がにげにくくなること、人は毛が少ないのであまりあたたかくならないけれど、それでも鳥肌は立つことを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 パジャマをぬぐと、ぶるっ
+0:30 どうしてだと思う？
+0:57 ぶつぶつを近くで見てみよう（毛の根もとの小さな筋肉）
+1:35 自分では動かせない筋肉
+1:55 毛を立てると、どんないいこと？（毛皮の動物と鳥）
+2:33 人は毛が少ない。それでも鳥肌は立つ
+2:57 こわいときや、すてきな音楽でも
+3:07 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「とりはだ」）
+https://nozomitaguchi.github.io/everyday-trivia/i/goosebumps/
+https://nozomitaguchi.github.io/everyday-trivia/t/goosebumps-cold/
+
+▼ 出典
+・平凡社『改訂新版 世界大百科事典』「鳥肌」（中山昭雄）、小学館『日本大百科全書（ニッポニカ）』「鳥肌」（齋藤公子）、『精選版 日本国語大辞典』「鳥肌」ほか（コトバンク）
+  https://kotobank.jp/word/%E9%B3%A5%E8%82%8C-585992
+・中村和弘「自律性体温調節」『温度生物学ハンドブック』（生理学研究所、PDF）
+  https://www.nips.ac.jp/thermalbio/handbook/2-1v2.pdf
+・NIH Research Matters "What goosebumps are for"（米国国立衛生研究所、2020年7月28日）
+  https://www.nih.gov/news-events/nih-research-matters/what-goosebumps-are
+・Harvard Gazette "The hair-raising reason for goosebumps is revealed"（ハーバード大学、2020年7月20日）
+  https://news.harvard.edu/gazette/story/2020/07/the-hair-raising-reason-for-goosebumps-is-revealed/
+・Smithsonian "Keeping warm in winter is for the birds"（スミソニアン協会、2015年1月30日）
+  https://si.edu/stories/keeping-warm-winter-birds
+・Mori K., Iwanaga M. (2017) "Two types of peak emotional responses to music: The psychophysiology of chills and tears" Scientific Reports 7: 46063（ネイチャー・アジアの日本語要約）
+  https://natureasia.com/ja-jp/srep/abstracts/87764
+
+※ 「鳥肌」という名前は、羽毛をむしり取ったあとの鳥の肌に、皮ふのぶつぶつがにていることからきています。
+※ 動画の「神経」は、交感神経（こうかんしんけい）のことです。立毛筋は交感神経に動かされているので、手や足の筋肉とちがって、自分の意思では動かせません。
+※ 毛を立てるのには「体を大きく見せて敵をおどろかせる意味もあるのだろう」と考えられています（推測です）。
+※ 人は体の毛が少ないので、鳥肌は体を温めるのにあまり役に立たない、とされています。寒いとき、人の体は、皮ふの血の流れを調節したり、筋肉をふるわせて熱を作ったりして体温を守っています。
+※ 皮ふの中の絵（毛・筋肉・神経の大きさや形）、毛皮の絵の空気のつぶや熱の矢印は、見やすいように描いたイメージです。
+※ わざと冷たい水をかけたり、寒い所に長くいたりして、鳥肌を立てようとしないでください。
+※ 鳥には近づかず、遠くから見るだけにしてください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #とりはだ #鳥肌 #からだ #冬 #しくみ #雑学 #親子で学ぶ #なぜなに
