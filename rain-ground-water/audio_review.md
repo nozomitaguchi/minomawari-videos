@@ -1,3 +1,4 @@
-# rain-ground-water ナレーションの耳レビュー（gemini-3.6-flash）
+# rain-ground-water ナレーションの耳レビュー（AI Studio の画面、台本を見せずに書き起こしてから照合）
 
 36行のうち、問題 0行。 OK
+- メモ: AI Studio の画面でチャンクごとに書き起こして照合。台本の行とすべて一致。
