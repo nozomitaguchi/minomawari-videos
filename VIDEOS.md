@@ -76,6 +76,7 @@
 | dog-panting | 犬は、どうして舌を出してハアハアするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/dog-panting.md)。汗をかけるのはほぼ肉球だけ、鼻から吸って口から出す、が見せ場。知らない犬に近づかない・さわるときは飼い主に聞く、暑い日の散歩と車内の注意を入れる） | 候補 |
 | lights-off-dark | 電気を消すと、どうして部屋が暗くなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/lights-off-dark.md)。光は外へにげずに、壁や物に当たるたびに吸いこまれて熱になる、が見せ場。スイッチは大人が・暗い中は歩きまわらない注意を入れる） | 候補 |
 | fridge | 冷蔵庫は中を冷やしているのに、どうして外があったかくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/fridge-warm-outside.md)。冷たさを作るのではなく中の熱を外へ運ぶ、外へ出す熱は中の熱＋モーターの分なのでドアを開けっぱなしでも部屋は涼しくならない、が見せ場。うしろや下の機械にさわらない・さわるのは大人、の注意を入れる） | 候補 |
+| washing-machine | 洗濯機は、服を回すだけでどうして水をしぼれるの？ | 記事作成待ち |
 
 ※ 問いの例は目安。元記事リンクがある行は、リンク先の問いをその動画で扱う。動画IDは制作フォルダ名として使う。
 
