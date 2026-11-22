@@ -1,0 +1,38 @@
+【タイトル案】
+みかんの白いすじは、何のためにあるの？｜みのまわり図鑑 みかん
+
+【概要欄】
+冬のこたつで、みかんをむくと、房のまわりに白いすじが、あみの目のようについています。この白いすじは、何のためにあるのでしょう？
+白いすじの正体は、みかんが木になっていたあいだ、葉や土から来た水と栄養を実の中まで運んでいた通り道「維管束（いかんそく）」。みかんのつくり（皮・白いふわふわ・房・つぶつぶ）、へたから実のまんなかへのびる管、房ひとつに太いすじが3本あること、皮の内がわの白いふわふわとは別のものだということ、そして、中のつぶつぶには管がつながっていなくて、栄養は細胞から細胞へ手わたしで送られると考えられていることを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 みかんをむくと、白いすじ
+0:26 白いすじの正体は？（予想）
+0:51 みかんのつくり（皮・白いふわふわ・房・つぶつぶ）
+1:13 白いすじは、水と栄養の通り道「維管束」
+1:51 房ひとつに、太いすじが3本。白いふわふわとは別のもの
+2:17 つぶつぶには、管がつながっていない
+2:53 大きくなってから、あまくなる
+3:14 正解と、みてみよう
+（チャプターの時刻は仮です。ナレーションが入ったあとに計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「みかんの しろい すじは、なんの ために あるの？」）
+https://nozomitaguchi.github.io/everyday-trivia/t/mikan-white-threads/
+
+▼ 出典
+・愛媛県「みかんの花が実をむすぶ」（みかんの学習資料 p.20）
+  https://www.pref.ehime.jp/uploaded/attachment/74172.pdf
+・「機能性成分・活用性等調査 －各種機能性成分を有した国産農産物（国産カンキツ類）－」（農研機構 食品総合研究所・果樹研究所の研究者ら執筆、食品産業センター掲載）
+  https://www.shokusan.or.jp/wp-content/uploads/2019/03/582pdf3.pdf
+・Sadka A, Shlizerman L, Kamara I, Blumwald E. "Primary Metabolism in Citrus Fruit as Affected by Its Unique Structure", Frontiers in Plant Science 10:1167（2019年）
+  https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2019.01167/full
+・新居直祐「カンキツ果実の砂じょうの成長と糖成分の転流・蓄積機構」（科学研究費 研究課題 61560042、名城大学、1986〜1987年度）
+  https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-61560042
+・Nii N, Coombe BG. "Anatomical Aspects of Juice Sacs of Satsuma Mandarin in Relation to Translocation", 園芸学会雑誌 56(4):375-381（1988年）
+  https://www.jstage.jst.go.jp/article/jjshs1925/56/4/56_4_375/_article/-char/en
+
+※ みかんをむく前に、手をあらってください。食べるのは、大人に聞いてから。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #みかん #白いすじ #雑学 #親子で学ぶ
