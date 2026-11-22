@@ -75,8 +75,48 @@
 | bird-fly | 鳥は、どうして空を飛べるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/bird-flight.md)。打ちおろしで羽根が重なり、打ち上げではすきまが開く、が見せ場。骨は「軽いから飛べる」とは言わない。ハトに近づかない・追いかけない、太陽は見ない注意を入れる） | 候補 |
 | dog-panting | 犬は、どうして舌を出してハアハアするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/dog-panting.md)。汗をかけるのはほぼ肉球だけ、鼻から吸って口から出す、が見せ場。知らない犬に近づかない・さわるときは飼い主に聞く、暑い日の散歩と車内の注意を入れる） | 候補 |
 | lights-off-dark | 電気を消すと、どうして部屋が暗くなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/lights-off-dark.md)。光は外へにげずに、壁や物に当たるたびに吸いこまれて熱になる、が見せ場。スイッチは大人が・暗い中は歩きまわらない注意を入れる） | 候補 |
+| train-wheel-curve | 電車は、ハンドルがないのに、どうやってカーブを曲がるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/train-wheel-curve.md）） | 候補 |
+| poop-color | うんちは、どうして茶色いの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/poop-color.md）） | 候補 |
+| cold-mucus-color | かぜをひくと、鼻水が黄色くなるのはどうして？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/cold-mucus-color.md）） | 候補 |
 | fridge | 冷蔵庫は中を冷やしているのに、どうして外があったかくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/fridge-warm-outside.md)。冷たさを作るのではなく中の熱を外へ運ぶ、外へ出す熱は中の熱＋モーターの分なのでドアを開けっぱなしでも部屋は涼しくならない、が見せ場。うしろや下の機械にさわらない・さわるのは大人、の注意を入れる） | 候補 |
 | washing-machine | 洗濯機は、服を回すだけでどうして水をしぼれるの？ | 記事作成待ち |
+| static-shock | 冬にドアをさわると、どうしてバチッとなるの？（静電気。冬の題材） | 記事作成待ち |
+| mochi-puff | おもちは、焼くとどうしてふくらむの？（お正月の題材） | 記事作成待ち |
+| mikan-white-threads | みかんの白いすじは、何のためにあるの？（冬の題材） | 記事作成待ち |
+| hiccup | しゃっくりは、どうして急に出て止まらないの？ | 記事作成待ち |
+| heartbeat-running | 走ると、どうして心臓がドキドキするの？ | 記事作成待ち |
+| sweat | あせは、どうして出るの？ | 記事作成待ち |
+| navel | おへそは、何のためにあるの？ | 記事作成待ち |
+| star-twinkle | 星は、どうしてキラキラまたたくの？ | 記事作成待ち |
+| moon-follows-car | 車に乗ると、どうしてお月さまがずっとついてくるの？ | 記事作成待ち |
+| supermarket-egg-chick | スーパーのたまごを温めたら、ひよこは生まれる？ | 記事作成待ち |
+| aquarium-big-fish | 水族館の大きな魚は、となりの小さな魚を食べちゃわないの？ | 記事作成待ち |
+| pigeon-babies | 公園にハトはあんなにいるのに、赤ちゃんはどこにいるの？ | 記事作成待ち |
+| snail-first-shell | カタツムリの赤ちゃんは、最初の殻をどこで見つけるの？ | 記事作成待ち |
+| banana-seeds | バナナには種が見当たらないのに、次のバナナはどうやって育つの？ | 記事作成待ち |
+| strawberry-seeds | いちごのつぶつぶ、一粒だけ割ったら中には何があるの？ | 記事作成待ち |
+| fish-thirsty | 魚ものどがかわくの？ 海の魚は海水を飲むの？ | 記事作成待ち |
+| mosquito-winter | 冬にいなくなった蚊は、春になるとどこから来るの？ | 記事作成待ち |
+| numb-legs | 正座をしていると、どうして足がしびれるの？ | 記事作成待ち |
+| bed-hair | 朝起きると、どうして寝ぐせがつくの？ | 記事作成待ち |
+| bruise | 強くぶつけると、どうして青あざができるの？ | 記事作成待ち |
+| blinking | 人は、どうして何回もまばたきをするの？（なみだの回と重ならないように） | 記事作成待ち |
+| earwax | 耳の中には、どうして耳あかがたまるの？ | 記事作成待ち |
+| motion-sickness | 車やバスに乗ると、どうして乗り物酔いするの？ | 記事作成待ち |
+| snoring | 寝ているとき、どうしていびきをかくの？ | 記事作成待ち |
+| sunburn | 外で遊ぶと、どうして肌が黒く日焼けするの？ | 記事作成待ち |
+| dark-adaptation | 暗い部屋に入ると、どうしてだんだん見えてくるの？ | 記事作成待ち |
+| ice-cream-headache | かき氷やアイスを食べると、どうして頭がキーンとするの？ | 記事作成待ち |
+| tape-sticky | テープは、どうしてペタッとくっつくの？ | 記事作成待ち |
+| suction-cup | 吸盤は、どうして壁にくっつくの？ | 記事作成待ち |
+| straw | ストローで吸うと、どうしてジュースが上がってくるの？ | 記事作成待ち |
+| magnifying-glass | 虫めがねでのぞくと、どうして物が大きく見えるの？ | 記事作成待ち |
+| coin-holes | 5円玉と50円玉に穴があいているのは、どうして？ | 記事作成待ち |
+| siren-doppler | 救急車が通りすぎると、どうしてサイレンの音が変わるの？ | 記事作成待ち |
+| contrail | 飛行機が飛んだあと、どうして空に白い線がのこるの？ | 記事作成待ち |
+| summer-winter | どうして夏は暑くて、冬は寒いの？ | 記事作成待ち |
+| water-strider | アメンボは、どうして水の上を歩けるの？ | 記事作成待ち |
+| spider-silk | クモは、どうしておしりから糸を出せるの？ | 記事作成待ち |
 
 ※ 問いの例は目安。元記事リンクがある行は、リンク先の問いをその動画で扱う。動画IDは制作フォルダ名として使う。
 
