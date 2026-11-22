@@ -1,0 +1,51 @@
+【タイトル案】
+おふろに はいると、どうして ゆびが しわしわに なるの？｜みのまわり図鑑 ゆび
+
+【概要欄】
+おふろやプールにしばらく入っていると、指先がしわしわになります。水を吸って、ふやけたのでしょうか？
+皮ふのいちばん外側の細胞は、たしかに水を吸ってふくらみます。でも、神経がはたらかなくなった指は、水につけてもしわになりません。しわは、体が自分でつくっているのです。水が汗の出口からしみこむ → まわりの神経が合図を出す → 指先の血管がちぢんで中身が少しへる → 上の皮ふが下へ引っぱられてしわになる、と考えられている順番、しわが毎回同じ形になること、そして、しわが何のためにあるのかはまだわかっていないことを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 おふろで、指がしわしわ
+0:27 どうしてだと思う？
+0:53 皮ふの外側は、水を吸ってふくらむ
+1:11 手がかりは、神経
+1:37 しわができる順番（水がしみこむ・神経の合図）
+1:57 血管がちぢんで、皮ふが引っぱられる
+2:16 しわの形は、毎回同じ
+2:35 何のため？ まだわかっていない
+3:09 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「ゆび」）
+https://nozomitaguchi.github.io/everyday-trivia/i/fingers/
+https://nozomitaguchi.github.io/everyday-trivia/t/finger-wrinkles/
+
+▼ 出典
+・Wilder-Smith EPV. Water immersion wrinkling. Clinical Autonomic Research 14, 125–131 (2004)
+  https://link.springer.com/doi/10.1007/s10286-004-0172-4
+・Haseleu J ほか. Water-Induced Finger Wrinkles Do Not Affect Touch Acuity or Dexterity in Handling Wet Objects. PLoS ONE 9(1): e84949 (2014)
+  https://edoc.mdc-berlin.de/id/eprint/13817/1/13817oa.pdf
+・Hsieh CH ほか. Paradoxical response to water immersion in replanted fingers. Clinical Autonomic Research (2006)
+  https://www.springermedizin.de/paradoxical-response-to-water-immersion-in-replanted-fingers/8780024
+・ニューカッスル大学 発表 "Get a grip - why we get wrinkly fingers and toes"（2013年1月）
+  https://www.ncl.ac.uk/press/articles/archive/2013/01/getagrip-whywegetwrinklyfingersandtoes.html
+・Kareklas K, Nettle D, Smulders TV. Water-induced finger wrinkles improve handling of wet objects. Biology Letters 9(2) (2013)
+  https://eprints.ncl.ac.uk/189064
+・Évora AS ほか. The effects of hydration on the topographical and mechanical properties of corneocytes. Journal of the Mechanical Behavior of Biomedical Materials 150 (2024)
+  https://research.birmingham.ac.uk/files/217335377/1-s2.0-S1751616123006501-main.pdf
+・ビンガムトン大学 発表 "Do your fingers wrinkle the same way every time you're in the water too long?"（2025年）
+  https://www.binghamton.edu/news/story/5547/
+
+※ しわができる順番（水が汗の出口からしみこむ → 神経が合図を出す → 血管がちぢむ → 皮ふが下へ引っぱられる）は、ウィルダー＝スミスの2004年のまとめの論文が「おそらく」として書いたものです。とくに、水がどうやって神経を動かすのかは、まだ確かめられていません。
+※ 動画の「神経」は、心臓や汗と同じように自分の意思と関係なくはたらく自律神経（交感神経）のことです。
+※ 「神経がはたらかない指は、しわにならない」は、1930年代のルイスとピッカリングの報告（手首の神経がまひした人。2014年の論文の紹介による）と、手術でつなぎなおした指を調べた研究（2006年）にもとづきます。
+※ 「皮ふのいちばん外側の細胞は、水を吸うとふくらむ」は、うでの皮ふからとった細胞を水につけた研究（2024年。厚みと体積が約50％ふえた）にもとづきます。
+※ 「ある実験」は、あたたかいお湯に30分手をつけたあと、水の中のビー玉を移す速さをくらべたニューカッスル大学の実験（2013年。しわの指のほうが12％早かった）、「べつの実験」は、40人で調べて速さが変わらなかった2014年の研究です。
+※ 「毎回同じ形」は、指を30分水につけて写真をとり、24時間以上あとに同じ条件でくり返したビンガムトン大学の研究（2025年の発表）にもとづきます。
+※ 指先の中の絵（汗の出口・神経・血管）や、しわの形は、見やすいように描いています。
+※ おふろは大人といっしょに入り、熱いお湯に長く入りすぎず、のぼせる前に出てください。しわを早く作ろうとして長湯をしないでください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #ゆび #指 #おふろ #しわしわ #からだ #雑学 #親子で学ぶ #なぜなに

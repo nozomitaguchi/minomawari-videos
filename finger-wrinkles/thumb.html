@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>ゆびの しわしわ：おふろに入ると、どうして指がしわしわになるの？</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  NOW = { i: 1, t: 3 };
+  let o = DEFS + `<rect width="1920" height="1080" fill="${FW.tile}"/>`;
+  for (let x = 0; x <= 1920; x += 160) o += `<line x1="${x}" y1="0" x2="${x}" y2="1080" stroke="${FW.tileLn}" stroke-width="6"/>`;
+  for (let y = 100; y <= 1080; y += 160) o += `<line x1="0" y1="${y}" x2="1920" y2="${y}" stroke="${FW.tileLn}" stroke-width="6"/>`;
+  // お湯と、しわしわの指
+  o += `<circle cx="1470" cy="640" r="430" fill="#fff" opacity="0.75"/>`;
+  o += g(fingerPad(0), { x: 1280, y: 650, s: 1.2 }) + g(fingerPad(1, { seed: 3 }), { x: 1680, y: 650, s: 1.2 });
+  o += arrow2(1410, 640, 1545, 640, C.ink, 22);
+  o += `<path d="M 960 900 q 60 -30 120 0 t 120 0 t 120 0 t 120 0 t 120 0 t 120 0 t 120 0 t 120 0 V 1080 H 960 Z" fill="${FW.water}" opacity="0.55"/>`;
+  [[1100, 330, 2.2], [1180, 250, 1.5], [1840, 300, 2.0]].forEach(([x, y, s]) => { o += drop(x, y, s); });
+  const T = (y, inner, size) => `<text x="60" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="28" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(170, `<tspan fill="${FW.waterDk}">おふろ</tspan>で ゆびが`, 150);
+  o += T(370, `<tspan fill="${FW.wr}">しわしわ</tspan> なぜ？`, 170);
+  o += `<g transform="translate(260 1078) scale(0.9)">${brother(0.3, { pose: 'point', eyes: 'wide', mouth: 'o', look: [8, -2] })}</g>`;
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 720, y: 560 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>
