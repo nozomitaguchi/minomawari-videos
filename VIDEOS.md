@@ -25,13 +25,13 @@
 |---|---|---|
 | elevator | どうやって上がる？ おもりのひみつ・消防用の鍵穴 | 公開 |
 | pill-bug | だんごむしは、どうして丸くなる？ | 完成 |
-| scab | けがのあと、どうしてかさぶたができる？ | 完成 |
+| scab | けがのあと、どうしてかさぶたができる？ | 公開 |
 | moon | 月は、どうして形が変わる？ | 公開 |
 | tummy-rumble | おなかは、どうして鳴る？ | 公開 |
 | mirror | 鏡は、どうして左右が反対に見える？ | 完成 |
-| eye-tears-blink | 泣くと、どうして鼻水まで出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/eye-tears-blink.md)） | 完成 |
-| sky-cloud-white | 白い雲と黒っぽい雨雲、何がちがうの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sky-cloud-white.md)） | 完成 |
-| power-lines | 電線に止まった鳥は、どうしてしびれない？ | 完成 |
+| eye-tears-blink | 泣くと、どうして鼻水まで出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/eye-tears-blink.md)） | 公開 |
+| sky-cloud-white | 白い雲と黒っぽい雨雲、何がちがうの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sky-cloud-white.md)） | 公開 |
+| power-lines | 電線に止まった鳥は、どうしてしびれない？ | 公開 |
 | escalator | エスカレーターの階段は、消えたあとどこへ行く？ | 完成 |
 | cold | かぜをひくと、どうして体は熱を出す？ | 完成 |
 | autumn-leaves | 葉っぱは、どうして秋になると赤や黄色になるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/autumn-leaves-color.md)） | 完成 |
