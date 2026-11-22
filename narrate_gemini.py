@@ -109,7 +109,14 @@ def generate(key, voice, style, text):
 def push(message, paths):
     git("add", "--", *paths)
     git("commit", "-m", message)
-    git("push", "origin", "HEAD:main")
+    for attempt in range(4):  # ほかのセッションの push とぶつかったら、取りこんでやり直す
+        try:
+            git("push", "origin", "HEAD:main")
+            return
+        except subprocess.CalledProcessError:
+            if attempt == 3:
+                raise
+            git("pull", "--rebase", "origin", "main")
 
 
 class SplitMismatch(RuntimeError):
