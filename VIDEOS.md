@@ -41,7 +41,7 @@
 | winter-trees | 冬、葉っぱがなくなる木と、緑のままの木があるのはなぜ？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/tree-winter-leaves.md)） | 完成 |
 | rain-snow | 空の上では何が起きて、雨になったり雪になったりするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/rain-snow.md)） | 完成 |
 | toilet | トイレは、流したあともどうして少し水が残るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/toilet-water.md)） | 完成 |
-| white-breath-steam | 寒いとき、湯気や白い息が見えるのはなぜ？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/steam-white-breath.md)。白いのは水蒸気ではなく小さな水のつぶ、が見せ場。湯気の出口には近づかない・さわらない注意を入れる） | ナレーション中（2026-11-22 21:20） |
+| white-breath-steam | 寒いとき、湯気や白い息が見えるのはなぜ？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/steam-white-breath.md)。白いのは水蒸気ではなく小さな水のつぶ、が見せ場。湯気の出口には近づかない・さわらない注意を入れる） | 仕上げ待ち |
 | car-drive | アクセルを踏むと、どうやってタイヤまで力が届くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/car-drivetrain.md)） | 保留 |
 | wheel-to-car | 車輪がついた荷車は、いつ自分で走る車になったの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/car-wheel-to-car.md)） | 保留 |
 | ant | アリの行列は、どうやって同じ道を見つける？ | 完成 |
@@ -60,7 +60,7 @@
 | recorded-voice | 録音した自分の声は、どうして別人みたいに聞こえるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/voice-recorded.md)） | 仕上げ中（2026-11-22 20:49） |
 | rain-ground-water | 雨がふったあと、地面の水はどこへ行くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/rain-ground-water.md)） | ナレーション中（2026-11-22 20:55） |
 | ice-melt | 氷は、どうしてとけるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/ice-melt.md)） | 仕上げ中（2026-11-22 20:50） |
-| finger-wrinkles | おふろに入ると、どうして指がしわしわになるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/finger-wrinkles.md)。わかっていないことは「わかっていない」と言う） | ナレーション中（2026-11-22 21:20） |
+| finger-wrinkles | おふろに入ると、どうして指がしわしわになるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/finger-wrinkles.md)。わかっていないことは「わかっていない」と言う） | 仕上げ待ち |
 | goosebumps | 寒いと、どうして鳥肌が立つの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/goosebumps-cold.md)） | ナレーション待ち |
 | shadow | かげは、どうして自分と同じ形になるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/shadow-shape.md)。太陽そのものは見ない） | 下書き中（2026-11-22 20:56） |
 | airplane | 飛行機は、あんなに重いのに、どうして空を飛べるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/airplane-lift.md)） | 下書き中（2026-11-22 20:56） |
