@@ -71,7 +71,7 @@
 | sneeze | くしゃみは、どうして出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sneeze-reflex.md)） | 候補 |
 | soap | 石けんで洗うと、どうしてよごれが落ちるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/soap-washing.md)） | 候補 |
 | cicada | セミは、どうして夏になると鳴くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/cicada-summer-song.md)） | 候補 |
-| fish-gills | 魚は、どうして水の中で息ができるの？ | 記事作成待ち |
+| fish-gills | 魚は、どうして水の中で息ができるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/fish-gills.md)。口とえらぶたの かわりばんこ、えらの3段ズーム、空気の中ではえらがしぼむ、が見せ場。魚は水から出さない・水そうに手を入れない注意を入れる） | 候補 |
 | bird-fly | 鳥は、どうして空を飛べるの？ | 記事作成待ち |
 | dog-panting | 犬は、どうして舌を出してハアハアするの？ | 記事作成待ち |
 | lights-off-dark | 電気を消すと、どうして部屋が暗くなるの？ | 記事作成待ち |
