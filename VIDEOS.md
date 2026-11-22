@@ -84,7 +84,7 @@
 | mochi-puff | おもちは、焼くとどうしてふくらむの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/rice-mochi-puff.md)。お正月の題材。中の水が目に見えない水蒸気になってかさが約1700倍、のびる網目が風船のゴムになる、が見せ場。焼くのは大人・焼きたては熱いのでさわらない、のどにつまらせない（小さく切る・のどをしめらせる）注意を入れる） | 候補 |
 | mikan-white-threads | みかんの白いすじは、何のためにあるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/mikan-white-threads.md)。すじは木から水と栄養を運んだ通り道、なのに中のつぶつぶには管がなく細胞から細胞へ手わたし、が見せ場。皮の内側の白いふわふわ（アルベド）とは別もの。むく前に手をあらう） | ナレーション待ち |
 | hiccup | しゃっくりは、どうして急に出て止まらないの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/hiccup-diaphragm.md)。横隔膜が勝手にピクッ → 声のとびらがパタンで「ヒック」、だから吸うときに鳴る、が見せ場。何のためかは「わかっていない」と言う。水を一気に飲む・袋をかぶせる・おどかす、で止めようとしない注意を入れる） | 下書き中（2026-11-23 08:20） |
-| heartbeat-running | 走ると、どうして心臓がドキドキするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/heartbeat-running.md)。心臓は打つ回数と1回に送る血の量を両方ふやして血を4〜5倍に、ふえた血はおもに走っている足の筋肉へ、アクセルとブレーキの神経、が見せ場。走るのは広くて車の来ない所で・苦しい・胸が痛いときはすぐ止まって大人に言う注意を入れる） | 候補 |
+| heartbeat-running | 走ると、どうして心臓がドキドキするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/heartbeat-running.md)。心臓は打つ回数と1回に送る血の量を両方ふやして血を4〜5倍に、ふえた血はおもに走っている足の筋肉へ、アクセルとブレーキの神経、が見せ場。走るのは広くて車の来ない所で・苦しい・胸が痛いときはすぐ止まって大人に言う注意を入れる） | 下書き中（2026-11-23 08:41） |
 | sweat | あせは、どうして出るの？ | 記事作成待ち |
 | navel | おへそは、何のためにあるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/navel-umbilical-cord.md)。いまのおへそは何もしていない・へその緒がついていたきずあと、へその緒の中は血の道3本（行き1本・帰り2本）、神経がないので切っても痛くない、が見せ場。おへその中をほじらない・赤ちゃんのへその緒の残りにさわらない注意を入れる） | 候補 |
 | star-twinkle | 星は、どうしてキラキラまたたくの？ | 記事作成待ち |
