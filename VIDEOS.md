@@ -45,14 +45,14 @@
 | car-drive | アクセルを踏むと、どうやってタイヤまで力が届くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/car-drivetrain.md)） | 保留 |
 | wheel-to-car | 車輪がついた荷車は、いつ自分で走る車になったの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/car-wheel-to-car.md)） | 保留 |
 | ant | アリの行列は、どうやって同じ道を見つける？ | 完成 |
-| digestion | 食べたものは、どうやってうんちになる？ | ナレーション待ち |
+| digestion | 食べたものは、どうやってうんちになる？ | ナレーション中（2026-11-22 15:28） |
 | pet-bottle | 炭酸のペットボトルは、どうして底が花びらみたいな形？ | 保留 |
 | pencil | 鉛筆は、どうして消しゴムで消える？ | 完成 |
 | baby-teeth | 子どもの歯は、どうしてぬけて生えかわるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/baby-teeth.md)） | 完成 |
 | yawn | あくびは、どうしてうつるの？（わかっていないことは「わかっていない」と言う）（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/yawn-contagious.md)） | 保留 |
 | mosquito-bite | 蚊にさされると、どうしてかゆくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/mosquito-bite-itch.md)） | 仕上げ待ち |
 | morning-glory | あさがおのつるは、どうやって棒に巻きつくの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/morning-glory-twining.md)） | 保留 |
-| dandelion | たんぽぽのわたげは、どうして遠くまで飛べるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/dandelion-seed-flight.md)） | ナレーション待ち |
+| dandelion | たんぽぽのわたげは、どうして遠くまで飛べるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/dandelion-seed-flight.md)） | ナレーション中（2026-11-22 15:28） |
 | honeycomb | ハチの巣は、どうして六角形なの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/bee-honeycomb-hexagon.md)。実物には近づかない。みてみようは写真や図で） | 下書き中（2026-11-22 15:18） |
 | rainbow | にじは、どうして雨のあとに出て、七色に見えるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/rainbow-after-rain.md)） | 候補 |
 | thunder | かみなりは、どうして光ってから音がするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/thunder-light-sound.md)） | 候補 |
