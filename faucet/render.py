@@ -19,6 +19,7 @@ def render(i):
                                "-c:v", "libx264", "-crf", "18", "-preset", "veryfast", "-pix_fmt", "yuv420p", "-r", str(FPS), str(tmp)], stdin=subprocess.PIPE)
         for f in range(int(round(dur * FPS))):
             pg.evaluate(f"show({i},{f / FPS})")
+            pg.evaluate("new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))")  # 描き終わるのを待つ（コマが欠けるのを防ぐ）
             ff.stdin.write(pg.screenshot(type="jpeg", quality=92))
         ff.stdin.close(); rc = ff.wait(); b.close()
         if rc == 0: os.replace(tmp, outdir / f"part{i:02d}.mp4")
