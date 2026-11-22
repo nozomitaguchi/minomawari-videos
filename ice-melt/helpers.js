@@ -81,7 +81,8 @@ function kidBody(who, t, o) {
 //   side: 吹き出しを出す向き 'right' | 'left'（書かなければ画面の右半分なら左に出す）。
 function kidShow(who, t, x, y, { s = 0.5, start = 0, n = 0, enter = null, act = null, pose = null, eyes = null, mouth = null, look = [0, 0], bubble = true, side = null, end = 1e9, size = 46 } = {}) {
   const key = NOW.i * 7 + n * 3 + (who === 'S' ? 0 : who === 'B' ? 1 : 2);
-  const en = enter || vpick(KID_ENTER, key), ac = act || vpick(KID_ACT, key + 50);
+  let en = enter || vpick(KID_ENTER, key); const ac = act || vpick(KID_ACT, key + 50);
+  if (who === 'K' && (en === 'slideL' || en === 'slideR')) en = x > 960 ? 'slideR' : 'slideL';  // カメレオンは頭から入ってくる（うしろ向きに進まない）
   const D = 0.6, e = clamp((t - start) / D), fade = clamp((end - t) / 0.3);
   if (e <= 0 || fade <= 0) return '';
   const T = NOW.t, tk = talking(who), L = lineOf(who);
@@ -112,7 +113,7 @@ function kidShow(who, t, x, y, { s = 0.5, start = 0, n = 0, enter = null, act = 
     else if (ac === 'spin') sx *= Math.cos(clamp(since / 0.6) * Math.PI * 2);
     else if (ac === 'tiptoe') { hop = 10 + Math.sin(T * 10) * 4; rot += Math.sin(T * 5) * 3; }
   }
-  if (who === 'K') sx *= x > 960 ? 1 : -1;  // カメレオンは画面の内がわを向く
+  if (who === 'K') sx = Math.abs(sx) * (x > 960 ? -1 : 1);  // カメレオンは画面の内がわを向く（絵は右向き。右半分にいるときは左右を返す）
   const body = `<g transform="translate(${x + dx} ${y + dy}) rotate(${rot}) scale(${s * sc * sx} ${s * sc})">${kidBody(who, T, { pose: pose2, eyes: eyes2, mouth: mouth2, look: look2, hop })}</g>`;
   let out = `<g opacity="${o}">${body}</g>`;
   if (bubble && L) {
