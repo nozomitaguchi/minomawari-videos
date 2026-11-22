@@ -1,0 +1,58 @@
+【タイトル案】
+寒いとき、湯気や白い息が見えるのはなぜ？｜みのまわり図鑑 ゆげと しろい いき
+
+【概要欄】
+寒い朝、外で「はー」と息をはくと、白いもやが出てきます。やかんの湯気も白く見えます。この白いもの、正体は何でしょう？ けむり？ 水蒸気？
+水が気体になった「水蒸気」は目に見えないこと、白く見えているのは水蒸気が冷えてできたとても小さな水のつぶで、たくさんのつぶが光をあちこちへちらすので白く見えること、やかんの口のすぐ上には白くなる前のとうめいなすきまがあること、空気がもてる水蒸気の量は温度で決まっていて、冷やされるともちきれない分が水のつぶになること（空の雲も同じしくみ）、あたたかくて水蒸気の多い息が冷たい空気とまざると白い息になること、そして白い息がすぐ消えるわけを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 白い息と、やかんの湯気
+0:29 白いものの正体は？
+0:51 水蒸気は見えない。白いのは小さな水のつぶ
+1:16 やかんの口のすぐ上は、とうめい
+1:37 空気がもてる水蒸気の量は、温度で決まる
+2:11 白い息ができるわけ
+2:41 すぐ消えるわけ
+2:55 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「ゆげ」）
+https://nozomitaguchi.github.io/everyday-trivia/i/steam/
+https://nozomitaguchi.github.io/everyday-trivia/t/steam-white-breath/
+
+▼ 出典
+・岳川有紀子「湯気と水蒸気の認識」大阪市立科学館研究報告 20号（2010）
+  https://www.sci-museum.jp/wp-content/themes/scimuseum2021/pdf/study/research/2010/pb20_129-132.pdf
+・Peter Dekkers「Can it be air?」ShowingPhysics（デルフト工科大学）
+  https://interactivetextbooks.tudelft.nl/showthephysics/demos/demo09/demo09.html
+・Matt Bobrowsky「Why can I see my breath on cold days?」Science and Children 2020年1月号（全米科学教育者協会 NSTA）
+  https://www.nsta.org/science-and-children/science-and-children-january-2020/q-why-can-i-see-my-breath-cold-days
+・Christopher S. Baird「How can there be clouds in winter when it is too cold for water to stay a vapor?」（ウェストテキサスA&M大学）
+  https://www.wtamu.edu/~cbaird/sq/2013/12/13/how-can-there-be-clouds-in-winter-when-it-is-too-cold-for-water-to-stay-a-vapor/
+・Herman Merte「How does bathwater give off steam?」Scientific American
+  https://www.scientificamerican.com/article/how-does-bathwater-give-off-steam/
+・気象庁 はれるんランド「どうやって雲ができるの？」
+  https://www.jma.go.jp/jma/kids/kids/faq/a1_12.html
+・仙台管区気象台 教材「雲ができる仕組み」（PDF）
+  https://www.data.jma.go.jp/sendai/knowledge/kyouiku/yoho/kumo.pdf
+・HyperPhysics「Saturated Vapor Pressure, Density for Water」（ジョージア州立大学）
+  https://www.hyperphysics.gsu.edu/hbase/Kinetic/watvap.html
+・Physics Van「Seeing Your Breath」（イリノイ大学物理学科）
+  https://van.physics.illinois.edu/ask/listing/738
+・LEE Boon-ying「Mixing Cloud in Winter」香港天文台
+  https://www.hko.gov.hk/en/education/edu06nature/ele_mixing.htm
+・Mary Knapp「Weekly Weather」カンザス州立大学 Weather Data Library（2017年10月）
+  https://secondary.climate.ksu.edu/news/stories/2017/10/ww_oct_18
+・Jeff Haby「How do clouds dissipate?」アメリカ国立気象局 訓練資料
+  https://www.weather.gov/source/zhu/ZHU_Training_Page/clouds/clouds_dissipation/cloud_dissipation.htm
+・国民生活センター「家電から出る蒸気による乳幼児のやけどにご注意！」（2021年9月2日公表）
+  https://www.kokusen.go.jp/news/data/n-20210902_3.html
+
+※ 水蒸気は目に見えない気体です。動画では、見えない水蒸気を「みずいろの小さな輪」、水のつぶを「あおい丸」で描いています。つぶの大きさや数は、見やすいように描いています。
+※ グラフの数字（0℃で4.85g、10℃で9.4g、20℃で17.3g、30℃で30.4g）は、1立方メートルの空気がふくめる水蒸気の重さです（ジョージア州立大学 HyperPhysics の表）。
+※ 「とうめいなすきま」は、やかんの口のすぐ上の話です。白い息は、あたたかくて水蒸気の多い息と、冷たい外の空気がまざってできます（香港天文台）。息やまわりの空気が十分しめっていないと、同じように息をはいても白くならない日もあります。
+※ 湯気の出口は、とても熱いです。炊飯器・電気ポット・電気ケトル・スチーム式の加湿器から出る蒸気で、0〜5歳の子どもがやけどをする事故が起きています。子どもは大人より皮ふがうすく、数秒ふれただけでやけどをするおそれがあります（国民生活センター）。手や顔を近づけない、さわらない。お湯をわかすのも、ふたを開けるのも大人がしてください。やかんは、はなれたところから見ましょう。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #ゆげ #湯気 #白い息 #水蒸気 #冬 #雑学 #親子で学ぶ #なぜなに
