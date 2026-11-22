@@ -1,0 +1,56 @@
+【タイトル案】
+シャボン玉は、どうして 丸く なるの？｜みのまわり図鑑 シャボンだま
+
+【概要欄】
+シャボン玉をふくと、まくは ぐにゃっと長くのびます。でも、輪からはなれたとたん、まんまるになって飛んでいきます。星の形の輪でふいても、出てくるのは まるい玉。シャボン玉は、どうして丸くなるのでしょう？
+シャボン玉は、空気をつつんだ とてもうすい石けん水のまくで、のびたゴムのように いつも ちぢもうとしていること、輪にわたした糸が のこったまくに引っぱられて ぴんとはる実験、輪からはなれて口がとじると、中の空気をつつんだまま いちばん小さくなろうとして まるい玉になること、同じ量の空気をつつむなら まるい玉がいちばん少ないまくですむこと、そして、2つくっつくと あいだに かべができることを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 ふくと ぐにゃっと のびる。はなれると まんまる
+0:28 星の輪でふくと、どんな玉が出る？（予想）
+0:52 シャボン玉のまくは、いつも ちぢもうとする
+1:14 糸の実験：まくが引っぱっている
+1:38 輪からはなれると、ちぢんで まるい玉に
+2:08 同じ空気をつつむなら、まるい玉がいちばん少ないまくですむ
+2:27 だから、星の輪でも まるい玉
+2:49 2つくっつくと、かべができる
+3:18 正解と、みてみよう
+（チャプターの時刻は仮です。ナレーションが入ったあとに計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「シャボンだま」）
+https://nozomitaguchi.github.io/everyday-trivia/i/soap-bubble/
+https://nozomitaguchi.github.io/everyday-trivia/t/soap-bubble-round/
+
+▼ 出典
+・Ron Hipschman「The Shape of Bubbles」（Exploratorium、1995年）
+  https://annex.exploratorium.edu/ronh/bubbles/shape_of_bubbles.html
+・Ron Hipschman「Sticky Water」（Exploratorium）
+  https://annex.exploratorium.edu/ronh/bubbles/sticky_water.html
+・Ron Hipschman「Soap」（Exploratorium）
+  https://annex.exploratorium.edu/ronh/bubbles/soap.html
+・Ron Hipschman「Bubble Meets Bubble」（Exploratorium）
+  https://annex.exploratorium.edu/ronh/bubbles/bubble_meets_bubble.html
+・Exploratorium「Why are bubbles round?」（Exploratopia）
+  https://annex.exploratorium.edu/exploratopia/activity_bubbles.html
+・「Bubble Shapes」（イリノイ大学アーバナ・シャンペーン校 物理学科 Physics Van、2007年）
+  https://van.physics.illinois.edu/ask/listing/2222
+・「Bubble Physics: Properties of Bubbles」（バージニア工科大学 物理学科）
+  https://www1.phys.vt.edu/bubble/properties-of-bubbles.html
+・「シャボン玉の形」（北海道大学 大学院理学研究院 数学部門 数学博物館、2016年、PDF）
+  https://www.math.sci.hokudai.ac.jp/museum/doc/wente.pdf
+・小野昌弘「サイエンスショー『ふわふわキラキラ！シャボン玉大実験』の制作について」（大阪市立科学館研究報告 29号、2019年、PDF）
+  https://www.sci-museum.jp/wp-content/themes/scimuseum2021/pdf/study/research/2019/pb29_103-110.pdf
+・村上良「最強のシャボン玉づくりに挑戦しよう」（甲南大学 理工学部 機能分子化学科、実験の手引き、PDF）
+  https://www.konan-u.ac.jp/news/wp/wp-content/uploads/2023/05/faculty-of-science-and-engineering/1a03dca95a1c71f48f8e6a7620bd9fa6.pdf
+・伊勢崎市「シャボン玉液を作って遊ぼう（家庭用）」（PDF）
+  https://www.city.isesaki.lg.jp/material/files/group/79/12soapbubbles.pdf
+
+※ 「とんがりぼうし・さいころ・まるい玉」の棒は、同じ体積（4.18…）をつつむときの表面積、円すい 16.09…・立方体 15.59…・球 12.56… をくらべたものです（北海道大学 数学博物館）。
+※ 四角・三角・三日月・星の枠でも丸いシャボン玉しかできなかった実験と、輪にわたした糸の実験は、大阪市立科学館のサイエンスショーによります。
+※ くっついた2つのシャボン玉は、同じ大きさなら かべが平らになり、大きさがちがうと、中の圧力が高い小さいほうが、大きいほうへふくらみます。大きさのそろった泡がたくさんならぶと、六角形がならんでハチの巣のように見えます（Exploratorium）。
+※ はなれた直後に ゆれながら丸くなるようす、まくの厚さ、石けんのつぶや空気のつぶの大きさと数は、見やすいように描いています。
+※ 石けん水は口に入れないでください。ストローは吸わずにふき、人の顔に向けてふかないでください。目に入ったら、こすらずに水道の水でよく洗ってください。部屋の中では床に跡がつくので、庭など外で遊びましょう。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #シャボン玉 #しゃぼんだま #石けん #自由研究 #雑学 #親子で学ぶ #なぜなに
