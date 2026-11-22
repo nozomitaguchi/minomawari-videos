@@ -1,0 +1,44 @@
+【タイトル案】
+たんぽぽのわたげは、どうして遠くまで飛べるの？｜みのまわり図鑑 たんぽぽ
+
+【概要欄】
+ふうっとふくと、ふわふわ飛んでいく、たんぽぽのわたげ。でも上から見ると、毛と毛のあいだは、すきまだらけです。すきまだらけなのに、どうしてゆっくり落ちて、遠くまで行けるのでしょう？
+わたげの一つぶのつくり（細い毛・細い軸・たね）、ゆっくり落ちるほど風に長くおされて遠くへ運ばれること、毛はおよそ100本で、丸の中の9割以上がすきまであること、落ちていくわたげの少し上に「空気のわっか（うずの輪）」が、はなれたまま浮かび続けること、そのおかげで、同じ広さあたり、すきまのない丸い板の4倍以上の空気の抵抗を受けること、じっさいにはほとんどのたねが近くに落ちること、しめった日にはわたげがとじることを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 すきまだらけなのに、飛べる？
+0:30 どうしてだと思う？
+0:56 わたげの一つぶのつくり
+1:15 ゆっくり落ちるほど、遠くへ
+1:29 毛はおよそ100本、9割以上がすきま
+1:51 わたげの上の「空気のわっか」
+2:20 すきまのない板とくらべると
+2:50 じっさいは、どこまで飛ぶ？ しめった日はとじる
+3:21 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「たんぽぽ」）
+https://nozomitaguchi.github.io/everyday-trivia/i/dandelion/
+https://nozomitaguchi.github.io/everyday-trivia/t/dandelion-seed-flight/
+
+▼ 出典
+・Cummins, C., Seale, M., Macente, A., Certini, D., Mastropaolo, E., Viola, I. M., & Nakayama, N.（2018）A separated vortex ring underlies the flight of the dandelion. Nature 562, 414–418（著者原稿、ストラスクライド大学リポジトリ）
+  https://strathprints.strath.ac.uk/79669/1/Cummins_etal_Nature_2018_A_separated_vortex_ring_underlies_the_flight.pdf
+  https://doi.org/10.1038/s41586-018-0604-2
+・Nature Japan プレスリリース「【植物科学】タンポポの種子の飛行を支える物理的機構」（2018年10月18日）
+  https://www.natureasia.com/ja-jp/nature/pr-highlights/12734
+・Nature Japan「生物物理学：タンポポの飛行」（2018年10月18日）
+  https://www.natureasia.com/ja-jp/nature/highlights/94648
+・Imperial College London "Engineers uncover secret 'thinking' behind dandelions' seed dispersal"（2022年6月1日）
+  https://www.imperial.ac.uk/news/236934/engineers-uncover-secret-thinking-behind-dandelions/
+
+※ 空気のわっか（うずの輪）は、2018年にイギリスのエディンバラ大学の研究チームが、わたげのまわりの空気の流れを調べて見つけたものです。空気は目に見えないので、動画では色をつけてかいています。
+※ 「1秒におよそ39センチ」は、風のない部屋ではかった速さです。
+※ 「4倍以上」は、同じ広さあたりで、すきまのない丸い板とくらべたときの空気の抵抗です。
+※ 「ほとんどのたねは2メートル以内に落ちる」「1キロより遠くまで運ばれるたねもある」は、論文に書かれている見積もりです。
+※ わたげが しめり気でとじる話は、2022年の同じ研究グループ（インペリアル・カレッジ・ロンドンなど）の発表によります。
+※ わたげやたねは、口に入れないでください。人の顔に向けてふかないでください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #たんぽぽ #わたげ #植物 #生きもの #雑学 #親子で学ぶ #なぜなに
