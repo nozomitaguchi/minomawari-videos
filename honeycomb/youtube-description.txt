@@ -1,0 +1,54 @@
+【タイトル案】
+ハチの巣は、どうして六角形なの？｜みのまわり図鑑 ハチ
+
+【概要欄】
+ミツバチの巣には、小さな部屋がびっしり並んでいます。どの部屋も、角が6つの六角形。丸でも四角でもなく、どうして六角形なのでしょう？
+巣の部屋の使い道（赤ちゃんを育てる・はちみつや花粉をためる）、壁の材料の「ろう」は働きバチのおなかから出て、はちみつを材料に作られること、丸い部屋を並べるとすき間ができること、すき間なく並べられる形は三角・四角・六角の3つだけで、同じ広さなら六角形の壁がいちばん短いこと、そして、ハチがどうやって六角形にしているのかは今も研究が続いていることを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 どの部屋も、六角形
+0:27 どうしてだと思う？
+0:53 部屋は何に使う？
+1:04 壁の材料「ろう」は、はちみつから
+1:32 すき間なく並ぶ形は3つだけ
+1:55 壁がいちばん短いのは六角形
+2:24 ハチはどうやって六角形にする？（まだ研究中）
+3:02 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「はち」）
+https://nozomitaguchi.github.io/everyday-trivia/i/bee/
+https://nozomitaguchi.github.io/everyday-trivia/t/bee-honeycomb-hexagon/
+
+▼ 出典
+・Thomas C. Hales, The Honeycomb Conjecture（arXiv:math/9906042、1999年）
+  https://arxiv.org/abs/math/9906042
+・Philip Ball, How honeycombs can build themselves, Nature（2013）
+  https://www.nature.com/articles/nature.2013.13398
+・F. Nazzi, The hexagonal shape of the honeycomb cells depends on the construction behavior of bees, Scientific Reports 6（2016）
+  https://www.nature.com/articles/srep28341
+・John Skinner（テネシー大学）, How do honey bees make wax?, Bee Health（eXtension）
+  https://bee-health.extension.org/?p=803
+・Clarence Collison, Beeswax, Wax Glands, Bee Culture
+  https://beeculture.com/?p=10571
+・アリゾナ大学 農業生命科学部, Information Sheet 2: The Honey Bee Body
+  https://cales.arizona.edu/pubs/insects/ahb/inf2.html
+・愛知県農業総合試験場「知ってとくとく ミツバチの管理法」
+  https://www.pref.aichi.jp/uploaded/attachment/320294.pdf
+・堺市「アシナガバチの巣の観察」
+  https://www.city.sakai.lg.jp/kenko/kenko/sodan/gaichu/mijika/ashinagabachi.files/asinagaitinen.pdf
+・横浜市泉区「アシナガバチの駆除方法」
+  https://www.city.yokohama.lg.jp/izumi/kurashi/sumai_kurashi/seikatsu/soudan/gaityueisei/ashinagabachi.html
+・堺市「アシナガバチ」
+  https://www.city.sakai.lg.jp/kenko/kenko/sodan/gaichu/mijika/ashinagabachi.html
+
+※ 「すき間なく並べられる形は3つだけ」は、同じ形・同じ大きさの正多角形（角も辺もそろった形）だけで並べるときの話です。
+※ 壁の長さ（約4.56・4・約3.72）は、部屋の広さを1にそろえたときの、まわりの長さです。
+※ 「作りたての部屋は丸く、少し古い部屋は六角形」は、2013年のイギリス・カーディフ大学の研究チームの報告です。
+※ ハチがどうやって六角形にしているのかは、ろうがあたためられてひっぱられるという考えと、部屋の並べ方で決まるという考えがあり、まだ議論が続いています。
+※ 「まわりの部屋が5つのところでは五角形」は、2016年の研究（Nazzi）で、まわりの部屋の数と同じ数の角を持つ形になっていた、という報告にもとづきます。
+※ 本物のハチの巣には、ぜったいに近づかないでください。つついたり、石を投げたりしないでください。見るのは、図鑑や写真で。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #ハチ #ハチの巣 #ミツバチ #六角形 #生きもの #雑学 #親子で学ぶ #なぜなに
