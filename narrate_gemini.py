@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 import re
 import subprocess
+import time
 import sys
 from urllib.error import HTTPError
 from urllib.parse import urlencode
@@ -109,13 +110,14 @@ def generate(key, voice, style, text):
 def push(message, paths):
     git("add", "--", *paths)
     git("commit", "-m", message)
-    for attempt in range(4):  # ほかのセッションの push とぶつかったら、取りこんでやり直す
+    for attempt in range(8):  # ほかのセッションの push とぶつかったら、少し待って取りこんでやり直す
         try:
             git("push", "origin", "HEAD:main")
             return
         except subprocess.CalledProcessError:
-            if attempt == 3:
+            if attempt == 7:
                 raise
+            time.sleep(3 + 4 * attempt)
             git("pull", "--rebase", "origin", "main")
 
 
