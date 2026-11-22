@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>セミ：セミは、どうして夏になくの？</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  NOW = { i: 1, t: 3 };
+  const t = 3.2;
+  let o = DEFS + skyRect('tsky', 0) + cloud(1010, 760, 0.8, '#fff', 0.85);
+  o += `<path d="M 0 930 Q 500 850 1000 920 T 1920 890 L 1920 1080 L 0 1080 Z" fill="#6fba68"/>`;
+  // 木とセミ
+  const TX = 1500;
+  o += [[0, -40, 330], [-300, 60, 220], [300, 60, 220]].map(([dx, dy, r], i) => `<circle cx="${TX + dx}" cy="${dy}" r="${r}" fill="${i ? CC.leaf2 : CC.leaf}"/>`).join('');
+  o += trunk(TX, 150, 1080, 330);
+  o += cicadaTop(TX, 640, 7.6);
+  o += soundWaves(TX + 240, 640, 0.25, { dir: 1, n: 3, r0: 30, step: 62, w: 20, a: 0.75 }) + soundWaves(TX - 240, 640, 0.25, { dir: -1, n: 3, r0: 30, step: 62, w: 20, a: 0.75 });
+  o += note(1150, 330, 8) + note(1830, 300, 7) + note(1060, 520, 5.5);
+  const T = (y, inner, size) => `<text x="60" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="28" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(190, `<tspan fill="#8a5a2c">セミ</tspan>は なぜ`, 196);
+  o += T(430, `<tspan fill="#e0541e">夏</tspan>に なく？`, 196);
+  o += `<g transform="translate(300 1078) scale(0.98)">${sister(0.3, { pose: 'point', eyes: 'wide', mouth: 'o', look: [8, -4] })}</g>`;
+  o += g(bubble(190, 150, '？', { size: 100 }), { x: 560, y: 690 });
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 880, y: 1000 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>
