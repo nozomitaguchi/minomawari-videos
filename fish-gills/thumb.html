@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>さかな：魚は、どうして水の中で息ができるの？</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  NOW = { i: 1, t: 3 };
+  const t = 0.4;
+  let o = DEFS + waterBg('tbg', '#bfe6f6', '#5fb0dc');
+  o += `<path d="M 0 60 ${Array.from({ length: 24 }, (_, i) => `q 20 ${i % 2 ? 10 : -10} 40 0 t 40 0`).join(' ')}" fill="none" stroke="#fff" stroke-width="10" opacity="0.8"/>`;
+  o += weed(1780, 1090, 420, t, '#4f9a62', 1) + weed(1850, 1090, 300, t, '#6fba78', 2) + weed(980, 1090, 200, t, '#6fba78', 3);
+  // 金魚（左向き。口をあけて、水が口へ入り、えらぶたのすきまから出る）
+  const FX = 1400, FY = 790, S = 7.2;
+  o += goldfish(FX, FY, S, { dir: -1, m: 1, c: 0.9, wag: 6 });
+  [-1, 1].forEach(k => { o += arrow(FX - 64 * S - 310, FY + k * 34, FX - 64 * S - 40, FY + k * 30, '#fff', 22, 1, 0.95); });
+  o += g(olText(0, 0, 'ぱく', { size: 110, fill: '#fff', ol: FC.waveDk, sw: 22 }), { x: 700, y: 620, r: -8 }) + g(olText(0, 0, 'ぱく', { size: 110, fill: '#fff', ol: FC.waveDk, sw: 22 }), { x: 900, y: 570, r: 6 });
+  const T = (y, inner, size) => `<text x="60" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="28" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(180, `<tspan fill="${FC.goldD}">魚</tspan>は <tspan fill="${FC.waveDk}">水の中</tspan>で`, 176);
+  o += T(390, `なぜ <tspan fill="#d2452c">息</tspan>が できる？`, 176);
+  o += `<g transform="translate(260 1078) scale(1.0)">${brother(0.3, { pose: 'point', eyes: 'wide', mouth: 'o', look: [8, -2] })}</g>`;
+  o += g(bubble(190, 150, '？', { size: 100 }), { x: 500, y: 820 });
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 760, y: 1000 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>
