@@ -47,7 +47,7 @@
 | ant | アリの行列は、どうやって同じ道を見つける？ | 完成 |
 | digestion | 食べたものは、どうやってうんちになる？ | 仕上げ待ち |
 | pet-bottle | 炭酸のペットボトルは、どうして底が花びらみたいな形？ | 保留 |
-| pencil | 鉛筆は、どうして消しゴムで消える？ | ナレーション中（2026-11-22 09:37） |
+| pencil | 鉛筆は、どうして消しゴムで消える？ | 仕上げ待ち |
 | baby-teeth | 子どもの歯は、どうしてぬけて生えかわるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/baby-teeth.md)） | 候補 |
 | yawn | あくびは、どうしてうつるの？（わかっていないことは「わかっていない」と言う）（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/yawn-contagious.md)） | 保留 |
 | mosquito-bite | 蚊にさされると、どうしてかゆくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/mosquito-bite-itch.md)） | 候補 |
