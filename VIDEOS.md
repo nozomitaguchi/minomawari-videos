@@ -81,7 +81,7 @@
 | fridge | 冷蔵庫は中を冷やしているのに、どうして外があったかくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/fridge-warm-outside.md)。冷たさを作るのではなく中の熱を外へ運ぶ、外へ出す熱は中の熱＋モーターの分なのでドアを開けっぱなしでも部屋は涼しくならない、が見せ場。うしろや下の機械にさわらない・さわるのは大人、の注意を入れる） | 候補 |
 | washing-machine | 洗濯機は、服を回すだけでどうして水をしぼれるの？ | 記事作成待ち |
 | static-shock | 冬にドアをさわると、どうしてバチッとなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/static-shock-door.md)。歩くとでんしが引っこしして体にたまり、乾いた冬はにげない、金属に近づくと空気をとびこえる小さなかみなり、が見せ場。わざとバチッとさせない・ガソリンスタンドのシートと給油は大人、の注意を入れる） | 候補 |
-| mochi-puff | おもちは、焼くとどうしてふくらむの？（お正月の題材） | 記事作成待ち |
+| mochi-puff | おもちは、焼くとどうしてふくらむの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/rice-mochi-puff.md)。お正月の題材。中の水が目に見えない水蒸気になってかさが約1700倍、のびる網目が風船のゴムになる、が見せ場。焼くのは大人・焼きたては熱いのでさわらない、のどにつまらせない（小さく切る・のどをしめらせる）注意を入れる） | 候補 |
 | mikan-white-threads | みかんの白いすじは、何のためにあるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/mikan-white-threads.md)。すじは木から水と栄養を運んだ通り道、なのに中のつぶつぶには管がなく細胞から細胞へ手わたし、が見せ場。皮の内側の白いふわふわ（アルベド）とは別もの。むく前に手をあらう） | 候補 |
 | hiccup | しゃっくりは、どうして急に出て止まらないの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/hiccup-diaphragm.md)。横隔膜が勝手にピクッ → 声のとびらがパタンで「ヒック」、だから吸うときに鳴る、が見せ場。何のためかは「わかっていない」と言う。水を一気に飲む・袋をかぶせる・おどかす、で止めようとしない注意を入れる） | 候補 |
 | heartbeat-running | 走ると、どうして心臓がドキドキするの？ | 記事作成待ち |
