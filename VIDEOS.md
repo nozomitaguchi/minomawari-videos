@@ -28,7 +28,7 @@
 | scab | けがのあと、どうしてかさぶたができる？ | 完成 |
 | moon | 月は、どうして形が変わる？ | 公開 |
 | tummy-rumble | おなかは、どうして鳴る？ | 公開 |
-| mirror | 鏡は、どうして左右が反対に見える？ | 仕上げ中（2026-11-22 07:24） |
+| mirror | 鏡は、どうして左右が反対に見える？ | 完成 |
 | eye-tears-blink | 泣くと、どうして鼻水まで出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/eye-tears-blink.md)） | 完成 |
 | sky-cloud-white | 白い雲と黒っぽい雨雲、何がちがうの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sky-cloud-white.md)） | 完成 |
 | power-lines | 電線に止まった鳥は、どうしてしびれない？ | 完成 |
