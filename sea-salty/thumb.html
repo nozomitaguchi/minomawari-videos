@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>うみ：海の水は、どうしてしょっぱいの？</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  NOW = { i: 1, t: 3 };
+  const t = 0.4;
+  let o = DEFS + `<linearGradient id="tsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fccf2"/><stop offset="0.6" stop-color="#e3f3fc"/></linearGradient><rect width="1920" height="1080" fill="url(#tsky)"/>`;
+  o += sunDisc(1700, 150, 90, 0);
+  // 海と砂浜
+  o += `<linearGradient id="tsea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${SEA.top}"/><stop offset="0.7" stop-color="${SEA.deep}"/></linearGradient>`;
+  const wave = Array.from({ length: 30 }, (_, i) => `${(i * 1920 / 29).toFixed(0)} ${(560 + Math.sin(i * 0.9) * 10).toFixed(1)}`).join(' L ');
+  o += `<path d="M ${wave} L 1920 1080 L 0 1080 Z" fill="url(#tsea)"/>`;
+  o += `<path d="M 0 1080 L 0 900 Q 500 800 1000 900 T 1920 860 L 1920 1080 Z" fill="${SEA.floor}"/>`;
+  for (let i = 0; i < 26; i++) o += saltDot(980 + rnd(i, 5) * 900, 620 + rnd(i, 6) * 220, 15 + rnd(i, 7) * 8);
+  // 大きなコップ
+  const [w, r] = glass(0.8, '#58aee0');
+  let gl = w; for (let i = 0; i < 12; i++) gl += saltDot(-40 + rnd(i, 3) * 80, -40 + rnd(i, 4) * 120, 8);
+  o += g(gl + r, { x: 1520, y: 720, s: 2.2, r: 6 });
+  const T = (y, inner, size) => `<text x="60" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="28" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(190, `<tspan fill="${C.blue}">海の水</tspan>は どうして`, 170);
+  o += T(410, `<tspan fill="#d2452c">しょっぱい</tspan>の？`, 190);
+  o += `<g transform="translate(300 1078) scale(1.0)">${sister(0.3, { pose: 'point', eyes: 'wide', mouth: 'o', look: [8, -2] })}</g>`;
+  o += g(bubble(190, 150, '？', { size: 100 }), { x: 560, y: 700 });
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 800, y: 1000 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>

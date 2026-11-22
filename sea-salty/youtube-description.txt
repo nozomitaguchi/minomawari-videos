@@ -1,0 +1,55 @@
+【タイトル案】
+海の水は、どうして しょっぱいの？｜みのまわり図鑑 うみ
+
+【概要欄】
+海であそんでいて水が口に入ると、しょっぱい。でも、海に流れこむ川の水も、空からふる雨も、しょっぱくありません。海の水は、どうしてしょっぱいのでしょう？
+海の水1キログラムをかわかすと 塩などが平均でおよそ35グラムのこること、その塩のおもなふるさとは山の岩で、雨が岩をほんの少しずつとかし、川が海へ運んでいること、海の底の熱い水がふき出すところからも加わること、川には雨の新しい水がいつもたされるのでしょっぱくならないこと、海からは水だけが蒸発して空へ出ていき 塩はのこること、そして、今の海はこれ以上しょっぱくならないと考えられているわけを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 海はしょっぱいのに、川も雨もしょっぱくない
+0:31 海の水がしょっぱいのは、どうして？（予想）
+0:59 海の水には、塩がとけている
+1:18 塩のふるさとは、山の岩
+1:36 川が海へ運ぶ。海の底からも加わる
+1:56 どうして川は、しょっぱくない？
+2:08 水だけが空へ、塩はのこる
+2:32 これからも、どんどんしょっぱくなる？
+3:07 正解と、みてみよう
+（チャプターの時刻は仮です。ナレーションが入ったあとに計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「うみの みずは どうして しょっぱいの？」）
+https://nozomitaguchi.github.io/everyday-trivia/t/sea-salty/
+
+▼ 出典
+・USGS Water Science School「Why is the ocean salty?」
+  https://www.usgs.gov/water-science-school/science/why-ocean-salty
+・NOAA National Ocean Service「Why is the ocean salty?」
+  https://oceanservice.noaa.gov/facts/whysalty.html
+・NOAA National Ocean Service「Why is the ocean salty, but rivers flowing into it are not?」
+  https://oceanservice.noaa.gov/facts/riversnotsalty.html
+・Woods Hole Oceanographic Institution「What makes the ocean salty?」
+  https://www.whoi.edu/ocean-learning-hub/ocean-facts/what-makes-the-ocean-salty/
+・Stedmon, C. A. and Visser, A. W. (2023)「Why is the Sea Salty and Does it Matter?」Frontiers for Young Minds 11:1097831
+  https://kids.frontiersin.org/articles/10.3389/frym.2023.1097831
+・Scripps Institution of Oceanography「Voyager: What makes the ocean salty and how much salt is in the ocean?」
+  https://scripps.ucsd.edu/news/voyager-what-makes-ocean-salty-and-how-much-salt-ocean
+・UNESCO Ocean Literacy「The reason why the Ocean is salty」
+  https://oceanliteracy.unesco.org/ocean-salty
+・気象庁「水温・塩分について」
+  https://ds.data.jma.go.jp/kaiyou/db/vessel_obs/description/obs_expr.html
+・長谷川正巳「受け継がれる塩づくりの歴史と文化」Ocean Newsletter 第355号（笹川平和財団 海洋政策研究所、2015年）
+  https://www.spf.org/opri/newsletter/355_3.html
+・観光庁 地域観光資源の多言語解説文データベース「The History of Salt Production in Japan」
+  https://www.mlit.go.jp/tagengo-db/en/R4-00550,html
+
+※ 水にとけた塩は、目に見えません。動画の白いつぶは、見やすくするための絵です。
+※ 「1キログラムにおよそ35グラム」は平均です（海の水の重さの約3.5％）。とけているものでいちばん多いのは、台所の食塩（塩化ナトリウム）のもとと同じ、塩化物イオンとナトリウムイオンです。
+※ 雨にとけている「空気の中のガス」は、二酸化炭素です。雨は弱い酸性になっていて、岩をほんの少しずつとかします。
+※ 「1年におよそ40億トン」は、世界の川が海へ運ぶ とけた塩の見つもりです（NOAA）。
+※ 「今の海は、もうしょっぱくなり続けてはいない」は、川が運んでくる塩と 海の底に積もって出ていく塩が、毎年だいたい同じくらいと考えられていることによります（NOAA）。
+※ 山・川・海の絵は、断面の図です。大きさの比は、本物とはちがいます。
+※ 塩水の小皿は、大人といっしょに。口に入れず、小さい子の手が届かないところに置いてください。海で遊ぶときも、海の水は飲まないでください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #海 #うみ #塩 #しお #水 #自由研究 #雑学 #親子で学ぶ #なぜなに
