@@ -68,7 +68,7 @@
 | sea-salty | 海の水は、どうしてしょっぱいの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sea-salty.md)。海の水は飲まない注意を入れる） | 候補 |
 | wind | 風は、どうしてふくの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/wind-blow.md)） | 完成 |
 | snow-white | 雪は、どうして白いの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/snow-white.md)） | 下書き中（2026-11-23 03:33） |
-| sneeze | くしゃみは、どうして出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sneeze-reflex.md)） | 候補 |
+| sneeze | くしゃみは、どうして出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sneeze-reflex.md)） | 下書き中（2026-11-23 03:34） |
 | soap | 石けんで洗うと、どうしてよごれが落ちるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/soap-washing.md)） | 候補 |
 | cicada | セミは、どうして夏になると鳴くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/cicada-summer-song.md)） | ナレーション中（2026-11-23 03:31） |
 | fish-gills | 魚は、どうして水の中で息ができるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/fish-gills.md)。口とえらぶたの かわりばんこ、えらの3段ズーム、空気の中ではえらがしぼむ、が見せ場。魚は水から出さない・水そうに手を入れない注意を入れる） | 下書き中（2026-11-23 03:20） |
