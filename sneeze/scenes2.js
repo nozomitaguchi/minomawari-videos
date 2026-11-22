@@ -167,7 +167,7 @@ SCENES.push({
     const bk = prog(t, sn, 0.25), bo = Math.min(bk * 4, 1 - prog(t, cueE(1) + 0.1, 0.3));
     if (bo > 0) {
       out += g(blastLines(bk, SZ.out, 220, 14), { x: NX + 110, y: NY + 30, o: bo });
-      out += g(burst(190, 250) + olText(0, 8, 'ハクション！', { size: 86, fill: SZ.out, ol: '#fff', sw: 8 }), { x: 1440, y: 440, s: Math.max(back(bk), 0.001) * (1 + Math.sin(t * 30) * 0.012), o: bo });
+      out += g(burst(190, 250) + olText(0, 8, 'ハクション！', { size: 86, fill: SZ.out, ol: '#fff', sw: 8 }), { x: 1510, y: 440, s: Math.max(back(bk), 0.001) * (1 + Math.sin(t * 30) * 0.012), o: bo });
     }
     // かってに でる
     out += pop(badge('とめようと しても、かってに でる', { fill: C.blueUi, size: 42 }), t, cue(3) + d0 * 0.4, 1500, 520, { end: cueE(4) + 0.6 });
@@ -494,7 +494,7 @@ SCENES.push({
       ];
       let c = '';
       cards.forEach(([label, o, ok, sub, fr], i) => {
-        const st = c2 + d2 * fr;
+        const st = fr <= 0.05 ? c2 - 0.15 : c2 + d2 * fr;  // 1まいめは 前の絵が消えたら すぐ出す（空白を作らない）
         let cd = card(500, 560) + g(shead(o), { x: -40, y: -90, s: 3 });
         if (!ok) cd += germ(96, -70, 9) + germ(126, -40, 8) + germ(108, -18, 7) + arrow(140, 0, 176, 44, '#4f7f2a', 7) + `<g transform="translate(196 104)"><rect x="-14" y="-52" width="28" height="104" rx="8" fill="#c9cdd2" stroke="${SZ.line}" stroke-width="4"/><circle cx="-36" cy="0" r="24" fill="#e2c24a" stroke="${SZ.line}" stroke-width="4"/>${germ(-44, -12, 7)}${germ(-28, 10, 6)}</g>`;
         cd += text(0, sub ? 176 : 196, label, { size: 50, w: 900 }) + (sub ? text(0, 236, sub, { size: 34, w: 900, fill: '#4f7f2a' }) : '');

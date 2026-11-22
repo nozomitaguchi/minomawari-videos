@@ -128,8 +128,9 @@ add(sfx, at('steps', 4, 0.5, -0.1), tick()); add(sfx, at('steps', 4, 0.5), sneez
 # 速さ・しぶき・そで
 add(sfx, at('speed', 0, 0.3), whoosh(1.0, 0.1)); add(sfx, at('speed', 0, 0.45), popfx()); add(sfx, at('speed', 0, 0.3, 3.2), whoosh(1.0, 0.08))
 add(sfx, cue('speed', 1, 0.4), sneezefx(0.7)); add(sfx, at('speed', 1, 0.5), popfx())
-for fr in (0.05, 0.38, 0.62): add(sfx, at('speed', 2, fr), popfx())
-add(sfx, at('speed', 2, 0.05, 0.5), crack(0.15, 0.13)); add(sfx, at('speed', 2, 0.38, 0.5), chime(1976, 0.09)); add(sfx, at('speed', 2, 0.62, 0.5), chime(2349, 0.09))
+add(sfx, cue('speed', 2, -0.15), popfx())
+for fr in (0.38, 0.62): add(sfx, at('speed', 2, fr), popfx())
+add(sfx, cue('speed', 2, 0.35), crack(0.15, 0.13)); add(sfx, at('speed', 2, 0.38, 0.5), chime(1976, 0.09)); add(sfx, at('speed', 2, 0.62, 0.5), chime(2349, 0.09))
 # リセット・まぶしい光
 add(sfx, cue('reset', 0, -0.9), popfx()); add(sfx, at('reset', 0, 0.15), popfx()); add(sfx, at('reset', 0, 0.55), popfx())
 add(sfx, at('reset', 1, 0.12), whoosh(0.9, 0.1)); add(sfx, at('reset', 1, 0.55), mallet(note_hz(55), 0.5, 0.16)); add(sfx, at('reset', 1, 0.55, 0.3), tick()); add(sfx, at('reset', 1, 0.55, 0.45), chime(2093, 0.1))
