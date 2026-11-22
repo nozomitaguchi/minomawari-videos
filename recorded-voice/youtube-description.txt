@@ -1,0 +1,47 @@
+【タイトル案】
+録音した自分の声は、どうしてちがって聞こえるの？｜みのまわり図鑑 こえ
+
+【概要欄】
+スマホやビデオで録音した自分の声を聞くと、「あれ？ こんな声だった？」。録音した自分の声は、どうしていつもとちがって聞こえるのでしょう？
+音が耳の奥にとどく道は「空気の道」と「骨の道」の2つあること、話している自分には2つの道の声がまざって聞こえること、マイクは空気のふるえしか拾えないので録音には空気の道の音だけが入ること、骨の道は高い音ほど弱めると考えられていて、いつも自分で聞く声は低い音が強く聞こえること、そして録音の声は、家族や友だちがいつも聞いている声だということを、親子で見られるようにアニメにしました。
+さいごに、手のひらで耳をそっとおおって「あー」と言う、かんたんな実験をしょうかいします。
+
+0:00 オープニング
+0:04 録音した声は、なんだかちがう
+0:27 どうしてだと思う？
+0:54 音がとどく道は2つ（空気の道・骨の道）
+1:32 話すと、2つの道の声がまざる
+1:55 録音に入るのは、空気の道だけ
+2:12 骨の道は、高い音ほど弱める
+2:33 録音の声は、まわりの人が聞いている声
+2:52 耳をふさぐと、どう聞こえる？
+3:12 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「こえ」）
+https://nozomitaguchi.github.io/everyday-trivia/i/voice/
+https://nozomitaguchi.github.io/everyday-trivia/t/voice-recorded/
+
+▼ 出典
+・東京大学「録音した自分の声はどうして変に聞こえる？→米村美紀｜素朴な疑問vs東大」（UTokyo FOCUS、2022年）
+  https://www.u-tokyo.ac.jp/focus/ja/features/z1304_00200.html
+・Orepic, Kannape, Faivre & Blanke 2023, Bone conduction facilitates self-other voice discrimination（Royal Society Open Science）
+  https://doi.org/10.1098/rsos.221561
+・Toya ほか 2020, Measurements of Transmission Characteristics Related to Bone-Conducted Speech Using Excitation Signals in the Oral Cavity（Journal of Speech, Language, and Hearing Research。北陸先端科学技術大学院大学）
+  https://pubs.asha.org/doi/10.1044/2020_JSLHR-20-00097
+・Reinfeldt, Östli, Håkansson & Stenfelt 2010, Hearing one's own voice during phoneme vocalization—Transmission by air and bone conduction（Journal of the Acoustical Society of America）
+  https://research.chalmers.se/en/publication/125312
+・Stenfelt & Reinfeldt 2007, A model of the occlusion effect with bone-conducted stimulation（International Journal of Audiology）
+  https://research.chalmers.se/en/publication/77419
+・ÉTS Montréal "When Earplugs Become Annoying: The Occlusion Effect"（2023年）
+  https://www.etsmtl.ca/en/news/when-earplugs-become-annoying-occlusion-effect
+
+※ 「空気の道」は気導音（きどうおん）、「骨の道」は骨導音（こつどうおん）、「うずまきの形をしたところ」は蝸牛（かぎゅう）のことです。
+※ 骨の道は「低い音だけが通る道」というほど単純ではありません。声をはかった研究では、多くの声で、骨の道の音が空気の道より大きくなったのは1〜2キロヘルツのあたりで、500ヘルツより低いところでは骨の道のほうが小さい、という結果もあります。頭の骨や体の中を音がどう伝わるかは、まだきちんと決まっていません。
+※ 録音の声がどう聞こえるかは、人によってちがいます（いつもより高く、細く聞こえる人が多い、という話です）。
+※ 動画の中の耳の中の絵、音の波、「低い音・高い音」の棒の長さは、しくみが見やすいように描いたもので、じっさいの大きさや数字を表したものではありません。
+※ 実験をするときは、手のひらで耳をそっとおおうだけにしてください。耳の穴に指や物を入れないでください。耳のそばで大きな声を出さないでください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #こえ #声 #録音 #耳 #音 #からだ #雑学 #親子で学ぶ #なぜなに
