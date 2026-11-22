@@ -8,9 +8,9 @@ import base64, io, json, os, pathlib, re, sys, time, wave
 import numpy as np
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from narrate_gemini import request  # noqa: E402
 
-MODEL = os.environ.get("REVIEW_MODEL", "gemini-3.8-flash")
 JOIN = 0.40      # もとの行と行のあいだに入れる無音（秒）
 MIN_GAP = 0.30   # これより長い無音でチャンクに分ける
 PROMPT = """あなたは子ども向け動画のナレーションの編集係です。
@@ -89,12 +89,8 @@ def ask(key, texts, audio, sr, chunks):
             small_wav(audio[max(0, s - pad): e + pad], sr)).decode()}})
     payload = {"contents": [{"role": "user", "parts": parts}],
                "generationConfig": {"temperature": 0, "responseMimeType": "application/json", "maxOutputTokens": 16384}}
-    for attempt in range(4):
-        try:
-            response = request(key, f"/models/{MODEL}:generateContent", payload); break
-        except RuntimeError as error:
-            if attempt == 3 or not any(c in str(error) for c in ("HTTP 503", "HTTP 429", "HTTP 500")): raise
-            time.sleep(40 * (attempt + 1))
+    from review_audio import generate
+    response = generate(key, payload)
     out = "".join(p.get("text", "") for p in response["candidates"][0]["content"]["parts"])
     nums = [int(x) for x in re.findall(r"-?\d+", out)]
     print(f"答え {len(nums)}個 / チャンク {len(chunks)}個")

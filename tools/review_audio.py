@@ -7,7 +7,29 @@ import base64, json, os, pathlib, sys, time
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from narrate_gemini import request  # noqa: E402
 
-MODEL = os.environ.get("REVIEW_MODEL", "gemini-3.8-flash")
+MODELS = os.environ.get("REVIEW_MODELS", "gemini-3.8-flash gemini-3.8-flash-lite gemini-3.6-flash").split()
+MODEL = MODELS[0]
+_dead = set()   # 今日の上限に当たった・使えないモデル
+
+
+def generate(key, payload):
+    """聞かせて答えをもらう。上限（429）や、ない名前（404）のモデルは次のモデルに切りかえる。混雑（503）は待ってやり直す。"""
+    global MODEL
+    last = None
+    for model in MODELS:
+        if model in _dead: continue
+        for attempt in range(3):
+            try:
+                response = request(key, f"/models/{model}:generateContent", payload)
+                MODEL = model
+                return response
+            except RuntimeError as error:
+                last = error
+                if "HTTP 429" in str(error) or "HTTP 404" in str(error) or "HTTP 400" in str(error):
+                    print(f"{model}: 使えません（{str(error)[16:24]}）。次のモデルへ。"); _dead.add(model); break
+                if attempt == 2 or not any(c in str(error) for c in ("HTTP 503", "HTTP 500")): raise
+                time.sleep(30 * (attempt + 1))
+    raise last or RuntimeError("使えるモデルがありません")
 PROMPT = """あなたは子ども向け動画のナレーションの検品係です。
 このあと「行 N」「台本: …」に続けて、その行の音声が1つずつ入っています。
 それぞれの音声を実際に聞いて、台本と同じ言葉が、過不足なく読まれているかを確かめてください。
@@ -32,14 +54,7 @@ def review(key, slug):
         "contents": [{"role": "user", "parts": parts}],
         "generationConfig": {"temperature": 0, "responseMimeType": "application/json", "maxOutputTokens": 16384},
     }
-    for attempt in range(4):  # 混雑（503）や一時的な上限（429）は、待ってやり直す
-        try:
-            response = request(key, f"/models/{MODEL}:generateContent", payload)
-            break
-        except RuntimeError as error:
-            if attempt == 3 or not any(code in str(error) for code in ("HTTP 503", "HTTP 429", "HTTP 500")):
-                raise
-            time.sleep(40 * (attempt + 1))
+    response = generate(key, payload)
     out = "".join(p.get("text", "") for p in response["candidates"][0]["content"]["parts"])
     rows = {int(r["line"]): r for r in json.JSONDecoder().raw_decode(out[out.index("["):])[0]}
     lines = [f"# {slug} ナレーションの耳レビュー（{MODEL}）", ""]
