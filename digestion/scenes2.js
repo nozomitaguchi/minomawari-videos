@@ -527,7 +527,7 @@ SCENES.push({
         [g(eyeIcon(0.3)), 'ながす まえに、うんちの いろと かたちを みる', C.ink, cue(4)],
         [g(warnIcon, { s: 0.62 }), 'みるだけ。さわらない', C.red, warnAt],
       ];
-      const isz = Math.min(...items.map(([, s]) => fit(s, 880, 38, 900)));
+      const isz = Math.min(...items.map(([, s]) => fit(s, 800, 38, 900)));
       items.forEach(([icn, s, col, st], i) => { b += pop(icn + text(64, 2, s, { size: isz, w: 900, anchor: 'start', fill: col }), t, st, 140, 300 + i * 88); });
       // 朝ごはん → 何分？ → トイレ
       const PX = 1510, PY = 520;
