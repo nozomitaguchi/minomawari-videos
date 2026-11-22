@@ -132,8 +132,6 @@ def split(wav, slugs, count):
     if len(ratios) != count or any(not 0.6 <= ratio <= 2.3 for ratio in ratios):
         bad = [round(r, 2) for r in ratios if not 0.6 <= r <= 2.3]
         raise SplitMismatch(f"分割の尺が想定範囲外です（{len(ratios)}/{count}行、範囲外の比 {bad[:10]}）")
-    # 次の行の出だしが前の行に付いたものを直す（「正解は」「2番。」など）。
-    print(subprocess.check_output([sys.executable, "fix_lead_in.py", *slugs], text=True))
     for slug in slugs:
         if len(list(Path(slug, "lines").glob("N_*.wav"))) != len(ntexts(slug)):
             raise RuntimeError(f"{slug} の分割ファイル数が原稿と一致しません")
