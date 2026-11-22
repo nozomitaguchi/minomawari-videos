@@ -1,0 +1,47 @@
+【タイトル案】
+蚊にさされると、どうしてかゆくなるの？｜みのまわり図鑑 か
+
+【概要欄】
+うでにとまった蚊が飛んでいったあと、しばらくすると、ぷくっとふくらんで、かゆくなります。蚊はもういないのに、どうしてでしょう？
+血をすうのはメスの蚊だけ（卵を産むとき）であること、1本に見える口は「さや」と6本の針でできていて、皮ふに入るのは針のたばだけであること、血をすうあいだに蚊がだ液（つば）を皮ふの中に出すこと、そのだ液に体の「見張り役」の細胞が気づいてヒスタミンを出し、ぷくっとふくらんでかゆくなると考えられていること、すぐのかゆみと次の日のかゆみのちがいを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 蚊はもういないのに、かゆい
+0:29 かゆくなるのは、どうして？
+0:57 血をすうのは、メスだけ
+1:11 口は、さやと6本の針
+1:35 皮ふの中で、血管をさがす
+2:04 体の見張り役が、だ液に気づく
+2:37 すぐのかゆみと、次の日のかゆみ
+2:59 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「か」）
+https://nozomitaguchi.github.io/everyday-trivia/i/mosquito/
+https://nozomitaguchi.github.io/everyday-trivia/t/mosquito-bite-itch/
+
+▼ 出典
+・CDC（アメリカ疾病予防管理センター）About Mosquito Bites
+  https://www.cdc.gov/mosquitoes/about/about-mosquito-bites.html
+・京都市 蚊の解説資料（PDF）
+  https://www.city.kyoto.lg.jp/hokenfukushi/cmsfiles/contents/0000353/353019/kanitsuite.pdf
+・NC State University, ENT 425 General Entomology「Mouthparts」
+  https://genent.cals.ncsu.edu/bug-bytes/mouthparts
+・Lee, R.（1974）Structure and function of the fascicular stylets … of male and female Aedes aegypti (L.). Quaestiones Entomologicae 10: 187–215
+  https://nature.berkeley.edu/~kipwill/QE%20documents%20for%20public/Lee%201974%20QEv10n3%20187_215%20CC%20released.pdf
+・Choumet V, et al.（2012）Visualizing Non Infectious and Infectious Anopheles gambiae Blood Feedings in Naive and Saliva-Immunized Mice. PLoS ONE 7(12): e50464
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC3521732/
+・Vander Does A, Labib A, Yosipovitch G.（2022）Update on mosquito bite reaction. Frontiers in Immunology 13: 1024559
+  https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2022.1024559/full
+・日本OTC医薬品協会「おくすりＱ＆Ａ：虫さされ薬」
+  https://jsmi.jp/qa/mushisasare.html
+
+※ 針の先が皮ふの中で曲がって血管をさがすようすは、ハマダラカの一種をネズミにとまらせて顕微鏡で見た実験の結果です。
+※ かゆみの主役はヒスタミンと考えられていますが、くわしいしくみは、まだはっきりしていません。
+※ 見張り役の細胞（肥満細胞）、ヒスタミンのつぶ、だ液のしずくは、わかりやすくするために、とても大きくかいています。
+※ 反応のしかたは人によってちがい、何も症状が出ない人もいます。
+※ さされたところは、かかずに、石けんと水であらって冷やしましょう。ふくらみが大きいときや熱をもつときは、大人に見せてください。蚊は、つかまえたり手でたたいたりせず、口のつくりは図や写真で見てください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #蚊 #虫さされ #かゆみ #生きもの #からだのふしぎ #雑学 #親子で学ぶ #なぜなに

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>か：かに さされると、どうして かゆく なるの？</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  NOW = { i: 1, t: 3 };
+  let o = DEFS + `<rect width="1920" height="1080" fill="#e9f3dc"/><circle cx="1560" cy="420" r="430" fill="#dcecc9"/>`;
+  // うでの ふくらみと、飛んでいく蚊
+  const AY = 800;
+  o += armSide(560, 2100, AY, 230) + bumpSide(1130, AY, 150, 1);
+  o += itchMark(900, AY - 110, 1.7) + itchMark(1370, AY - 100, 1.7);
+  o += mosqAt(1560, 560, 2.5, 0.31, { fly: 1, prob: 0.15, belly: 1 });
+  o += `<g transform="translate(300 1075) scale(0.86)">${sister(1.3, { pose: 'point', eyes: 'wide', mouth: 'o', look: [8, 2] })}</g>`;
+  const T = (x, y, inner, size) => `<text x="${x}" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="26" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(50, 170, `<tspan fill="${MC.body}">か</tspan>に さされると`, 144);
+  o += T(50, 360, `どうして <tspan fill="${MC.bumpDk}">かゆい</tspan>？`, 144);
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 290, y: 540 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>
