@@ -68,6 +68,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NARRATE_FIRST: ${{ inputs.first }}
+          GEMINI_LISTEN_KEY: ${{ secrets.GEMINI_LISTEN_KEY }}
         shell: bash -eo pipefail {0}
         run: |
           git config user.name 'github-actions[bot]'

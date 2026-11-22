@@ -31,6 +31,7 @@ jobs:
         if: inputs.realign == 'yes'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_LISTEN_KEY: ${{ secrets.GEMINI_LISTEN_KEY }}
           SLUGS: ${{ inputs.slugs }}
         run: python tools/realign.py $SLUGS | tee -a "$GITHUB_STEP_SUMMARY"
         shell: bash -eo pipefail {0}
@@ -38,6 +39,7 @@ jobs:
         id: listen
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_LISTEN_KEY: ${{ secrets.GEMINI_LISTEN_KEY }}
           SLUGS: ${{ inputs.slugs }}
         run: python tools/review_audio.py $SLUGS | tee -a "$GITHUB_STEP_SUMMARY"
         shell: bash -o pipefail {0}

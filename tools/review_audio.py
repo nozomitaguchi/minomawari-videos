@@ -15,6 +15,7 @@ _dead = set()   # 今日の上限に当たった・使えないモデル
 def generate(key, payload):
     """聞かせて答えをもらう。上限（429）や、ない名前（404）のモデルは次のモデルに切りかえる。混雑（503）は待ってやり直す。"""
     global MODEL
+    key = os.environ.get("GEMINI_LISTEN_KEY") or key   # 聞くほうは、有料枠のキーがあればそちらを使う（読み上げは無料枠のまま）
     last = None
     for model in MODELS:
         if model in _dead: continue
