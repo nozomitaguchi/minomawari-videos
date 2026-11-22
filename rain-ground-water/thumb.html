@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>あめ：あめの あと、じめんの みずは どこへ いくの？</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  NOW = { i: 1, t: 3 };
+  let o = DEFS + skyG('thsky', '#7fc4ee', '#dcf1fb');
+  o += sunG(1700, 190, 110, 0.4, 1) + cloud(1180, 170, 2.0, '#ffffff', 0.95);
+  // 地面（土のつぶが 見える だんめん）と 水たまり
+  const land = 'M 0 700 Q 960 660 1920 700 L 1920 1080 L 0 1080 Z';
+  o += `<clipPath id="thl"><path d="${land}"/></clipPath><path d="${land}" fill="${RG.soil}"/><g clip-path="url(#thl)">${grainsG(0, 800, 1920, 300, 30, { o: 0.7, seed: 91 })}</g><path d="M 0 700 Q 960 660 1920 700" fill="none" stroke="${RG.soilDk}" stroke-width="12"/>`;
+  o += puddleG(1220, 742, 400, 66);
+  // 3つの いきさき
+  o += arrowL(1100, 800, 1100, 1010, RG.waterDk, 34, 1) + arrowL(1500, 720, 1840, 760, RG.water, 34, 1);
+  [1130, 1290, 1450].forEach((x, i) => { o += vaporG(x, 700, 330 + (i === 1 ? 60 : 0), 0.3 + i, 1, '#ffffff', 22); });
+  o += big(1010, 930, '？', 150, C.ochre) + big(1800, 640, '？', 150, C.ochre) + big(1570, 400, '？', 150, C.ochre);
+  o += `<g transform="translate(300 1078) scale(0.98)">${sister(1.3, { pose: 'point', eyes: 'wide', mouth: 'o', look: [9, 6] })}</g>`;
+  const T = (x, y, inner, size) => `<text x="${x}" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="28" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(50, 160, `<tspan fill="${RG.waterDk}">あめ</tspan>の <tspan fill="${RG.waterDk}">みず</tspan>は`, 160);
+  o += T(50, 360, `<tspan fill="#a8801e">どこへ</tspan> いく？`, 160);
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 300, y: 540 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>

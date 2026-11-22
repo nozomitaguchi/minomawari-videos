@@ -1,0 +1,50 @@
+【タイトル案】
+雨がふったあと、地面の水はどこへ行くの？｜みのまわり図鑑 あめの ゆくえ
+
+【概要欄】
+雨の日にできた大きな水たまり。雨がやんでしばらくすると、なくなっています。地面の水は、どこへ行ったのでしょう？
+地面にふった雨の行き先は「土にしみこむ」「低いほうへ流れる」「空へもどる」の3つあること、土は小さなつぶの集まりで、つぶとつぶのすき間に水がしみこむこと、つぶの大きい砂は水が速く通りぬけ、つぶの細かい土はゆっくりしかしみこまないこと、土がのみきれない水が低いところに集まって水たまりになること、まちのアスファルトにはしみこまず、みぞから地面の下のパイプを通って川へ集まること、そして、しみこんだ水は地下水になって、ゆっくり海へもどり、また雨になることを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 水たまりが、なくなった
+0:28 水がいちばん速くしみこむのは？
+0:53 雨の行き先は3つ
+1:12 しみこむ（土のつぶと、すき間）
+1:41 流れる（水たまりができるわけ）
+1:55 まちの雨は、みぞからパイプを通って川へ
+2:15 空へもどる（蒸発）
+2:36 地下水は、ゆっくり海へ
+3:04 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「あめと ゆき」）
+https://nozomitaguchi.github.io/everyday-trivia/i/rain-snow/
+https://nozomitaguchi.github.io/everyday-trivia/t/rain-ground-water/
+
+▼ 出典
+・文部科学省『小学校学習指導要領（平成29年告示）解説 理科編』（第4学年「雨水の行方と地面の様子」「天気の様子」）
+  https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/03/18/1387017_005_1.pdf
+・国土交通省・河川財団 小学校4年理科「雨水の行方と地面の様子」動画の絵コンテ
+  https://www.mlit.go.jp/river/bousai/education/movie/pdf/amamizunoyukue.pdf
+・内閣官房 水循環政策本部『中学校副読本 水循環』（2025年3月）
+  https://www.cas.go.jp/jp/seisaku/mizu_junkan/kyouiku/files/fukudokuhon02_202503.pdf
+・USDA Natural Resources Conservation Service "Soil Quality Indicators: Infiltration"（2008年）
+  https://www.nrcs.usda.gov/sites/default/files/2022-10/Infiltration.pdf
+・USDA Forest Service, Rocky Mountain Research Station "Soils and Their Effects on the Water Cycle"
+  https://www.fs.usda.gov/rm/boise/AWAE/labs/awae_flagstaff/watersheds/basics/soileffects.html
+・横浜市「合流式と分流式」
+  https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kasen-gesuido/gesuido/yakuwari/bungouryuu.html
+・東京都下水道局『雨水浸透ハンドブック』（令和6年3月）
+  https://www.gesui.metro.tokyo.lg.jp/documents/d/gesui/handbook_usui
+・大阪府 理科ハンドブック 単元チェックシート「雨水のゆくえと地面のようす」
+  https://www.pref.osaka.lg.jp/documents/35587/32_amamizunoyukuetojimennoyousu.pdf
+
+※ 「地面の下のパイプ」は、下水道の管のことです。雨の水の流しかたは、まちによってちがいます。
+※ 地下水が進む速さは、速くても1日に10〜100メートルくらいで、土や地層によっては、1日に1メートルも進まないことがあります。
+※ 水がしみこむ速さは、土のしめりぐあいや、ふみ固められているかどうかでも変わります。動画でくらべているのは、つぶの大きい砂と、つぶの細かい土のちがいです。
+※ 土のつぶ、すき間、道路のまん中の高さ、地下水の流れは、しくみが見やすいように、じっさいより大きく・大げさに描いています。
+※ 雨の日に外を見るときは、歩道や家の中から見てください。みぞ（側溝）のふたの穴に手や棒を入れないでください。雨でふえた川や用水路には近づかないでください（山で雨がふると、まちが晴れていても川の水がふえることがあります）。水たまりの水は口に入れないでください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #雨 #水たまり #地下水 #水のじゅんかん #天気 #理科 #雑学 #親子で学ぶ #なぜなに
