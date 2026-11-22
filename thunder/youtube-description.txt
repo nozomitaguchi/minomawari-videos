@@ -1,0 +1,51 @@
+【タイトル案】
+かみなりは、どうして光ってから音がするの？｜みのまわり図鑑 かみなり
+
+【概要欄】
+空がピカッと光って、少したってからゴロゴロ。かみなりは、どうして光ってから音がするのでしょう？ 音は、あとから鳴っているのでしょうか。
+かみなりの正体は電気で、雲の中であられと小さな氷のつぶがぶつかり合って電気が分かれると考えられていること、電気が一気に流れると、そばの空気が1万℃くらいまで熱くなって急にふくらみ、まわりの空気をふるわせて音になること、光と音はほとんど同じときに生まれているのに、光は音のおよそ100万倍も速いので音がおくれてとどくこと、光ってから音までの秒数をかぞえるときょりがわかること（3秒でおよそ1km）、そして、ゴロゴロが聞こえたらすぐ建物や車の中に入ることを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 ピカッのあとに、ゴロゴロ
+0:24 どうしてだと思う？
+0:49 かみなりの正体は電気
+1:12 音は、どうやって生まれる？
+1:43 光と音のきょうそう
+2:19 秒数をかぞえると、きょりがわかる
+2:51 ゴロゴロが聞こえたら、もう近い
+3:12 正解と、みてみよう
+（チャプターの時刻は仮。ナレーションを入れたあとで計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「かみなり」）
+https://nozomitaguchi.github.io/everyday-trivia/i/thunder/
+https://nozomitaguchi.github.io/everyday-trivia/t/thunder-light-sound/
+
+▼ 出典
+・気象庁「雷とは？」
+  https://www.jma.go.jp/jma/kishou/know/toppuu/thunder1-0.html
+・気象庁 はれるんランド「雷はどうして光るの？どうして音が鳴るの？」
+  https://www.jma.go.jp/jma/kids/kids/faq/a3_19.html
+・気象庁 はれるんランド「雷が光ってから、音が聞こえるまでに差があるのはどうしてなの？」
+  https://www.jma.go.jp/jma/kids/kids/faq/a3_16.html
+・気象庁「雷から身を守るには」
+  https://www.jma.go.jp/jma/kishou/know/toppuu/thunder4-3.html
+・NOAA National Weather Service "Understanding Lightning: Thunder"
+  https://www.weather.gov/safety/lightning-science-thunder
+・NOAA National Weather Service "Understanding Lightning Science"
+  https://www.weather.gov/safety/lightning-science-overview
+・NOAA National Severe Storms Laboratory "Severe Weather 101: Lightning Basics"
+  https://www.nssl.noaa.gov/education/svrwx101/lightning/
+・Environment and Climate Change Canada "How thunder sounds"
+  https://www.canada.ca/en/environment-climate-change/services/lightning/science/how-thunder-sounds.html
+
+※ 雲の上のほうにプラス、まん中から下にマイナスの電気が多くなる絵は、アメリカ国立気象局の説明にもとづきます。雲がどうやって電気をためるのか、細かいところはまだ議論が続いています。
+※ 「1万℃くらい」は、気象庁（はれるんランド）の数字です。
+※ 光は1秒におよそ30万km、音は1秒におよそ340m進みます。音は3秒でおよそ1km（340m×3＝1020m）進むので、「光ってから音までの秒数÷3」が、かみなりまでのおよそのきょり（km）になります（カナダ環境・気候変動省）。
+※ 動画の中の「きょうそう」や、音の波が進む速さは、見やすいように描いています。
+※ ゴロゴロが聞こえたら、かみなりはもう近くにいます。秒数をかぞえるのは、かならず家の中で（窓やかべから少しはなれて）。外にいるときは、かぞえるより先に建物や車の中へ入ってください。
+※ 高い木の近くはあぶないので、幹・枝・葉のどこからも2m以上はなれてください。木の下で雨やどりはしないでください（気象庁）。
+※ 鉄筋コンクリートの建物、自動車（オープンカーはのぞく）、バス、列車の中は比較的安全です。木造の建物の中も基本的に安全で、電気器具や天井・かべから1m以上はなれると、さらに安全です（気象庁）。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #かみなり #雷 #天気 #光 #音 #雑学 #親子で学ぶ #なぜなに
