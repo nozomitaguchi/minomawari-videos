@@ -25,18 +25,17 @@
 <script src="characters.js"></script>
 <script>
 function drawThumb() {
-  const NOONP = '0,0 1130,0 830,1080 0,1080', EVEP = '1130,0 1920,0 1920,1080 830,1080';
-  let o = DEFS;
-  o += `<clipPath id="cl"><polygon points="${NOONP}"/></clipPath><clipPath id="cr"><polygon points="${EVEP}"/></clipPath>`;
-  o += `<g clip-path="url(#cl)">${skyRect('t0', 0)}${sunDisc(330, 230, 92, 0)}${cloud(700, 300, 1.1, '#fff')}<path d="M 0 900 Q 500 820 1000 900 L 1000 1080 L 0 1080 Z" fill="#6fba68"/></g>`;
-  o += `<g clip-path="url(#cr)">${skyRect('t1', 1)}${sunDisc(1650, 880, 110, 1)}${cloud(1380, 240, 0.9, '#ffc9b3')}<path d="M 800 920 Q 1400 830 1920 900 L 1920 1080 L 800 1080 Z" fill="#4a4766"/></g>`;
-  o += `<line x1="1130" y1="0" x2="830" y2="1080" stroke="#fffaf0" stroke-width="14"/>`;
-  const T = (y, inner, size) => `<text x="70" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="26" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
-  o += T(430, `昼は <tspan fill="${C.blue}">青い</tspan>のに`, 190);
-  o += T(680, `夕やけは <tspan fill="#e8541e">赤い</tspan>？`, 190);
-  o += `<g transform="translate(1600 1075) scale(0.98)">${sister(0.3, { pose: 'point', eyes: 'wide', mouth: 'open', look: [4, -10] })}</g>`;
-  o += g(bubble(190, 150, '？', { size: 100 }), { x: 1760, y: 300 });
-  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 300, y: 950 });
+  NOW = { i: 1, t: 3 };
+  let o = DEFS + skyBg('tbg', '#5fa9e6', '#d6ecfb');
+  o += cloud(1500, 930, 2.2, '#fff', 0.95) + cloud(380, 1010, 2.0, '#fff', 0.9) + cloud(1750, 240, 1.2, '#fff', 0.9);
+  // 大きなハト：つばさを 上げて、さきの はねに すきま
+  o += pigeon(1480, 700, 2.2, { k: 1, open: 1 });
+  const T = (y, inner, size) => `<text x="60" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="28" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(180, `<tspan fill="#35657f">鳥</tspan>は どうして`, 164);
+  o += T(400, `<tspan fill="#d2452c">飛べる</tspan>の？`, 200);
+  o += `<g transform="translate(250 1078) scale(1.0)">${sister(0.3, { pose: 'point', eyes: 'wide', mouth: 'o', look: [8, -6] })}</g>`;
+  o += g(bubble(190, 150, '？', { size: 100 }), { x: 520, y: 640 });
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 760, y: 1000 });
   document.getElementById('stage').innerHTML = o;
   document.getElementById('cap').style.display = 'none';
 }

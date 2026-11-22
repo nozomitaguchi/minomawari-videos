@@ -1,0 +1,49 @@
+【タイトル案】
+鳥は、どうして 空を飛べるの？｜みのまわり図鑑 とり
+
+【概要欄】
+公園のハトは、バタバタと音を立てて飛び立ちます。鳥は、どうして空を飛べるのでしょう？
+鳥は つばさで空気を下と後ろへ押して、体を持ち上げ、前へ進んでいること、つばさは 人の腕と手にあたるところが変わったもので、長い羽根がならんで空気を受ける面になっていること、羽根は小さなかぎでマジックテープのようにくっついていること、つばさを打ちおろすときは さきの羽根が重なり、上げるときは ブラインドのように開いて空気を通すこと、つばさを動かす胸の大きな筋肉と 肩の「滑車」のしくみ、そして、中が空っぽでも軽すぎるわけではない骨のひみつを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 ハトが バタバタと 飛び立つ
+0:25 つばさを上げるとき、さきの羽根はどうなる？（予想）
+0:50 つばさで空気を 下と後ろへ押す
+1:15 つばさは 腕と手。羽根は マジックテープ
+1:45 打ちおろしで重なり、上げるときは すきまが開く
+2:11 胸の大きな筋肉と、肩の「滑車」
+2:43 骨は空っぽ。でも軽すぎない
+3:04 はばたかずに、くるくるのぼる鳥
+3:19 正解と、みてみよう
+（チャプターの時刻は仮です。ナレーションが入ったあとに計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「とりは、どうして そらを とべるの？」）
+https://nozomitaguchi.github.io/everyday-trivia/t/bird-flight/
+
+▼ 出典
+・川上和人・島絵里子・渡辺明「鳥類学者が語る『骨から探る鳥のふしぎ』講演会およびワークショップ開催記録」（北海道大学 学術成果コレクション HUSCAP、2025年）
+  https://eprints.lib.hokudai.ac.jp/repo/huscap/all/94362/honekarasaguru.pdf
+・Carrol Henderson, Michael A. Kallok "How Do Birds Fly?" Minnesota Conservation Volunteer 2012年3–4月号（ミネソタ州天然資源局）
+  https://files.dnr.state.mn.us/mcvmagazine/young_naturalists/young-naturalists-article/bird_flight/bird_flight
+・Andrew A. Biewener "Biomechanics of avian flight" Current Biology 32: R1110–R1114（2022年、ハーバード大学）
+  https://biewenerlab.oeb.harvard.edu/resource/biewenerbiomechanicsavianflightcurrbiol2022pdf
+・カリフォルニア大学古生物学博物館（UCMP）"Aves: More on Morphology"
+  https://ucmp.berkeley.edu/diapsids/birds/birdmm.html
+・コーネル大学鳥類学研究所 Bird Academy "How Feathers Are Built"
+  https://academy.allaboutbirds.org/features/all-about-feathers/how-feathers-are-built.php
+・マサチューセッツ大学アマースト校の発表資料 "Bird bones may be hollow, but they are also heavy"（ScienceDaily、2010年）／E. R. Dumont, Proceedings of the Royal Society B（2010年、doi:10.1098/rspb.2010.0117）
+  https://www.sciencedaily.com/releases/2010/03/100322112103.htm
+・Ehrlich, Dobkin & Wheye『The Birder's Handbook』"Soaring"（1988年、スタンフォード大学で公開）
+  https://web.stanford.edu/group/stanfordbirds/text/essays/Soaring.html
+
+※ 「体の重さの5分の1ほど」は、いろいろな種類の鳥をならした大きさです（つばさを打ちおろす大胸筋が平均17％、上げる烏口上筋が2〜4％、合わせて約20％）。人の大胸筋は体重の約0.5％（200分の1ほど）です（ビューウェナー 2022年）。
+※ 鳥の骨には中が空っぽのものもありますが、「骨が軽いから飛べる」わけではありません。骨そのものは鳥がいちばん密度が高く、約57グラム（2オンス）の小鳥の骨格は、同じ重さのネズミのなかまの骨格と同じくらいの重さです（デュモン 2010年）。
+※ つばさを上げるときに さきの羽根（初列風切）がブラインドのように開くのは、空気の抵抗を小さくするためです（ミネソタ州天然資源局）。
+※ つばさを上げる筋肉（烏口上筋）のすじ（腱）が通る肩のあなは「三骨間孔（さんこつかんこう）」といいます。
+※ はばたかずに輪をかいてのぼる鳥として資料にあるのは、コンドルやハゲワシのなかまと、一部のタカです。のぼっていくあたたかい空気の柱は「サーマル」とよばれます。
+※ 羽根・かぎ・骨の中・筋肉は、見やすいように大きく、かんたんな形で描いています。動画の中の はばたきは、ゆっくりにしています。
+※ ハトを見るときは、はなれたところから。近づいたり、追いかけたりしないでください。空の鳥をさがすときは、太陽をぜったいに直接見ないでください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #鳥 #とり #ハト #つばさ #自由研究 #雑学 #親子で学ぶ #なぜなに

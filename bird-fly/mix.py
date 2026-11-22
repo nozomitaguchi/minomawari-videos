@@ -1,4 +1,4 @@
-"""ナレーション・BGM・効果音を timeline.js に合わせて混ぜて mix.wav を作る（そら）。"""
+"""ナレーション・BGM・効果音を timeline.js に合わせて混ぜて mix.wav を作る（とり）。"""
 import json, re, wave, pathlib
 import numpy as np
 here = pathlib.Path(__file__).parent
@@ -88,24 +88,74 @@ def swell(dur=2.5, amp=0.10):
         t = np.arange(len(y)) / SR; e = np.sin(np.pi * t / dur) ** 2
         y += amp * 0.25 * e * np.sin(2 * np.pi * note_hz(m) * t)
     return y
-add(sfx, cue('hook', 1, 0.5), swell(3.4, 0.12))
+def dur_(sid, k): return cueE(sid, k) - cue(sid, k)
+def at(sid, T): return SC[sid][0] + T
+def flapfx(amp=0.10, dur=0.14):
+    # はばたきの「ばさっ」（やわらかい風の音）
+    n = int(dur * SR); t = np.arange(n) / SR
+    x = rng.standard_normal(n + 400); x = np.convolve(x, np.ones(60) / 60, 'same')[200:200 + n]
+    return amp * 6 * x * np.sin(np.pi * t / dur) ** 2
+def up(sid, st, n, step, f0=880, df=90, amp=0.035):
+    for k in range(n): add(sfx, st + k * step, pluck(f0 + df * k, 0.2, amp, 0.8))
+# つかみ：バタバタと とびたつ → 大きく はばたく → 題名
+c = cue('hook', 0)
+for k in range(15): add(sfx, c + 0.2 + k / 4.2, flapfx(0.10)); add(sfx, c + 0.7 + k / 4.2 + 0.08, flapfx(0.07))
+add(sfx, c + dur_('hook', 0) * 0.45, popfx()); add(sfx, c + dur_('hook', 0) * 0.45 + 0.35, popfx())
+c1 = cue('hook', 1); k = 0
+while c1 + k / 0.9 < cueE('hook', 3) + 0.4: add(sfx, c1 + k / 0.9, flapfx(0.13, 0.35)); k += 1
 add(sfx, cueE('hook', 3, 0.6), chime(1568, 0.14)); add(sfx, cueE('hook', 3, 0.75), chime(2093, 0.1))
+for k in range(4): add(sfx, cueE('hook', 3, 0.6 + 1.7 + k * 0.15), popfx())
+# 予想
 for k in range(1, 4): add(sfx, cue('guess', k, -0.2), popfx())
 for k in range(3): add(sfx, cueE('guess', 3, 0.3 + k), tick())
 add(sfx, cueE('guess', 3, 3.3), chime(1760, 0.12))
-add(sfx, cue('air', 0, 1.4), popfx()); add(sfx, cue('air', 2, 0.2), chime(2349, 0.08))
-add(sfx, cue('prism', 1, 0.2), chime(1318.5, 0.1))
-for k, m in enumerate([72, 74, 76, 79, 81, 84, 86]): add(sfx, cue('prism', 1, 1.4 + k * 0.12), mallet(note_hz(m), 0.5, 0.10))
-add(sfx, cue('prism', 2, 0.2), popfx())
-# 散乱：青い光がはねる「ぴょん」をいくつか
-for k in range(10): add(sfx, cue('scatter', 0, 1.2 + k * 0.62), pluck(1760 + 220 * (k % 3), 0.18, 0.035, 0.8))
-add(sfx, cue('scatter', 1), chime(1568, 0.1))
-add(sfx, cue('every', 1, 0.8), popfx()); add(sfx, cue('every', 2, 1.0), crack(0.15, 0.15))
-add(sfx, cue('purple', 1, 0.2), popfx()); add(sfx, cue('purple', 1, 3.0), popfx()); add(sfx, cue('purple', 1, 6.2), chime(1568, 0.1))
-add(sfx, cue('sunset', 1, 0.4), swell(3.2, 0.10)); add(sfx, cue('sunset', 4, -0.3), swell(2.2, 0.12))
-add(sfx, cue('mars', 0, 0.3), popfx()); add(sfx, cue('mars', 1, 3.6), chime(1318.5, 0.1))
-add(sfx, cue('look', 0, 1.2), chime(1568, 0.14)); add(sfx, cue('look', 0, 1.35), chime(1976, 0.12)); add(sfx, cue('look', 0, 1.5), chime(2349, 0.1))
-for k in range(1, 4): add(sfx, cue('look', k), popfx())
+# 空気を おす → うく・すすむ → つばさの 上と下
+k = 0
+while at('push', k / 0.8) < cue('push', 2, -0.7): add(sfx, at('push', k / 0.8), flapfx(0.12, 0.4)); k += 1
+add(sfx, cue('push', 0, dur_('push', 0) * 0.45), popfx())
+add(sfx, cue('push', 1), swell(2.0, 0.09)); add(sfx, cue('push', 1, dur_('push', 1) * 0.25), popfx()); add(sfx, cue('push', 1, dur_('push', 1) * 0.6), popfx())
+add(sfx, cue('push', 2, -0.4), swell(1.6, 0.08)); add(sfx, cue('push', 2, dur_('push', 2) * 0.12), popfx()); add(sfx, cue('push', 2, dur_('push', 2) * 0.6), popfx())
+add(sfx, cue('push', 3, dur_('push', 3) * 0.18), popfx()); add(sfx, cue('push', 3, dur_('push', 3) * 0.6), chime(1568, 0.11)); add(sfx, cue('push', 3, dur_('push', 3) * 0.8), popfx())
+# うでと つばさ → はねが ならぶ → かぎ → くちばしで ととのえる
+add(sfx, at('arm', 0.2), popfx()); add(sfx, at('arm', 0.5), popfx())
+for k in range(3): add(sfx, cue('arm', 0, dur_('arm', 0) * 0.4 + k * 0.5), popfx())
+up('arm', cue('arm', 1, dur_('arm', 1) * 0.15), 6, 0.12, 784, 60); up('arm', cue('arm', 1, dur_('arm', 1) * 0.15 + 0.8), 7, 0.12, 1047, 70)
+add(sfx, cue('arm', 1, dur_('arm', 1) * 0.55), popfx())
+add(sfx, cue('arm', 2, -0.4), swell(1.6, 0.08)); add(sfx, cue('arm', 2, dur_('arm', 2) * 0.25), chime(2093, 0.09))
+add(sfx, cue('arm', 2, dur_('arm', 2) * 0.45), popfx()); add(sfx, cue('arm', 2, dur_('arm', 2) * 0.7), popfx())
+add(sfx, cue('arm', 4, -0.9), popfx())
+up('arm', cue('arm', 4, dur_('arm', 4) * 0.35), 9, 0.15, 1175, 80, 0.04)
+add(sfx, cue('arm', 4, dur_('arm', 4) * 0.35 + 1.2), chime(1760, 0.1)); add(sfx, cue('arm', 4, dur_('arm', 4) * 0.45), popfx())
+# うちおろし と うちあげ
+c0 = cue('stroke', 0); c1 = cue('stroke', 1); c3 = cue('stroke', 3)
+add(sfx, c0 + 0.5, flapfx(0.15, 1.2)); add(sfx, c0 + 3.0, flapfx(0.08, 0.5)); add(sfx, c0 + 4.0, flapfx(0.15, 1.2))
+add(sfx, c0 + dur_('stroke', 0) * 0.45, popfx())
+add(sfx, c1 - 0.2, swell(3.0, 0.08)); up('stroke', c1 + 0.3, 5, 0.3, 1319, 110, 0.035)
+add(sfx, c1 + dur_('stroke', 1) * 0.5, popfx()); add(sfx, c3 + dur_('stroke', 3) * 0.4, popfx())
+k = 0
+while c3 - 0.4 + k * 3.6 < cue('stroke', -1, -0.8): add(sfx, c3 - 0.4 + k * 3.6, flapfx(0.13, 0.6)); k += 1
+# むねの きんにく → 100この しかく → かっしゃ
+for q in (0.35, 0.7): add(sfx, cue('muscle', 0, dur_('muscle', 0) * q), popfx())
+for q in (0.25, 0.6): add(sfx, cue('muscle', 1, dur_('muscle', 1) * q), popfx())
+add(sfx, cue('muscle', 2, -0.3), swell(1.4, 0.07)); up('muscle', cue('muscle', 2, dur_('muscle', 2) * 0.12), 20, 0.07, 880, 30, 0.03)
+add(sfx, cue('muscle', 2, dur_('muscle', 2) * 0.3), chime(1568, 0.1)); add(sfx, cue('muscle', 2, dur_('muscle', 2) * 0.58), pluck(660, 0.25, 0.07, 0.6)); add(sfx, cue('muscle', 2, dur_('muscle', 2) * 0.66), popfx())
+add(sfx, cue('muscle', 3, -0.3), swell(1.4, 0.07))
+for q in (0.3, 0.65): add(sfx, cue('muscle', 3, dur_('muscle', 3) * q), popfx())
+for q in (0.1, 0.3): add(sfx, cue('muscle', 4, dur_('muscle', 4) * q), popfx())
+add(sfx, cue('muscle', 4, dur_('muscle', 4) * 0.6), chime(1568, 0.1))
+# ほね：からっぽ → かたくて つよい → てんびん
+add(sfx, at('bone', 0.3), popfx()); add(sfx, cue('bone', 0, dur_('bone', 0) * 0.3), swell(1.4, 0.08)); add(sfx, cue('bone', 0, dur_('bone', 0) * 0.5), popfx())
+add(sfx, cue('bone', 1, 0.2), chime(1318.5, 0.1)); add(sfx, cue('bone', 1, dur_('bone', 1) * 0.28), popfx())
+for k in range(3): add(sfx, cue('bone', 1, dur_('bone', 1) * 0.5 + 0.2 + k * 0.35), mallet(note_hz(48), 0.3, 0.14))
+add(sfx, cue('bone', 1, dur_('bone', 1) * 0.6), popfx())
+add(sfx, cue('bone', 2, -0.4), swell(1.8, 0.08)); add(sfx, cue('bone', 2, dur_('bone', 2) * 0.15), popfx()); add(sfx, cue('bone', 2, dur_('bone', 2) * 0.4), popfx()); add(sfx, cue('bone', 2, dur_('bone', 2) * 0.72), chime(1568, 0.11))
+# くるくる のぼる
+add(sfx, at('soar', 0.4), swell(3.2, 0.09)); add(sfx, cue('soar', 0, dur_('soar', 0) * 0.45), popfx())
+add(sfx, cue('soar', 1, -0.3), swell(2.8, 0.11)); add(sfx, cue('soar', 1, dur_('soar', 1) * 0.2), popfx()); add(sfx, cue('soar', 1, dur_('soar', 1) * 0.6), chime(1760, 0.1))
+up('soar', cue('soar', 1, 0.4), 8, 0.35, 880, 70, 0.03)
+# 正解とみてみよう
+add(sfx, cue('look', 0, 0.7), chime(1568, 0.14)); add(sfx, cue('look', 0, 0.85), chime(1976, 0.12)); add(sfx, cue('look', 0, 1.0), chime(2349, 0.1))
+for k in range(1, 5): add(sfx, cue('look', k), popfx())
 add(sfx, cue('end', -1, -7.2), chime(1046.5, 0.12)); add(sfx, cue('end', -1, -7.0), chime(1568, 0.1))
 
 # 吹き出しが出るときの「ポン」
