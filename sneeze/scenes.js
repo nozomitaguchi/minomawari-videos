@@ -615,9 +615,11 @@ SCENES.push({
       }
     });
     // きづいた！
-    out += pop(burst(96, 132, 12, '#fff8d8', SZ.nerveDk, 7) + text(0, 4, 'きづいた！', { size: 44, w: 900, fill: SZ.nerveDk }), t, hit + 0.15, 1100, 660, { end: c3 - 0.2 });
+    out += pop(burst(96, 132, 12, '#fff8d8', SZ.nerveDk, 7) + text(0, 4, 'きづいた！', { size: 44, w: 900, fill: SZ.nerveDk }), t, hit + 0.15, 1100, 660, { end: Math.min(c3 - 0.2, cue(2) - 0.15) });
     // カメレオン
-    out += kidShow('K', t, 1690, 850, { s: 0.7, start: cue(2) - 0.9, n: 0, enter: 'slideR' });
+    out += kidShow('K', t, 1690, 850, { s: 0.7, start: cue(2) - 0.9, n: 0, enter: 'slideR', bubble: false });
+    // 吹き出し：しっぽの先を カメレオンの 頭に とどかせる
+    out += talkBubble('K', 1420, 590, 1622, 726, 46);
     // つめたい くうき
     const co = prog(t, c3 - 0.1, 0.4);
     if (co > 0) {
@@ -767,8 +769,8 @@ SCENES.push({
     }
     if (t > boom) {
       const bk = prog(t, boom, 0.25);
-      out += g(burst(180, 240) + olText(0, 8, 'ハクション！', { size: 84, fill: SZ.out, ol: '#fff', sw: 8 }), { x: 1440, y: 500, s: Math.max(back(bk), 0.001) * (1 + Math.sin(t * 30) * 0.012 * exh), o: Math.min(1, bk * 4) });
-      out += g(text(1440, 796, 'くうきが はなから いっきに でる', { size: 46, w: 900, fill: SZ.outDk }), { o: prog(t, boom + 0.5, 0.3) });
+      out += g(burst(180, 240) + olText(0, 8, 'ハクション！', { size: 84, fill: SZ.out, ol: '#fff', sw: 8 }), { x: 1440, y: 532, s: Math.max(back(bk), 0.001) * (1 + Math.sin(t * 30) * 0.012 * exh), o: Math.min(1, bk * 4) });
+      out += g(text(1440, 818, 'くうきが はなから いっきに でる', { size: 46, w: 900, fill: SZ.outDk }), { o: prog(t, boom + 0.5, 0.3) });
     }
     return out;
   },
@@ -971,7 +973,7 @@ SCENES.push({
     out += pop(text(0, 0, 'みのまわり図鑑', { size: 120, w: 900, fill: '#fff' }), t, 0.3, 960, 360);
     out += g(text(0, 0, 'まいにち見ているものを、前より くわしく。', { size: 44, w: 700, fill: '#e6efe8' }), { x: 960, y: 500, o: prog(t, 0.9, 0.5) });
     out += g(`<rect x="-560" y="-60" width="1120" height="120" rx="60" fill="rgba(255,255,255,0.14)"/>` + text(0, 2, 'nozomitaguchi.github.io/everyday-trivia', { size: 46, w: 700, fill: '#fff', ls: 0.02 }), { x: 960, y: 660, o: prog(t, 1.4, 0.5) });
-    out += g(text(0, 0, 'もっと くわしくは サイトの「くしゃみは どうして でるの？」のページへ ／ 出典は 概要欄に', { size: 34, w: 700, fill: '#d9e6dc' }), { x: 960, y: 800, o: prog(t, 2.0, 0.5) });
+    out += g(text(0, 0, 'くわしくは サイトの「くしゃみは どうして でるの？」へ ／ 出典は 概要欄に', { size: 34, w: 700, fill: '#d9e6dc' }), { x: 1000, y: 782, o: prog(t, 2.0, 0.5) });
     // 左に立つ子は動画ごとに変わる（END_SWAP）。動きも kidShow が動画ごとに選ぶ
     const [kL, kR] = END_SWAP ? ['B', 'S'] : ['S', 'B'];
     out += kidShow(kL, t, 150, 1060, { s: 0.52, start: 0.8, n: 0, bubble: false });

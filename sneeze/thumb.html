@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>そら：昼は青いのに、どうして夕やけは赤い？</title>
+<title>くしゃみ：くしゃみは、どうして出るの？</title>
 <style>
   html, body { margin: 0; padding: 0; background: #fffaf0; }
   body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
@@ -25,18 +25,20 @@
 <script src="characters.js"></script>
 <script>
 function drawThumb() {
-  const NOONP = '0,0 1130,0 830,1080 0,1080', EVEP = '1130,0 1920,0 1920,1080 830,1080';
-  let o = DEFS;
-  o += `<clipPath id="cl"><polygon points="${NOONP}"/></clipPath><clipPath id="cr"><polygon points="${EVEP}"/></clipPath>`;
-  o += `<g clip-path="url(#cl)">${skyRect('t0', 0)}${sunDisc(330, 230, 92, 0)}${cloud(700, 300, 1.1, '#fff')}<path d="M 0 900 Q 500 820 1000 900 L 1000 1080 L 0 1080 Z" fill="#6fba68"/></g>`;
-  o += `<g clip-path="url(#cr)">${skyRect('t1', 1)}${sunDisc(1650, 880, 110, 1)}${cloud(1380, 240, 0.9, '#ffc9b3')}<path d="M 800 920 Q 1400 830 1920 900 L 1920 1080 L 800 1080 Z" fill="#4a4766"/></g>`;
-  o += `<line x1="1130" y1="0" x2="830" y2="1080" stroke="#fffaf0" stroke-width="14"/>`;
-  const T = (y, inner, size) => `<text x="70" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="26" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
-  o += T(430, `昼は <tspan fill="${C.blue}">青い</tspan>のに`, 190);
-  o += T(680, `夕やけは <tspan fill="#e8541e">赤い</tspan>？`, 190);
-  o += `<g transform="translate(1600 1075) scale(0.98)">${sister(0.3, { pose: 'point', eyes: 'wide', mouth: 'open', look: [4, -10] })}</g>`;
-  o += g(bubble(190, 150, '？', { size: 100 }), { x: 1760, y: 300 });
-  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 300, y: 950 });
+  NOW = { i: 1, t: 3 };
+  let o = DEFS + `<rect width="1920" height="1080" fill="#fdebd6"/>`;
+  o += `<circle cx="1600" cy="800" r="540" fill="#cfe6f1"/><circle cx="870" cy="800" r="430" fill="#fff6e6"/>`;
+  // ほこり・かふん（はなから とびだす）
+  [[1400, 600, 12], [1330, 800, 9], [1420, 860, 11], [330, 600, 10], [250, 740, 12], [420, 880, 9]].forEach(([x, y, r], i) => { o += i % 3 === 1 ? pollenDot(x, y, r + 6) : dustDot(x, y, r); });
+  // ハクション！
+  o += g(blastLines(1, SZ.out, 230, 22), { x: 1560, y: 706, r: 176 });
+  o += g(burst(205, 268, 14, '#fff', SZ.out, 14) + olText(0, 10, 'ハクション！', { size: 100, fill: SZ.out, ol: '#fff', sw: 8 }), { x: 870, y: 792, r: -4 });
+  // おねえちゃん（くしゃみの しゅんかん）
+  o += `<g transform="translate(1710 1080) rotate(-7) scale(1.2)">${sister(0.3, { pose: 'stand', eyes: 'closed', mouth: 'open' })}</g>`;
+  const T = (y, inner, size) => `<text x="60" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="28" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(170, `<tspan fill="${SZ.outDk}">くしゃみ</tspan>は`, 200);
+  o += T(400, `どうして <tspan fill="${C.blueUi}">出る</tspan>の？`, 190);
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 270, y: 1012 });
   document.getElementById('stage').innerHTML = o;
   document.getElementById('cap').style.display = 'none';
 }
