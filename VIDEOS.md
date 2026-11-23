@@ -92,7 +92,7 @@
 | itch | どうしてかゆくなるの？（かくと、なぜもっとかゆくなる？ 蚊の回とは別に、かゆみそのものの話）（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/itch-scratch.md)） | 完成 |
 | supermarket-egg-chick | スーパーのたまごを温めたら、ひよこは生まれる？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/egg-supermarket-chick.md)。めんどりはおんどりがいなくても1日に約1個産む、スーパーのたまごはめんどりだけの農場の無精卵がほとんど、受精は殻ができる前に体の中の入り口で、黄身の白い点「胚」はぎざぎざの点とわっかで見え方がちがう、が見せ場。割るのは大人・生卵をさわったら手をあらう・たまごを温めてためさない注意を入れる） | 候補 |
 | aquarium-big-fish | 水族館の大きな魚は、となりの小さな魚を食べちゃわないの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/fish-aquarium-tankmates.md)。海のサメは魚を食べる、でも水族館ではおなかいっぱいにして食べた量を記録（まんぷくのサメはすばやい魚をわざわざ追わない）、1匹ずつ決まった場所でごはん、小さな魚ははなれたすみで、いっしょにする種類と口に入らない大きさを選ぶ、それでもゼロではないので毎日ようすを見る、が見せ場。ガラスをたたかない注意を入れる） | 候補 |
-| pigeon-babies | 公園にハトはあんなにいるのに、赤ちゃんはどこにいるの？ | 記事作成待ち |
+| pigeon-babies | 公園にハトはあんなにいるのに、赤ちゃんはどこにいるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/bird-pigeon-babies.md)。赤ちゃんは雨のかからない建物のすき間や橋の下の巣にいる、オスが枝を1本ずつ運びメスが組む、卵はふつう2つでオスとメスが交代であたためる、親ののどの「そのう」から出るピジョンミルクを口うつし、巣の中に25〜32日いて巣を出るころには親と同じ大きさ（だから公園で見ても赤ちゃんとわからない）、若いハトは目が黒っぽく白いこぶが小さい、が見せ場。ハトに近づかない・追いかけない・エサをあげない、巣を見つけてもさわらずそっとはなれる注意を入れる） | 候補 |
 | snail-first-shell | [カタツムリの赤ちゃんは、最初の殻をどこで見つけるの？](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/snail-first-shell.md) | 候補 |
 | banana-seeds | バナナには種が見当たらないのに、次のバナナはどうやって育つの？ | 記事作成待ち |
 | strawberry-seeds | いちごのつぶつぶ、一粒だけ割ったら中には何があるの？ | 記事作成待ち |
