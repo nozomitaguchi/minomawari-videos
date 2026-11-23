@@ -91,7 +91,7 @@
 | moon-follows-car | 車に乗ると、どうしてお月さまがずっとついてくるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/moon-follows-car.md)。近くの木は「びゅーん」、遠くの山は「ゆっくり」、約38万km先の月は走っても見える向きがほとんど変わらず窓の同じところにいる、が見せ場。近い指と遠い指の実験もできる。窓から顔や手を出さない・シートベルト・運転する人の気を散らさない注意を入れる） | 完成 |
 | itch | どうしてかゆくなるの？（かくと、なぜもっとかゆくなる？ 蚊の回とは別に、かゆみそのものの話）（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/itch-scratch.md)） | 完成 |
 | supermarket-egg-chick | スーパーのたまごを温めたら、ひよこは生まれる？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/egg-supermarket-chick.md)。めんどりはおんどりがいなくても1日に約1個産む、スーパーのたまごはめんどりだけの農場の無精卵がほとんど、受精は殻ができる前に体の中の入り口で、黄身の白い点「胚」はぎざぎざの点とわっかで見え方がちがう、が見せ場。割るのは大人・生卵をさわったら手をあらう・たまごを温めてためさない注意を入れる） | 候補 |
-| aquarium-big-fish | 水族館の大きな魚は、となりの小さな魚を食べちゃわないの？ | 記事作成待ち |
+| aquarium-big-fish | 水族館の大きな魚は、となりの小さな魚を食べちゃわないの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/fish-aquarium-tankmates.md)。海のサメは魚を食べる、でも水族館ではおなかいっぱいにして食べた量を記録（まんぷくのサメはすばやい魚をわざわざ追わない）、1匹ずつ決まった場所でごはん、小さな魚ははなれたすみで、いっしょにする種類と口に入らない大きさを選ぶ、それでもゼロではないので毎日ようすを見る、が見せ場。ガラスをたたかない注意を入れる） | 候補 |
 | pigeon-babies | 公園にハトはあんなにいるのに、赤ちゃんはどこにいるの？ | 記事作成待ち |
 | snail-first-shell | [カタツムリの赤ちゃんは、最初の殻をどこで見つけるの？](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/snail-first-shell.md) | 候補 |
 | banana-seeds | バナナには種が見当たらないのに、次のバナナはどうやって育つの？ | 記事作成待ち |
