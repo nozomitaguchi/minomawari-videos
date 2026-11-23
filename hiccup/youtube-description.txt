@@ -7,14 +7,13 @@
 
 0:00 オープニング
 0:04 急に「ヒック」。どうして止まらない？
-0:24 「ヒック」の音は、どこで鳴っている？（予想）
-0:50 息をすう筋肉「おうかくまく」
-1:19 おうかくまくが、かってにピクッ
-1:41 のどのとびらがパタン →「ヒック」
-2:14 何回もくり返す。たいていは数分で止まる
-2:40 おなかの赤ちゃんも。何のためかは、まだなぞ
-3:11 正解と、みてみよう
-（チャプターの時刻は仮です。ナレーションが入ったあとに計算しなおします）
+0:22 「ヒック」の音は、どこで鳴っている？（予想）
+0:47 息をすう筋肉「おうかくまく」
+1:14 おうかくまくが、かってにピクッ
+1:33 のどのとびらがパタン →「ヒック」
+2:02 何回もくり返す。たいていは数分で止まる
+2:25 おなかの赤ちゃんも。何のためかは、まだなぞ
+2:49 正解と、みてみよう
 
 ▼ もっとくわしく（みのまわり図鑑「しゃっくりは どうして でるの？」）
 https://nozomitaguchi.github.io/everyday-trivia/i/hiccup/
@@ -26,7 +25,7 @@ https://nozomitaguchi.github.io/everyday-trivia/i/hiccup/
   https://www.msdmanuals.com/ja-jp/professional/01-消化管疾患/消化管疾患の症状/吃逆
 ・MSDマニュアル家庭版「呼吸の制御」（Rebecca Dezube 執筆、2025年7月 最終更新）
   https://www.msdmanuals.com/ja-jp/home/07-肺と気道の病気/肺と気道の生物学/呼吸の制御
-・Straus, Vasilakos, Wilson, Oshima, Zelter, Derenne, Similowski & Whitelaw, "A phylogenetic hypothesis for the origin of hiccough", BioEssays 25巻 182–188ページ（2003年）
+・Straus et al., "A phylogenetic hypothesis for the origin of hiccough", BioEssays 25巻 182–188ページ（2003年）
   https://core.ac.uk/download/357378668.pdf
 ・Mayo Clinic "Hiccups: Symptoms and causes"（2023年3月）
   https://www.mayoclinic.org/diseases-conditions/hiccups/symptoms-causes/syc-20352613
