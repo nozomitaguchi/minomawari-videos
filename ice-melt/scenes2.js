@@ -501,7 +501,7 @@ SCENES.push({
       let p = card(470, 280);
       p += `<rect x="-200" y="20" width="170" height="54" rx="12" fill="#c9d2da" stroke="#8d99a3" stroke-width="6"/><rect x="-190" y="28" width="150" height="14" rx="7" fill="#fff" opacity="0.5"/>` + iceCube(-118, 30, 70, 0.55 * eio(prog(t, c1 + 2.0, 8)));
       p += `<rect x="30" y="20" width="170" height="54" rx="12" fill="#fff" stroke="#b9b3a3" stroke-width="6"/>` + iceCube(112, 30, 70, 0.05 * prog(t, c1 + 2.0, 8));
-      p += text(-115, 108, 'アルミ', { size: 32, w: 900 }) + text(115, 108, 'はっぽうスチロール', { size: 26, w: 900 }) + text(0, -100, 'どっちが はやい？', { size: 36, w: 900, fill: C.ochre });
+      p += text(-115, 108, 'アルミ', { size: 32, w: 900 }) + text(108, 108, 'はっぽうスチロール', { size: 22, w: 900 }) + text(0, -100, 'どっちが はやい？', { size: 36, w: 900, fill: C.ochre });
       b += pop(p, t, c1 + 0.6, 1610, 330);
       b += kidShow('K', t, 1690, 810, { s: 0.8, start: cue(1) + 0.8, n: 0, bubble: false });
       out += g(b, { o: bO });
