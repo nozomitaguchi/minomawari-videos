@@ -77,7 +77,7 @@
 | lights-off-dark | 電気を消すと、どうして部屋が暗くなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/lights-off-dark.md)。光は外へにげずに、壁や物に当たるたびに吸いこまれて熱になる、が見せ場。スイッチは大人が・暗い中は歩きまわらない注意を入れる） | 下書き中（2026-11-23 23:48） |
 | train-wheel-curve | 電車は、ハンドルがないのに、どうやってカーブを曲がるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/train-wheel-curve.md）） | 完成 |
 | poop-color | うんちは、どうして茶色いの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/poop-color.md）） | 完成 |
-| cold-mucus-color | かぜをひくと、鼻水が黄色くなるのはどうして？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/cold-mucus-color.md）） | 候補 |
+| cold-mucus-color | かぜをひくと、鼻水が黄色くなるのはどうして？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/cold-mucus-color.md）） | 下書き中（2026-11-24 02:48） |
 | fridge | 冷蔵庫は中を冷やしているのに、どうして外があったかくなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/fridge-warm-outside.md)。冷たさを作るのではなく中の熱を外へ運ぶ、外へ出す熱は中の熱＋モーターの分なのでドアを開けっぱなしでも部屋は涼しくならない、が見せ場。うしろや下の機械にさわらない・さわるのは大人、の注意を入れる） | 候補 |
 | washing-machine | 洗濯機は、服を回すだけでどうして水をしぼれるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/washing-machine-spin.md)。穴のあいた洗濯槽を速く回すと、服も水も外へ押され、水だけが小さな穴から飛び出す、が見せ場。回っている間はふたを開けない・手を入れない・洗濯機の中に入らない注意を入れる） | 候補 |
 | static-shock | 冬にドアをさわると、どうしてバチッとなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/static-shock-door.md)。歩くとでんしが引っこしして体にたまり、乾いた冬はにげない、金属に近づくと空気をとびこえる小さなかみなり、が見せ場。わざとバチッとさせない・ガソリンスタンドのシートと給油は大人、の注意を入れる） | 下書き中（2026-11-23 23:25） |
