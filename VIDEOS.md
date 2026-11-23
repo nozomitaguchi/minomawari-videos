@@ -73,7 +73,7 @@
 | cicada | セミは、どうして夏になると鳴くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/cicada-summer-song.md)） | 公開 |
 | fish-gills | 魚は、どうして水の中で息ができるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/fish-gills.md)。口とえらぶたの かわりばんこ、えらの3段ズーム、空気の中ではえらがしぼむ、が見せ場。魚は水から出さない・水そうに手を入れない注意を入れる） | 公開 |
 | bird-fly | 鳥は、どうして空を飛べるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/bird-flight.md)。打ちおろしで羽根が重なり、打ち上げではすきまが開く、が見せ場。骨は「軽いから飛べる」とは言わない。ハトに近づかない・追いかけない、太陽は見ない注意を入れる） | 公開 |
-| dog-panting | 犬は、どうして舌を出してハアハアするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/dog-panting.md)。汗をかけるのはほぼ肉球だけ、鼻から吸って口から出す、が見せ場。知らない犬に近づかない・さわるときは飼い主に聞く、暑い日の散歩と車内の注意を入れる） | 下書き中（2026-11-23 20:48） |
+| dog-panting | 犬は、どうして舌を出してハアハアするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/dog-panting.md)。汗をかけるのはほぼ肉球だけ、鼻から吸って口から出す、が見せ場。知らない犬に近づかない・さわるときは飼い主に聞く、暑い日の散歩と車内の注意を入れる） | 候補 |
 | lights-off-dark | 電気を消すと、どうして部屋が暗くなるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/lights-off-dark.md)。光は外へにげずに、壁や物に当たるたびに吸いこまれて熱になる、が見せ場。スイッチは大人が・暗い中は歩きまわらない注意を入れる） | 候補 |
 | train-wheel-curve | 電車は、ハンドルがないのに、どうやってカーブを曲がるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/train-wheel-curve.md）） | 仕上げ待ち |
 | poop-color | うんちは、どうして茶色いの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/poop-color.md）） | 仕上げ待ち |
@@ -88,7 +88,7 @@
 | sweat | あせは、どうして出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sweat-why.md)。汗は肌の上で乾く（蒸発する）ときに体の熱を持っていくので、出ただけでは冷えず乾いてはじめて冷える、脳の「温度の係」が神経で約300万個の汗腺に合図、材料は血で塩を取りもどしてうすい汗に、むしむしの日は乾かないので冷えにくい、が見せ場。暑い日は水をこまめに・頭が痛い・気持ちが悪いときはすずしい所で休んで大人に言う注意を入れる） | 候補 |
 | navel | おへそは、何のためにあるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/navel-umbilical-cord.md)。いまのおへそは何もしていない・へその緒がついていたきずあと、へその緒の中は血の道3本（行き1本・帰り2本）、神経がないので切っても痛くない、が見せ場。おへその中をほじらない・赤ちゃんのへその緒の残りにさわらない注意を入れる） | 候補 |
 | star-twinkle | 星は、どうしてキラキラまたたくの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/star-twinkle.md)。星の光は地球をつつむ空気の中で、あたたかい・つめたい空気のかたまりに少しずつ曲げられ、かたまりがいつも動くので光がゆれる、星は遠すぎて「点」なのでゆれが目立ち惑星はあまりまたたかない、地平線近くほどキラキラ、空気のない月や宇宙ではまたたかない（だからハッブルは宇宙に）、が見せ場。夜は大人といっしょに・車の通る道やベランダの手すりの近くでは見ない注意を入れる） | 候補 |
-| moon-follows-car | 車に乗ると、どうしてお月さまがずっとついてくるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/moon-follows-car.md)。近くの木は「びゅーん」、遠くの山は「ゆっくり」、約38万km先の月は走っても見える向きがほとんど変わらず窓の同じところにいる、が見せ場。近い指と遠い指の実験もできる。窓から顔や手を出さない・シートベルト・運転する人の気を散らさない注意を入れる） | ナレーション中（2026-11-23 20:56） |
+| moon-follows-car | 車に乗ると、どうしてお月さまがずっとついてくるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/moon-follows-car.md)。近くの木は「びゅーん」、遠くの山は「ゆっくり」、約38万km先の月は走っても見える向きがほとんど変わらず窓の同じところにいる、が見せ場。近い指と遠い指の実験もできる。窓から顔や手を出さない・シートベルト・運転する人の気を散らさない注意を入れる） | ナレーション待ち |
 | itch | どうしてかゆくなるの？（かくと、なぜもっとかゆくなる？ 蚊の回とは別に、かゆみそのものの話）（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/itch-scratch.md)） | 仕上げ待ち |
 | supermarket-egg-chick | スーパーのたまごを温めたら、ひよこは生まれる？ | 記事作成待ち |
 | aquarium-big-fish | 水族館の大きな魚は、となりの小さな魚を食べちゃわないの？ | 記事作成待ち |
