@@ -1,0 +1,50 @@
+【タイトル案】
+走ると、どうして 心臓が ドキドキするの？｜みのまわり図鑑 しんぞう
+
+【概要欄】
+公園でかけっこをしたあと、むねに手を当てると、心臓がドキドキと速く、強く打っています。走ると、どうして心臓はドキドキするのでしょう？
+心臓は血を送り出すポンプだということ、走っている足の筋肉は酸素を使って力を出していて、その酸素を運ぶのが血だということ、走ると心臓は「打つ回数」も「1回に送り出す血の量」も両方ふやして、送り出す血が休んでいるときの4〜5倍にもなること、ふえた血のほとんどは走っている筋肉へ向かうこと、心臓を速くする神経とおそくする神経が 車のアクセルとブレーキのようにはたらいていること、走るのをやめると最初の1分ほどで ぐっとゆっくりになることを、親子で見られるようにアニメにしました。
+
+0:00 オープニング
+0:04 走ったあと、むねがドキドキ
+0:26 走ると、心臓は何をふやす？（予想）
+0:50 心臓は、血を送り出すポンプ
+1:10 走る筋肉は、酸素を使って力を出す
+1:27 「打つ回数」と「1回の量」を両方ふやす
+1:48 ふえた血は、走っている筋肉へ
+2:11 心臓のアクセルとブレーキ
+2:40 止まると、最初の1分ほどで ぐっとゆっくりに
+3:01 正解と、みてみよう
+（チャプターの時刻は仮です。ナレーションが入ったあとに計算しなおします）
+
+▼ もっとくわしく（みのまわり図鑑「はしると、どうして しんぞうが ドキドキ するの？」）
+https://nozomitaguchi.github.io/everyday-trivia/i/heart/
+
+▼ 出典
+・MSDマニュアル家庭版「心臓の生物学」（Jessica I. Gupta・Michael J. Shea 執筆、2025年4月 最終更新）
+  https://www.msdmanuals.com/ja-jp/home/06-心臓と血管の病気/心臓と血管の生物学/心臓の生物学
+・健康長寿ネット「心拍数と運動強度」（公益財団法人長寿科学振興財団、2023年7月 更新）
+  https://www.tyojyu.or.jp/net/kenkou-tyoju/undou-kiso/shinpaku.html
+・e-ヘルスネット「有酸素性エネルギー代謝」（厚生労働省、2023年2月 更新）
+  https://kennet.mhlw.go.jp/information/information/exercise/s-02-001.html
+・Betts ほか『Anatomy and Physiology』19.4 Cardiac Physiology（OpenStax, Rice University）
+  https://openstax.org/books/anatomy-and-physiology/pages/19-4-cardiac-physiology
+・McGill Physiology Virtual Lab "Exercise Physiology Laboratory: Cardio/CNS contribution"（McGill University）
+  https://www.medicine.mcgill.ca/physio/vlab/exercise/cardio_cns.htm
+・Korthuis RJ.『Skeletal Muscle Circulation』第4章（Morgan & Claypool Life Sciences, 2011年。NCBI Bookshelf）
+  https://www.ncbi.nlm.nih.gov/books/NBK57139/
+・Michael S, Graham KS, Davis GM, "Cardiac Autonomic Responses during Exercise and Post-exercise Recovery Using Heart Rate Variability and Systolic Time Intervals—A Review", Frontiers in Physiology 8巻 301（2017年）
+  https://www.frontiersin.org/articles/10.3389/fphys.2017.00301/pdf
+
+※ 「4〜5倍」は、体重70kgの人が休んでいるとき（1分間に約5.25リットル）と、健康な若い人が運動しているとき（約19.5リットル）をくらべた例です（OpenStax）。子どもの数字ではありません。絵の「打つ回数」のしるしやコップの量は、ふえることを見せるためのもので、実際の数には合わせていません。
+※ 「ドックン」の「ドッ」は 心臓の入口の弁（僧帽弁・三尖弁）がしまる音、「クン」は 出口の弁（大動脈弁・肺動脈弁）がしまる音です（MSDマニュアル家庭版）。動画では、弁を「とびら」とよんでいます。
+※ 「速くする神経」は交感神経、「おそくする神経」は副交感神経（迷走神経）のことです。
+※ 筋肉は、休んでいるときは届いた酸素の20〜40％を、激しい運動では約70〜80％を取り出すことがあります（Korthuis 2011年）。絵では、10このうち3こ・7〜8こで表しています。
+※ 走るのをやめたあと、心臓の速さは 最初の1分ほどで速く下がり、そのあとゆっくり下がります（Michael ほか 2017年）。グラフは形だけを表したもので、もとにもどるまでの時間は 人や運動によってちがいます。
+※ 子どもの休んでいるときの心拍数は、大人（1分間に60〜100回）より多く、100回をこえることも多いとされています（OpenStax）。
+※ 心臓・血のめぐる道・とびら（弁）・筋肉・神経の絵は、見やすいように、かんたんに描いています。
+※ 走るのは、広くて車の来ない場所で。むりに速く、長く走らないでください。苦しい・気持ちが悪い・むねが痛いときは、すぐに止まって大人に言ってください。お医者さんから運動の決まりを言われている場合は、その決まりを守ってください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #心臓 #しんぞう #からだ #かけっこ #自由研究 #雑学 #親子で学ぶ #なぜなに
