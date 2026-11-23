@@ -69,7 +69,7 @@
 | wind | 風は、どうしてふくの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/wind-blow.md)） | 完成 |
 | snow-white | 雪は、どうして白いの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/snow-white.md)） | 完成 |
 | sneeze | くしゃみは、どうして出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sneeze-reflex.md)） | 仕上げ待ち |
-| soap | 石けんで洗うと、どうしてよごれが落ちるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/soap-washing.md)） | ナレーション中（2026-11-23 09:07） |
+| soap | 石けんで洗うと、どうしてよごれが落ちるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/soap-washing.md)） | ナレーション待ち |
 | cicada | セミは、どうして夏になると鳴くの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/cicada-summer-song.md)） | 完成 |
 | fish-gills | 魚は、どうして水の中で息ができるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/fish-gills.md)。口とえらぶたの かわりばんこ、えらの3段ズーム、空気の中ではえらがしぼむ、が見せ場。魚は水から出さない・水そうに手を入れない注意を入れる） | 完成 |
 | bird-fly | 鳥は、どうして空を飛べるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/bird-flight.md)。打ちおろしで羽根が重なり、打ち上げではすきまが開く、が見せ場。骨は「軽いから飛べる」とは言わない。ハトに近づかない・追いかけない、太陽は見ない注意を入れる） | 仕上げ待ち |
