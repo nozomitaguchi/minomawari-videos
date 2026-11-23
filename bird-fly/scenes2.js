@@ -361,7 +361,7 @@ SCENES.push({
     out += pop(badge('はねが かさなって、まえへ すすむ ちからを うむ', { fill: BD.dark, size: 42 }), t, c0 + d0 * 0.45, 760, 785, { end: c1 - 0.3 });
     out += pop(g(blindIcon(op), { s: 0.8 }), t, c1 + d1 * 0.5, 1040, 250, { end: c3 - 0.2 }) + pop(badge('ブラインド みたいに ひらく', { fill: BD.air, size: 42 }), t, c1 + d1 * 0.55, 760, 785, { end: c3 - 0.2 });
     out += pop(badge('くうきが すりぬける → じゃまされにくい', { fill: BD.air, size: 44 }), t, c3 + d3 * 0.4, 760, 785);
-    out += kidShow('B', t, 140, 905, { s: 0.56, start: cue(2) - 0.9, n: 0, act: 'cheer', end: c3 + d3 * 0.35 });  // spin だと 話しはじめに 横向きで 見えなくなるので 決める
+    out += kidShow('B', t, 140, 905, { s: 0.56, start: cue(2) - 0.9, n: 0, enter: 'pop', act: 'cheer', end: c3 + d3 * 0.35 });  // spin だと 話しはじめに 横向きで 見えなくなるので 決める
     out += topBadge();
     return out;
   },
@@ -587,7 +587,7 @@ SCENES.push({
       let p = card(440, 360) + `<clipPath id="lkc"><rect x="-200" y="-160" width="400" height="320" rx="20"/></clipPath><g clip-path="url(#lkc)"><rect x="-200" y="-160" width="400" height="320" fill="${BD.sky2}"/>${pigeon(-6, 62, 0.6, { k, open: op })}</g>`;
       b += pop(p, t, cue(1) + 0.3, 1600, 360);
       b += pop(badge('すきまは みえるかな？', { fill: BD.air, size: 36 }), t, cue(2) + 0.6, 1600, 590);
-      b += kidShow('K', t, 1700, 850, { s: 0.7, start: cue(1) + 0.8, n: 0, bubble: false });
+      b += kidShow('K', t, 1700, 850, { s: 0.7, start: cue(1) + 0.8, n: 0, enter: 'pop', bubble: false });
       out += g(b, { o: bO });
     }
     return out;
