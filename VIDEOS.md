@@ -89,7 +89,7 @@
 | navel | おへそは、何のためにあるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/navel-umbilical-cord.md)。いまのおへそは何もしていない・へその緒がついていたきずあと、へその緒の中は血の道3本（行き1本・帰り2本）、神経がないので切っても痛くない、が見せ場。おへその中をほじらない・赤ちゃんのへその緒の残りにさわらない注意を入れる） | 候補 |
 | star-twinkle | 星は、どうしてキラキラまたたくの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/star-twinkle.md)。星の光は地球をつつむ空気の中で、あたたかい・つめたい空気のかたまりに少しずつ曲げられ、かたまりがいつも動くので光がゆれる、星は遠すぎて「点」なのでゆれが目立ち惑星はあまりまたたかない、地平線近くほどキラキラ、空気のない月や宇宙ではまたたかない（だからハッブルは宇宙に）、が見せ場。夜は大人といっしょに・車の通る道やベランダの手すりの近くでは見ない注意を入れる） | 候補 |
 | moon-follows-car | 車に乗ると、どうしてお月さまがずっとついてくるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/moon-follows-car.md)。近くの木は「びゅーん」、遠くの山は「ゆっくり」、約38万km先の月は走っても見える向きがほとんど変わらず窓の同じところにいる、が見せ場。近い指と遠い指の実験もできる。窓から顔や手を出さない・シートベルト・運転する人の気を散らさない注意を入れる） | ナレーション中（2026-11-23 20:56） |
-| itch | どうしてかゆくなるの？（かくと、なぜもっとかゆくなる？ 蚊の回とは別に、かゆみそのものの話）（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/itch-scratch.md)） | ナレーション中（2026-11-23 21:06） |
+| itch | どうしてかゆくなるの？（かくと、なぜもっとかゆくなる？ 蚊の回とは別に、かゆみそのものの話）（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/itch-scratch.md)） | 仕上げ待ち |
 | supermarket-egg-chick | スーパーのたまごを温めたら、ひよこは生まれる？ | 記事作成待ち |
 | aquarium-big-fish | 水族館の大きな魚は、となりの小さな魚を食べちゃわないの？ | 記事作成待ち |
 | pigeon-babies | 公園にハトはあんなにいるのに、赤ちゃんはどこにいるの？ | 記事作成待ち |
