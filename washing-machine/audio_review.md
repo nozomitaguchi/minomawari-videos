@@ -1,3 +1,4 @@
-# washing-machine ナレーションの耳レビュー（gemini-3.6-flash）
+# washing-machine ナレーションの耳レビュー（AI Studio の画面、台本を見せずに書き起こしてから照合）
 
 33行のうち、問題 0行。 OK
+- メモ: AI Studio の画面で区間ごとに書き起こして照合。切れ目のずれなし。
