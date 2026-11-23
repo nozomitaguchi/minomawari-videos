@@ -1,3 +1,4 @@
-# train-wheel-curve ナレーションの耳レビュー
+# train-wheel-curve ナレーションの耳レビュー（AI Studio の画面、台本を見せずに書き起こしてから照合）
 
-未レビュー（RuntimeError）。
+33行のうち、問題 0行。 OK
+- メモ: AI Studio の画面で区間ごとに書き起こして照合。切れ目のずれなし。
