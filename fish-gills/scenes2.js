@@ -265,7 +265,7 @@ SCENES.push({
       const FX = 1100, FY = 470, S = 4.8, { m, c } = paku(t, T);
       let b = waterBg('owbg') + streaks(1880, 250, 60, 250, t, { n: 5, o: 0.45, len: 60, speed: 0.4, col: '#8fc7e0', spread: 50, seed: 7 }) + streaks(1880, 690, 60, 690, t, { n: 5, o: 0.45, len: 60, speed: 0.4, col: '#8fc7e0', spread: 50, seed: 8 });
       b += flowFish(FX, FY, S, t, { T, inLen: 430, outLen: 520 });
-      b += pop(olText(0, 0, 'くちから はいって、えらぶたの すきまから でる', { size: 50 }), t, c1 + d1 * 0.25, 960, 140);
+      b += pop(olText(0, 0, 'くちから はいって、えらぶたの すきまから でる', { size: 50 }), t, c1 + d1 * 0.25, 960, 158);
       b += pop(badge('くち', { fill: FC.waveDk, size: 44 }), t, c1 + d1 * 0.3, 1560, 330) + pointer(1530, 366, FX + 64 * S + 4, FY - 14, FC.waveDk, prog(t, c1 + d1 * 0.3 + 0.2, 0.3));
       b += pop(badge('えらぶた', { fill: '#b85a2a', size: 44 }), t, c1 + d1 * 0.6, 1380, 250) + pointer(1340, 286, FX + 30 * S, FY - 80, '#b85a2a', prog(t, c1 + d1 * 0.6 + 0.2, 0.3));
       b += pop(badge('いっぽうつうこう', { fill: C.blueUi, size: 54, pad: 44 }), t, c2 + 0.2, 440, 270);
