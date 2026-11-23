@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>せんたくき：洗濯機は、服を回すだけで どうして水をしぼれるの？</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  NOW = { i: 1, t: 3 };
+  let o = DEFS + `<rect width="1920" height="1080" fill="${WM.wall}"/><rect y="940" width="1920" height="140" fill="${WM.floor}"/><rect y="932" width="1920" height="12" fill="#cdb48c"/>`;
+  // グルグル回る洗濯機（中が見える絵）と、穴から飛び出す水
+  const MX = 1420, MY = 1012, S = 1.3;
+  o += `<circle cx="${MX}" cy="560" r="470" fill="#fff" opacity="0.5"/>`;
+  o += g(washer(0.4, { spin: 0.5, blade: 0.5, press: 1, fly: 1, drain: 1, id: 'wt' }), { x: MX, y: MY, s: S });
+  o += g(ellArrow((WG.IX + 34) * S, 58, WM.spin, 24), { x: MX, y: MY - 330 * S });
+  [[-420, -470, 40], [-440, -200, 30], [420, -420, 34], [436, -160, 44]].forEach(([x, y, r]) => { o += dropW(MX + x, MY + y, r); });
+  o += `<text x="1836" y="170" font-size="190" font-weight="900" fill="${C.ochre}" stroke="#fffaf0" stroke-width="24" stroke-linejoin="round" paint-order="stroke" text-anchor="middle" dominant-baseline="middle" transform="rotate(12 1836 170)">？</text>`;
+  o += `<g transform="translate(560 1076) scale(0.92)">${brother(1.3, { pose: 'point', eyes: 'wide', mouth: 'o', look: [8, -2] })}</g>`;
+  const T = (x, y, inner, size) => `<text x="${x}" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="26" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(50, 170, `<tspan fill="${WM.spin}">回す</tspan>だけで`, 176);
+  o += T(50, 390, `なぜ <tspan fill="${WM.waterD}">しぼれる</tspan>？`, 138);
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 290, y: 600 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>
