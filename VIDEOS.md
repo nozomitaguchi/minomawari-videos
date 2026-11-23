@@ -86,9 +86,9 @@
 | hiccup | しゃっくりは、どうして急に出て止まらないの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/hiccup-diaphragm.md)。横隔膜が勝手にピクッ → 声のとびらがパタンで「ヒック」、だから吸うときに鳴る、が見せ場。何のためかは「わかっていない」と言う。水を一気に飲む・袋をかぶせる・おどかす、で止めようとしない注意を入れる） | 仕上げ待ち |
 | heartbeat-running | 走ると、どうして心臓がドキドキするの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/heartbeat-running.md)。心臓は打つ回数と1回に送る血の量を両方ふやして血を4〜5倍に、ふえた血はおもに走っている足の筋肉へ、アクセルとブレーキの神経、が見せ場。走るのは広くて車の来ない所で・苦しい・胸が痛いときはすぐ止まって大人に言う注意を入れる） | 仕上げ待ち |
 | sweat | あせは、どうして出るの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/sweat-why.md)。汗は肌の上で乾く（蒸発する）ときに体の熱を持っていくので、出ただけでは冷えず乾いてはじめて冷える、脳の「温度の係」が神経で約300万個の汗腺に合図、材料は血で塩を取りもどしてうすい汗に、むしむしの日は乾かないので冷えにくい、が見せ場。暑い日は水をこまめに・頭が痛い・気持ちが悪いときはすずしい所で休んで大人に言う注意を入れる） | 下書き中（2026-11-23 14:08） |
-| navel | おへそは、何のためにあるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/navel-umbilical-cord.md)。いまのおへそは何もしていない・へその緒がついていたきずあと、へその緒の中は血の道3本（行き1本・帰り2本）、神経がないので切っても痛くない、が見せ場。おへその中をほじらない・赤ちゃんのへその緒の残りにさわらない注意を入れる） | 候補 |
+| navel | おへそは、何のためにあるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/navel-umbilical-cord.md)。いまのおへそは何もしていない・へその緒がついていたきずあと、へその緒の中は血の道3本（行き1本・帰り2本）、神経がないので切っても痛くない、が見せ場。おへその中をほじらない・赤ちゃんのへその緒の残りにさわらない注意を入れる） | 下書き中（2026-11-23 14:08） |
 | star-twinkle | 星は、どうしてキラキラまたたくの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/star-twinkle.md)。星の光は地球をつつむ空気の中で、あたたかい・つめたい空気のかたまりに少しずつ曲げられ、かたまりがいつも動くので光がゆれる、星は遠すぎて「点」なのでゆれが目立ち惑星はあまりまたたかない、地平線近くほどキラキラ、空気のない月や宇宙ではまたたかない（だからハッブルは宇宙に）、が見せ場。夜は大人といっしょに・車の通る道やベランダの手すりの近くでは見ない注意を入れる） | 候補 |
-| moon-follows-car | 車に乗ると、どうしてお月さまがずっとついてくるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/moon-follows-car.md)。近くの木は「びゅーん」、遠くの山は「ゆっくり」、約38万km先の月は走っても見える向きがほとんど変わらず窓の同じところにいる、が見せ場。近い指と遠い指の実験もできる。窓から顔や手を出さない・シートベルト・運転する人の気を散らさない注意を入れる） | 候補 |
+| moon-follows-car | 車に乗ると、どうしてお月さまがずっとついてくるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/moon-follows-car.md)。近くの木は「びゅーん」、遠くの山は「ゆっくり」、約38万km先の月は走っても見える向きがほとんど変わらず窓の同じところにいる、が見せ場。近い指と遠い指の実験もできる。窓から顔や手を出さない・シートベルト・運転する人の気を散らさない注意を入れる） | 下書き中（2026-11-23 14:08） |
 | supermarket-egg-chick | スーパーのたまごを温めたら、ひよこは生まれる？ | 記事作成待ち |
 | aquarium-big-fish | 水族館の大きな魚は、となりの小さな魚を食べちゃわないの？ | 記事作成待ち |
 | pigeon-babies | 公園にハトはあんなにいるのに、赤ちゃんはどこにいるの？ | 記事作成待ち |
