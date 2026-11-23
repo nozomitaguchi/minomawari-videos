@@ -1,0 +1,51 @@
+【タイトル案】
+冷蔵庫は 中を冷やしているのに、どうして 外があったかいの？｜みのまわり図鑑 れいぞうこ
+
+【概要欄】
+冷蔵庫の中は、ひんやり冷たい。それなのに、大人が冷蔵庫の横にさわると、ほんのり あたたかい。どうしてでしょう？
+じつは冷蔵庫は、冷たさを「作って」いるのではなく、中にある熱を、管の中をめぐる「冷媒（れいばい）」に運ばせて、外へ出している機械です。冷媒が 冷却器・圧縮機・熱を出す管・細い管の4つの部品をぐるぐるめぐること、外へ出す熱は「中から運んだ熱＋モーターの電気の分」なので、ドアを開けっぱなしにしても 部屋はすずしくならないこと、熱がこもらないように すきまをあけて置くことを、親子で見られるようにアニメにしました。
+
+0:00 オープニング・中はひんやり、横はほんのり あったかい
+0:28 どうして あったかいと思う？（予想）
+0:54 冷たさを作るのではなく、中の熱を外へ運ぶ
+1:13 液体から気体に変わるとき、まわりの熱をうばう
+1:28 れいばいは、4つの部品をぐるぐる
+2:02 横の面は 50度以上になることも
+2:23 ドアを開けっぱなしでも、すずしくならない
+2:47 熱がこもらないように、すきまを
+2:56 正解と、みてみよう
+
+▼ もっとくわしく（みのまわり図鑑「れいぞうこは なかを ひやして いるのに、どうして そとが あったかいの？」）
+https://nozomitaguchi.github.io/everyday-trivia/t/fridge-warm-outside/
+https://nozomitaguchi.github.io/everyday-trivia/i/fridge/
+
+▼ 出典
+・Danfoss: How a refrigerator works - basic training
+  https://www.danfoss.com/en/about-danfoss/our-businesses/cooling/the-fridge-how-it-works
+・パナソニック「生活スタイルに合わせて進化する冷却性能」
+  https://panasonic.jp/reizo/quality/story02.html
+・家電 Watch「コンプレッサーとは」
+  https://kaden.watch.impress.co.jp/docs/word/169762.html
+・アイリスオーヤマ「冷凍冷蔵庫の側面が熱くなる。」
+  https://www.irisohyama.co.jp/support/faq/detail.php?ID=201
+・アイリスオーヤマ「冷凍冷蔵庫を設置する際はどのくらいの隙間が必要ですか？」
+  https://www.irisohyama.co.jp/support/faq/detail.php?ID=1254
+・Samsung UK: Why are the side walls of a Samsung refrigerator heating up?
+  https://www.samsung.com/uk/support/home-appliances/why-are-the-side-walls-of-a-samsung-refrigerator-heating-up/
+・Illinois Physics Van: Open Refrigerator
+  https://van.physics.illinois.edu/ask/listing/1790
+・OpenStax『University Physics Volume 2』4.3
+  https://pressbooks.online.ucf.edu/osuniversityphysics2/?p=1193
+・PhysLink.com Ask the Experts #149
+  https://www.physlink.com/Education/AskExperts/ae149.cfm
+（出典の全体は、サイトの記事にあります）
+
+※ 「まわりが30度のとき、横の面が50度以上になる冷蔵庫もある」は、アイリスオーヤマの冷凍冷蔵庫の説明にもとづく話です。どの冷蔵庫でも、いつも50度になるわけではありません。
+※ 熱を出す管（放熱パイプ・凝縮器）の場所は、うしろ・両側の面など、機種によってちがいます。
+※ 冷蔵庫を切った絵は、わかりやすくするために、部品や管の大きさ・位置を変えてかいています。熱のつぶの数（4＋2＝6）や温度計の目もりもイメージです。
+※ 必要なすきまは製品によってちがいます。お使いの冷蔵庫の説明書をごらんください。
+※ 冷蔵庫の横にさわってくらべるのは、大人がしてください。冷蔵庫のうしろや下の機械のあたりは熱くなることがあるので、子どもは手を入れない・さわらないでください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #冷蔵庫 #家電 #しくみ #熱 #雑学 #親子で学ぶ #なぜなに

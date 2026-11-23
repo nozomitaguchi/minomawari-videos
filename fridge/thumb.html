@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>れいぞうこ：冷蔵庫は中を冷やしているのに、どうして外があったかいの？</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fffaf0; }
+  body { width: 1920px; height: 1080px; overflow: hidden; position: relative;
+         font-family: "Noto Sans CJK JP", "IPAGothic", sans-serif; }
+  #stage { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  #cap { position: absolute; left: 0; right: 0; bottom: 46px; display: flex; justify-content: center; pointer-events: none; }
+  #cap span { display: inline-block; max-width: 1640px; padding: 18px 44px 20px; border-radius: 22px;
+              background: rgba(30, 29, 25, 0.84); color: #fff; font-size: 52px; font-weight: 700;
+              letter-spacing: 0.04em; line-height: 1.45; text-align: center; white-space: pre-line; }
+  #cap span.night { background: rgba(255, 250, 240, 0.92); color: #1e1d19; }
+  #cap span:empty { display: none; }
+</style>
+</head>
+<body>
+<svg id="measure" width="0" height="0" style="position:absolute;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="cap"><span></span></div>
+<script src="timeline.js"></script>
+<script src="scenes.js"></script>
+<script src="characters.js"></script>
+<script>
+function drawThumb() {
+  NOW = { i: 1, t: 3 };
+  let o = DEFS + `<rect width="1920" height="1080" fill="${FR.wall}"/><rect y="930" width="1920" height="150" fill="${FR.floor}"/><rect y="922" width="1920" height="12" fill="#cfb38a"/>`;
+  // 冷蔵庫（中はひんやり、横はあったかい）
+  const FX = 1400, FY = 1020, S = 0.9;
+  o += `<circle cx="${FX + 20}" cy="720" r="370" fill="#fff" opacity="0.5"/>`;
+  o += g(fridge3D(0, { open: 1, warm: 1 }), { x: FX, y: FY, s: S });
+  const sx = FX + SIDE_C[0] * S;
+  [[sx + 110, 600], [sx + 160, 780], [sx + 110, 940]].forEach(([x, y], i) => { o += `<path d="M ${x} ${y} q -22 -34 0 -68 t 0 -68" fill="none" stroke="${FR.hot}" stroke-width="20" stroke-linecap="round"/>`; });
+  o += flake(FX - 360, 700, 50, FR.cold, 11) + flake(FX - 440, 860, 36, FR.cold, 9);
+  o += `<text x="1800" y="240" font-size="250" font-weight="900" fill="${C.ochre}" stroke="#fffaf0" stroke-width="26" stroke-linejoin="round" paint-order="stroke" text-anchor="middle" dominant-baseline="middle" transform="rotate(12 1800 240)">？</text>`;
+  o += `<g transform="translate(520 1076) scale(0.8)">${sister(1.3, { pose: 'point', eyes: 'wide', mouth: 'o', look: [8, -2] })}</g>`;
+  const T = (x, y, inner, size) => `<text x="${x}" y="${y}" font-size="${size}" font-weight="900" letter-spacing="0.02em" fill="${C.ink}" stroke="#fffaf0" stroke-width="26" stroke-linejoin="round" paint-order="stroke" dominant-baseline="middle">${inner}</text>`;
+  o += T(50, 170, `冷蔵庫の 外は`, 156);
+  o += T(50, 372, `なぜ <tspan fill="${FR.hot}">あったかい</tspan>？`, 140);
+  o += g(badge('みのまわり図鑑', { fill: C.accent, size: 54, pad: 50 }), { x: 290, y: 570 });
+  document.getElementById('stage').innerHTML = o;
+  document.getElementById('cap').style.display = 'none';
+}
+</script>
+</body>
+</html>
