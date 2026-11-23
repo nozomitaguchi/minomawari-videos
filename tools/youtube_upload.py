@@ -37,11 +37,43 @@ def video_metadata(slug):
     if not match:
         raise SystemExit("youtube-description.txt に【タイトル案】と【概要欄】が必要です。")
     title, description = (field.strip() for field in match.groups())
+    description = fit_description(description)
     if not title or not description or len(title) > 100 or len(description.encode()) > 5000:
         raise SystemExit("YouTube のタイトルまたは概要欄の長さを確認してください。")
     if any(ch in title or ch in description for ch in "<>"):
         raise SystemExit("YouTube のタイトルと概要欄に < > は使用できません。")
     return title, description
+
+
+LIMIT = 4950  # YouTube の概要欄は 5000 バイトまで
+
+
+def fit_description(description):
+    """長すぎる概要欄を、出典の URL の行（下から）→ 出典の項目（下から）の順にけずって収める。
+    出典の全体はサイトの記事にあるので、けずったときはその旨を1行足す。"""
+    if len(description.encode()) <= LIMIT:
+        return description
+    lines = description.split("\n")
+    try:
+        start = next(i for i, line in enumerate(lines) if line.strip().startswith("▼ 出典"))
+    except StopIteration:
+        return description
+    end = next((i for i in range(start + 1, len(lines)) if not lines[i].strip()), len(lines))
+    note = "（出典の URL など、くわしくは上のサイトの記事にあります）"
+    body = lines[start + 1:end]
+
+    def joined():
+        return "\n".join(lines[:start + 1] + body + [note] + lines[end:])
+
+    for index in range(len(body) - 1, -1, -1):  # まず URL の行を下からけずる
+        if len(joined().encode()) <= LIMIT:
+            break
+        if body[index].strip().startswith("http"):
+            del body[index]
+    while body and len(joined().encode()) > LIMIT:  # まだ長ければ、出典の項目を下からけずる
+        del body[-1]
+    return joined()
+
 
 
 def verify_render(path):
