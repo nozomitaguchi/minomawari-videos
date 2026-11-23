@@ -1,3 +1,3 @@
-# cold-mucus-color ナレーションの耳レビュー
+# cold-mucus-color ナレーションの耳レビュー（gemini-3.6-flash）
 
-未レビュー（RuntimeError）。
+32行のうち、問題 0行。 OK
