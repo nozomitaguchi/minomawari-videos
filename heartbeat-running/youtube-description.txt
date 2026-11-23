@@ -7,15 +7,14 @@
 
 0:00 オープニング
 0:04 走ったあと、むねがドキドキ
-0:26 走ると、心臓は何をふやす？（予想）
-0:50 心臓は、血を送り出すポンプ
-1:10 走る筋肉は、酸素を使って力を出す
-1:27 「打つ回数」と「1回の量」を両方ふやす
-1:48 ふえた血は、走っている筋肉へ
-2:11 心臓のアクセルとブレーキ
-2:40 止まると、最初の1分ほどで ぐっとゆっくりに
-3:01 正解と、みてみよう
-（チャプターの時刻は仮です。ナレーションが入ったあとに計算しなおします）
+0:25 走ると、心臓は何をふやす？（予想）
+0:48 心臓は、血を送り出すポンプ
+1:07 走る筋肉は、酸素を使って力を出す
+1:23 「打つ回数」と「1回の量」を両方ふやす
+1:42 ふえた血は、走っている筋肉へ
+2:01 心臓のアクセルとブレーキ
+2:25 止まると、最初の1分ほどで ぐっとゆっくりに
+2:41 正解と、みてみよう
 
 ▼ もっとくわしく（みのまわり図鑑「はしると、どうして しんぞうが ドキドキ するの？」）
 https://nozomitaguchi.github.io/everyday-trivia/i/heart/
@@ -25,15 +24,11 @@ https://nozomitaguchi.github.io/everyday-trivia/i/heart/
   https://www.msdmanuals.com/ja-jp/home/06-心臓と血管の病気/心臓と血管の生物学/心臓の生物学
 ・健康長寿ネット「心拍数と運動強度」（公益財団法人長寿科学振興財団、2023年7月 更新）
   https://www.tyojyu.or.jp/net/kenkou-tyoju/undou-kiso/shinpaku.html
-・e-ヘルスネット「有酸素性エネルギー代謝」（厚生労働省、2023年2月 更新）
-  https://kennet.mhlw.go.jp/information/information/exercise/s-02-001.html
 ・Betts ほか『Anatomy and Physiology』19.4 Cardiac Physiology（OpenStax, Rice University）
   https://openstax.org/books/anatomy-and-physiology/pages/19-4-cardiac-physiology
-・McGill Physiology Virtual Lab "Exercise Physiology Laboratory: Cardio/CNS contribution"（McGill University）
-  https://www.medicine.mcgill.ca/physio/vlab/exercise/cardio_cns.htm
-・Korthuis RJ.『Skeletal Muscle Circulation』第4章（Morgan & Claypool Life Sciences, 2011年。NCBI Bookshelf）
+・Korthuis RJ.『Skeletal Muscle Circulation』第4章（2011年。NCBI Bookshelf）
   https://www.ncbi.nlm.nih.gov/books/NBK57139/
-・Michael S, Graham KS, Davis GM, "Cardiac Autonomic Responses during Exercise and Post-exercise Recovery Using Heart Rate Variability and Systolic Time Intervals—A Review", Frontiers in Physiology 8巻 301（2017年）
+・Michael ほか, "Cardiac Autonomic Responses during Exercise and Post-exercise Recovery Using Heart Rate Variability and Systolic Time Intervals—A Review", Frontiers in Physiology 8巻 301（2017年）
   https://www.frontiersin.org/articles/10.3389/fphys.2017.00301/pdf
 
 ※ 「4〜5倍」は、体重70kgの人が休んでいるとき（1分間に約5.25リットル）と、健康な若い人が運動しているとき（約19.5リットル）をくらべた例です（OpenStax）。子どもの数字ではありません。絵の「打つ回数」のしるしやコップの量は、ふえることを見せるためのもので、実際の数には合わせていません。
