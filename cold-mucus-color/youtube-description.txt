@@ -1,0 +1,44 @@
+【タイトル案】
+かぜの鼻水は、どうして 黄色くなるの？｜みのまわり図鑑 はなみずの いろ
+
+【概要欄】
+かぜのひきはじめの鼻水は、水みたいに透明。でも何日かすると、白や黄色、治りかけには 緑っぽくなることがあります。どうしてでしょう？
+色のもとは、ウイルスとたたかうために鼻に集まってきた、体を守る白血球。白血球の中には 緑色の「こうそ」がたっぷりつまっていて、それが鼻水を緑っぽく見せること、黄色や緑の鼻水でも それだけで細菌の病気とはいえないこと、色よりも 鼻水が続いている日数を見ることを、親子で見られるようにアニメにしました。
+
+0:00 オープニング・はじめは透明、何日かすると黄色
+0:28 どうして黄色くなると思う？（予想）
+0:57 ひきはじめ：透明な鼻水が、ウイルスを洗い流す
+1:14 2〜3日め：白血球が集まって、白や黄色に
+1:41 治りかけ：白血球の中の 緑色の「こうそ」
+2:06 「緑」という意味の名前
+2:23 黄色や緑なら、細菌の病気？
+2:51 色より、続いている日数
+3:05 正解と、みてみよう
+
+▼ もっとくわしく（みのまわり図鑑「はなみずの いろが かわるのは なぜ」）
+https://nozomitaguchi.github.io/everyday-trivia/t/cold-mucus-color/
+https://nozomitaguchi.github.io/everyday-trivia/t/common-cold/
+https://nozomitaguchi.github.io/everyday-trivia/t/cold-basics/
+
+▼ 出典
+・CDC: Runny Nose（PDF）
+  https://www.cdc.gov/antibiotic-use/media/pdfs/Runny-Nose-508.pdf
+・アメリカ小児科学会 HealthyChildren.org: The Difference Between Sinusitis and a Cold
+  https://www.healthychildren.org/English/health-issues/conditions/ear-nose-throat/Pages/The-Difference-Between-Sinusitis-and-a-Cold.aspx
+・アメリカ小児科学会 HealthyChildren.org: Children and Colds
+  https://healthychildren.org/English/health-issues/conditions/ear-nose-throat/pages/Children-and-Colds.aspx
+・Myeloperoxidase: a front-line defender against phagocytosed microorganisms（J Leukoc Biol）
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC3545676
+・Altiner et al. 2009, Sputum colour for diagnosis of a bacterial infection in patients with acute cough（Scand J Prim Health Care）
+  https://www.antibioticconservation.auckland.ac.nz/resource-hub/publications/sputum-colour-for-diagnosis-of-a-bacterial-infection-in-patients-with-acute-cough
+
+※ 動画の「白血球」は好中球、「こうそ」はミエロペルオキシダーゼ、「細菌をやっつける薬」は抗菌薬（抗生物質）のことです。
+※ 「緑という意味の名前」はベルドペルオキシダーゼ。いまはミエロペルオキシダーゼとよばれています。
+※ ドイツの研究（2009年）は、せきの出る大人の「たん」を調べたものです。透明なたんでは105件中6件、黄色や緑のたんでは136件中22件で細菌が育ちました。
+※ 鼻の中の絵は、わかりやすくするために、白血球やウイルスの大きさ・数を変えてかいています。
+※ この動画は病気の診断をするものではありません。アメリカ小児科学会は、鼻水が10〜14日より長く続くときは小児科に相談するようすすめています。息が速い・苦しそう、ひどく眠そうなど、気になるときは早めにお医者さんに相談してください。
+※ 鼻をかんだティッシュは、見おわったらすぐにすてて、手をあらいましょう。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #鼻水 #かぜ #からだ #白血球 #雑学 #親子で学ぶ #なぜなに
