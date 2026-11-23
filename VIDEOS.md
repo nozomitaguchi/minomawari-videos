@@ -92,7 +92,7 @@
 | supermarket-egg-chick | スーパーのたまごを温めたら、ひよこは生まれる？ | 記事作成待ち |
 | aquarium-big-fish | 水族館の大きな魚は、となりの小さな魚を食べちゃわないの？ | 記事作成待ち |
 | pigeon-babies | 公園にハトはあんなにいるのに、赤ちゃんはどこにいるの？ | 記事作成待ち |
-| snail-first-shell | カタツムリの赤ちゃんは、最初の殻をどこで見つけるの？ | 記事作成待ち |
+| snail-first-shell | [カタツムリの赤ちゃんは、最初の殻をどこで見つけるの？](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/snail-first-shell.md) | 候補 |
 | banana-seeds | バナナには種が見当たらないのに、次のバナナはどうやって育つの？ | 記事作成待ち |
 | strawberry-seeds | いちごのつぶつぶ、一粒だけ割ったら中には何があるの？ | 記事作成待ち |
 | fish-thirsty | 魚ものどがかわくの？ 海の魚は海水を飲むの？ | 記事作成待ち |
