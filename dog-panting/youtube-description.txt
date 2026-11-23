@@ -1,0 +1,51 @@
+【タイトル案】
+犬は、どうして 舌を出してハアハアするの？｜みのまわり図鑑 いぬ
+
+【概要欄】
+暑い日や、たくさん走ったあと。犬は、口を大きくあけて舌をだらんと出し、ハアハアと速い息をします。どうしてでしょう？
+人は暑いと体じゅうに汗をかきますが、犬が汗をかけるのは、ほぼ足のうらの肉球だけ。そこで犬は、口と鼻の中のぬれたところから水をかわかして（蒸発させて）、体の熱を外へすてています。ハアハアのときは鼻から吸って口から出すことが多いこと、鼻のおくから冷やすための水が出ること、舌に血が5倍あまり流れること、1秒に5回くらいの「ちょうどいいリズム」、むし暑い日は冷えにくいことを、親子で見られるようにアニメにしました。
+
+0:00 オープニング・舌を出してハアハア
+0:29 犬が汗をかけるのは、どこ？（予想）
+0:49 人は体じゅうに汗、犬はほぼ肉球だけ
+1:10 水は、かわくときに熱を持っていく
+1:36 鼻から吸って、口から出す
+2:05 1秒に5回くらいの、ちょうどいいリズム
+2:32 むし暑い日は、冷えにくい
+2:53 正解と、みてみよう
+（チャプターの時刻は仮です。ナレーションを入れたあとに直します）
+
+▼ もっとくわしく（みのまわり図鑑「いぬは、どうして したを だして ハアハアするの？」）
+https://nozomitaguchi.github.io/everyday-trivia/t/dog-panting/
+https://nozomitaguchi.github.io/everyday-trivia/i/dog/
+
+▼ 出典
+・鳥取県「熱中症に注意！」
+  https://www.pref.tottori.lg.jp/247386.htm
+・環境省「飼い主のみなさまへ ペットを車内に残さないで！」
+  https://www.env.go.jp/content/900517571.pdf
+・東京都保健医療局「ペットの熱中症にご注意ください！」
+  https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/aigo/doubutsu_oshirase/nettyuusyou
+・MSD獣医マニュアル「The Integumentary System in Animals」
+  https://www.msdvetmanual.com/integumentary-system/integumentary-system-introduction/the-integumentary-system-in-animals
+・Schmidt-Nielsen ほか「Panting in Dogs: Unidirectional Air Flow over Evaporative Surfaces」Science 1970 doi:10.1126/science.169.3950.1102
+・Blatt ほか「Thermal Panting in Dogs: The Lateral Nasal Gland…」Science 1972 doi:10.1126/science.177.4051.804
+・Pleschka, Krönert「Lingual blood flow and its hypothalamic control in the dog during panting」Pflügers Arch 1976 doi:10.1007/bf00583652
+・Crawford「Mechanical aspects of panting in dogs」J Appl Physiol 1962 doi:10.1152/jappl.1962.17.2.249
+・do Nascimento ほか「Heat stress in domestic dogs…」Front Anim Sci 2025
+  https://www.frontiersin.org/journals/animal-science/articles/10.3389/fanim.2025.1679377/full
+・千葉市「人が犬に咬まれる事故が多発しています」
+  https://www.city.chiba.jp/hokenfukushi/iryoeisei/seikatsueisei/dobutsuhogo/040_dog_bite_prevention.html
+（出典の全体は、サイトの記事にあります）
+
+※ 犬は、まったく汗をかかないわけではありません。汗をかけるところが、ほぼ肉球だけで、その汗が体を冷やす役目は小さいと考えられています。
+※ 「鼻から吸って口から出す」は、暑くてハアハアしているときに多い息のしかたです（1970年の論文）。すずしいところで休んでいるときは鼻だけで息をし、もっと暑いときや走っているときは口からも吸います（1981年の論文）。
+※ 「舌に血が5倍あまり」は、20℃で休んでいるとき（平均1分に11mL）と、38℃でハアハアしているとき（平均60.4mL）のくらべです（1976年の論文）。
+※ 「1秒に5回くらい」は、電球で温めた体重12kgほどの犬の実験の数字です（1962年の論文）。ブランコは、たとえです。
+※ 犬の頭を切った絵は、わかりやすくするために、鼻のおくのひだ・水の出るところ・血のすじの形や大きさを変えてかいています。
+※ 知らない犬には近づかないでください。さわりたいときは、むやみにさわらず、飼い主の人に聞いてからにしてください。暑い日の散歩はすずしい朝や夕方に。短い時間でも、車の中に犬を残さないでください。
+※ すずしいところで休んでいるのに、荒いハアハアがつづくときは、獣医師に相談してください。
+
+ナレーション：Gemini TTS（Google AI Studio）で生成
+
+#みのまわり図鑑 #犬 #いぬ #ハアハア #パンティング #熱中症 #雑学 #親子で学ぶ #なぜなに
