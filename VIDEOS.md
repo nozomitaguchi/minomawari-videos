@@ -114,7 +114,7 @@
 | magnifying-glass | 虫めがねでのぞくと、どうして物が大きく見えるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/magnifying-glass-bigger.md)。物は近いほど大きく見えるのに近すぎるとピントが合わない、凸レンズが光を内側に曲げるので目に近くてもくっきり＝虫めがねは物を大きくしているのではなく「ぐっと近づける」道具、同じ虫めがねで遠くの家をのぞくとさかさまで小さい、が見せ場。虫めがねで太陽をのぞかない・日の当たる窓ぎわに置きっぱなしにしない（収れん火災）注意を入れる。メモは ideas/notes/magnifying-glass.md） | 候補 |
 | coin-holes | 5円玉と50円玉に穴があいているのは、どうして？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/coin-holes.md)。はじめは穴がなく、5円は1円と、50円は100円とまちがえやすかったので穴をあけた、が見せ場。硬貨は口に入れない注意を入れる） | 候補 |
 | siren-doppler | 救急車が通りすぎると、どうしてサイレンの音が変わるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/ambulance-siren-doppler.md)） | 候補 |
-| contrail | 飛行機が飛んだあと、どうして空に白い線がのこるの？ | 記事作成待ち |
+| contrail | 飛行機が飛んだあと、どうして空に白い線がのこるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/airplane-contrail.md)。白い線はけむりではなく小さな氷のつぶの雲「飛行機雲」、エンジンで燃料が燃えると水のガス（水蒸気、排ガスの28%）ができる、飛行機が飛ぶ高い空はマイナス40度より冷たく（ふつう8kmより上）熱くしめったガスが冷たい空気とまざって水蒸気が細かいつぶにくっつき水のつぶ→すぐこおる、寒い日の白い息と同じなかま、空の上がかわいている日は氷がすぐ消え・しめっている日はまわりの水をもらって何時間ものこる、のこる日は空の上がしめっているしるしで天気が変わることもある、が見せ場。見上げるときは立ち止まる・太陽は見ない注意を入れる。メモは ideas/notes/contrail.md） | 候補 |
 | summer-winter | どうして夏は暑くて、冬は寒いの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/seasons-summer-winter.md)。夏は太陽に近いからではなく（いちばん近いのは1月）、地球が約23.4°かたむいたまま回るので、お昼の太陽が高い夏は光がせまいところに集まって強く当たり（東京77.8°と30.9°、同じ光の当たる広さは冬に約1.9倍）、昼も長い（14時間35分と9時間45分）、南半球は季節が反対、いちばん暑いのは夏至ではなく8月、が見せ場。太陽をじかに見ない・懐中電灯の光を目に向けない注意を入れる。メモは ideas/notes/summer-winter.md） | 候補 |
 | water-strider | アメンボは、どうして水の上を歩けるの？ | 記事作成待ち |
 | spider-silk | クモは、どうしておしりから糸を出せるの？ | 記事作成待ち |
