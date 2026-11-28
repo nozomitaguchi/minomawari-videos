@@ -95,7 +95,7 @@
 | pigeon-babies | 公園にハトはあんなにいるのに、赤ちゃんはどこにいるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/bird-pigeon-babies.md)。赤ちゃんは雨のかからない建物のすき間や橋の下の巣にいる、オスが枝を1本ずつ運びメスが組む、卵はふつう2つでオスとメスが交代であたためる、親ののどの「そのう」から出るピジョンミルクを口うつし、巣の中に25〜32日いて巣を出るころには親と同じ大きさ（だから公園で見ても赤ちゃんとわからない）、若いハトは目が黒っぽく白いこぶが小さい、が見せ場。ハトに近づかない・追いかけない・エサをあげない、巣を見つけてもさわらずそっとはなれる注意を入れる） | 候補 |
 | snail-first-shell | [カタツムリの赤ちゃんは、最初の殻をどこで見つけるの？](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/snail-first-shell.md) | 候補 |
 | banana-seeds | バナナには種が見当たらないのに、次のバナナはどうやって育つの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/banana-seeds.md)。まんなかの黒いつぶは種ではなく種になれなかった「胚珠」のあと、野生のバナナには黒くてかたい種がぎっしり、食べるバナナは花粉がつかなくても実だけ太る、「バナナの木」は葉のつけねが重なった草で実をつけるのは一生に一度、次のバナナは根もとから出る子ども「吸芽」から育つ、が見せ場。包丁は大人が使う・植物園のバナナは見るだけの注意を入れる） | 候補 |
-| strawberry-seeds | いちごのつぶつぶ、一粒だけ割ったら中には何があるの？ | 記事作成待ち |
+| strawberry-seeds | いちごのつぶつぶ、一粒だけ割ったら中には何があるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/strawberry-seeds.md)。つぶは種ではなく1つぶ1つぶが「実」で中に種が1つ、赤いところは花のつけね（花托）、つぶを全部取るといちごは大きくならず1つ残すとそこだけふくらむ、が見せ場。包丁は大人・つぶは割ろうとしない注意を入れる） | 候補 |
 | fish-thirsty | 魚ものどがかわくの？ 海の魚は海水を飲むの？ | 記事作成待ち |
 | mosquito-winter | 冬にいなくなった蚊は、春になるとどこから来るの？ | 記事作成待ち |
 | numb-legs | 正座をしていると、どうして足がしびれるの？ | 記事作成待ち |
