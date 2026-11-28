@@ -2,7 +2,7 @@
 
 元記事：[魚ものどがかわくのか、海の魚は海水を飲むのか…](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/fish-drink-seawater.md)（2026-11-28 作成）
 サイト：https://nozomitaguchi.github.io/everyday-trivia/t/fish-drink-seawater/
-図：`everyday-trivia/assets/figures-fish2.js`（名前は `fd-` ではじまる。いちばん上の絵は `fish-drink-seawater`）
+図：`everyday-trivia/assets/figures-fish2.js`（名前は `fd-` ではじまる。いちばん上の絵は `fish-drink-seawater`）。2026-11-28 の追記分は `everyday-trivia/assets/figures-fishdrink.js`（`ft-esophagus`・`ft-reflex`・`ft-human`）
 色の約束：うみ＝こい みずいろ、かわ（淡水）＝うすい みずいろ、みずの うごき＝あおい やじるし（からだから出る・入る水は点線）、しお＝しろい しかく、おしっこ＝きいろの しずく、きんぎょ型の魚＝オレンジ、ホルモン＝むらさきの まる、にょうそ＝みどりの まる
 同じチャンネルの「魚は、どうして水の中で息ができるの？」（fish-gills）の続きとして見られる。えらの話は fish-gills にまかせ、今回は「水と しお」だけを扱う。
 
@@ -20,6 +20,9 @@
 - **川の さかなは はんたい**（`fd-fresh`）：水が入ってくる → のまない → おしっこ たくさん。くらべは `fd-sea-urine`（おしっこ すこし／たくさん）か、いちばん上の `fish-drink-seawater` を左右に並べる
 - **ウナギと サケは きりかえる**（`fd-eel-switch`）：川では のまない、海では のむ
 - **サメは「にょうそ」で うみと おなじ こさ**（`fd-shark`）：2つめの「へぇ」。時間が足りなければ省く
+- （追記）**のどの さきで しおを ぬく**（`ft-esophagus`）：飲んだ海水は、腸に着く前に食道で しおだけが抜かれて こさが はんぶんに。食道は水を通さない（竹井祥郎さんの解説）。「ごくごく → しおを ぬく → おなかで みずを もらう」の3段にできる
+- （追記）**「のどが かわいた」では なく、はんしゃで ごくん**（`ft-reflex`）：題名の問いへの答えに使える。陸の動物は前の脳で「渇き」を感じて飲むが、魚は脳の うしろ（延髄の最後野）が命令する、のみこむ反射で飲む（竹井さんの科研費報告 2009年度、カタヤマさんたちの論文 2018年）
+- （追記）**ひとは うみの みずを のんじゃ だめ**（`ft-human`）：人の腎臓は海水より こい おしっこを作れないので、飲むと体の水が もっと へる（NOAA）。おわりの「みてみよう」の注意につなげる
 
 ## 場面の順番（説明は5場面）
 
@@ -29,13 +32,14 @@
 4. 川の魚は はんたい。水が入ってくるので ほとんど飲まず、うすい おしっこを たくさん。足りない しおは えらで取りこむ（`fd-fresh`、`fd-fresh-gill`）
 5. ウナギや サケは 川と海で やりかたを きりかえる（`fd-eel-switch`）。サメは体に「にょうそ」をためて、海の水と おなじくらいの こさにする（`fd-shark`）
 
-「のどが かわく？」への答え方：飲むかどうかは、血の中の「ホルモン」という しらせが 頭（脳の「さいごや」）に とどいて決まる（`fd-brain-signal`、`fd-swallow`）。魚は口の中にいつも水があるので、「ごくん」と のみこむだけで飲める。**人のように「のどが かわいた」と感じているかは わかっていない**ので、ナレーションでは「からだが みずを ほしがると、ごくごく のむ」程度にし、「のどが からから」とは言わない。
+「のどが かわく？」への答え方：飲むかどうかは、血の中の「ホルモン」という しらせが 頭（脳の「さいごや」）に とどいて決まる（`fd-brain-signal`、`fd-swallow`）。魚は口の中にいつも水があるので、「ごくん」と のみこむだけで飲める。**研究では、水の中の魚は 人のように前の脳で「のどが かわいた」と感じて飲むのではなく、脳の うしろの命令で反射的に のみこむ、と報告されている**（`ft-reflex`。竹井さんの科研費報告 2009年度「前脳に作用して『渇き』という動機づけにより飲水する陸上動物と異なる」、カタヤマさんたち 2018年）。ナレーションは「さかなは『のどが かわいた』と おもって のむのでは なく、あたまの うしろの めいれいで、ごくんと のむ」。「魚は何も感じていない」とまでは言わない。
 
 みてみよう：水族館で「うみの さかな」と「かわの さかな」の水そうが わかれているか、ふだを見くらべる。ウナギや サケの水そうは どちらにあるか さがす（`fd-look-aquarium`）。
 
 ## 注意書き・言いかたの注意
 
 - **ガラスは たたかない。家の金魚の水に しおや 海水を入れて ためさない**。動画の「みてみよう」で必ず言う（金魚を水から出さない、も入れてよい）
+- **海で あそぶときは、口に入った海の水を のみこまない**（`ft-human` の場面を入れるとき）
 - 「3分の1」は東京大学 金子豊二さんの資料（魚類の血液浸透圧は一部の例外を除き海水のおよそ1/3）。0.9％・3.5％・0.1％未満は同じ先生の講義資料。ナレーションは「うみの みずより ずっと うすい」でよく、数字は字幕か図だけ
 - 「飲んだ海水の90％を腸で吸収」は東大大気海洋研究所 竹井祥郎さんの科研費報告書（英文要約）。子ども向けには「おなかで みずだけ とりこむ」
 - 魚が1日にどれだけ飲むかの数字は言わない（確かめていない）
@@ -56,3 +60,9 @@
 - 高知大学「魚類の浸透圧調節」https://www.kochi-u.ac.jp/w3museum/Fish_Labo/Member/Endoh/fish_diversity/20171110_fish_diversity_migration01.pdf
 - 日下部誠「海水魚と淡水魚を同じ水槽で飼うためには？」（静岡大学）https://www.sci.shizuoka.ac.jp/sci/wp-content/uploads/2021/06/20171019_02.pdf
 - N. Hammerschlag（2006）「Osmoregulation in elasmobranchs」Marine and Freshwater Behaviour and Physiology 39(3) https://sharkresearch.earth.miami.edu/wp-content/uploads/2018/09/Osmoregulation-in-elasmobranchs-a-review-for-fish-biologists-behaviourists-and-ecologists.pdf
+- 竹井祥郎「魚類の体液調節のしくみ －海水環境への適応機構－」（ソルト・サイエンス研究財団）https://www.saltscience.or.jp/images/2023/07/2-takei.pdf
+- Takei（2021）Zoological Letters 7: 10 https://pmc.ncbi.nlm.nih.gov/articles/PMC8215749/
+- 竹井祥郎「水生から陸生にともなう飲水機構の進化」科研費 研究成果報告書（2009年度）https://kaken.nii.ac.jp/ja/report/KAKENHI-PROJECT-19207005/19207005seika
+- Katayama ら（2018）Frontiers in Physiology 9: 1112 https://frontiersin.org/journals/physiology/articles/10.3389/fphys.2018.01112/full
+- Nobata・Takei（2022）Journal of Experimental Biology 225: jeb244094 https://cob.silverchair.com/jeb/article/doi/10.1242/jeb.244094/275264/am/Circulating-Isotocin-not-Angiotensin-II-is-the
+- NOAA「Can humans drink seawater?」https://oceanservice.noaa.gov/facts/drinksw.html
