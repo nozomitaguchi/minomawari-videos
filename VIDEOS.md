@@ -118,7 +118,7 @@
 | summer-winter | どうして夏は暑くて、冬は寒いの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/seasons-summer-winter.md)。夏は太陽に近いからではなく（いちばん近いのは1月）、地球が約23.4°かたむいたまま回るので、お昼の太陽が高い夏は光がせまいところに集まって強く当たり（東京77.8°と30.9°、同じ光の当たる広さは冬に約1.9倍）、昼も長い（14時間35分と9時間45分）、南半球は季節が反対、いちばん暑いのは夏至ではなく8月、が見せ場。太陽をじかに見ない・懐中電灯の光を目に向けない注意を入れる。メモは ideas/notes/summer-winter.md） | 候補 |
 | water-strider | アメンボは、どうして水の上を歩けるの？ | 記事作成待ち |
 | spider-silk | クモは、どうしておしりから糸を出せるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/spider-silk.md)） | 候補 |
-| bicycle-freewheel | 自転車は、ペダルを止めてもどうして前へ進めるの？ | 記事作成待ち |
+| bicycle-freewheel | 自転車は、ペダルを止めてもどうして前へ進めるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/bicycle-freewheel.md)。後ろのタイヤのまん中に一方通行のしかけ「ラチェット」、こぐとばねで押された爪が歯にかかってタイヤが回り、足を止めると爪が歯の上をすべるだけでタイヤだけ回る（その音が「チッチッチッ」）、動くものは動きつづける、ラチェットのない競輪のピストは止まるまでペダルも回る、1860年代の自転車はペダルが前輪にじかについていて下り坂では足を上げた、が見せ場。走っている自転車に近づかない・歯車やチェーンに指を入れない注意を入れる。メモは ideas/notes/bicycle-freewheel.md） | 候補 |
 | umbrella | 傘は、手元をおし上げるだけで、どうして全部の骨がいっぺんに開くの？ | 記事作成待ち |
 
 ※ 問いの例は目安。元記事リンクがある行は、リンク先の問いをその動画で扱う。動画IDは制作フォルダ名として使う。
