@@ -96,7 +96,7 @@
 | snail-first-shell | [カタツムリの赤ちゃんは、最初の殻をどこで見つけるの？](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/snail-first-shell.md) | 候補 |
 | banana-seeds | バナナには種が見当たらないのに、次のバナナはどうやって育つの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/banana-seeds.md)。まんなかの黒いつぶは種ではなく種になれなかった「胚珠」のあと、野生のバナナには黒くてかたい種がぎっしり、食べるバナナは花粉がつかなくても実だけ太る、「バナナの木」は葉のつけねが重なった草で実をつけるのは一生に一度、次のバナナは根もとから出る子ども「吸芽」から育つ、が見せ場。包丁は大人が使う・植物園のバナナは見るだけの注意を入れる） | 候補 |
 | strawberry-seeds | いちごのつぶつぶ、一粒だけ割ったら中には何があるの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/strawberry-seeds.md)。つぶは種ではなく1つぶ1つぶが「実」で中に種が1つ、赤いところは花のつけね（花托）、つぶを全部取るといちごは大きくならず1つ残すとそこだけふくらむ、が見せ場。包丁は大人・つぶは割ろうとしない注意を入れる） | 候補 |
-| fish-thirsty | 魚ものどがかわくの？ 海の魚は海水を飲むの？ | 記事作成待ち |
+| fish-thirsty | 魚ものどがかわくの？ 海の魚は海水を飲むの？（[元記事](https://github.com/nozomitaguchi/everyday-trivia/blob/main/trivia/fish-drink-seawater.md)。魚の体の水は海水よりずっとうすい（およそ3分の1）、水は塩のこいほうへひっぱられるので海の魚は体の水が海へにげる、だから海水をごくごく飲んでおなかで水だけ取りこみ塩はえらから捨てる・おしっこは少し、川の魚は反対で水が入ってくるのでほとんど飲まずうすいおしっこをたくさん、ウナギとサケは切りかえ、サメは「にょうそ」で海と同じこさ、が見せ場。ガラスをたたかない・金魚の水に塩や海水を入れてためさない注意を入れる。メモは ideas/notes/fish-thirsty.md） | 候補 |
 | mosquito-winter | 冬にいなくなった蚊は、春になるとどこから来るの？ | 記事作成待ち |
 | numb-legs | 正座をしていると、どうして足がしびれるの？ | 記事作成待ち |
 | bed-hair | 朝起きると、どうして寝ぐせがつくの？ | 記事作成待ち |
